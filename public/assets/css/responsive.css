@@ -2275,8 +2275,8 @@ background: #002e5b;
 	margin-right: 15px;
 }
 #scrollUp {
-	right: 20px;
-	bottom: 30px;
+	left: 25px;
+	bottom: 40px;
 }
 .video-wrap > img {
 	display: none;
