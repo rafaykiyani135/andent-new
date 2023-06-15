@@ -9,7 +9,7 @@ import Appointment from '../Menhome/Appointment'
 import Blog from '../Menhome/Blog'
 import { FloatingWhatsApp } from 'react-floating-whatsapp-button'
 import 'react-floating-whatsapp-button/dist/index.css'
-import TrustBox from '../reviews/trustpilot'
+import Review from '../reviews/trustpilot'
 
 function Main() {
   return (
@@ -26,8 +26,7 @@ function Main() {
       <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>
       <FloatingWhatsApp autoOpenTimeout="0" size="50px" phone="+355 69 375 5065" message='' popupMessage="Hello! How can we help you?" position='left'/>
       </div>
-      <TrustBox/>
-      
+      <Review/>
     </>
      
   )
