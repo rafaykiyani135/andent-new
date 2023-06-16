@@ -49,7 +49,7 @@ function Main() {
               <div className="row">
               <div className='col-sm-12 col-md-12 col-lg-8'>
               <h1 style={{paddingBottom:"50px"}}>
-                Title : { blog.title }
+              { blog.title }
               </h1>
               <div>
                 { ReactHtmlParser(blog.content) }
