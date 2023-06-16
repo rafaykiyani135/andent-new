@@ -55,7 +55,7 @@ function Blogchild (props) {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-8">                 
-                    <h1>Blogs are coming soon!</h1>
+                    <h1>Blog is coming soon!</h1>
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-4">
                     <aside className="sidebar-widget">
