@@ -19,18 +19,19 @@ function Main() {
   const [blog,setBlog]=useState([]);
   const [connected,setConnected] =useState(false);
 
-  useEffect(()=>{
-
-    axios.get(url)
-    .then(response => {
-      setBlog(response.data.data.attributes)
-      setConnected(true);
-    })
-    .catch(error => {
-      console.log("error fetching data ",error)
-    })
-
-  },[url]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(url);
+        setBlog(response.data.data.attributes);
+        setConnected(true);
+      } catch (error) {
+        console.log("Error fetching data:", error);
+      }
+    };
+  
+    fetchData();
+  }, [url]);
 
   return (
     

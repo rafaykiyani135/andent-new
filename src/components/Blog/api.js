@@ -12,18 +12,19 @@ function Blogchild (props) {
     const [connected,setConnected] =useState(false);
 
 
-  useEffect(()=>{
-
-    axios.get(url)
-    .then(response => {
-      setblogData(response.data.data)
-      setConnected(true);
-    })
-    .catch(error => {
-      console.log("error fetching data ",error)
-    })
-
-  },[url]);
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await axios.get(url);
+          setblogData(response.data.data);
+          setConnected(true);
+        } catch (error) {
+          console.log("Error fetching data:", error);
+        }
+      };
+    
+      fetchData();
+    }, [url]);
 
  
 

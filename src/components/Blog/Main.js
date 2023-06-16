@@ -43,17 +43,18 @@ function Main() {
 
   const url="https://ec2-18-216-114-158.us-east-2.compute.amazonaws.com/api/blogs?sort=createdAt%3Adesc&pagination[page]=1&pagination[pageSize]=5"
 
-  useEffect(()=>{
-
-    axios.get(url)
-    .then(response => {
-      setPages(response.data.meta.pagination.pageCount);
-    })
-    .catch(error => {
-      console.log("error fetching data ",error)
-    })
-
-  },[]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(url);
+        setPages(response.data.meta.pagination.pageCount);
+      } catch (error) {
+        console.log("Error fetching data:", error);
+      }
+    };
+  
+    fetchData();
+  }, []);
 
   return (
     <>
