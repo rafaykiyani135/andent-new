@@ -144,7 +144,7 @@ function Main() {
                                                             <Link to="/blog">Blog</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/blogdetails">Blog Details</Link>
+                                                        <Link to='/blogdetails/1'>Blog Details</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
