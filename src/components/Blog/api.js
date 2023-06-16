@@ -7,7 +7,7 @@ import Sideone from "../Menblog/Sideone";
 function Blogchild (props) {
 
 
-    const url=`http://ec2-18-216-114-158.us-east-2.compute.amazonaws.com:8080/api/blogs?sort=createdAt%3Adesc&pagination[page]=${props.page}&pagination[pageSize]=5`;
+    const url=`https://ec2-18-216-114-158.us-east-2.compute.amazonaws.com/api/blogs?sort=createdAt%3Adesc&pagination[page]=${props.page}&pagination[pageSize]=5`;
     const [blogData,setblogData]=useState(null);
     const [connected,setConnected] =useState(false);
 

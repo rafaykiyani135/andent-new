@@ -1,11 +1,7 @@
 import React, { useRef } from 'react'
-import First from '../Menblog/First'
-import Second from '../Menblog/Second'
-import Sideone from '../Menblog/Sideone'
 //import Three from '../Menblog/Three'
 // import Search from '../Menblog/Search'
 import Bredcm from '../Menhome/breadcrumb'
-import Pagination from '../Pagination/Main'
 import { useState,useEffect } from 'react'
 import Blogchild from './api'
 import axios from 'axios'
@@ -45,7 +41,7 @@ function Main() {
     }
   }
 
-  const url="http://ec2-18-216-114-158.us-east-2.compute.amazonaws.com:8080/api/blogs?sort=createdAt%3Adesc&pagination[page]=1&pagination[pageSize]=5"
+  const url="https://ec2-18-216-114-158.us-east-2.compute.amazonaws.com/api/blogs?sort=createdAt%3Adesc&pagination[page]=1&pagination[pageSize]=5"
 
   useEffect(()=>{
 
