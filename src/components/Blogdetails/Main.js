@@ -14,7 +14,7 @@ function Main() {
 
   const {id} = useParams();
 
-  const url=`https://ec2-18-216-114-158.us-east-2.compute.amazonaws.com/api/blogs/${id}`
+  const url=`https://andent-backend.prodbuilds.com/api/blogs/${id}`
 
   const [blog,setBlog]=useState([]);
   const [connected,setConnected] =useState(false);
