@@ -13,7 +13,7 @@ function Main() {
 
   const {page} = useParams();
   const [pages,setPages]=useState(null);
-  const [paramPage,setParamPage]=useState(1);
+  const [paramPage,setParamPage]=useState(null);
 
   useEffect(() => {
       setParamPage(page);
@@ -36,6 +36,7 @@ function Main() {
   fetchData();
 }, []);
 
+  console.log(paramPage);
 
   return (
 
@@ -48,7 +49,7 @@ function Main() {
           subtitledown="Blog" 
         />
         <div>
-          <Blogchild page={paramPage}/>
+          <Blogchild page={paramPage} pageCount={pages}/>
             <section className="inner-blog pt-120 pb-120">
                 <div className="container">
                   <div className="row">
