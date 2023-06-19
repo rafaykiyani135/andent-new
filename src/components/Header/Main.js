@@ -141,7 +141,7 @@ function Main() {
                                                     <Link to="/blog">Blog</Link>
                                                     <ul>
                                                         <li>
-                                                            <Link to="/blog">Blog</Link>
+                                                            <Link to="/blog/1">Blog</Link>
                                                         </li>
                                                         <li>
                                                         <Link to='/blogdetails/1'>Blog Details</Link>
@@ -268,7 +268,7 @@ function Main() {
                                                             {Blog && 
                                                             <ul style={{ display: "block" }}>
                                                                 <li>
-                                                                    <Link to="/blog">Blog</Link>
+                                                                    <Link to="/blog/1">Blog</Link>
                                                                 </li>
                                                                 <li>
                                                                 <   Link to='/blogdetails/1'>Blog Details</Link>

@@ -10,16 +10,22 @@ function Blogchild (props) {
     const url=`https://andent-backend.prodbuilds.com/api/blogs?sort=createdAt%3Adesc&pagination[page]=${props.page}&pagination[pageSize]=5`;
     const [blogData,setblogData]=useState(null);
     const [connected,setConnected] =useState(false);
+    const [isLoading,setIsLoading]=useState(false);
 
 
   useEffect(() => {
+
+   setIsLoading(true); 
+
   const fetchData = async () => {
     try {
       const response = await axios.get(url);
       setblogData(response.data.data);
       setConnected(true);
+      setIsLoading(false);
     } catch (error) {
       console.log("Error fetching data:", error);
+      setIsLoading(false);
     }
   };
 
@@ -30,7 +36,18 @@ function Blogchild (props) {
 
     return(
         <>
-          {connected ? (
+
+          { isLoading ? (
+             <div className='container' style={{padding:"100px"}}>
+             <div className='row justify-content-center text-center'>
+               <div className='col-lg-8'>
+                 <h1>Loading...</h1>
+               </div>
+             </div>
+           </div>
+          ) : (
+            <div>
+                {connected ? (
               <section className="inner-blog pt-120 pb-120">
               <div className="container">
                 <div className="row">
@@ -67,6 +84,10 @@ function Blogchild (props) {
               </div>
           </section>
           )}
+            </div>
+          ) }
+
+          
         </>
 
     );

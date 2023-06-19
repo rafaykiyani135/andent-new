@@ -18,15 +18,21 @@ function Main() {
 
   const [blog,setBlog]=useState([]);
   const [connected,setConnected] =useState(false);
+  const [isLoading,setIsLoading]=useState(false);
 
   useEffect(() => {
+
+    setIsLoading(true);
+
     const fetchData = async () => {
       try {
         const response = await axios.get(url);
         setBlog(response.data.data.attributes);
         setConnected(true);
+        setIsLoading(false);
       } catch (error) {
         console.log("Error fetching data:", error);
+        setIsLoading(false);
       }
     };
   
@@ -44,44 +50,59 @@ function Main() {
             subtitledown="Blog Details"
         />
 
-        { connected ? (
-          <section className="inner-blog b-details-p pt-120 pb-120">
-            <div className="container"> 
-              <div className="row">
-              <div className='col-sm-12 col-md-12 col-lg-8'>
-              <h1 style={{paddingBottom:"50px"}}>
-              { blog.title }
-              </h1>
-              <div>
-                { ReactHtmlParser(blog.content) }
-              </div>
-              </div>
-              <div className="col-sm-12 col-md-12 col-lg-4">
-                  <aside className="sidebar-widget">
-                      <Sideone/>
-                  </aside>
-              </div>
-              </div>
+        { isLoading ? (
+          <div className='container' style={{padding:"100px"}}>
+          <div className='row justify-content-center text-center'>
+            <div className='col-lg-8'>
+              <h1>Loading...</h1>
             </div>
-          </section>
+          </div>
+        </div>
         ) : (
-          <section className="inner-blog b-details-p pt-120 pb-120">
-            <div className="container"> 
-              <div className="row">
-              <div className='col-sm-12 col-md-12 col-lg-8'>
-              <h1>
-                Sorry, we could not find the post your are looking for.
-              </h1>
+          <div>
+          { connected ? (
+            <section className="inner-blog b-details-p pt-120 pb-120">
+              <div className="container"> 
+                <div className="row">
+                <div className='col-sm-12 col-md-12 col-lg-8'>
+                <h1 style={{paddingBottom:"50px"}}>
+                { blog.title }
+                </h1>
+                <div>
+                  { ReactHtmlParser(blog.content) }
+                </div>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-4">
+                    <aside className="sidebar-widget">
+                        <Sideone/>
+                    </aside>
+                </div>
+                </div>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-4">
-                  <aside className="sidebar-widget">
-                      <Sideone/>
-                  </aside>
+            </section>
+          ) : (
+            <section className="inner-blog b-details-p pt-120 pb-120">
+              <div className="container"> 
+                <div className="row">
+                <div className='col-sm-12 col-md-12 col-lg-8'>
+                <h1>
+                  Sorry, we could not find the post your are looking for.
+                </h1>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-4">
+                    <aside className="sidebar-widget">
+                        <Sideone/>
+                    </aside>
+                </div>
+                </div>
               </div>
-              </div>
-            </div>
-          </section>
+            </section>
+          )}
+        
+        </div>
         )}
+
+        
     </>
   )
 }

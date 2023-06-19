@@ -2,19 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-function First({published,by,cover,title,abstract,content,id}) {
-   // const [video, setVideo] = useState();
-
-
+function First({published,by,cover,title,abstract,id}) {
 
     const date= new Date(published.slice(0,10))
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const formattedDate = date.toLocaleDateString('en-US', options);
+    const coverLink = "https://andent-backend.prodbuilds.com" + cover;
 
     return (
         <div className="bsingle__post mb-50">
       <div className="bsingle__post-thumb">
-        <img src={cover} alt="" />
+        <img src={coverLink} alt="" />
       </div>
       <div className="bsingle__content">
         <div className="meta-info">
