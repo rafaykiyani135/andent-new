@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import iconone from '../../assets/andent-data/address.png'
+import icontwo from '../../assets/andent-data/contactus.png'
 
 
 function Make() {
@@ -7,80 +8,82 @@ function Make() {
     <>
         <section id="contact" className="contact-area after-none contact-bg pt-120 pb-120 p-relative fix" >
             <div className="container">
-              <div className="row justify-content-center align-items-center">
+              <div className="row justify-content-around align-items-center">
                 <div className="col-lg-4 order-2">
                   <div className="contact-info">
-                    <div className="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
+                    <div className="pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
                       <div className="f-cta-icon">
-                        <i className="far fa-map" />
+                        <img src={iconone} alt='none'/>
                       </div>
-                      <h5>Office Address</h5>
-                      <p>
-                        380 St Kilda Road, Melbourne <br />
-                        VIC 3004, Australia
+                      <h5 className='theme-dark' style={{color:"#4E4E50"}}>Clinic Address</h5>
+                      <p className='size-16 theme-dark'>
+                      Rruga Bardhok Biba, Pall. Golden Trema,<br />
+                       Shk. B, Kati 4, Tiranë 
                       </p>
                     </div>
                     <div
-                      className="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
+                      className=" pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
                       <div className="f-cta-icon">
-                        <i className="far fa-clock" />
+                        <img src={icontwo} alt='none'/>
                       </div>
-                      <h5>Working Hours</h5>
-                      <p>
-                        Monday to Friday 09:00 to 18:30 <br />
-                        Saturday 15:30
-                      </p>
-                    </div>
-                    <div className="single-cta wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
-                      <div className="f-cta-icon">
-                        <i className="far fa-envelope-open" />
-                      </div>
-                      <h5>Message Us</h5>
-                      <p>
-                        {" "}
-                       <Link to="#">support@example.com</Link>
-                        <br />
-                       <Link to="#">info@example.com</Link>
+                      <h5 className='theme-dark' style={{color:"#4E4E50"}}>Contact Us</h5>
+                      <p className='size-16 theme-dark'>
+                        Phone Number: +355(0) 69 375 5065 <br/>
+                        Email: info@andent.al<br/>
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-8 order-1">
-                  <div className="contact-bg02">
-                    <div className="section-title center-align">
-                      <h2>Make Appointment</h2>
+                <div className='row justify-content-center text-center'>
+                  <div className='col-lg-8'>
+                <div className="section-title center-align">
+                      <h2 className='size-60 theme-dark'>Book an Appointment</h2>
                     </div>
+                    </div>
+                </div>
+                <div className="col-lg-6 order-1 upper-padding" >
+                  <div className="contact">
+                    
                     <form action="mail.php" method="post" className="contact-form mt-30">
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="contact-field p-relative c-name mb-20">
-                            <input type="text" id="firstn" name="firstn" placeholder="First Name" required="" />
+                            <input type="text" id="firstn" name="firstn" placeholder="First Name" required="" style={{borderRadius:"15px"}}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field p-relative c-subject mb-20">
-                            <input type="text" id="email" name="email" placeholder="Eamil" required="" />
+                            <input type="text" id="lastn" name="lastn" placeholder="Last Name" required="" style={{borderRadius:"15px"}}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field p-relative c-subject mb-20">
-                            <input type="text" id="phone" name="phone" placeholder="Phone No." required="" />
+                            <input type="text" id="Email" name="Email" placeholder="Email" required="" style={{borderRadius:"15px"}}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field p-relative c-subject mb-20">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" />
+                            <input type="text" id="Phone Number" name="Phone Number" placeholder="Phone Number" className='input-box' style={{borderRadius:"15px"}}/>
                           </div>
                         </div>
                         <div className="col-lg-12">
                           <div className="contact-field p-relative c-message mb-30">
-                            <textarea name="message" id="message" cols={30} rows={10} placeholder="Write comments" defaultValue={""} />
+                            <textarea name="message" id="message" cols={30} rows={10} placeholder="Write comments" defaultValue={""} className='input-box'/>
                           </div>
-                          <div className="slider-btn">
-                            <button className="btn ss-btn" data-animation="fadeInRight" data-delay=".8s" >
-                              <span>Submit Now</span>
+                          <div className="col-lg-12" style={{transform:"translateY(-15px)"}}>
+                          <div className="contact-field p-relative c-subject mb-20">
+                            <input type="text" id="panoramex" name="panoramex" placeholder="Panoramex" required="" style={{borderRadius:"15px"}}/>
+                          </div>
+                        </div>
+                          <div className='d-flex justify-content-center'>
+                            <button className="btn" data-animation="fadeInRight" data-delay=".8s" style={{width:"182px",height:"50px"}}>
+                              <p style={{transform:"translateY(-5px)"}}>
+                                BOOK NOW
+                              </p>
                             </button>
                           </div>
+                          <br/>
+                          <br/>
                         </div>
                       </div>
                     </form>

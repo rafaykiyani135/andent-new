@@ -1,154 +1,187 @@
 import React from 'react'
-import Iconone from '../../assets/img/icon/fe-icon01.png'
-import IconFour from '../../assets/img/icon/fe-icon04.png'
-import IconFive from '../../assets/img/icon/fe-icon05.png'
-import IconSix from '../../assets/img/icon/fe-icon06.png'
-import IconSeven from '../../assets/img/icon/fe-icon07.png'
-import IconEight from '../../assets/img/icon/fe-icon08.png'
-import Featuresservices from '../../assets/img/features/services-img-details2.png'
-import FeaturesservicesTwo from '../../assets/img/features/about_img.png'
+import Iconone from '../../assets/img/icon/costmetic-dentistry-veneers.png'
+import Icontwo from '../../assets/img/icon/dental-implants.png'
+import Iconthree from '../../assets/img/icon/dentalcrowns-bridges.png'
+import Iconfour from '../../assets/img/icon/dentures.png'
+import Iconfive from '../../assets/img/icon/general-dentistry.png'
+import Iconsix from '../../assets/img/icon/orthodontic-treatment.png'
+import slider1 from '../../assets/andent-data/slider1.png'
+import slider2 from '../../assets/andent-data/slider2.jpg'
+import slider3 from '../../assets/andent-data/slider3.jpg'
+import slider4 from '../../assets/andent-data/slider4.jpg'
+import slider5 from '../../assets/andent-data/slider5.jpg'
 import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function Ourservices() {
+
+
+    const settings = {
+        dots: true,
+        fade: true,
+        infinite: true,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+
+
   return (
     <>
          <section id="service-details2" className="service-details-two pt-120 pb-105 p-relative" >
                 <div className="container">
-                <div className="row align-items-center">
+                <div className="row align-items-center justify-content-around">
                     <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center">
-                        <h5>Our Services</h5>
-                        <h2>What We Provide</h2>
+                        <h5 style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"20px"}} >EXPERIENCE THESE ARE MORE</h5>
+                        <h2 className='theme-dark' style={{fontSize:"60px"}}>Dental Treatments</h2>
                     </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12">
                     <div className="about-content s-about-content">
-                        <ul className="sr-tw-ul text-right">
-                        <li>
-                            <div className="text">
-                            <h4>Root Canal</h4>
-                            <p>
-                                Aenean eleifend turpis tellus, nec laoreet metus elementum
-                                ac.
+                        <ul className="text-left">
+                        <div>
+                        <li style={{paddingBottom:"40px"}}>
+                            <div className="icon">
+                            <img src={Icontwo} alt="icon01" className='andent-icon'/>
+                            </div>
+                            <div className="text" style={{paddingLeft:"20px"}}>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Dental Implants</h4>
+                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
+                            Durable, artificial tooth roots to support natural-looking replacement teeth.
                             </p>
                             </div>
-                            <div className="icon-right">
-                            <img src={Iconone} alt="icon01" />
-                            </div>
                         </li>
-                        <li>
-                            <div className="text">
-                            <h4>Alignment Teeth</h4>
-                            <p>
-                                Aenean eleifend turpis tellus, nec laoreet metus elementum
-                                ac.
+                        </div>
+                        <div>
+                        <li style={{paddingBottom:"40px"}}>
+                            <div className="icon">
+                            <img src={Iconthree} alt="icon01" className='andent-icon'/>
+                            </div>
+                            <div className="text" style={{paddingLeft:"20px"}}>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Dental Crowns and Bridges</h4>
+                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
+                            High-quality prosthetics for damaged or missing teeth, ensuring durability.
                             </p>
                             </div>
-                            <div className="icon-right">
-                            <img src={IconFive} alt="icon01" />
-                            </div>
                         </li>
+                        </div>
+                        <div>
                         <li>
-                            <div className="text">
-                            <h4>Cosmetic Teeth</h4>
-                            <p>
-                                Aenean eleifend turpis tellus, nec laoreet metus elementum
-                                ac.
+                            <div className="icon">
+                            <img src={Iconfour} alt="icon01" className='andent-icon'/>
+                            </div>
+                            <div className="text" style={{paddingLeft:"20px"}}>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Dentures</h4>
+                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
+                            Custom-made replacements for comfortable chewing, speaking, and smiling.
                             </p>
                             </div>
-                            <div className="icon-right">
-                            <img src={IconSeven} alt="icon01" />
-                            </div>
                         </li>
+                        </div>
                         </ul>
                     </div>
                     </div>
-                    <div className="col-lg-4 col-md-12 col-sm-12 text-center d-none d-lg-block">
-                    <div className="sd-img">
-                        <img src={Featuresservices} alt="img" />
-                    </div>
-                    </div>
                     <div className="col-lg-4 col-md-6 col-sm-12">
+                    <br/>
                     <div className="about-content s-about-content">
-                        <ul className="sr-tw-ul">
-                        <li>
+                        <ul>
+                        <div>
+                        <li style={{paddingBottom:"40px"}}>
                             <div className="icon">
-                            <img src={IconFour} alt="icon01" />
+                            <img src={Iconone} alt="icon01" className='andent-icon'/>
                             </div>
-                            <div className="text pt-10">
-                            <h4>Oral Hygiene</h4>
-                            <p>
-                                Aenean eleifend turpis tellus, nec laoreet metus elementum
-                                ac.
+                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Cosmetic Dentistry and Veneers</h4>
+                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
+                            Transform your smile with whitening, veneers, and personalized makeovers.
                             </p>
                             </div>
                         </li>
-                        <li>
+                        </div>
+                        <div>
+                        <li style={{paddingBottom:"40px"}}>
                             <div className="icon">
-                            <img src={IconSix} alt="icon01" />
+                            <img src={Iconsix} alt="icon01" className='andent-icon'/>
                             </div>
-                            <div className="text pt-10">
-                            <h4>Live Advisory</h4>
-                            <p>
-                                Aenean eleifend turpis tellus, nec laoreet metus elementum
-                                ac.
+                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Orthodontic Treatment</h4>
+                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
+                            Achieve straighter teeth and correct bites with orthodontic treatments, including Invisalign
                             </p>
                             </div>
                         </li>
+                        </div>
+                        <div>
                         <li>
                             <div className="icon">
-                            <img src={IconEight} alt="icon01" />
+                            <img src={Iconfive} alt="icon01" className='andent-icon'/>
                             </div>
-                            <div className="text pt-10">
-                            <h4>Cavity Inspection</h4>
-                            <p>
-                                Aenean eleifend turpis tellus, nec laoreet metus elementum
-                                ac.
+                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>General Dentistry</h4>
+                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
+                            Preventive care, treatments, and maintenance for optimal oral health and a beautiful smile.
                             </p>
                             </div>
                         </li>
+                        </div>
                         </ul>
                     </div>
                     </div>
                 </div>
                 </div>
          </section>
-
+        
          <section className="about-area about-p pb-120 p-relative fix">
             <div className="container">
                     <div className="row justify-content-center align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="s-about-img p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s" >
-                        <img src={FeaturesservicesTwo} alt="img" />
-                        <div className="about-text second-about">
-                            <span>50</span>
-                            <p>Years of Experience</p>
+                    <div className="col-lg-5 col-md-12 col-sm-12 align-items-center justify-content-center">
+                    <div className="fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
+                        <Slider {...settings}>
+                        <div className='d-flex justify-content-center'>
+                            <img src={slider1} className="img-fluid" alt="SliderImage6" />
                         </div>
+                        <div>
+                             <img src={slider2} className="img-fluid" alt="Slider Image1" />
                         </div>
+                        <div>
+                        <img src={slider3} className="img-fluid" alt="Slider Image2" />
+                        </div>
+                        <div>
+                        <img src={slider4} className="img-fluid" alt="Slider Image3" />
+                        </div>
+                        <div>
+                        <img src={slider5} className="img-fluid" alt="Slider Image4" />
+                        </div>
+                        </Slider>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    </div>
+                    <div className="col-lg-5 col-md-12 col-sm-12" style={{paddingTop:"50px"}}>
                         <div className="about-content s-about-content  wow fadeInRight  animated"  data-animation="fadeInRight" data-delay=".4s" >
                         <div className="about-title second-title pb-25">
-                            <h5>About Us</h5>
-                            <h2>We Care For Your Dental Health</h2>
+                            <h5 className='theme-andent' style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"20px"}}>About Us</h5>
+                            <h2 className='theme-dark' style={{fontSize:"25px"}}>Why Andent?</h2>
                         </div>
-                        <p>
-                            Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam
-                            quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id
-                            tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo
-                            vehicula arcu.
+                        <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
+                        Your Trusted Dental Clinic in Albania. With 10+ years of expertise,
+                         our renowned dentist Dr. Anduela Çurmaku leads our exceptional team.
+                          From painless implants to advanced treatments, our precision, safety,
+                           and top-quality equipment ensure optimal oral health. Trust our skilled
+                            team for a confident smile. 
                         </p>
-                        <p>
-                            Aliquam erat volutpat. Aliquam enim massa, sagittis blandit ex
-                            mattis, ultricies posuere sapien. Morbi a dignissim enim. Fusce
-                            elementum, augue in elementum porta, sapien nunc volutpat ex, a
-                            accumsan nunc lectus eu lectus.
-                        </p>
-                        <div className="slider-btn mt-20">
-                            <Link to="about.html" className="btn ss-btn smoth-scroll">
-                            Read More
+                        <div style={{ paddingTop: "20px" }}>
+                        <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }}>
+                            <Link to="/about" style={{ color: "white" }}>
+                            <p style={{transform:"translateY(8px)"}}>
+                                Learn More
+                            </p>
                             </Link>
+                        </button>
                         </div>
                         </div>
                     </div>

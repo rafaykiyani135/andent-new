@@ -157,7 +157,7 @@ a:hover,
 
 a,
 button {
-    color: #00173c;
+    color: #6DA7A2;
     outline: medium none;
 }
 
@@ -190,19 +190,11 @@ textarea:focus {
     text-transform: capitalize;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Poppins', sans-serif;
-    color: #00173c;
-    margin-top: 0px;
-    font-style: normal;
-    font-weight: 700;
-    text-transform: normal;
+
+.theme {
+	color:#6DA7A2;
 }
+
 
 h1 a,
 h2 a,
@@ -598,7 +590,7 @@ label {
 
 .main-menu ul li a {
     display: block;
-    color: #00173c;
+    color: #6DA7A2;
     padding: 20px 0;
     font-weight: 600;
     position: relative;
@@ -659,7 +651,7 @@ label {
     display: inline-block;
     position: absolute;
     top: 16px;
-    border: 2px solid #00173c;
+    border: 2px solid #6DA7A2;
     border-radius: 30px;
     left: 20%;
 }
@@ -862,7 +854,7 @@ label {
 .second-header {
     border: none;
     padding-bottom: 15px;
-    background: #00173c;
+    background: #6DA7A2;
     padding-top: 15px;
     color: #fff;
     position: relative;
@@ -1925,7 +1917,7 @@ label {
 }
 
 .about-content .nav-tabs {
-    border: 1px solid #00173c;
+    border: 1px solid #6DA7A2;
     width: 54%;
     padding: 6px;
     display: inherit;
@@ -1942,7 +1934,7 @@ label {
 .about-content .nav-tabs .nav-item.show .nav-link,
 .about-content .nav-tabs .nav-link.active {
     color: #495057;
-    background-color: #00173c;
+    background-color: #6DA7A2;
     border: none;
     border-radius: 10px;
     padding: 12px 32px;
@@ -2053,7 +2045,7 @@ label {
     right: 0;
     text-align: center;
     z-index: -1;
-    color: #00173c;
+    color: #6DA7A2;
     opacity: .05;
     margin: 0;
     font-family: 'Playfair Display', serif;
@@ -2113,7 +2105,7 @@ label {
     font-size: 20px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    color: #00173c;
+    color: #6DA7A2;
     margin-bottom: 5px;
 }
 
@@ -2290,7 +2282,7 @@ label {
 .s-btn {
     font-size: 14px;
     font-weight: 500;
-    color: #00173c;
+    color: #6DA7A2;
     display: inline-block;
     border: 1px solid #ccc;
     padding: 9px 30px;
@@ -2699,7 +2691,7 @@ section:hover .section-title h2::before {
     text-align: center;
     width: 100%;
     height: 100%;
-    background: #00173c9c;
+    background: #6DA7A29c;
     padding-top: 45%;
     transition: .3s cubic-bezier(.24, .74, .58, 1);
     transform: scaleY(1);
@@ -2747,7 +2739,7 @@ section:hover .section-title h2::before {
     top: 0;
     left: 0;
     padding: 100px 60px 0;
-    background: #00173c;
+    background: #6DA7A2;
     height: 100%;
     width: 100%;
     color: #fff;
@@ -3814,7 +3806,7 @@ section:hover .section-title h2::before {
 }
 
 .g-btn .text {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .g-btn .text strong {
@@ -4540,7 +4532,7 @@ section:hover .section-title h2::before {
 
 .count {
     font-size: 50px;
-    color: #00173c;
+    color: #6DA7A2;
     font-weight: 700;
     margin-bottom: 5px;
     line-height: 1;
@@ -5519,7 +5511,7 @@ section:hover .section-title h2::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #00173c 0% 0% no-repeat padding-box;
+    background: #6DA7A2 0% 0% no-repeat padding-box;
     opacity: 0.8;
     display: inline-block;
 }
@@ -5583,7 +5575,7 @@ section:hover .section-title h2::before {
     padding-top: 10px;
     padding-left: 15px;
     font-size: 14px;
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .blog-thumb:hover .b-meta h4,
@@ -5634,8 +5626,8 @@ section:hover .section-title h2::before {
 }
 
 .blog-btn a:hover {
-    color: #00173c;
-    border-bottom: 3px solid #00173c;
+    color: #6DA7A2;
+    border-bottom: 3px solid #6DA7A2;
 }
 
 .blog-btn2 a {
@@ -5903,7 +5895,7 @@ section:hover .section-title h2::before {
 .pricing-head h4 {
     font-size: 30px;
     font-weight: 600;
-    color: #00173c;
+    color: #6DA7A2;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -5931,7 +5923,7 @@ section:hover .section-title h2::before {
 }
 
 .price-count span {
-    color: #00173c;
+    color: #6DA7A2;
     font-size: 15px;
     margin-left: -10px;
 }
@@ -6124,7 +6116,7 @@ section:hover .section-title h2::before {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #00173c;
+    color: #6DA7A2;
     margin-bottom: 20px;
     cursor: unset;
 }
@@ -6343,7 +6335,7 @@ section:hover .section-title h2::before {
     margin-bottom: 5px;
     position: relative;
     padding-bottom: 10px;
-    color: #fff;
+    color: 
 }
 
 .f-widget-title h2::before,
@@ -6361,24 +6353,24 @@ section:hover .section-title h2::before {
 }
 
 .footer-link ul li i {
-    color: #3660d9;
+    color: black;
     margin-right: 5px;
 }
 
 .footer-link ul li a {
-    color: #b2c0d8;
+    color: black;
     display: inline-block;
 }
 
 .footer-link ul li a::before {
     content: "+";
     margin-right: 8px;
-    color: #3660d9;
+    color: black;
     font-size: 18px;
 }
 
 .footer-link ul li a:hover {
-    color: #fff;
+    color: black;
 }
 
 .footer-link ul li {
@@ -6749,7 +6741,7 @@ section:hover .section-title h2::before {
 }
 
 .single-cta a {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .main-menu ul li.has-sub .current a {
@@ -7023,15 +7015,15 @@ li.has-sub.has-mega-menu:hover>ul>li>ul {
 }
 
 .recentcomments a {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .sidebar-widget a.rsswidget {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 #wp-calendar caption {
-    color: #00173c;
+    color: #6DA7A2;
     font-weight: 500;
     font-size: 14px;
 }
@@ -7163,7 +7155,7 @@ padding-bottom: 0;
 
 .post-password-form input[type="submit"] {
     border: none;
-    background: #00173c;
+    background: #6DA7A2;
     padding: 10px 30px;
     color: #ffffff;
     font-size: 14px;
@@ -7583,7 +7575,7 @@ iframe {
     outline: none;
     outline: none;
     display: inline-block;
-    background: #00173c;
+    background: #6DA7A2;
     color: #fff !important;
     width: auto;
     border-radius: 5px;
@@ -7602,8 +7594,8 @@ iframe {
 .wp-block-button.is-style-outline .wp-block-button__link {
 
     background: none;
-    border: 2px solid #00173c;
-    color: #00173c !important;
+    border: 2px solid #6DA7A2;
+    color: #6DA7A2 !important;
 
 }
 
@@ -7659,7 +7651,7 @@ iframe {
 
 .wp-block-media-text.alignwide .has-large-font-size {
     font-size: 28px;
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .wp-block-media-text__content {
@@ -7776,7 +7768,7 @@ iframe {
     background: #e4e4e4;
     padding: 10px 5px;
     text-align: center;
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .bsingle__content h1,
@@ -7815,7 +7807,7 @@ iframe {
 .inner-linke-page {
     font-size: 16px;
     font-weight: 600;
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .inner-linke-page a {
@@ -7834,7 +7826,7 @@ iframe {
 
 .inner-linke-page a:hover {
     color: #ffffff;
-    background: #00173c;
+    background: #6DA7A2;
 }
 
 .inner-linke-page>span {
@@ -7847,7 +7839,7 @@ iframe {
     border-radius: 50%;
     font-size: 14px;
     text-align: center;
-    background: #00173c;
+    background: #6DA7A2;
     color: #ffffff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.32);
 }
@@ -8380,7 +8372,7 @@ img {
 .bakix-details-tab ul li a {
     font-size: 16px;
     font-weight: 500;
-    color: #00173c;
+    color: #6DA7A2;
     letter-spacing: 2px;
     padding: 0;
     text-transform: capitalize;
@@ -8646,7 +8638,7 @@ p.checkout-coupon input[type="submit"]:hover {
 .coupon input[type="submit"],
 .buttons-cart a,
 .coupon-info p.form-row input[type="submit"] {
-    background: #00173c none repeat scroll 0 0;
+    background: #6DA7A2 none repeat scroll 0 0;
     border: medium none;
     color: #fff;
     display: inline-block;
@@ -9399,7 +9391,7 @@ p.checkout-coupon input[type="text"] {
     display: block;
     font-size: 32px;
     line-height: 1.2em;
-    color: #00173c;
+    color: #6DA7A2;
     margin-bottom: 20px;
 }
 
@@ -9408,7 +9400,7 @@ p.checkout-coupon input[type="text"] {
     display: block;
     font-size: 24px;
     line-height: 1.2em;
-    color: #00173c;
+    color: #6DA7A2;
     margin-bottom: 20px;
 }
 
@@ -9659,7 +9651,7 @@ p.checkout-coupon input[type="text"] {
 }
 
 .project-detail .text-column .inner-column p strong {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .project-detail .pr-ul {
@@ -9770,7 +9762,7 @@ p.checkout-coupon input[type="text"] {
 }
 
 .project-detail .project-info li strong {
-    color: #00173c;
+    color: #6DA7A2;
     font-size: 20px;
     line-height: 24px;
     display: inline-block;
@@ -10018,7 +10010,7 @@ p.checkout-coupon input[type="text"] {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 1px 1.732px 60px 0px rgba(0, 0, 0, 0.1);
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .feature-text h3 {
@@ -10055,7 +10047,7 @@ p.checkout-coupon input[type="text"] {
 }
 
 .search-outer {
-    border-bottom: 1px solid #00173c;
+    border-bottom: 1px solid #6DA7A2;
     float: left;
     margin-top: 100px;
     padding-bottom: 16px;
@@ -10084,7 +10076,7 @@ p.checkout-coupon input[type="text"] {
 .case-study-content02 {
     padding: 30px 30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 16px 32px #00173c0A;
+    box-shadow: 0px 16px 32px #6DA7A20A;
 }
 
 .case-study-content02 span {
@@ -10164,7 +10156,7 @@ p.checkout-coupon input[type="text"] {
     height: 50px;
     text-align: center;
     background: #4CC3C1 0% 0% no-repeat padding-box;
-    border: 4px solid #00173c;
+    border: 4px solid #6DA7A2;
     border-radius: 50%;
     color: #FFFFFF;
     font-weight: 600;
@@ -10172,7 +10164,7 @@ p.checkout-coupon input[type="text"] {
 
 /* 24. skills-area */
 .team-area-content .skill-name {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .skills {
@@ -11081,7 +11073,7 @@ p.checkout-coupon input[type="text"] {
 blockquote,
 .pages-content blockquote,
 .comment-list blockquote {
-    background: #00173c;
+    background: #6DA7A2;
     border-radius: 10px;
     padding: 50px 45px 57px !important;
     position: relative;
@@ -11291,7 +11283,7 @@ cite {
     padding-top: 0px;
     width: 100%;
     text-align: right;
-    color: #62605c;
+    color: #0000;
     min-height: 42px;
     line-height: 28px;
 }
@@ -11709,7 +11701,7 @@ figure img {
 .bsingle__content table th,
 .pages-content table th,
 .comment-text table th {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .bsingle__content table a,
@@ -11729,23 +11721,20 @@ figure img {
 
 
 .footer-widget .tag-cloud-link {
-    color: #020202;
+    color:black;
 }
 
 .footer-widget .textwidget,
 .footer-widget .recentcomments a,
 .footer-widget a,
 .footer-widget .widget_categories a {
-    color: #99A3AC;
+    color: black;
 }
 
 .footer-widget .recentcomments a:hover,
 .footer-widget a:hover,
 .footer-widget .widget_categories a:hover {}
 
-.footer-widget .tag-cloud-link:hover {
-    color: #fff;
-}
 
 .single-post .bsingle__content .admin {
     display: none;
@@ -11914,7 +11903,7 @@ blockquote footer {
 .contact-info p {}
 
 .contact-info h5 {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .single-cta {
@@ -11959,7 +11948,7 @@ div.single-cta:last-child {
 .award-box .date {
     font-weight: 700;
     font-size: 24px;
-    color: #00173c;
+    color: #6DA7A2;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -12088,7 +12077,7 @@ div.single-cta:last-child {
     outline: none;
     outline: none;
     display: inline-block;
-    background: #00173c;
+    background: #6DA7A2;
     color: #fff !important;
     width: auto;
     border-radius: 5px;
@@ -12104,7 +12093,7 @@ div.single-cta:last-child {
 .bsingle__content table th,
 .pages-content table th,
 .comment-text table th {
-    color: #00173c;
+    color: #6DA7A2;
 }
 
 .bsingle__content table a,
@@ -12146,7 +12135,7 @@ div.single-cta:last-child {
     padding-top: 0px;
     width: 100%;
     text-align: right;
-    color: #62605c;
+    color: 
     min-height: 42px;
     line-height: 28px;
 }

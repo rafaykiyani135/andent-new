@@ -4,7 +4,7 @@ import About from '../Menabout/About'
 import Appointment from '../Menhome/Appointment'
 import Ourdr from '../Menhome/Ourdr'
 import Faq from '../Menhome/Faqsection'
-import Blog from '../Menhome/Blog'
+import Blog from '../Menhome/tourism'
 import { FloatingWhatsApp } from 'react-floating-whatsapp-button'
 import 'react-floating-whatsapp-button/dist/index.css'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Bredcm from '../Menhome/breadcrumb'
-import Testimonialslider from '../Menhome/Testimonialslider'
+import Testimonialslider from '../Menhome/Testimonial'
 import Teeth from '../ServiceMen/Teeth'
 
 

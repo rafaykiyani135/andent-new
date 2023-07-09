@@ -1,11 +1,11 @@
 import React from 'react'
 import Ourservish from '../Menhome/Ourservices'
 import Book from '../Menhome/Booking'
-import Testimo from '../Menhome/Testimonialslider'
+import Testimo from '../Menhome/Testimonial'
 import Faq from '../Menhome/Faqsection'
 import OurDr from '../Menhome/Ourdr'
 import Appointment from '../Menhome/Appointment'
-import Blog from '../Menhome/Blog'
+import Blog from '../Menhome/tourism'
 import Slider from "react-slick";
 import { Link } from 'react-router-dom'
 

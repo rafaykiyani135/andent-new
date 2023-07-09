@@ -1,32 +1,33 @@
 import React, { useState } from 'react'
-import Logo from '../../assets/img/logo/logo.png'
+import Logo from '../../assets/andent-data/logo.png'
 import { Link } from 'react-router-dom'
+import phone from '../../assets/andent-data/callcalling.png'
+import mail from '../../assets/andent-data/mail1.png'
+import ig from '../../assets/andent-data/instagram.png'
+import fb from '../../assets/andent-data/facebook.png'
 
 
 function Main() {
 
     const [mobile, setmobile] = useState(false);
-    const [home, setHome] = useState(false);
     const [Services, setServices] = useState(false)
-    const [Pages, setPages] = useState(false)
-    const [Blog, setBlog] = useState(false)
 
     return (
         <>
             <header className="header-area header-three">
-                <div className="header-top second-header d-none d-md-block" >
+                <div className="header-top second-header d-none d-md-block" style={{backgroundColor:"#6DA7A2"}}>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-8 col-md-8 d-none d-lg-block">
                                 <div className="header-cta">
                                     <ul>
                                         <li>
-                                            <i className="icon fal fa-envelope" />
-                                            <span>info@example.com</span>
+                                            <img src={phone} alt='phone' className='icon' style={{paddingRight:"10px"}}/>
+                                            <span>+91-7052-101-786</span>
                                         </li>
                                         <li>
-                                            <i className="icon fal fa-phone" />
-                                            <span>+91-7052-101-786</span>
+                                           <img src={mail} alt='mail' className='icon1' style={{paddingRight:"10px"}}/>
+                                            <span>info@example.com</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -35,16 +36,10 @@ function Main() {
                                 <div className="header-social">
                                     <span>
                                         <Link to='https://www.facebook.com/' title="Facebook">
-                                            <i className="fab fa-facebook-f" />
+                                        <img src={fb} alt='phone' className='icon3' style={{paddingRight:"10px"}}/>
                                         </Link>
-                                        <Link to='https://www.instagram.com/' title="LinkedIn">
-                                            <i className="fab fa-instagram" />
-                                        </Link>
-                                        <Link to='https://twitter.com/' title="Twitter">
-                                            <i className="fab fa-twitter" />
-                                        </Link>
-                                        <Link to='https://www.youtube.com/' title="Twitter">
-                                            <i className="fab fa-youtube" />
+                                        <Link to='https://www.instagram.com/' title="instgram">
+                                        <img src={ig} alt='phone' className='icon2' style={{paddingRight:"10px"}}/>
                                         </Link>
                                     </span>
                                 </div>
@@ -68,100 +63,54 @@ function Main() {
                                     <div className="main-menu text-right text-xl-right">
                                         <nav id="mobile-menu">
                                             <ul>
-                                                <li className="has-sub">
+                                                <li className='has-sub'>
                                                     <Link to="/">Home</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="/dental-tourism">Denal Tourism</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="/dental-crowns-bridges">Dental Crowns</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="#">About</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="#">Testimonials</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="/contact">Other Services &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
                                                     <ul>
                                                         <li>
-                                                            <Link to="/">Home Page 01</Link>
+                                                            <Link to="/dental-implants">Dental Implants</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/hometwo">Home Page 02</Link>
+                                                            <Link to="/singleservice">Cosmetic Dentistry and Veneers</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/homethree">Home Page 03</Link>
+                                                            <Link to="/singleservice">Orthodontic Treatment</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/singleservice">Dentures</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/general-dentistry">General Dentistry</Link>
                                                         </li>
                                                     </ul>
-                                                </li>
-                                                <li>
-                                                    <Link to="/about">About Us</Link>
-                                                </li>
-                                                <li className="has-sub">
-                                                    <Link to="/service">Services</Link>
-                                                    <ul>
-                                                        <li>
-                                                            <Link to="/singleservice"> Root Canal</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/singleservice">Alignment Teeth</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/singleservice"> Cosmetic Teeth</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/singleservice">Oral Hygiene</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/singleservice">Live Advisory</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/singleservice">Cavity Inspection</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/service">Services</Link>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li className="has-sub">
-                                                    <Link to="#">Pages</Link>
-                                                    <ul>
-                                                        <li>
-                                                            <Link to="/gallery">Gallery</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/pricing">Pricing</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/faq">Faq</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/team">Team</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/teamdetails">Team Details</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/shop">Shop</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/Shopdetails">Shop Details</Link>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li className="has-sub">
-                                                    <Link to="/blog">Blog</Link>
-                                                    <ul>
-                                                        <li>
-                                                            <Link to="/blog/1">Blog</Link>
-                                                        </li>
-                                                        <li>
-                                                        <Link to='/blogdetails/1'>Blog Details</Link>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <Link to="/contact">Contact</Link>
                                                 </li>
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-3 text-right d-none d-lg-block mt-25 mb-25 text-right text-xl-right">
-                                    <div className="login">
+                                    <div>
                                         <ul>
                                             <li>
-                                                <div className="second-header-btn">
-                                                    <Link to="/contact" className="btn">
-                                                        Book Appointment
+                                                <div>
+                                                    <Link to="/contact" className="header-btn">
+                                                        <p>
+                                                        Contact Us
+                                                        </p>
                                                     </Link>
                                                 </div>
                                             </li>
@@ -179,108 +128,43 @@ function Main() {
                                                     <ul style={{ display: "block" }}>
                                                         <li className="has-sub">
                                                             <Link to="/"> Home </Link>
-                                                            {home &&
-                                                                <ul style={{ display: "block" }}>
-
-                                                                    <li>
-                                                                        <Link to="/">Home Page 01</Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link to="/hometwo">Home Page 02</Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link to="/homethree">Home Page 03</Link>
-                                                                    </li>
-
-                                                                </ul>}
-
-                                                            <Link className={`mean-expand ${mobile && "mean-clicked"}`} to="#" onClick={() => { setHome(!home) }} style={{ fontSize: 18 }}>
-                                                                {home ? "-" : "+"}
-                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/about">About Us</Link>
+                                                            <Link to="/dental-tourism">Dental Tourism</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="/services">Services</Link>
+                                                            <Link to="/dental-crowns-bridges">Dental Crowns</Link>
+                                                        </li>
+                                                        <li className="has-sub">
+                                                            <Link to="#">About</Link>
+                                                        </li>
+                                                        <li className="has-sub">
+                                                            <Link to="#">Testimonials</Link>
+                                                        </li>
+                                                        <li className="mean-last has-sub">
+                                                            <Link to="/contact">Other Services</Link>
                                                             {Services &&
                                                             <ul style={{ display: "block" }}>
-                                                                <li>
-                                                                    <Link to="/singleservice"> Root Canal</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/singleservice">Alignment Teeth</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/singleservice"> Cosmetic Teeth</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/singleservice">Oral Hygiene</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/singleservice">Live Advisory</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/singleservice">Cavity Inspection</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/services">Services</Link>
-                                                                </li>
+                                                            <li>
+                                                                <Link to="/dental-implants">Dental Implants</Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to="/singleservice">Cosmetic Dentistry and Veneers</Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to="/singleservice">Orthodontic Treatment</Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to="/singleservice">Dentures</Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to="/general-dentistry">General Dentistry</Link>
+                                                            </li>
                                                             </ul>  
                                                             }
                                                             <Link className={`mean-expand ${mobile && "mean-clicked"}`} to="#" onClick={() => { setServices(!Services) }} style={{ fontSize: 18 }}>
                                                             {Services ? "-" : "+"}
                                                             </Link>
-                                                        </li>
-                                                        <li className="has-sub">
-                                                            <Link to="#">Pages</Link>
-                                                            {Pages && 
-                                                            <ul style={{ display: "block" }}>
-                                                                <li>
-                                                                    <Link to="/gallery">Gallery</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/pricing">Pricing</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/faql">Faq</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/team">Team</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/teamsingle">Team Details</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/shop">Shop</Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link to="/Shopdetails">Shop Details</Link>
-                                                                </li>
-                                                            </ul>
-                                                            }
-                                                            <Link className={`mean-expand ${Pages && "mean-clicked"}`} to="#" style={{ fontSize: 18 }} onClick={() => { setPages(!Pages) }}>
-                                                            {Pages ? "-" : "+"}
-                                                            </Link>
-                                                        </li>
-                                                        <li className="has-sub">
-                                                            <Link to="blog.html">Blog</Link>
-                                                            {Blog && 
-                                                            <ul style={{ display: "block" }}>
-                                                                <li>
-                                                                    <Link to="/blog/1">Blog</Link>
-                                                                </li>
-                                                                <li>
-                                                                <   Link to='/blogdetails/1'>Blog Details</Link>
-                                                                </li>
-                                                            </ul> 
-                                                            }
-                                                            <Link className={`mean-expand ${Blog && "mean-clicked"}`} to="#" style={{ fontSize: 18 }} onClick={() => { setBlog(!Blog) }} >
-                                                                +
-                                                            </Link>
-                                                        </li>
-                                                        <li className="mean-last">
-                                                            <Link to="/contact">Contact</Link>
                                                         </li>
                                                     </ul>
                                                 </nav>

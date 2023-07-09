@@ -18,6 +18,10 @@ import Shop from '../components/PagesMen/Shop/Main'
 import ShopDetails from '../components/PagesMen/ShopDetails/Main'
 import Hometwo from '../components/HomeTwo/Main'
 import HomeThree from '../components/HomeThree/Main'
+import Implants from '../components/implants/Main'
+import BrdigesCrowns from '../components/dentalbridgescrowns/Main'
+import GeneralDenstiry from '../components/generaldentistry/Main'
+import Tourism from '../components/dentaltourism/Main';
 
 function Index() {
 
@@ -34,6 +38,10 @@ function Index() {
       <Routes>
 
         <Route path="/" element={<Home />} />
+        <Route path='/dental-implants' element={<Implants/>}/>
+        <Route path='dental-crowns-bridges' element={<BrdigesCrowns/>}/>
+        <Route path='general-dentistry' element={<GeneralDenstiry/>}/>
+        <Route path='/dental-tourism' element={<Tourism/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={ <Contact/>} />
         <Route path="/blog/:page" element={ <Blog/>} />
