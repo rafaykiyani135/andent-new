@@ -88,7 +88,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-center upper-padding text-left">
-                        <div className="col-lg-3" >
+                        <div className="col-lg-3 text-center" >
                             <img src={d1} alt='teeth1' style={{width:"319px",height:"195px"}}/>
                             <div style={{paddingTop:"20px"}}>
                                 <h3 className='theme-dark size-18 text-center decent-pad'>
@@ -138,7 +138,7 @@ function Main(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3" >
+                        <div className="col-lg-3 text-center">
                             <img src={d2} alt='teeth1' style={{width:"319px",height:"195px"}}/>
                             <div style={{paddingTop:"20px"}}>
                                 <h3 className='theme-dark size-18 text-center decent-pad'>
