@@ -1,6 +1,7 @@
 import React from 'react'
 import iconone from '../../assets/andent-data/address.png'
 import icontwo from '../../assets/andent-data/contactus.png'
+import Iframe from 'react-iframe'
 
 
 function Make() {
@@ -9,7 +10,7 @@ function Make() {
         <section id="contact" className="contact-area after-none contact-bg pt-120 pb-120 p-relative fix" >
             <div className="container">
               <div className="row justify-content-around align-items-center">
-                <div className="col-lg-4 order-2 d-flex justify-content-center ">
+                <div className="col-lg-4 order-2 d-flex justify-content-center upper-padding">
                   <div className="contact-info">
                     <div className="pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
                       <div className="f-cta-icon">
@@ -32,6 +33,14 @@ function Make() {
                         Email: info@andent.al<br/>
                       </p>
                     </div>
+                    <div className="col-lg-12">
+                    <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.004518759625!2d19.814192096789547!3d41.3305151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031303fe86d0b%3A0x7d2830bb4995e303!2sDentisti%20in%20Albania%20-%20Andent%20Clinic!5e0!3m2!1sen!2s!4v1688988361448!5m2!1sen!2s"
+                           width={322}
+                           height={303} 
+                           style={{ border : "0" }}
+                          loading="lazy">
+                    </Iframe>
+                </div>
                   </div>
                 </div>
                 <div className='row justify-content-center text-center'>

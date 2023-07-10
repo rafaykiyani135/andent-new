@@ -73,7 +73,7 @@ function Main() {
                                                     <Link to="/dental-crowns-bridges">Dental Crowns</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="#">About</Link>
+                                                    <Link to="/about">About</Link>
                                                 </li>
                                                 <li className='has-sub'>
                                                     <Link to="#">Testimonials</Link>
@@ -88,7 +88,7 @@ function Main() {
                                                             <Link to="/singleservice">Cosmetic Dentistry and Veneers</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/singleservice">Orthodontic Treatment</Link>
+                                                            <Link to="/orthodontics">Orthodontic Treatment</Link>
                                                         </li>
                                                         <li>
                                                             <Link to="/singleservice">Dentures</Link>
@@ -136,7 +136,7 @@ function Main() {
                                                             <Link to="/dental-crowns-bridges">Dental Crowns</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="#">About</Link>
+                                                            <Link to="/about">About</Link>
                                                         </li>
                                                         <li className="has-sub">
                                                             <Link to="#">Testimonials</Link>
@@ -152,7 +152,7 @@ function Main() {
                                                                 <Link to="/singleservice">Cosmetic Dentistry and Veneers</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="/singleservice">Orthodontic Treatment</Link>
+                                                                <Link to="/orthodontics">Orthodontic Treatment</Link>
                                                             </li>
                                                             <li>
                                                                 <Link to="/singleservice">Dentures</Link>

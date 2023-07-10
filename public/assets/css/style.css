@@ -304,6 +304,10 @@ label {
     font-size: 20px;
 }
 
+.size-25 {
+    font-size: 25px;
+}
+
 
 .size-60 {
     font-size: 60px;
@@ -428,6 +432,10 @@ label {
         width: 100%;
         height: 100%;
     }
+    .interview-vid {
+        height: 600px;
+        width: 200px;
+    }
   }
   
 @media (min-width: 992px) {
@@ -467,6 +475,13 @@ label {
         left: 80px;
         width: 600px;
         height: 400px;
+    }
+    .about-us-top {
+        position: relative;
+        left: 100px;
+    }
+    .orth-type{
+        padding-left: 250px;
     }
 
   }

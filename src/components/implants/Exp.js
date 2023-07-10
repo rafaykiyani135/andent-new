@@ -1,40 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player';
-import { useState,useEffect } from 'react';
 
 function Main (){
 
-    const [isMobile, setIsMobile] = useState(false)
-    //choose the screen size 
-    const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
-    }
-  
-    // create an event listener
-    useEffect(() => {
-      window.addEventListener("resize", handleResize)
 
-    })
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        slidesToShow: isMobile ? 1 : 3,
-        slidesToScroll: isMobile ? 1 : 3
-      };
 
     return(
         <div className="container">
         <div className="row">
-            <div className="col-lg-12 col-md-10">
+            <div className="col-lg-12 col-md-12">
             <div
                 className="call-area"
                 style={{ backgroundColor: "#6DA7A2", borderRadius: "20px" }}

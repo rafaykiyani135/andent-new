@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturesservicesTwo from '../../assets/img/features/about_img.png'
+import FeaturesservicesTwo from '../../assets/andent-data/aboutustop.png'
 import { Link } from 'react-router-dom'
 
 
@@ -11,37 +11,47 @@ function About() {
             <div className="container">
                     <div className="row justify-content-center align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="s-about-img p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s" >
-                        <img src={FeaturesservicesTwo} alt="img" />
-                        <div className="about-text second-about">
-                            <span>50</span>
-                            <p>Years of Experience</p>
+                        <div className="s-about-img p-relative wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s" >
+                        <img src={FeaturesservicesTwo} alt="img" className='about-us-top' />
+                        <div className="about-text second-about text-left">
+                            <span style={{color:"#6DA7A2"}}>10</span>
+                            <p style={{color:"#6DA7A2"}}>Years of Experience</p>
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="about-content s-about-content  wow fadeInRight  animated"  data-animation="fadeInRight" data-delay=".4s" >
-                        <div className="about-title second-title pb-25">
-                            <h5>About Us</h5>
-                            <h2>We Care For Your Dental Health</h2>
-                        </div>
-                        <p>
-                            Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam
-                            quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id
-                            tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo
-                            vehicula arcu.
-                        </p>
-                        <p>
-                            Aliquam erat volutpat. Aliquam enim massa, sagittis blandit ex
-                            mattis, ultricies posuere sapien. Morbi a dignissim enim. Fusce
-                            elementum, augue in elementum porta, sapien nunc volutpat ex, a
-                            accumsan nunc lectus eu lectus.
-                        </p>
-                        <div className="slider-btn mt-20">
-                            <Link to="/about" className="btn ss-btn smoth-scroll">
-                            Read More
-                            </Link>
-                        </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 align-items-start">
+                    <div className="">
+                            <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
+                            Experience Exceptional Dental Care
+                            </h5>
+                            <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"65px",lineHeight:"60pt"}}>
+                            Welcome to Andent
+                            </h2>
+                            <p data-animation="fadeInUp" data-delay=".6s" style={{color:"#000000",lineHeight:"20px",fontSize:"16px",fontWeight:"400"}}>
+                            Since our establishment in 2007, we've dedicated ourselves to transforming smiles and enhancing oral health for over 15,000 patients,
+                            both domestically and across Europe. Our unwavering commitment to safety, advanced dental technologies, and European quality standards
+                             set us apart as a pioneer in the Albanian dental
+                             sector With 15 years of experience, we proudly offer a comprehensive range of dental services to cater to all oral health needs.
+                            </p>
+                            <br/>
+                            <br/>
+                            <div className="row">
+                            <div className="col-lg-4 col-md-3">
+                                <input className='input-box form-control mb-3' placeholder='Your Phone Number...' />
+                            </div>
+                            <div className="col-lg-4 col-md-3">
+                                <input className='input-box form-control mb-3' placeholder='Your Name...' />
+                            </div>
+                            <div className="col-lg-4 col-md-4">
+                                <button className='btn'>
+                                <Link to="/contact" >
+                                <p style={{color:"white",position:"relative",top:"4px"}}>
+                                    Get Call Back
+                                </p>
+                                </Link>
+                                </button>
+                            </div>
+                            </div>
                         </div>
                     </div>
                     </div>

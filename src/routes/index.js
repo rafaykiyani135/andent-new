@@ -22,6 +22,7 @@ import Implants from '../components/implants/Main'
 import BrdigesCrowns from '../components/dentalbridgescrowns/Main'
 import GeneralDenstiry from '../components/generaldentistry/Main'
 import Tourism from '../components/dentaltourism/Main';
+import Orthodontic from '../components/Orthodontics/Main';
 
 function Index() {
 
@@ -43,6 +44,7 @@ function Index() {
         <Route path='general-dentistry' element={<GeneralDenstiry/>}/>
         <Route path='/dental-tourism' element={<Tourism/>}/>
         <Route path="/about" element={<About />} />
+        <Route path='orthodontics' element={<Orthodontic/>}/>
         <Route path="/contact" element={ <Contact/>} />
         <Route path="/blog/:page" element={ <Blog/>} />
         <Route path="/blogdetails/:id" element={ <BlogDdeatils/>} />
