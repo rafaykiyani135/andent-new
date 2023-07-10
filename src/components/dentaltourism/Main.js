@@ -8,6 +8,7 @@ import Treatment from './Treatments';
 import Safety from './Safety'
 import Contact from '../implants/Contactsm'
 import Appt from '../MenContact-Us/Make'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 
 function Main (){
@@ -27,6 +28,9 @@ function Main (){
             <Safety/>
             <Contact/>
             <Appt/>
+            <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>
+            <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true"/>
+            </div>
         </div>
     )
 }
