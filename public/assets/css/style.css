@@ -421,6 +421,13 @@ label {
         width: 250px ;
         height: 120px;
     }
+    .exp-vid {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
   }
   
 @media (min-width: 992px) {
@@ -450,6 +457,18 @@ label {
         width: 150px ;
         height: 120px;
     }
+    .reviews-pos {
+        position: relative;
+        bottom: 100px;
+    }
+    .exp-vid {
+        position: absolute;
+        top: 10px;
+        left: 80px;
+        width: 600px;
+        height: 400px;
+    }
+
   }
 
 

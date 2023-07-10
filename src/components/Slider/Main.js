@@ -30,7 +30,7 @@ function Main(props) {
                             <br/>
                             <br/>
                             <div className="row">
-                            <div className="col-lg-4 col-md-4">
+                            <div className="col-lg-3 col-md-3">
                                 <input className='input-box form-control mb-3' placeholder='Your Phone Number...' />
                             </div>
                             <div className="col-lg-3 col-md-3">

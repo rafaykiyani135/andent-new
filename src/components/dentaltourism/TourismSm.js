@@ -9,8 +9,8 @@ function Tourism() {
     <>
         <section id="blog" className="blog-area p-relative fix pt-90 pb-90">
             <div className="container">
-                <div className="row align-items-center">
-                <div className="col-lg-11">
+                <div className="row align-items-center justify-content-center">
+                <div className="col-lg-11 text-center">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
                     <h5 className='theme-andent' style={{color:"#6DA7A2",fontSize:"20px"}}>GETTING TO TIRANA</h5>
                     <h2 className='theme-dark'>An Easily Accessible and Budget Friendly Destination</h2>

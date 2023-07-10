@@ -1,8 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player';
+import { useState,useEffect } from 'react';
 
 function Main (){
+
+    const [isMobile, setIsMobile] = useState(false)
+    //choose the screen size 
+    const handleResize = () => {
+      if (window.innerWidth < 720) {
+          setIsMobile(true)
+      } else {
+          setIsMobile(false)
+      }
+    }
+  
+    // create an event listener
+    useEffect(() => {
+      window.addEventListener("resize", handleResize)
+
+    })
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        slidesToShow: isMobile ? 1 : 3,
+        slidesToScroll: isMobile ? 1 : 3
+      };
+
     return(
         <div className="container">
         <div className="row">
@@ -20,13 +48,7 @@ function Main (){
                     style={{ position: "relative", paddingTop: "56.25%" }}
                     >
                     <div
-                        style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        }}
+                        className='exp-vid'
                     >
                         <ReactPlayer
                         url="https://streamable.com/cnka92"
