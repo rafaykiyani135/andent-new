@@ -8,7 +8,7 @@ function Main (){
              <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center upper-padding'>
                     <div style={{ position: 'relative', paddingTop: '56.25%', width: '100%' }} className="interview-vid">
                     <ReactPlayer
-                        url="https://streamable.com/0c8pjh"
+                        url="https://streamable.com/1fom0f"
                         controls={true}
                         width='100%'
                         height='100%'

@@ -3,6 +3,7 @@ import b1 from '../../assets/andent-data/a1.png'
 import b2 from '../../assets/andent-data/a2.png'
 import b3 from '../../assets/andent-data/a3.png'
 import b4 from '../../assets/andent-data/a4.png'
+import arrow from '../../assets/andent-data/arrow.png'
 
 function Main (){
     return(
@@ -51,6 +52,14 @@ function Main (){
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
                     <h2 className='theme-dark'>How Invisible Aligners Work</h2>
+                    </div>
+                </div>
+                </div>
+
+                <div className="row align-items-center">
+                <div className="col-lg-12">
+                    <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
+                    <img src={arrow} alt='arrow' />
                     </div>
                 </div>
                 </div>

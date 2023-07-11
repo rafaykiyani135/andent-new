@@ -23,6 +23,9 @@ import BrdigesCrowns from '../components/dentalbridgescrowns/Main'
 import GeneralDenstiry from '../components/generaldentistry/Main'
 import Tourism from '../components/dentaltourism/Main';
 import Orthodontic from '../components/Orthodontics/Main';
+import Veneers from '../components/Veneers/Main'
+import Dentures from '../components/dentures/Main'
+import Testimonial from '../components/Testimonial/Main'
 
 function Index() {
 
@@ -44,7 +47,10 @@ function Index() {
         <Route path='general-dentistry' element={<GeneralDenstiry/>}/>
         <Route path='/dental-tourism' element={<Tourism/>}/>
         <Route path="/about" element={<About />} />
-        <Route path='orthodontics' element={<Orthodontic/>}/>
+        <Route path='/orthodontics' element={<Orthodontic/>}/>
+        <Route path='/dental-veneers' element={<Veneers/>}/>
+        <Route path='/dentures' element={<Dentures/>}/>
+        <Route path='/testimonials' element={<Testimonial/>}/>s
         <Route path="/contact" element={ <Contact/>} />
         <Route path="/blog/:page" element={ <Blog/>} />
         <Route path="/blogdetails/:id" element={ <BlogDdeatils/>} />

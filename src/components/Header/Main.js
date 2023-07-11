@@ -76,7 +76,7 @@ function Main() {
                                                     <Link to="/about">About</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="#">Testimonials</Link>
+                                                    <Link to="/testimonials">Testimonials</Link>
                                                 </li>
                                                 <li className='has-sub'>
                                                     <Link to="/contact">Other Services &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
@@ -85,13 +85,13 @@ function Main() {
                                                             <Link to="/dental-implants">Dental Implants</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/singleservice">Cosmetic Dentistry and Veneers</Link>
+                                                            <Link to="/dental-veneers">Cosmetic Dentistry and Veneers</Link>
                                                         </li>
                                                         <li>
                                                             <Link to="/orthodontics">Orthodontic Treatment</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/singleservice">Dentures</Link>
+                                                            <Link to="/dentures">Dentures</Link>
                                                         </li>
                                                         <li>
                                                             <Link to="/general-dentistry">General Dentistry</Link>
@@ -139,7 +139,7 @@ function Main() {
                                                             <Link to="/about">About</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="#">Testimonials</Link>
+                                                            <Link to="/testimonials">Testimonials</Link>
                                                         </li>
                                                         <li className="mean-last has-sub">
                                                             <Link to="/contact">Other Services</Link>
@@ -149,13 +149,13 @@ function Main() {
                                                                 <Link to="/dental-implants">Dental Implants</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="/singleservice">Cosmetic Dentistry and Veneers</Link>
+                                                                <Link to="/dental-veneers">Cosmetic Dentistry and Veneers</Link>
                                                             </li>
                                                             <li>
                                                                 <Link to="/orthodontics">Orthodontic Treatment</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="/singleservice">Dentures</Link>
+                                                                <Link to="/dentures">Dentures</Link>
                                                             </li>
                                                             <li>
                                                                 <Link to="/general-dentistry">General Dentistry</Link>

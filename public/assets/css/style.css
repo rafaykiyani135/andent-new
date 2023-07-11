@@ -436,6 +436,11 @@ label {
         height: 600px;
         width: 200px;
     }
+    .icon2-text-pos {
+        position: relative;
+        left: 10px;
+        top: 3px;
+    }
   }
   
 @media (min-width: 992px) {
@@ -445,6 +450,10 @@ label {
     }
     .bpadding {
         padding-bottom: 275px;
+    }
+    .icon2-text-pos {
+        position: relative;
+        right: 100px;
     }
     .upper-padding-rs {
         padding-top: 0px;
