@@ -5,6 +5,7 @@ import phone from '../../assets/andent-data/callcalling.png'
 import mail from '../../assets/andent-data/mail1.png'
 import ig from '../../assets/andent-data/instagram.png'
 import fb from '../../assets/andent-data/facebook.png'
+import tiktok from '../../assets/andent-data/tiktok.png'
 
 
 function Main() {
@@ -23,23 +24,26 @@ function Main() {
                                     <ul>
                                         <li>
                                             <img src={phone} alt='phone' className='icon' style={{paddingRight:"10px"}}/>
-                                            <span>+91-7052-101-786</span>
+                                            <span>+355(0) 69 375 5065</span>
                                         </li>
                                         <li>
                                            <img src={mail} alt='mail' className='icon1' style={{paddingRight:"10px"}}/>
-                                            <span>info@example.com</span>
+                                            <span>info@andent.com</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 d-none d-lg-block text-right">
-                                <div className="header-social">
+                                <div className="header-social header-btn-pos">
                                     <span>
-                                        <Link to='https://www.facebook.com/' title="Facebook">
-                                        <img src={fb} alt='phone' className='icon3' style={{paddingRight:"10px"}}/>
+                                        <Link to='https://instagram.com/andent_clinic?igshid=MzRlODBiNWFlZA' title="instgram">
+                                        <img src={ig} alt='phone' className='icon2' style={{width:"45px",height:"45px"}}/>
                                         </Link>
-                                        <Link to='https://www.instagram.com/' title="instgram">
-                                        <img src={ig} alt='phone' className='icon2' style={{paddingRight:"10px"}}/>
+                                        <Link to='https://www.facebook.com/andentclinic?mibextid=LQQJ4d' title="Facebook">
+                                        <img src={fb} alt='phone' className='icon3' style={{width:"45px",height:"45px"}}/>
+                                        </Link>
+                                        <Link to='https://www.tiktok.com/@andentclinic' title="tiktok">
+                                        <img src={tiktok} alt='phone' className='icon2' style={{width:"45px",height:"45px"}} />
                                         </Link>
                                     </span>
                                 </div>
@@ -52,15 +56,15 @@ function Main() {
                     <div className="container">
                         <div className="second-menu">
                             <div className="row align-items-center">
-                                <div className="col-xl-2 col-lg-2">
-                                    <div className="logo">
+                                <div className="col-xl-2 col-lg-2 justify-content-start">
+                                    <div className="logo header-logo">
                                         <Link to="/">
-                                            <img src={Logo} alt="logo" />
+                                            <img src={Logo} alt="logo" style={{height:"35px",width:"145px"}}/>
                                         </Link>
                                     </div>
                                 </div>
                                 <div className="col-xl-7 col-lg-7">
-                                    <div className="main-menu text-right text-xl-right">
+                                    <div className="main-menu text-right text-xl-right header-nav">
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li className='has-sub'>
@@ -103,7 +107,7 @@ function Main() {
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-3 text-right d-none d-lg-block mt-25 mb-25 text-right text-xl-right">
-                                    <div>
+                                    <div className='header-btn-pos'>
                                         <ul>
                                             <li>
                                                 <div>

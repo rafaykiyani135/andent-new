@@ -15,7 +15,7 @@ import Exp from '../implants/Exp';
 function Main (){
     return(
         <div>
-            <div className="container upper-padding">
+            <div className="container andent-padding">
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-12 col-md-10'>
                         <h3 className='size-60 theme-dark'>
@@ -24,7 +24,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">Routine Dental Examinations and Check-ups</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Stay ahead of potential dental problems with regular check-ups. Our skilled dentists perform thorough examinations,
@@ -32,14 +32,14 @@ function Main (){
                             </p>
                         </div>
                         <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s1} alt='step1' className='icon'/>
+                            <img src={s1} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
                         <div className="col-lg-2 text-center" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s2} alt='step1' className='icon'/>
+                            <img src={s2} alt='step1' className='andent-icon-sq'/>
                         </div>
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-left" >
                             <h5 className="size-18 theme-dark">Dental Cleanings </h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Experience a fresh and healthy smile with our professional dental cleanings. Our hygienists employ advanced techniques
@@ -48,7 +48,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">Dental Fillings</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Restore the strength and appearance of your damaged teeth with our amalgam or composite resin fillings.
@@ -56,14 +56,14 @@ function Main (){
                             </p>
                         </div>
                         <div className="col-lg-2 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
-                            <img src={s3} alt='step1' className='icon'/>
+                            <img src={s3} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
                         <div className="col-lg-2 text-center" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s4} alt='step1' className='icon'/>
+                            <img src={s4} alt='step1' className='andent-icon-sq'/>
                         </div>
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-left" >
                             <h5 className="size-18 theme-dark">Tooth Extractions</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             In cases where a tooth is beyond repair due to severe damage or infection, our skilled dentists perform tooth extractions with utmost care.
@@ -72,7 +72,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">Dental Sealants</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Protect your teeth from cavities with dental sealants. Our thin, protective coatings are
@@ -81,7 +81,7 @@ function Main (){
                             </p>
                         </div>
                         <div className="col-lg-2 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
-                            <img src={s5} alt='step1' className='icon'/>
+                            <img src={s5} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
 
@@ -89,7 +89,7 @@ function Main (){
 
                     <div className='decent-pad'>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">Fluoride Treatments</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Strengthen your tooth enamel and prevent tooth decay with our fluoride treatments.
@@ -98,14 +98,14 @@ function Main (){
                             </p>
                         </div>
                         <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s6} alt='step1' className='icon'/>
+                            <img src={s6} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
                         <div className="col-lg-2 text-center" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s7} alt='step1' className='icon'/>
+                            <img src={s7} alt='step1' className='andent-icon-sq'/>
                         </div>
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-left" >
                             <h5 className="size-18 theme-dark">Treatment for Gum Disease (Gingivitis) </h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Combat gum disease with our effective treatments. Our comprehensive approach eliminates bacteria and
@@ -114,7 +114,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">Dental X-Rays</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Accurate diagnoses and treatment planning are made possible with dental X-rays. Our modern imaging technology
@@ -122,14 +122,14 @@ function Main (){
                             </p>
                         </div>
                         <div className="col-lg-2 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
-                            <img src={s8} alt='step1' className='icon'/>
+                            <img src={s8} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
                         <div className="col-lg-2 text-center" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s9} alt='step1' className='icon'/>
+                            <img src={s9} alt='step1' className='andent-icon-sq'/>
                         </div>
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-left" >
                             <h5 className="size-18 theme-dark">Dental Bonding</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Enhance the appearance and functionality of your teeth with dental bonding. Our skilled dentists use tooth-colored 
@@ -138,7 +138,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">Oral Hygiene Instructions</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Our dedicated dental team takes the time to educate patients on proper oral hygiene
@@ -146,7 +146,7 @@ function Main (){
                             </p>
                         </div>
                         <div className="col-lg-2 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
-                            <img src={s10} alt='step1' className='icon'/>
+                            <img src={s10} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     </div>

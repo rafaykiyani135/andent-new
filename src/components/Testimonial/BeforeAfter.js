@@ -1,15 +1,30 @@
 import React from "react";
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Main (){
 
     const images = require.context('../../assets/andent-data/final pictures', true);
     const imageList = images.keys().map(image => images(image));
 
+    const settings = {
+        dots: true,
+        fade: true,
+        infinite: true,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+
+
     return(
         <div>
-        <div className="container upper-padding">
+        <div className="container andent-padding">
 
-            <div className="row align-items-center justify-content-center text-center upper-padding">
+            <div className="row align-items-center justify-content-center text-center andent-padding">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
                     <h2 className='theme-dark'>Before & After Pictures of Clients</h2>
@@ -18,11 +33,15 @@ function Main (){
             </div>
 
             <div className="row justify-content-center text-center">
-            {imageList.map((image, index) => (
-                <div className="col-lg-6 col-md-6" key={index} style={{paddingBottom:"50px"}}>
-                <img src={image} alt={index} />
-                </div>
-            ))}
+            <div className="col-lg-12 col-md-12 justify-content-center">
+                <Slider {...settings}>
+                {imageList.map((image, index) => (
+                    <div key={index} className="slider-image-wrapper">
+                    <img src={image} alt="beforeafterimg" className="slider-image" />
+                    </div>
+                ))}
+                </Slider>
+            </div>
             </div>
         </div>
         </div>

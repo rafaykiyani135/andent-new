@@ -23,7 +23,7 @@ function Main() {
                                 </h2>
                                 </div>
                                 <div className="footer-link">
-                                <p className='size-16' style={{textAlign:"left",color:"#000000"}}>
+                                <p className='size-16' style={{textAlign:"left",color:"#000000",lineHeight:"21px"}}>
                                     Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur
                                     sagittis libero tincidunt tempor finibus. Mauris at dignissim
                                     ligula, nec tristique orci.Quisque vitae metus.
@@ -49,24 +49,18 @@ function Main() {
                                 <h2 style={{fontSize:"25px",color:"black"}}>Other Links</h2>
                                 </div>
                                 <div className="footer-link">
-                                <ul>
+                                <ul style={{fontWeight:"600"}}>
                                     <li className='size-16' style={{color:"black"}}>
-                                    <Link to="/"> Home</Link>
+                                    <Link to="/">Home</Link>
                                     </li>
                                     <li  className='size-16' style={{color:"black"}}>
                                     <Link to="/about">About Us</Link>
                                     </li>
                                     <li  className='size-16' style={{color:"black"}}>
-                                    <Link to="/service">Services</Link>
+                                    <Link to="/testimonials">Testimonials</Link>
                                     </li>
                                     <li  className='size-16' style={{color:"black"}}>
-                                    <Link to="/gallery"> Project</Link>
-                                    </li>
-                                    <li  className='size-16' style={{color:"black"}}>
-                                    <Link to="/team">Our Team</Link>
-                                    </li>
-                                    <li  className='size-16' style={{color:"black"}}>
-                                    <Link to="/blog">Latest Blog</Link>
+                                    <Link to="/dental-tourism">Dental Tourism</Link>
                                     </li>
                                 </ul>
                                 </div>
@@ -78,24 +72,24 @@ function Main() {
                                 <h2 style={{color:"black"}}>Our Services</h2>
                                 </div>
                                 <div className="footer-link">
-                                <ul>
+                                <ul style={{fontWeight:"600"}}>
                                     <li>
-                                    <Link to="/singleservice"> Root Canal</Link>
+                                    <Link to="/dental-implants">Dental Implants</Link>
                                     </li>
                                     <li>
-                                    <Link to="/singleservice">Alignment Teeth</Link>
+                                    <Link to="/dental-crowns-bridges">Dental Bridges</Link>
                                     </li>
                                     <li>
-                                    <Link to="/singleservice"> Cosmetic Teeth</Link>
+                                    <Link to="/general-dentistry">General Dentistry</Link>
                                     </li>
                                     <li>
-                                    <Link to="/singleservice">Oral Hygiene</Link>
+                                    <Link to="/orthodontics">Orthodontics</Link>
                                     </li>
                                     <li>
-                                    <Link to="/singleservice">Live Advisory</Link>
+                                    <Link to="/dental-veneers">Dental Veneers</Link>
                                     </li>
                                     <li>
-                                    <Link to="/singleservice">Cavity Inspection</Link>
+                                    <Link to="/dentures">Dentures</Link>
                                     </li>
                                 </ul>
                                 </div>
@@ -109,9 +103,9 @@ function Main() {
                                 <div className="f-contact">
                                 <ul>
                                     <li>
-                                    <img src={location} className='icon' alt='locicon' height={70} style={{width:"70px"}}/>
+                                    <img src={location} className='icon' alt='locicon' style={{width:"60px",height:"60px"}}/>
                                     <span>
-                                    <p style={{lineHeight:"20px",color:"black"}}>
+                                    <p style={{paddingTop:"5px",lineHeight:"20px",color:"black",fontWeight:"400"}}>
                                     Rruga Bardhok Biba, <br/>
                                     Pall. Golden Trema, <br/>
                                     Shk. B, Kati 4, Tiranë
@@ -119,9 +113,9 @@ function Main() {
                                     </span>
                                     </li>
                                     <li>
-                                    <img src={phone} className='icon' alt="phoneicon" height={70} style={{width:"70px"}}/>
+                                    <img src={phone} className='icon' alt="phoneicon"  style={{width:"60px",height:"60px"}}/>
                                     <span>
-                                        <p style={{paddingTop:"15px",lineHeight:"20px",color:"black"}}>
+                                        <p style={{paddingTop:"15px",lineHeight:"20px",color:"black",fontWeight:"400"}}>
                                         +355(0) 69 375 5065
                                         <br />
                                         +39 351 949 5868
@@ -129,10 +123,10 @@ function Main() {
                                     </span>
                                     </li>
                                     <li>
-                                    <img src={mail} className='icon' alt='mailicon' height={70} style={{width:"70px"}}/>
+                                    <img src={mail} className='icon' alt='mailicon' style={{width:"60px",height:"60px"}}/>
                                     <span>
-                                        <Link to="mailto:info@andent.al" style={{color:"black"}}>
-                                            <p style={{paddingTop:"30px",lineHeight:"20px",color:"black"}}>
+                                        <Link to="mailto:info@andent.al" style={{color:"black",fontWeight:"400"}}>
+                                            <p style={{paddingTop:"25px",lineHeight:"20px",color:"black"}}>
                                             info@andent.al
                                             </p>
                                             </Link>

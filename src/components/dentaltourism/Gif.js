@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 function Main (){
 
     return(
-        <div>
-            <div className='row justify-content-center text-center upper-padding'>
-            <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center upper-padding'>
+        <div className='andent-padding'>
+            <div className='row justify-content-center text-center'>
+            <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center'>
                 <div>
                 <img src={gif} alt="loading.."/>
                 </div>

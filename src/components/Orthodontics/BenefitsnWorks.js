@@ -8,43 +8,49 @@ import arrow from '../../assets/andent-data/arrow.png'
 function Main (){
     return(
         <div>
-            <div className="container upper-padding">
+            <div className="container andent-padding">
                 <div className="row justify-content-center align-items-center text-center">
                     <h3 className='theme-dark size-60'>
                     Benefits of Invisible Aligners
                     </h3>
                 </div>
                 <div className="row justify-content-center align-items-center text-center upper-padding">
-                    <div className="col-lg-5 col-md-10" style={{paddingBottom:"50px"}}>
+                    <div className="col-lg-5 col-md-10 move-left" style={{paddingBottom:"50px"}}>
                         <div>
                             <img src={Aligner} alt='aligner' style={{width:"482px",height:"322px"}}/>
                         </div>
                     </div> 
                     <br/>
-                    <div className="col-lg-3 col-md-10">
+                    <div className="col-lg-3 col-md-10 d-flex justify-content-center text-center move-up orth-benefits-textbox">
                         <div>
                             <h3 className='size-25 theme-dark' style={{fontWeight:"700"}}>
                                 Superior Design
                             </h3>
-                            <p style={{color:"black",fontWeight:"400",lineHeight:"20px"}}>
-                            Invisible aligners offer a <span className='theme-andent'>revolutionary, aesthetic, and convenient</span> orthodontic treatment.
-                            With their clear design, comfortable fit, and advanced 3D technology, these aligners enable discreet,
-                            predictable, and personalized teeth alignment, redefining your orthodontic journey.
-                            </p>
+                            <div className='orth-benefits-p text-center'>
+                                 <p style={{color:"black",fontWeight:"400",lineHeight:"20px"}}>
+                                    Invisible aligners offer a <span className='theme-andent'>revolutionary, aesthetic, and convenient</span> orthodontic treatment.
+                                    With their clear design, comfortable fit, and advanced 3D technology, these aligners enable discreet,
+                                    predictable, and personalized teeth alignment, redefining your orthodontic journey.
+                                </p>
+                            </div>
+                           
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-10">
+                    <div className="col-lg-3 col-md-10 d-flex justify-content-center text-center move-up orth-benefits-textbox move-right">
                         <div>
                             <h3 className='size-25 theme-dark' style={{fontWeight:"700"}}>
                             Convenience
                             </h3>
+                            <div className='orth-benefits-p text-center'>
                             <p style={{color:"black",fontWeight:"400",lineHeight:"20px"}}>
-                            Invisible aligners at seamlessly integrate into your lifestyle.
-                            They offer the <span className='theme-andent'>convenience of removability for daily activities</span>,
-                            require fewer orthodontist visits compared to traditional braces,
-                            and promote better oral hygiene by reducing the risks of tooth decay
-                            and gum disease during treatment.
+                                Invisible aligners at seamlessly integrate into your lifestyle.
+                                They offer the <span className='theme-andent'>convenience of removability for daily activities</span>,
+                                require fewer orthodontist visits compared to traditional braces,
+                                and promote better oral hygiene by reducing the risks of tooth decay
+                                and gum disease during treatment.
                             </p>
+                            </div>
+                           
                         </div>
                     </div>     
                 </div>

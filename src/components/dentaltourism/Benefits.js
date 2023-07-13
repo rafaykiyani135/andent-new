@@ -11,7 +11,7 @@ function Main (){
     return(
         <div>
             <div className="container">
-                <div className="row">
+                <div className="row justify-content-center">
                     <div className="col-lg-12 text-center">
                         <h3 className="theme-dark size-60">
                             Benefits of Dental Tourism with Andent

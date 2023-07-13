@@ -12,7 +12,7 @@ function About() {
                     <div className="row justify-content-center align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="s-about-img p-relative wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s" >
-                        <img src={FeaturesservicesTwo} alt="img" className='about-us-top' />
+                        <img src={FeaturesservicesTwo} alt="img" className='about-us-top' style={{height:"498px",width:"370px"}}/>
                         <div className="about-text second-about text-left">
                             <span style={{color:"#6DA7A2"}}>10</span>
                             <p style={{color:"#6DA7A2"}}>Years of Experience</p>

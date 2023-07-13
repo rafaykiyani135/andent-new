@@ -6,7 +6,7 @@ import b3 from '../../assets/andent-data/dentures4.png'
 function Main (){
     return(
         <div>
-            <div className="container upper-padding">
+            <div className="container upper-pad-20">
                 <div>
                     <div className="row align-items-center justify-content-center text-center">
                     <div className="col-lg-8">

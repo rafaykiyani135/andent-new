@@ -23,8 +23,8 @@ function Review() {
 
 
   return (
-    <div className='container' style={{paddingBottom:"50px"}}>
-    <div className="row justify-content-center" style={{paddingBottom:"56px"}}>
+    <div className='container'>
+    <div className="row justify-content-center">
       <div className="col-lg-8 text-center">
         <h1 className="theme-dark" style={{fontSize:"57px"}}>
           See What Others Have to Say

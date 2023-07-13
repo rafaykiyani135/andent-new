@@ -7,7 +7,7 @@ import s5 from '../../assets/andent-data/os5.png'
 function Main (){
     return (
         <div>
-            <div className="container upper-padding">
+            <div className="container andent-padding">
             <div className='row justify-content-center text-center'>
                 <div className='col-lg-12 col-md-10'>
                 <h3 className='size-60 theme-dark'>
@@ -16,19 +16,19 @@ function Main (){
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
-                <div className="col-lg-6 text-left" >
+                <div className="col-lg-6 text-left move-right" >
                     <h5 className="size-18 theme-dark">Consultation</h5>
                     <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                     Our orthodontic experts will assess your teeth and discuss your smile goals.
                     </p>
                 </div>
                 <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                    <img src={s1} alt='step1' className='icon'/>
+                    <img src={s1} alt='step1' className='andent-icon-circ'/>
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
                 <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                    <img src={s2} alt='step1' className='icon'/>
+                    <img src={s2} alt='step1' className='andent-icon-circ'/>
                 </div>
                 <div className="col-lg-6 text-left" >
                     <h5 className="size-18 theme-dark">Custom Treatment Plan</h5>
@@ -38,7 +38,7 @@ function Main (){
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
-                <div className="col-lg-6 text-left" >
+                <div className="col-lg-6 text-left move-right" >
                     <h5 className="size-18 theme-dark">Fabrication Process</h5>
                     <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                     Your custom Invisible aligners or your metal braces will be be
@@ -46,12 +46,12 @@ function Main (){
                     </p>
                 </div>
                 <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                    <img src={s3} alt='step1' className='icon'/>
+                    <img src={s3} alt='step1' className='andent-icon-circ'/>
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
                 <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                    <img src={s4} alt='step1' className='icon'/>
+                    <img src={s4} alt='step1' className='andent-icon-circ'/>
                 </div>
                 <div className="col-lg-6 text-left" >
                     <h5 className="size-18 theme-dark">Aligner Wear or Placing Braces</h5>
@@ -62,7 +62,7 @@ function Main (){
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
-                <div className="col-lg-6 text-left" >
+                <div className="col-lg-6 text-left move-right" >
                     <h5 className="size-18 theme-dark">Smile Transformation</h5>
                     <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                     Over time, you will notice your teeth gradually moving into their proper alignment,
@@ -70,7 +70,7 @@ function Main (){
                     </p>
                 </div>
                 <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                    <img src={s5} alt='step1' className='icon'/>
+                    <img src={s5} alt='step1' className='andent-icon-circ'/>
                 </div>
             </div>
             </div>

@@ -5,7 +5,7 @@ function Main (){
         <div>
             <div className="container">
             <div className="row justify-content-center">
-             <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center upper-padding'>
+             <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center andent-padding'>
                     <div style={{ position: 'relative', paddingTop: '56.25%', width: '100%' }} className="interview-vid">
                     <ReactPlayer
                         url="https://streamable.com/1fom0f"

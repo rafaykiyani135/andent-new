@@ -8,9 +8,9 @@ function Main(props) {
     <>
         
  
-            <section id="home" className="slider-area fix p-relative">
+            <section id="home" className="slider-area fix p-relative move-up" style={{paddingBottom:"10px"}}>
                 <div className="slider-active">
-                <div className="single-slider slider-bg d-flex align-items-center" style={{backgroundImage: "url(img/slider/slider_bg.png)", backgroundSize: "cover"}}>
+                <div className="single-slider slider-bg d-flex align-items-center">
                    <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-8 col-md-8">

@@ -6,7 +6,7 @@ function Main (){
         <div>
             <div className="container">
                 <div className="row justify-content-center text-left">
-                    <div className="col-lg-6 col-md-12" style={{paddingBottom:"35px"}}>
+                    <div className="col-lg-6 col-md-12 move-right" style={{paddingBottom:"35px"}}>
                         <img src={img1} alt='img1' style={{height:"275px",width:"523px"}}/>
                     </div>
 

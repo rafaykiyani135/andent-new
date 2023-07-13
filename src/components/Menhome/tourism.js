@@ -9,7 +9,7 @@ import ReactPlayer from 'react-player'
 function Tourism() {
   return (
     <>
-        <section id="blog" className="blog-area p-relative fix pt-90 pb-90">
+        <section id="blog" className="upper-padding">
             <div className="container">
                 <div className="row align-items-center">
                 <div className="col-lg-12">
@@ -42,7 +42,7 @@ function Tourism() {
                         <img src={Innertwo} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark' style={{textAlign:"center",fontSize:"18px"}}>Assistance with your dental travel experience from start to finish</h4>
+                        <h4 className='theme-dark' style={{textAlign:"center",fontSize:"18px",height:"44px",width:"324px"}}>Assistance with your dental travel experience from start to finish</h4>
                         </div>
                         <div style={{paddingTop:"0px"}}>
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>

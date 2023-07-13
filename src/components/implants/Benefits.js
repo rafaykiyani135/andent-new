@@ -53,81 +53,81 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Permanent and Sturdy Foundation</h4>
                         </div>
-                        <div>
-                            <p className='theme-dark size-16 text-center'>
-                            Dental implants provide a long-lasting solution for replacing 
-                            missing teeth, offering a secure and stable base.
+                        <div className='andent-sq-icon-text'>
+                            <p className='theme-dark size-16 text-center offset-fix-1' style={{lineHeight:"20px"}}>
+                            Dental implants provide a long-lasting solution for replacing missing teeth,
+                            offering a secure and stable base.
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
-                        <img src={b1} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        <img src={b1} alt="dt1" className='andent-icon-sq'/>
                         </div>
                     </div>
-                    </div>
-                    <div className="col-lg-2 col-md-6 d-flex justify-content-center">
+                </div>
+                <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Improved Functionality</h4>
                         </div>
-                        <div>
-                            <p className='theme-dark size-16 text-center'>
+                        <div className='andent-sq-icon-text'>
+                            <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             With dental implants, you can regain full chewing ability and restore
-                             proper speech, enhancing your overall quality of life.
+                            proper speech, enhancing your overall quality of life.
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
-                        <img src={b2} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        <img src={b2} alt="dt1" className='andent-icon-sq'/>
                         </div>
                     </div>
-                    </div>
-                    <div className="col-lg-2 col-md-6 d-flex justify-content-center">
+                </div>
+                <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Prevents Dental Complications</h4>
                         </div>
-                        <div>
-                            <p className='theme-dark size-16 text-center'>
+                        <div className='andent-sq-icon-text offset-fix-2'>
+                            <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             By replacing missing teeth, dental implants prevent surrounding teeth from shifting,
-                             maintaining proper bite alignment and avoiding potential jawbone deterioration.
+                            maintaining proper bite alignment and avoiding potential jawbone deterioration.
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
-                        <img src={b3} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        <img src={b3} alt="dt1" className='andent-icon-sq'/>
                         </div>
                     </div>
-                    </div>
-                    <div className="col-lg-2 col-md-6 d-flex justify-content-center">
+                </div>
+                <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Preserves Dental Structure</h4>
                         </div>
-                        <div>
-                            <p className='theme-dark size-16 text-center'>
-                            Dental implants help preserve the integrity of your dental structure, 
-                            preventing the loss of adjacent teeth and supporting optimal oral health.
+                        <div className='andent-sq-icon-text'>
+                            <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
+                            Dental implants help preserve the integrity of your dental structure, preventing the
+                            loss of adjacent teeth and supporting optimal oral health.
                             </p>
                         </div>
-                        <div className='d-flex justify-content-center upper-padding' style={{paddingBottom:"50px"}}>
-                        <img src={b4} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        <div className='d-flex justify-content-center upper-padding'>
+                        <img src={b4} alt="dt1" className='andent-icon-sq'/>
                         </div>
                     </div>
-                    </div>
-                    <div className="col-lg-2 col-md-6 d-flex justify-content-center">
+                </div>
+                <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Stimulates Jawbone Health</h4>
                         </div>
-                        <div>
-                            <p className='theme-dark size-16 text-center'>
-                            Implants stimulate the jawbone, promoting healthy bone growth
-                             and preventing bone loss commonly associated with missing teeth.
+                        <div className='andent-sq-icon-text'>
+                            <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
+                            Implants stimulate the jawbone, promoting healthy bone growth and
+                            preventing bone loss commonly associated with missing teeth.
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
-                        <img src={b5} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        <img src={b5} alt="dt1" className='andent-icon-sq'/>
                         </div>
                     </div>
-                    </div>
+                </div>
                     </Slider>
                 </div>
                 </div>

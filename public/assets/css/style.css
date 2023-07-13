@@ -325,9 +325,20 @@ label {
     line-height: 20px;
 }
 
+.services-icon {
+    height: 91px;
+    width: 91px;
+}
+
 .andent-icon {
     height: 75px;
     width: 120px;
+}
+
+.andent-icon-circ{
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
 }
 
 .andent-dark-bold {
@@ -429,8 +440,6 @@ label {
         position: absolute;
         top: 0px;
         left: 0px;
-        width: 100%;
-        height: 100%;
     }
     .interview-vid {
         height: 600px;
@@ -440,6 +449,48 @@ label {
         position: relative;
         left: 10px;
         top: 3px;
+    }
+    .apt-text {
+        position: relative;
+        top: 20px;
+    }
+    .map-pos {
+        position: relative;
+        right: 15px;
+    }
+    .contact-lg{
+        height: auto;
+        width: auto;
+    }
+    .pad-20-sm{
+        padding: 20px;
+    }
+    .andent-icon-circ-sm{
+        position: relative;
+        top: 40px;
+    }
+    .contact-girl-sm{
+        height: auto;
+        width: auto;
+    }
+    .sm-icon{
+        height: auto;
+        width: 300px;
+    }
+    .sm-col-gap {
+        padding-top: 25px;
+    }
+    
+  }
+
+
+@media (min-width: 1680px) and (max-width: 1920px) and (min-height: 1050px) and (max-height: 1080px) {
+    .exp-vid {
+        position:relative;
+        top: 100px;
+        left: 80px;
+        width: 600px;
+        height: 400px;
     }
   }
   
@@ -492,8 +543,208 @@ label {
     .orth-type{
         padding-left: 250px;
     }
+    .form-small {
+        height: 46px;
+        width: 252.9px;
+    }
+    .form-big{
+        height: 93px;
+        width: 525.87px;
+    }
+    .form-big2 {
+        height: 46px;
+        width: 525.87px;
+    }
+    .testimon-dim{
+        height: 160px;
+        width: auto;
+    }
+    .header-logo{
+        position: relative;
+        right: 50px;
+    }
+    .header-nav{
+        position: relative;
+        left: 100px;
+    }
+    .header-btn-pos{
+        position: relative;
+        left: 50px;
+    }
+    .exp-text-pos{
+        position: relative;
+        left: 40px;
+        bottom: 40px;
+    }
+    .exp-text-size{
+        height: 70px;
+        width: 450px;
+    }
+    .contact-lg {
+        position: relative;
+        bottom: 100px;
+        left: 50px;
+    }
+    .contact-dim {
+        width: 1278px;
+        height: 414px;
+    }
+    .sec-icon-text {
+        height: 103px;
+        width: 263px;
+    }
+    .sec-icon-text-heading{
+        height: 22px;
+        width: 261px;
+    }
+    .andent-sq-icon-text{
+        width: 263px;
+        height: auto;
+    }
+    .offset-fix {
+        position: relative;
+        left: 40px;
+    }
+    .offset-fix-1{
+        position: relative;
+        left: 30px;
+    }
+    .offset-fix-2{
+        position: relative;
+        left: 7px;
+    }
+    .types-textbox{
+        height: 60px;
+        width: 294px;
+    }
+    .move-left {
+        position: relative;
+        right: 50px;
+    }
+    .move-right {
+        position: relative;
+        left: 50px;
+    }
+    .orth-text-head{
+        height: 76px;
+        width: 241px;
+    }
+    .move-up {
+        position: relative;
+        bottom: 20px;
+    }
+    .move-down {
+        position: relative;
+        top: 25px;
+    }
+    .orth-benefits-p{
+        width: 259px;
+        height: 175px;
+    }
+    .orth-benefits-textbox{
+        height: 263px;
+        width: 279px;
+    }
+    .move-img-right{
+        position: relative;
+        left: 20px;
+    }
+    .before-after-pos{
+        position: relative;
+        left: 375px;
+    }
+    .andent-move-up {
+        position: relative;
+        bottom: 60px;
+    }
 
   }
+
+
+  .slider-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  } 
+
+.pad-10 {
+    padding: 10px;
+}
+
+.upper-pad-20 {
+    padding-top: 20px;
+}
+
+
+.andent-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.upper-pad-10 {
+    padding-top: 10px;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.contacts-map {
+    width: 100%;
+    float:left;
+    height:300px;
+    position:relative;
+}
+
+.andent-icon-sq {
+    height: 120px;
+    width: 120px;
+}
+
+.andent-icon-sq-1 {
+    height: 100px;
+    width: 100px;
+}
+
+#contactsMap {
+    width: 100%;
+    float:left;
+    height:300px;
+    position:relative;
+}
+
+.overlay{height: 300px;}
+
+.overlay:before {
+    content: '';
+    display: block;
+    width:100%;
+    height:150px;
+    background:#000;
+    color:#fff;
+    position:absolute;
+    bottom: 0;
+    -webkit-transform: skew(-9deg);
+    -moz-transform: skew(-9deg);
+    -o-transform: skew(-9deg);
+    transform: skew(-9deg);
+
+}
+.content {
+    top: 150px;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    padding: 5px 15px;
+}
+.overlay a, .overlay span {
+    color:#fff;
+}
 
 
 .header-btn{
@@ -5362,12 +5613,11 @@ background: #fff;
 }
 .contact-field input  {
 	width: 100%;
-border: none;
-padding-left: 15px;
-transition: .3s;
-border-radius: 0;
+    border: none;
+    padding-left: 15px;
+    transition: .3s;
+    border-radius: 0;
     border: 1px solid #777;
-    height: calc(3.0em + .75rem + 2px);
 }
 
 .contact-field.c-name::after{content: "\f007";}

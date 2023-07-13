@@ -38,86 +38,77 @@ function Main (){
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center">
-                        <h5 style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"20px"}} >EXPERIENCE THESE ARE MORE</h5>
-                        <h2 className='theme-dark' style={{fontSize:"60px"}}>Dental Treatments</h2>
+                        <p style={{fontSize:"16px",color:"#6DA7A2",paddingBottom:"20px"}} >Experience our state-of-the-art dental facilities equipped with modern tools and technologies, including:</p>
                     </div>
                     </div>
                     <div className="col-lg-5 col-md-6 col-sm-12">
-                    <div className="about-content s-about-content">
+                    <div>
                         <ul className="text-left">
-                        <div>
-                        <li style={{paddingBottom:"40px"}}>
-                            <div className="icon">
-                            <img src={img1} alt="icon01" className='andent-icon sec-img'/>
+                        <li style={{ paddingBottom: "40px", display: "flex" }}>
+                            <div>
+                            <img src={img1} alt="icon01" className='andent-icon-circ andent-icon-circ-sm ' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Intra and Extra Oral Scanner</h4>
-                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                            Durable, artificial tooth roots to support natural-looking replacement teeth.
+                            <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>Intra and Extra Oral Scanner</h4>
+                            <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
+                                Durable, artificial tooth roots to support natural-looking replacement teeth.
                             </p>
-                            <Link to="/" style={{position:"relative",bottom:"15px"}}>
-                                <p style={{style:"italic",fontSize:"10px",color:"#6DA7A2"}}>
-                                    Learn More
+                            <Link to="/" style={{ position: "relative", bottom: "15px" }}>
+                                <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
+                                Learn More
                                 </p>
                             </Link>
                             </div>
                         </li>
-                        </div>
-                        <div>
-                        <li style={{paddingBottom:"40px"}}>
-                            <div className="icon">
-                            <img src={img3} alt="icon01" className='andent-icon sec-img'/>
+                        <li style={{ paddingBottom: "40px", display: "flex" }}>
+                            <div>
+                            <img src={img3} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>DNA and Bacterial Testing</h4>
-                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                            High-quality prosthetics for damaged or missing teeth, ensuring durability.
+                            <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>DNA and Bacterial Testing</h4>
+                            <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
+                                High-quality prosthetics for damaged or missing teeth, ensuring durability.
                             </p>
-                            <Link to="/" style={{position:"relative",bottom:"15px"}}>
-                                <p style={{style:"italic",fontSize:"10px",color:"#6DA7A2"}}>
-                                    Learn More
+                            <Link to="/" style={{ position: "relative", bottom: "15px" }}>
+                                <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
+                                Learn More
                                 </p>
                             </Link>
                             </div>
                         </li>
-                        </div>
-                        <div>
-                        <li>
-                            <div className="icon">
-                            <img src={img5} alt="icon01" className='andent-icon  sec-img'/>
+                        <li style={{ paddingBottom: "40px", display: "flex" }}>
+                            <div>
+                            <img src={img5} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>DNA and Bacterial Testing</h4>
-                            <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                            Custom-made replacements for comfortable chewing, speaking, and smiling.
+                            <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>DNA and Bacterial Testing</h4>
+                            <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
+                                Custom-made replacements for comfortable chewing, speaking, and smiling.
                             </p>
-                            <Link to="/" style={{position:"relative",bottom:"15px"}}>
-                                <p style={{style:"italic",fontSize:"10px",color:"#6DA7A2"}}>
-                                    Learn More
+                            <Link to="/" style={{ position: "relative", bottom: "15px" }}>
+                                <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
+                                Learn More
                                 </p>
                             </Link>
                             </div>
                         </li>
-                        </div>
                         </ul>
                     </div>
                     </div>
                     <div className="col-lg-5 col-md-6 col-sm-12">
-                    <br/>
-                    <div className="about-content s-about-content">
                         <ul>
                         <div>
-                        <li style={{paddingBottom:"40px"}}>
-                            <div className="icon">
-                            <img src={img2} alt="icon01" className='andent-icon sec-img'/>
+                        <li style={{paddingBottom:"40px",display:"flex"}}>
+                            <div>
+                            <img src={img2} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Laser Technology</h4>
+                            <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>Laser Technology</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             Transform your smile with whitening, veneers, and personalized makeovers.
                             </p>
                             <Link to="/" style={{position:"relative",bottom:"15px"}}>
-                                <p style={{style:"italic",fontSize:"10px",color:"#6DA7A2"}}>
+                                <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
                             </Link>
@@ -125,17 +116,17 @@ function Main (){
                         </li>
                         </div>
                         <div>
-                        <li style={{paddingBottom:"40px"}}>
-                            <div className="icon">
-                            <img src={img4} alt="icon01" className='andent-icon sec-img'/>
+                        <li style={{paddingBottom:"40px",display:"flex"}}>
+                            <div>
+                            <img src={img4} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }}/>
                             </div>
-                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Intraoral Camera</h4>
+                            <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>Intraoral Camera</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             Achieve straighter teeth and correct bites with orthodontic treatments, including Invisalign
                             </p>
                             <Link to="/" style={{position:"relative",bottom:"15px"}}>
-                                <p style={{style:"italic",fontSize:"10px",color:"#6DA7A2"}}>
+                                <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
                             </Link>
@@ -143,17 +134,17 @@ function Main (){
                         </li>
                         </div>
                         <div>
-                        <li>
-                            <div className="icon">
-                            <img src={img6} alt="icon01" className='andent-icon sec-img'/>
+                        <li style={{paddingBottom:"40px",display:"flex"}}>
+                            <div>
+                            <img src={img6} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }}/>
                             </div>
-                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>3D Dental CT Scan</h4>
+                            <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>3D Dental CT Scan</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             Preventive care, treatments, and maintenance for optimal oral health and a beautiful smile.
                             </p>
                             <Link to="/" style={{position:"relative",bottom:"15px"}}>
-                                <p style={{style:"italic",fontSize:"10px",color:"#6DA7A2"}}>
+                                <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
                             </Link>
@@ -161,7 +152,6 @@ function Main (){
                         </li>
                         </div>
                         </ul>
-                    </div>
                     </div>
                 </div>
             </div>
