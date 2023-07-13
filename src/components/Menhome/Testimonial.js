@@ -17,9 +17,9 @@ function Testimonialslider() {
     <>
         <div className='container andent-padding pad-20'>
             <div className='row justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
-                <div className='col-lg-4 col-md-10'>
+                <div className='col-lg-4 col-md-12'>
                     <h4 className='size-20 theme-dark'>Gaetano Lolimitica &nbsp; &nbsp; {stars}</h4>
-                    <div style={{paddingTop:"15px"}}>
+                    <div style={{paddingTop:"15px"}} className='text-center'>
                         <img src={test1} alt='testimg'/>
                     </div>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>
@@ -31,9 +31,9 @@ function Testimonialslider() {
                         </p>
                     </div>
                 </div>
-                <div className='col-lg-4 col-md-10'>
+                <div className='col-lg-4 col-md-12'>
                     <h4 className='size-20 theme-dark'>Gaetano Lolimitica &nbsp; &nbsp; {stars}</h4>
-                    <div style={{paddingTop:"15px"}}>
+                    <div style={{paddingTop:"15px"}} className='text-center'>
                         <img src={test2} alt='testimg'/>
                     </div>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>

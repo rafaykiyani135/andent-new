@@ -9,7 +9,7 @@ function Make() {
         <section id="contact" className="andent-padding" >
             <div className="container">
               <div className="row justify-content-around align-items-center">
-                <div className="col-lg-4 order-2 d-flex justify-content-center wow fadeInUp animated pad-10" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
+                <div className="col-lg-4 col-8 order-2 d-flex justify-content-center wow fadeInUp animated pad-10" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
                   <div className="contact-info">
                     <div className='row justify-content-center'>
                       <div className='col-lg-4'>

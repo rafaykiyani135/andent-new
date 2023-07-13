@@ -7,7 +7,7 @@ function Ourdr() {
 
     return (
         <>
-        <div className='container'>
+        <div className='container andent-padding'>
             <div className='row justify-content-center text-center'>
             <div className='col-lg-8'>
                 <h2 className='theme-dark' style={{ fontSize: "60px" }}>

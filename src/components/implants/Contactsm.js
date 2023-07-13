@@ -9,7 +9,7 @@ function Main() {
             <div className="container contact-dim" style={{backgroundColor:"#A7CCC8",borderRadius:"20px"}}>
                 <div className="row align-items-center">
                 <div className="col-lg-5 col-md-5 col-sm-12 pad-20-sm">
-                    <div className="single-counter-img fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
+                    <div className="single-counter-img fadeInUp animated text-center" data-animation="fadeInDown animated" data-delay=".2s" >
                     <img src={Callmenone} alt="img" className="img contact-lg" style={{height:"504px",width:"378px"}}/>
                     </div>
                 </div>

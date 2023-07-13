@@ -21,7 +21,7 @@ function Main (){
                     </div>
                 </div>
 
-                <div className="row justify-content-around upper-padding">
+                <div className="row justify-content-around" style={{paddingTop:"75px"}}>
                 <div className="col-lg-6 text-left move-right" >
                         <h5 className="size-18 theme-dark">Teeth Whitening</h5>
                         <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>

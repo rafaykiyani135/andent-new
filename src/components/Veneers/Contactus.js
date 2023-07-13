@@ -8,7 +8,7 @@ function Main() {
         <div style={{paddingTop:"200px"}}>
             <div className="container contact-dim" style={{backgroundColor:"#A7CCC8",borderRadius:"20px"}}>
                 <div className="row align-items-center">
-                <div className="col-lg-5 col-md-5 col-sm-12 pad-20-sm">
+                <div className="col-lg-5 col-md-5 col-sm-12 pad-20-sm text-center">
                     <div className="single-counter-img fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s" >
                     <img src={Callmenone} alt="img" className="img contact-lg" />
                     </div>

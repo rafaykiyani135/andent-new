@@ -3,6 +3,10 @@ import d2 from '../../assets/andent-data/o2.png'
 
 
 function Main () {
+
+
+
+
     return(
         <div className='container' style={{paddingBottom:"125px"}}>
             <div className='row justify-content-center'>
@@ -14,7 +18,7 @@ function Main () {
             </div>
             <div className="row justify-content-center upper-pad-20 orth-type">
                 <div className='col-lg-6 col-md-12 move-right'>
-                    <div>
+                    <div className='orth-types'>
                         <img src={d1} alt='traditional bracer' style={{width:"240px",height:"144px",borderRadius:"10px"}}/>
                     </div>
                     <div className='decent-pad orth-text-head'>
@@ -29,7 +33,7 @@ function Main () {
                     </div>
                 </div>
                 <div className='col-lg-6 col-md-12 move-left'>
-                    <div>
+                    <div className='orth-types'>
                         <img src={d2} alt='traditional bracer' style={{width:"240px",height:"144px",borderRadius:"10px"}}/>
                     </div>
                     <div className='decent-pad orth-text-head'>

@@ -41,8 +41,8 @@ function Tourism() {
                         <div>
                         <img src={Innertwo} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
-                        <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark' style={{textAlign:"center",fontSize:"18px",height:"44px",width:"324px"}}>Assistance with your dental travel experience from start to finish</h4>
+                        <div style={{paddingTop:"20px"}} className='justify-content-md-center'>
+                        <h4 className='theme-dark tourism-head' style={{textAlign:"center",fontSize:"18px"}}>Assistance with your dental travel experience from start to finish</h4>
                         </div>
                         <div style={{paddingTop:"0px"}}>
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>

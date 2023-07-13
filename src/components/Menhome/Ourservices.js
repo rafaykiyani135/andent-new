@@ -33,7 +33,7 @@ function Ourservices() {
 
   return (
     <div className='andent-padding'>
-         <section id="service-details2" className="service-details-two pt-120 pb-105 p-relative" >
+         <section id="service-details2" className="" >
                 <div className="container">
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-12">
@@ -154,7 +154,7 @@ function Ourservices() {
                 </div>
          </section>
         
-         <section className="about-area about-p pb-120 p-relative fix">
+         <section className="upper-padding">
             <div className="container">
                     <div className="row justify-content-center align-items-start">
                     <div className="col-lg-5 col-md-12 col-sm-12 align-items-center justify-content-center">

@@ -480,6 +480,17 @@ label {
     .sm-col-gap {
         padding-top: 25px;
     }
+    .steps-img-left{
+        position: relative;
+        top: 60px;
+    }
+    .steps-img-left2{
+        position: relative;
+        bottom: 30px;
+    }
+    .orth-types{
+        text-align: center;
+    }
     
   }
 
@@ -577,8 +588,9 @@ label {
         bottom: 40px;
     }
     .exp-text-size{
-        height: 70px;
-        width: 450px;
+        padding-top: 125px;
+        padding-left: 150px;
+        padding-bottom: 50px;
     }
     .contact-lg {
         position: relative;
@@ -656,6 +668,10 @@ label {
     .andent-move-up {
         position: relative;
         bottom: 60px;
+    }
+    .tourism-head{
+        height: 44px;
+        width: 324px;
     }
 
   }

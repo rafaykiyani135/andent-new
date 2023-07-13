@@ -19,7 +19,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">1. Comprehensive Assessment</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             We kickstart your journey with a detailed evaluation of your oral health,
@@ -27,15 +27,15 @@ function Main(){
                             We leverage advanced imaging technology for precise treatment planning 
                             </p>
                         </div>
-                        <div className="col-lg-2 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
                             <img src={s1} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 text-center" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s2} alt='step1' className='andent-icon-sq'/>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center " style={{position:"relative",bottom:"30px"}}>
+                            <img src={s2} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
                             <h5 className="size-18 theme-dark">2. Implant Surgery</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Our dental experts will then place the titanium implant into your jawbone.
@@ -45,22 +45,22 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">3. Healing and Integration</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Post-surgery, we allow time for osseointegration, where the implant fuses with the jawbone.
                              This healing process, which can take a few months, ensures a stable foundation for the new tooth.
                             </p>
                         </div>
-                        <div className="col-lg-2 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
-                            <img src={s3} alt='step1' className='andent-icon-sq-1'/>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                            <img src={s3} alt='step1' className='andent-icon-sq-1 steps-img-left'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 text-center" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s4} alt='step1' className='andent-icon-sq-1'/>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                            <img src={s4} alt='step1' className='andent-icon-sq-1 steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
                             <h5 className="size-18 theme-dark">4. Abutment Placement</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Once healed, an abutment, a small connector, is attached to the implant.
@@ -69,14 +69,14 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
                             <h5 className="size-18 theme-dark">5. Beautiful Restoration</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             The final step is the placement of the prosthetic tooth, beautifully crafted to blend seamlessly with your natural teeth.
                              With your new smile in place, you're all set to chew, speak, and beam with confidence.
                             </p>
                         </div>
-                        <div className="col-lg-2 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
                             <img src={s5} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
