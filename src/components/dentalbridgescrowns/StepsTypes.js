@@ -26,12 +26,12 @@ function Main(){
                             </p>
                         </div>
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s1} alt='step1' className='andent-icon-sq'/>
+                            <img src={s1} alt='step1' className='andent-icon-sq steps-img-left2'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
-                            <img src={s2} alt='step1' className='andent-icon-sq'/>
+                            <img src={s2} alt='step1' className='andent-icon-sq steps-img-left3'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
                             <h5 className="size-18 theme-dark">2. Treatment Planning</h5>

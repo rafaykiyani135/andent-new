@@ -488,6 +488,10 @@ label {
         position: relative;
         bottom: 30px;
     }
+    .steps-img-left3{
+        position: relative;
+        top: 20px;
+    }
     .orth-types{
         text-align: center;
     }
