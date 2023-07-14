@@ -88,55 +88,53 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-center upper-padding text-left">
-                        <div className="col-lg-3 text-center move-left" >
-                            <img src={d1} alt='teeth1' style={{width:"321px",height:"195px"}}/>
-                            <div style={{paddingTop:"20px"}}>
-                                <h3 className='theme-dark size-18 text-center decent-pad'>
-                                    Zirconia Implants
-                                </h3>
-                                <div className="row decent-pad">
-                                <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center">
-                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
-                                        <img src={redtick} className="icon img-fluid d-flex justify-content-center" alt="phoneicon" height={42} style={{ width: "42px" }} />
-                                    </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left">
-                                        <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
-                                        Metal-free option with excellent aesthetics.
-                                        </h6>
-                                    </div>
-                                    </div>
+                    <div className="col-lg-3 text-center move-left">
+                        <img src={d1} alt="teeth1" style={{ width: "100%", maxWidth: "321px", height: "auto" }} />
+                        <div style={{ paddingTop: "20px" }}>
+                            <h3 className="theme-dark size-18 text-center decent-pad">Zirconia Implants</h3>
+                            <div className="row decent-pad">
+                            <div className="col-lg-12 col-md-12 col-sm-12">
+                                <div className="d-flex align-items-center">
+                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
-                                </div>
-                                <div className="row decent-pad">
-                                <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center">
-                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
-                                        <img src={redtick} className="d-flex justify-content-center icon-size" alt="phoneicon" />
-                                    </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left">
-                                        <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
-                                        Biocompatible ceramic material.
-                                        </h6>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div className="row decent-pad">
-                                <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center">
-                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
-                                        <img src={redtick} className="icon img-fluid d-flex justify-content-center" alt="phoneicon" height={42} style={{ width: "42px" }} />
-                                    </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left">
-                                        <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
-                                        Perfect for patients seeking a natural look and feel.
-                                        </h6>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                    <h6 style={{ color: "black", fontWeight: "400" }} className="size-16 icon-text-pos">
+                                    Metal-free option with excellent aesthetics.
+                                    </h6>
                                 </div>
                                 </div>
                             </div>
+                            </div>
+                            <div className="row decent-pad">
+                            <div className="col-lg-12 col-md-12 col-sm-12">
+                                <div className="d-flex align-items-center">
+                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
+                                </div>
+                                <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                    <h6 style={{ color: "black", fontWeight: "400" }} className="size-16 icon-text-pos">
+                                    Biocompatible ceramic material.
+                                    </h6>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="row decent-pad">
+                            <div className="col-lg-12 col-md-12 col-sm-12">
+                                <div className="d-flex align-items-center">
+                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
+                                </div>
+                                <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                    <h6 style={{ color: "black", fontWeight: "400" }} className="size-16 icon-text-pos">
+                                    Perfect for patients seeking a natural look and feel.
+                                    </h6>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                         </div>
                         <div className="col-lg-3 text-center move-right">
                             <img src={d2} alt='teeth1' style={{width:"321px",height:"195px"}}/>
@@ -148,9 +146,9 @@ function Main(){
                                 <div className="col-lg-12 col-md-12 col-sm-12">
                                     <div className="d-flex align-items-center">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
-                                        <img src={redtick} className="icon img-fluid d-flex justify-content-center" alt="phoneicon" height={42} style={{ width: "42px" }} />
+                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left">
+                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
                                         <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
                                         Long lasting solution for natural tooth replacement
                                         </h6>
@@ -162,9 +160,9 @@ function Main(){
                                 <div className="col-lg-12 col-md-12 col-sm-12">
                                     <div className="d-flex align-items-center">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
-                                        <img src={redtick} className="icon img-fluid d-flex justify-content-center" alt="phoneicon" height={42} style={{ width: "42px" }} />
+                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left">
+                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
                                         <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
                                         Reduced risk of rejection or allergic reactions
                                         </h6>
@@ -176,9 +174,9 @@ function Main(){
                                 <div className="col-lg-12 col-md-12 col-sm-12">
                                     <div className="d-flex align-items-center">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
-                                        <img src={redtick} className="icon img-fluid d-flex justify-content-center" alt="phoneicon" height={42} style={{ width: "42px" }} />
+                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left">
+                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
                                         <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
                                         Prevents bone loss from missing teeth
                                         </h6>

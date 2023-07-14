@@ -8,7 +8,7 @@ import test2 from '../../assets/andent-data/test2.png'
 function Testimonialslider() {
 
     const stars = Array.from({ length: 5 }, (_, index) => (
-        <img index={index} src={star} alt="icons" style={{paddingRight:"10px",transform:"translateY(-5px)"}}/>
+        <img index={index} src={star} alt="icons" style={{paddingRight:"10px",transform:"translateY(-5px)",height:"25px",width:"35px"}}  />
       ));
 
   return (
@@ -18,7 +18,14 @@ function Testimonialslider() {
         <div className='container andent-padding pad-20'>
             <div className='row justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
                 <div className='col-lg-4 col-md-12'>
-                    <h4 className='size-20 theme-dark'>Gaetano Lolimitica &nbsp; &nbsp; {stars}</h4>
+                    <div className='row justify-content-center text-center'>
+                        <div className='col-lg-6'>
+                            <h4 className='size-18 theme-dark' style={{fontWeight:"700"}}>Gaetano Lolimitica &nbsp; &nbsp;</h4>
+                        </div>
+                        <div className='col-lg-6'>
+                            {stars}
+                        </div>
+                    </div>
                     <div style={{paddingTop:"15px"}} className='text-center'>
                         <img src={test1} alt='testimg'/>
                     </div>
@@ -32,7 +39,14 @@ function Testimonialslider() {
                     </div>
                 </div>
                 <div className='col-lg-4 col-md-12'>
-                    <h4 className='size-20 theme-dark'>Gaetano Lolimitica &nbsp; &nbsp; {stars}</h4>
+                    <div className='row justify-content-center text-center'>
+                        <div className='col-lg-6'>
+                            <h4 className='size-18 theme-dark' style={{fontWeight:"700"}}>Gaetano Lolimitica &nbsp; &nbsp;</h4>
+                        </div>
+                        <div className='col-lg-6'>
+                            {stars}
+                        </div>
+                    </div>
                     <div style={{paddingTop:"15px"}} className='text-center'>
                         <img src={test2} alt='testimg'/>
                     </div>

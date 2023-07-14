@@ -12,12 +12,12 @@ function Make() {
               <div className="col-lg-4 order-2 d-flex justify-content-center wow fadeInUp animated upper-padding" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
                   <div >
                     <div className='row justify-content-center'>
-                      <div className='col-lg-4'>
+                      <div className='col-lg-4 col-8'>
                       <div className="f-cta-icon">
                         <img src={iconone} alt='none'/>
                       </div>
                       </div>
-                      <div className='col-lg-8'>
+                      <div className='col-lg-8 col-12'>
                         <div className='apt-text'>
                             <h5 className='theme-dark' style={{color:"#4E4E50"}}>Clinic Address</h5>
                             <p className='size-16 theme-dark' style={{width:"263px",height:"64px",lineHeight:"20px",fontWeight:"400"}}>
@@ -29,12 +29,12 @@ function Make() {
                     </div>
                     <br/>
                     <div className='row justify-content-center'>
-                      <div className='col-lg-4'>
+                      <div className='col-lg-4 col-8'>
                       <div className="f-cta-icon">
                         <img src={icontwo} alt='none'/>
                       </div>
                       </div>
-                      <div className='col-lg-8'>
+                      <div className='col-lg-8 col-12'>
                         <div style={{position:"relative",bottom:"20px"}} className='apt-text'>
                           <h5 className='theme-dark' style={{color:"#4E4E50"}}>Contact Us</h5>
                           <p className='size-16 theme-dark' style={{width:"263px",height:"100px",lineHeight:"20px",fontWeight:"400"}}>

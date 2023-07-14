@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Img from '../../assets/img/bg/bdrc-bg.png'
 
 
 function breadcrumb({ subtitle, title, subtitledown }) {
   return (
     <>
-        <section className="breadcrumb-area d-flex align-items-center" style={{ backgroundImage: `url(${ Img })`}} >
+        <section className="breadcrumb-area d-flex align-items-center" style={{ backgroundColor:"#6DA7A2"}} >
             <div className="container">
                 <div className="row align-items-center">
                 <div className="col-xl-12 col-lg-12">
