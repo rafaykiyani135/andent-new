@@ -9,7 +9,7 @@ import ReactPlayer from 'react-player'
 function Tourism() {
   return (
     <>
-        <section id="blog" className="upper-padding">
+        <section className="andent-padding">
             <div className="container">
                 <div className="row align-items-center">
                 <div className="col-lg-12">

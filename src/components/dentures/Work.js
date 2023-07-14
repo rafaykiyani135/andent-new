@@ -5,7 +5,14 @@ function Main (){
     return(
         <div>
             <div className="container">
-                <div className="row justify-content-center text-left">
+                <div className='row justify-content-center text-center'>
+                    <div className='col-lg-12 col-md-12 col-12'>
+                        <h4 className='size-60 theme-dark' style={{fontWeight:"700"}}>
+                            How Dentures Work
+                        </h4>
+                    </div>
+                </div>
+                <div className="row justify-content-center text-left upper-padding">
                     <div className="col-lg-6 col-md-12 move-right" style={{paddingBottom:"35px"}}>
                         <img src={img1} alt='img1' style={{height:"275px",width:"523px"}}/>
                     </div>

@@ -34,13 +34,13 @@ function Main (){
                         international guidelines, ensuring a safe environment.
                         </p>
                     </div>
-                </div>
-                <div className="row align-items-center justify-content-center">
                     <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center">
                         <p style={{fontSize:"16px",color:"#6DA7A2",paddingBottom:"20px"}} >Experience our state-of-the-art dental facilities equipped with modern tools and technologies, including:</p>
                     </div>
                     </div>
+                </div>
+                <div className="row align-items-center justify-content-end move-left">
                     <div className="col-lg-5 col-md-6 col-sm-12">
                     <div>
                         <ul className="text-left">
@@ -96,7 +96,7 @@ function Main (){
                     </div>
                     </div>
                     <div className="col-lg-5 col-md-6 col-sm-12">
-                        <ul>
+                        <ul className='text-left'>
                         <div>
                         <li style={{paddingBottom:"40px",display:"flex"}}>
                             <div>

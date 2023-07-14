@@ -17,7 +17,7 @@ function Main (){
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-5 col-md-12 order-lg-1">
+                <div className="col-lg-5 col-md-12 order-lg-1" style={{paddingBottom:"40px"}}>
                     <div className="justify-content-center text-center exp-text-size">
                     <h5 className="theme-dark size-25" style={{ color: "#4E4E50" }}>
                         Experience the <span style={{ color: "#F9665E" }}>life-changing</span> benefits of dental implants at our clinic.
@@ -27,7 +27,7 @@ function Main (){
                         Our experienced team ensures precise implant placement, exceptional aesthetics, and superior functionality.
                         </p>
                     </div>
-                    <div className="upper-padding">
+                    <div className="">
                         <Link href="#" className="btn" style={{ height: "40px", width: "169px" }}>
                         <p style={{ transform: "translate(-2px,-10px)", fontSize: "18px" }}>
                             Contact Us

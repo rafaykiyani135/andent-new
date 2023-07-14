@@ -16,7 +16,9 @@ function Main() {
       <Review/>
       <Ourservish/>
       <OurDr/>
+      <div className='move-up2'>
       <Tourism/>
+      </div>
       <Testimonial/>
       <Appointment/>
       <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>

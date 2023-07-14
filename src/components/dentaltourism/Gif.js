@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Main (){
 
     return(
-        <div className='andent-padding'>
+        <div className=''>
             <div className='row justify-content-center text-center'>
             <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center'>
                 <div>

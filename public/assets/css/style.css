@@ -507,7 +507,10 @@ label {
         height: 40px;
         width: 234px;
     }
-    
+    .move-up2 {
+        position: relative;
+        bottom: 35px;
+    }
   }
 
 
@@ -661,6 +664,10 @@ label {
         position: relative;
         bottom: 20px;
     }
+    .move-up2 {
+        position: relative;
+        bottom: 35px;
+    }
     .move-down {
         position: relative;
         top: 25px;
@@ -689,6 +696,10 @@ label {
         height: 44px;
         width: 324px;
     }
+    .tourism-benefits{
+        height: 60px;
+        width: 545px;
+    }
 
   }
 
@@ -714,8 +725,8 @@ label {
 
 
 .andent-padding{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .upper-pad-10 {

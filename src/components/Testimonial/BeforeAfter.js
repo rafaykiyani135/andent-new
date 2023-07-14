@@ -22,7 +22,7 @@ function Main (){
 
     return(
         <div>
-        <div className="container andent-padding">
+        <div className="container ">
 
             <div className="row align-items-center justify-content-center text-center andent-padding">
                 <div className="col-lg-12">

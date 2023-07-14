@@ -9,14 +9,14 @@ function Ourdr() {
         <>
         <div className='container andent-padding'>
             <div className='row justify-content-center text-center'>
-            <div className='col-lg-8'>
+            <div className='col-lg-8 col-12'>
                 <h2 className='theme-dark' style={{ fontSize: "60px" }}>
                 Meet Our Team
                 </h2>
             </div>
             </div>
             <div className='row justify-content-around text-center' style={{paddingTop:"50px",paddingBottom:"50px"}}>
-            <div className='col-lg-3 col-md-6 mb-4'>
+            <div className='col-lg-3 col-md-6 col-12 mb-4'>
                 <img src={teamone} alt='team-img' className='img-fluid' style={{height:"200px",width:"400px"}}/>
                 <div style={{ paddingTop: "15px" }}>
                 <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -27,7 +27,7 @@ function Ourdr() {
                 </p>
                 </div>
             </div>
-            <div className='col-lg-3 col-md-6 mb-4'>
+            <div className='col-lg-3 col-md-6 col-12 mb-4'>
                 <img src={teamone} alt='team-img' className='img-fluid' style={{height:"200px",width:"400px"}}/>
                 <div style={{ paddingTop: "15px" }}>
                 <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -38,7 +38,7 @@ function Ourdr() {
                 </p>
                 </div>
             </div>
-            <div className='col-lg-3 col-md-6 mb-4'>
+            <div className='col-lg-3 col-md-6 col-12 mb-4'>
                 <img src={teamone} alt='team-img' className='img-fluid' style={{height:"200px",width:"400px"}}/>
                 <div style={{ paddingTop: "15px" }}>
                 <h3 className='theme-dark' style={{ fontSize: "18px" }}>

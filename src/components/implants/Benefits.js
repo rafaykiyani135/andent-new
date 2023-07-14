@@ -37,7 +37,7 @@ function Main (){
 
     return(
         <div>
-                <section id="blog" className="blog-area p-relative fix pt-90 pb-90">
+            <section className="andent-padding">
             <div className="container">
                 <div className="row align-items-center">
                 <div className="col-lg-12">

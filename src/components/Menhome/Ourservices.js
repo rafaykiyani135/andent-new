@@ -154,7 +154,7 @@ function Ourservices() {
                 </div>
          </section>
         
-         <section className="upper-padding">
+         <section style={{paddingTop:"75px"}}>
             <div className="container">
                     <div className="row justify-content-center align-items-start">
                     <div className="col-lg-5 col-md-12 col-sm-12 align-items-center justify-content-center">

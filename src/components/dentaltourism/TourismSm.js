@@ -18,7 +18,7 @@ function Tourism() {
                 </div>
                 </div>
                 <div className="row justify-content-around">
-                <div className="col-lg-3 col-md-6 d-flex text-center">
+                <div className="col-lg-3 col-md-12 d-flex text-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innerone} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
@@ -34,13 +34,13 @@ function Tourism() {
                         </div>
                     </div>
                     </div>
-                    <div className="col-lg-3 col-md-6 text-center">
+                <div className="col-lg-3 col-md-12 text-center">
                 <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innertwo} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark' style={{textAlign:"center",fontSize:"18px",height:"44px",width:"324px"}}>Assistance with your dental travel experience from start to finish</h4>
+                        <h4 className='theme-dark tourism-head' style={{textAlign:"center",fontSize:"18px"}}>Assistance with your dental travel experience from start to finish</h4>
                         </div>
                         <div style={{paddingTop:"0px"}}>
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>
@@ -50,7 +50,7 @@ function Tourism() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-6 text-center">
+                <div className="col-lg-3 col-md-12 text-center">
                 <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innerthree} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
