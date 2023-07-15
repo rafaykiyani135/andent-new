@@ -1,7 +1,6 @@
 import React from 'react'
 import star from '../../assets/andent-data/star.png'
-import test1 from '../../assets/andent-data/test1.png'
-import test2 from '../../assets/andent-data/test2.png'
+import ReactPlayer from 'react-player'
 
 
 
@@ -33,10 +32,15 @@ function Testimonialslider() {
                             {stars}
                         </div>
                     </div>
-                    <div style={{paddingTop:"15px"}} className='text-center'>
-                        <img src={test1} alt='testimg'/>
+                    <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
+                        <ReactPlayer
+                            url="https://streamable.com/vfuq3g"
+                            controls={true}
+                            width='400px'
+                            height='500px'
+                        />
                     </div>
-                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>
+                    <div style={{paddingTop:"10px"}} className='andent-text text-center testimon-dim'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         Dentures are removable dental appliances that are crafted to resemble your
                         natural teeth and gums. They are custom-made to fit your unique mouth shape
@@ -48,16 +52,21 @@ function Testimonialslider() {
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark' style={{fontWeight:"700"}}>Gaetano Lolimitica &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark' style={{fontWeight:"700"}}>Roberta &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6'>
                             {stars}
                         </div>
                     </div>
-                    <div style={{paddingTop:"15px"}} className='text-center'>
-                        <img src={test2} alt='testimg'/>
+                    <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
+                        <ReactPlayer
+                            url="https://streamable.com/3lvdou"
+                            controls={true}
+                            width='400px'
+                            height='500px'
+                        />
                     </div>
-                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>
+                    <div style={{paddingTop:"10px"}} className='andent-text text-center testimon-dim'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         Dentures are removable dental appliances that are crafted to resemble your
                         natural teeth and gums. They are custom-made to fit your unique mouth shape
