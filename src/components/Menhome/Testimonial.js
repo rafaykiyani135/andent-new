@@ -26,7 +26,7 @@ function Testimonialslider() {
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark' style={{fontWeight:"700"}}>Gaetano Lolimitica &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-left' style={{fontWeight:"700"}}>Gaetano Lolimitica &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6'>
                             {stars}
@@ -52,7 +52,7 @@ function Testimonialslider() {
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark' style={{fontWeight:"700"}}>Roberta &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-left mob-center' style={{fontWeight:"700"}}>Roberta &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6'>
                             {stars}

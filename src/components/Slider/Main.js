@@ -31,7 +31,7 @@ function Main(props) {
 
 
     <>
-   <section id="home" className="slider-area fix p-relative " style={{paddingBottom:"10px"}}>
+   <section id="home" className="slider-area fix p-relative mob-bottom-pad">
                 <div className="slider-active">
                 <div className="single-slider slider-bg d-flex align-items-center">
                    <div className="container">
@@ -76,7 +76,7 @@ function Main(props) {
                             </div>
                         </div>
                         </div>
-                        <div className="col-lg-5 col-md-4 col-12 upper-padding move-down">
+                        <div className="col-lg-5 col-md-4 col-12 upper-padding move-down mob-slider">
                         <div className='slider-container2'>
                             <Slider {...settings}>
                                 <div style={{height:"394px",width:"484px"}} className='upper-container'>
