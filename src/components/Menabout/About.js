@@ -43,7 +43,7 @@ function About() {
                                 <input className='input-box form-control mb-3' placeholder='Your Name...' />
                             </div>
                             <div className="col-lg-4 col-md-4">
-                                <button className='btn'>
+                                <button className='btn' style={{height:"66px"}}>
                                 <Link to="/contact" >
                                 <p style={{color:"white",position:"relative",top:"4px"}}>
                                     Get Call Back

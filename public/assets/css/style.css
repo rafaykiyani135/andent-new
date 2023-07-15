@@ -729,6 +729,10 @@ display: flex;
 flex-direction: column;
 }
 
+.upper-container{
+    margin-bottom: 50px !important;
+}
+
 .slider-container2{
     overflow: hidden;
     height: 394px;
