@@ -26,10 +26,6 @@ function Main(props) {
         verticalSwiping: true,
         pauseOnHover: false,
       };
-
-
-
-  
       
   return (
 
