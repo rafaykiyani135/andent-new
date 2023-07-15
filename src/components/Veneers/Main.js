@@ -10,7 +10,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 function Main (){
     return (
         <div>
-            <Slider heading="Discover Premium Dental Veneers and" description="We are devoted to
+            <Slider heading="Discover Premium Dental Veneers" description="We are devoted to
             delivering remarkable results for all of our orthodontic treatments. Take the first
             step towards your dream smile with our personalized care"/>
             <Review/>

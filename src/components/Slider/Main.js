@@ -7,6 +7,7 @@ import vid from '../../assets/andent-data/hero section videos/hero1.mp4'
 import imgleft from '../../assets/andent-data/hero section videos/hero Images/22_DENTAL CLINIC.jpg';
 import imgleft2 from '../../assets/andent-data/hero section videos/hero Images/8_DENTAL CLINIC.jpg';
 import imgright from '../../assets/andent-data/hero section videos/hero Images/horizontal rectangle 2.jpg';
+import imgright2 from '../../assets/andent-data/hero section videos/hero Images/horizontal rectangle1.jpg';
 import vid2 from '../../assets/andent-data/hero section videos/hero2.mp4'
 import vid3 from '../../assets/andent-data/hero section videos/hero3.mp4'
 import vid4 from '../../assets/andent-data/hero section videos/hero4.mp4'
@@ -36,20 +37,25 @@ function Main(props) {
                 <div className="single-slider slider-bg d-flex align-items-center">
                    <div className="container">
                     <div className="row justify-content-center align-items-center">
-                        <div className="col-lg-8 col-md-12 col-12">
+                        <div className="col-lg-7 col-md-12 col-12">
                         <div className="slider-content s-slider-content mt-20">
                             <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                             welcome To Andent
                             </h5>
-                            <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"75px",lineHeight:"60pt"}}>
-                            {props.heading}
-                            </h2>
-                            <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E",fontSize:"85px",lineHeight:"70pt"}}>
+                            <div className='slider-head'>
+                                <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"65px",lineHeight:"60pt"}}>
+                                {props.heading}
+                                </h2>
+                            </div>
+                            <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E",fontSize:"80px",lineHeight:"70pt"}}>
                             Save Up to 70%
                             </h2>
-                            <p data-animation="fadeInUp" data-delay=".6s" style={{color:"#000000",lineHeight:"17pt",fontSize:"16px"}}>
-                            {props.description}
-                            </p>
+                            <div className='slider-para'>
+                                 <p data-animation="fadeInUp" data-delay=".6s" style={{color:"#000000",lineHeight:"17pt",fontSize:"16px"}}>
+                                {props.description}
+                                </p>
+                            </div>
+                           
                             <br/>
                             <br/>
                             <div className="row">
@@ -71,41 +77,51 @@ function Main(props) {
                             </div>
                         </div>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-12 upper-padding move-down">
+                        <div className="col-lg-5 col-md-4 col-12 upper-padding move-down">
                         <div className="row justify-content-center">
                         <div className="col-lg-6 col-6 text-center slider-container d-flex justify-content-center">
                         <Slider {...settings}>
-                            <div className="slider-video">
+                            <div className="slider-video move-up">
                             <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
                                 <source src={vid} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             </div>
+
                             <div className="slider-picture">
                             <img src={imgleft} alt="leftimg2" style={{height:"100%",width:"100%"}}/>
                             </div>
+
                             <div className="slider-video">
                             <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
                                 <source src={vid2} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             </div>
+
                             <div className="slider-picture">
                             <img src={imgleft2} alt="leftimg2" style={{height:"100%",width:"100%"}}/>
                             </div>
                         </Slider>
                         </div>
-                        <div className="col-lg-6 col-6 text-center slider-container slider-mob-padding">
+                        <div className="col-lg-6 col-6 text-center slider-container slider-mob-padding" style={{backgroundColor:"green"}}>
                         <Slider {...settings}>
+
                             <div className="slider-video">
                             <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
                                 <source src={vid3} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             </div>
+
                             <div className="slider-picture">
                             <img src={imgright} alt="rightimg1"style={{height:"100%",width:"100%"}}/>
                             </div>
+                            
+                            <div className="slider-picture">
+                            <img src={imgright2} alt="rightimg1"style={{height:"100%",width:"100%"}}/>
+                            </div>
+                            
                             <div className="slider-video">
                             <video autoPlay loop muted style={{height:"100%",width:"100%"}}>
                                 <source src={vid4} type="video/mp4" />

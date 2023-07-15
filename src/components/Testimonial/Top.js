@@ -41,18 +41,20 @@ function Main() {
                         <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                         welcome To Andent
                         </h5>
-                        <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"75px",lineHeight:"60pt"}}>
+                        <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"65px",lineHeight:"60pt"}}>
                         Our Client
                         </h2>
-                        <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E",fontSize:"85px",lineHeight:"70pt"}}>
+                        <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E",fontSize:"80px",lineHeight:"70pt"}}>
                         Testimonials
                         </h2>
+                        <div>
                         <p data-animation="fadeInUp" data-delay=".6s" style={{color:"#000000",lineHeight:"17pt",fontSize:"16px"}}>
                         We are dedicated to providing you with the highest standard <br/><br/>
 
                         carefully crafted dentures to fit your mouth and replicate the appearance
                         of natural teeth. <br/>Take the first step towards your dream smile with our personalized care.
                         </p>
+                        </div>
                         <br/>
                         <br/>
                         <div className="row">

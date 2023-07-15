@@ -11,7 +11,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 function Main (){
     return(
         <div>
-            <Slider heading="Discover Dental Bridges & Crowns &" description="Say goodbye to the challenges of missing or damaged teeth.
+            <Slider heading="Discover Dental Bridges & Crowns" description="Say goodbye to the challenges of missing or damaged teeth.
              We restore your smile with our affordable and long lasting implants for improved oral health."/>
              <Reviews/>
             <Importance/>

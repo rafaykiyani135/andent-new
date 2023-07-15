@@ -11,7 +11,7 @@ import Review from '../reviews/trustpilot'
 function Main() {
   return (
     <>
-      <Slider heading="Discover Premium Dental Treatments &" description="We are devoted to delivering remarkable results for all of our orthodontic treatments.
+      <Slider heading="Discover Premium Dental Treatments" description="We are devoted to delivering remarkable results for all of our orthodontic treatments.
                             Take the first step towards your dream smile with our personalized care"/>
       <Review/>
       <Ourservish/>

@@ -11,7 +11,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 function Main (){
     return(
         <div>
-            <Welcome heading="Discover Premium Orthodontic Treatments &" description="We are devoted to delivering
+            <Welcome heading="Discover Premium Orthodontic Treatments" description="We are devoted to delivering
              remarkable results for all of our orthodontic treatments. Take the first step towards your dream smile
               with our personalized care"/>
             <Review/>

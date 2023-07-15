@@ -16,13 +16,15 @@ function Main(props) {
                 <h5 data-animation="fadeInUp" data-delay=".4s" className="theme" style={{ color: "#6DA7A2" }}>
                     welcome To Andent
                 </h5>
-                <h2 data-animation="fadeInUp" data-delay=".4s" style={{ color: "#4E4E50", fontSize: "85px", lineHeight: "70pt" }}>
+                <h2 data-animation="fadeInUp" data-delay=".4s" style={{ color: "#4E4E50", fontSize: "65px", lineHeight: "70pt" }}>
                 Experience Dental Tourism at Andent
                 </h2>
+                <div className='slider-para'>
                 <p data-animation="fadeInUp" data-delay=".6s" style={{ color: "#000000", lineHeight: "17pt", fontSize: "16px" ,fontWeight:"400"}}>
                 If you're seeking top-quality dental care combined with an unforgettable travel experience, look no further than Andent.
                  We are proud to offer exceptional dental tourism services in the beautiful city of Tirana, Albania
                 </p>
+                </div>
                 <br />
                 <br />
                 <div className="row">

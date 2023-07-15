@@ -709,18 +709,20 @@ label {
     }
     .slider-para{
         height: auto;
-        width: 639px;
+        width: 628px;
     }
 
   }
 
 .slider-container {
-width: 210px; /* Set the desired width */
-height: 420px; /* Set the desired height */
+width: 251px; /* Set the desired width */
+height: 484px; /* Set the desired height */
 overflow: hidden;
 display: flex;
 flex-direction: column;
 }
+
+
 
 .slider-video {
     height: 251px;

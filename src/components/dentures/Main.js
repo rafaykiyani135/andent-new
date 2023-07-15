@@ -11,7 +11,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 function Main (){
     return (
         <div>
-            <Slider heading="Discover Premium Dentures and " description="We are dedicated to providing you with carefully
+            <Slider heading="Discover Premium Dentures" description="We are dedicated to providing you with carefully
             crafted dentures to fit your mouth and replicate the appearance of natural teeth. Take the first step towards
             your dream smile with our personalized care"/>
             <Review/>
