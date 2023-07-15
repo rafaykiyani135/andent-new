@@ -711,6 +711,13 @@ label {
         height: auto;
         width: 628px;
     }
+    .upper-pad-lg{
+        padding-top: 20px;
+    }
+    .move-down-lg{
+        position: relative;
+        top: 10px;
+    }
 
   }
 

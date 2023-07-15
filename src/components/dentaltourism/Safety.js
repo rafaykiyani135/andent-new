@@ -78,18 +78,21 @@ function Main (){
                         </li>
                         <li style={{ paddingBottom: "40px", display: "flex" }}>
                             <div>
-                            <img src={img5} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
+                            <img src={img5} alt="icon01" className='andent-icon-circ andent-icon-circ-sm move-down-lg' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
                             <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
-                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>DNA and Bacterial Testing</h4>
-                            <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
-                                Custom-made replacements for comfortable chewing, speaking, and smiling.
-                            </p>
-                            <Link to="/" style={{ position: "relative", bottom: "15px" }}>
-                                <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
-                                Learn More
+                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>Guarantee for Dental Services</h4>
+                            <div className='upper-pad-lg'>
+                                <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
+                                    Custom-made replacements for comfortable chewing, speaking, and smiling.
                                 </p>
-                            </Link>
+                                <Link to="/" style={{ position: "relative", bottom: "15px" }}>
+                                    <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
+                                    Learn More
+                                    </p>
+                                </Link>
+                            </div>
+                            
                             </div>
                         </li>
                         </ul>
