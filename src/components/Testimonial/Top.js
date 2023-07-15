@@ -7,6 +7,7 @@ import vid from '../../assets/andent-data/hero section videos/hero1.mp4'
 import imgleft from '../../assets/andent-data/hero section videos/hero Images/22_DENTAL CLINIC.jpg';
 import imgleft2 from '../../assets/andent-data/hero section videos/hero Images/8_DENTAL CLINIC.jpg';
 import imgright from '../../assets/andent-data/hero section videos/hero Images/horizontal rectangle 2.jpg';
+import imgright2 from '../../assets/andent-data/hero section videos/hero Images/horizontal rectangle1.jpg';
 import vid2 from '../../assets/andent-data/hero section videos/hero2.mp4'
 import vid3 from '../../assets/andent-data/hero section videos/hero3.mp4'
 import vid4 from '../../assets/andent-data/hero section videos/hero4.mp4'
@@ -36,7 +37,7 @@ function Main() {
             <div className="single-slider slider-bg d-flex align-items-center" style={{backgroundImage: "url(img/slider/slider_bg.png)", backgroundSize: "cover"}}>
                 <div className="container">
                 <div className="row justify-content-center align-items-center">
-                    <div className="col-lg-8 col-md-8">
+                    <div className="col-lg-7 col-md-8">
                     <div className="slider-content s-slider-content mt-20">
                         <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                         welcome To Andent
@@ -76,49 +77,54 @@ function Main() {
                         </div>
                     </div>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-12 upper-padding move-down">
-                        <div className="row justify-content-center">
-                        <div className="col-lg-6 col-6 text-center slider-container d-flex justify-content-center">
-                        <Slider {...settings}>
-                            <div className="slider-video">
-                            <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-                            <div className="slider-picture">
-                            <img src={imgleft} alt="leftimg2" style={{height:"100%",width:"100%"}}/>
-                            </div>
-                            <div className="slider-video">
-                            <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid2} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-                            <div className="slider-picture">
-                            <img src={imgleft2} alt="leftimg2" style={{height:"100%",width:"100%"}}/>
-                            </div>
-                        </Slider>
-                        </div>
-                        <div className="col-lg-6 col-6 text-center slider-container slider-mob-padding">
-                        <Slider {...settings}>
-                            <div className="slider-video">
-                            <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid3} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-                            <div className="slider-picture">
-                            <img src={imgright} alt="rightimg1"style={{height:"100%",width:"100%"}}/>
-                            </div>
-                            <div className="slider-video">
-                            <video autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid4} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-                        </Slider>
-                        </div>
+                    <div className="col-lg-5 col-md-4 col-12 upper-padding move-down">
+                        <div className='slider-container2'>
+                            <Slider {...settings}>
+                                <div className=' d-flex'>
+                                    <div className='slider-picture' style={{paddingRight:"5px"}}>
+                                        <img src={imgleft} style={{}}/>
+                                    </div>
+                                    <div className="slider-video">
+                                    <video  autoPlay loop muted style={{}}>
+                                        <source src={vid} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                </div>
+                                <div className=' d-flex'>
+                                    <div className="slider-video" >
+                                    <video  autoPlay loop muted style={{width:"234px",height:"251px",position:"relative",bottom:"125px"}}>
+                                        <source src={vid2} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                    <div className='slider-picture2' style={{position:"relative",bottom:"15px",right:"34px"}}>
+                                        <img src={imgright} style={{height:"133px",width:"277px"}}/>
+                                    </div>
+                                </div>
+                                <div className=' d-flex'>
+                                    <div className='slider-picture' style={{paddingRight:"5px"}}>
+                                        <img src={imgleft2} style={{}}/>
+                                    </div>
+                                    <div className="slider-video">
+                                    <video  autoPlay loop muted style={{}}>
+                                        <source src={vid3} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                </div>
+                                <div className=' d-flex'>
+                                    <div className="slider-video" >
+                                    <video  autoPlay loop muted style={{width:"234px",height:"251px",position:"relative",bottom:"125px"}}>
+                                        <source src={vid4} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                    <div className='slider-picture2' style={{position:"relative",bottom:"15px",right:"34px"}}>
+                                        <img src={imgright2} style={{height:"133px",width:"277px"}}/>
+                                    </div>
+                                </div>
+                            </Slider>
                         </div>
                         </div>
                 </div>

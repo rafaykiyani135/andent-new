@@ -722,6 +722,17 @@ display: flex;
 flex-direction: column;
 }
 
+.slider-container2{
+    overflow: hidden;
+    height: 394px;
+    width: 475px;
+}
+
+.inner-container{
+    width: 475px;
+    height: 252px;
+    display: flex;
+}
 
 
 .slider-video {
@@ -731,8 +742,12 @@ flex-direction: column;
 
 .slider-picture{
     height: 139px;
-    width: 186px;
-    align-items: center;
+    width: 205px;
+}
+
+.slider-picture2{
+    height: 80px;
+    width: 277px;
 }
 
 .player-wrapper {

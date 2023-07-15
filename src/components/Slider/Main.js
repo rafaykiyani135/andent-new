@@ -78,58 +78,53 @@ function Main(props) {
                         </div>
                         </div>
                         <div className="col-lg-5 col-md-4 col-12 upper-padding move-down">
-                        <div className="row justify-content-center">
-                        <div className="col-lg-6 col-6 text-center slider-container d-flex justify-content-center">
-                        <Slider {...settings}>
-                            <div className="slider-video move-up">
-                            <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-
-                            <div className="slider-picture">
-                            <img src={imgleft} alt="leftimg2" style={{height:"100%",width:"100%"}}/>
-                            </div>
-
-                            <div className="slider-video">
-                            <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid2} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-
-                            <div className="slider-picture">
-                            <img src={imgleft2} alt="leftimg2" style={{height:"100%",width:"100%"}}/>
-                            </div>
-                        </Slider>
-                        </div>
-                        <div className="col-lg-6 col-6 text-center slider-container slider-mob-padding" style={{backgroundColor:"green"}}>
-                        <Slider {...settings}>
-
-                            <div className="slider-video">
-                            <video  autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid3} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-
-                            <div className="slider-picture">
-                            <img src={imgright} alt="rightimg1"style={{height:"100%",width:"100%"}}/>
-                            </div>
-                            
-                            <div className="slider-picture">
-                            <img src={imgright2} alt="rightimg1"style={{height:"100%",width:"100%"}}/>
-                            </div>
-                            
-                            <div className="slider-video">
-                            <video autoPlay loop muted style={{height:"100%",width:"100%"}}>
-                                <source src={vid4} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            </div>
-                        </Slider>
-                        </div>
+                        <div className='slider-container2'>
+                            <Slider {...settings}>
+                                <div className=' d-flex'>
+                                    <div className='slider-picture' style={{paddingRight:"5px"}}>
+                                        <img src={imgleft} style={{}}/>
+                                    </div>
+                                    <div className="slider-video">
+                                    <video  autoPlay loop muted style={{}}>
+                                        <source src={vid} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                </div>
+                                <div className=' d-flex'>
+                                    <div className="slider-video" >
+                                    <video  autoPlay loop muted style={{width:"234px",height:"251px",position:"relative",bottom:"125px"}}>
+                                        <source src={vid2} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                    <div className='slider-picture2' style={{position:"relative",bottom:"15px",right:"34px"}}>
+                                        <img src={imgright} style={{height:"133px",width:"277px"}}/>
+                                    </div>
+                                </div>
+                                <div className=' d-flex'>
+                                    <div className='slider-picture' style={{paddingRight:"5px"}}>
+                                        <img src={imgleft2} style={{}}/>
+                                    </div>
+                                    <div className="slider-video">
+                                    <video  autoPlay loop muted style={{}}>
+                                        <source src={vid3} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                </div>
+                                <div className=' d-flex'>
+                                    <div className="slider-video" >
+                                    <video  autoPlay loop muted style={{width:"234px",height:"251px",position:"relative",bottom:"125px"}}>
+                                        <source src={vid4} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                    <div className='slider-picture2' style={{position:"relative",bottom:"15px",right:"34px"}}>
+                                        <img src={imgright2} style={{height:"133px",width:"277px"}}/>
+                                    </div>
+                                </div>
+                            </Slider>
                         </div>
                         </div>
 
