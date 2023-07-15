@@ -3,6 +3,14 @@ import Callmenone from '../../assets/andent-data/veneergirl.png'
 import { Link } from 'react-router-dom'
 
 function Main() {
+    
+    const scrollToBottom = () => {
+    window.scrollTo({
+        top: document.documentElement.scrollHeight - window.innerHeight - 500,
+        behavior: 'smooth',
+    });
+    };
+
   return (
     <>
         <div style={{paddingTop:"200px"}}>
@@ -19,7 +27,7 @@ function Main() {
                     <h2 style={{fontSize:"16px",color:"black",fontWeight:"400"}}>Contact us today to schedule a consultation
                     and let our team create a customized treatment plan to deliver beautiful, natural-looking results.</h2>
                     <div className='decent-pad'>
-                        <Link href="#" className="btn" style={{ height: "40px", width: "169px" }}>
+                        <Link href="#" className="btn" style={{ height: "40px", width: "169px" }} onClick={scrollToBottom}>
                         <p style={{ transform: "translate(-2px,-10px)", fontSize: "18px" }}>
                             Contact Us
                         </p>

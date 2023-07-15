@@ -4,7 +4,12 @@ import ReactPlayer from 'react-player';
 
 function Main (){
 
-
+    const scrollToBottom = () => {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight - window.innerHeight - 500,
+          behavior: 'smooth',
+        });
+      };
 
     return(
         <div className="container andent-padding">
@@ -28,7 +33,7 @@ function Main (){
                         </p>
                     </div>
                     <div className="">
-                        <Link href="#" className="btn" style={{ height: "40px", width: "169px" }}>
+                        <Link href="#" className="btn" style={{ height: "40px", width: "169px" }} onClick={scrollToBottom}>
                         <p style={{ transform: "translate(-2px,-10px)", fontSize: "18px" }}>
                             Contact Us
                         </p>

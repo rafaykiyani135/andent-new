@@ -1,8 +1,15 @@
 import gif from '../../assets/andent-data/s.gif';
-import { Link } from 'react-router-dom';
 
 
 function Main (){
+
+    
+    const scrollToBottom = () => {
+        window.scrollTo({
+        top: document.documentElement.scrollHeight - window.innerHeight - 500,
+        behavior: 'smooth',
+        });
+    };
 
     return(
         <div className=''>
@@ -16,12 +23,10 @@ function Main (){
             <div className='row justify-content-center text-center'>
                 <div className='col-lg-8 col-md-8 d-flex justify-content-center'>
                 <div className='upper-padding'>
-                        <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }}>
-                            <Link to="/about" style={{ color: "white" }}>
+                        <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }} onClick={scrollToBottom}>
                             <p style={{transform:"translateY(8px)"}}>
                                 Learn More
                             </p>
-                            </Link>
                         </button>
                         </div>
                 </div>
