@@ -26,7 +26,7 @@ function Testimonialslider() {
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark text-left' style={{fontWeight:"700"}}>Antonio Naselli &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-lg-start' style={{fontWeight:"700"}}>Antonio Naselli &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6'>
                             {stars}
@@ -40,7 +40,7 @@ function Testimonialslider() {
                             height='500px'
                         />
                     </div>
-                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>
+                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim test-mob-moveup'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         Dentures are removable dental appliances that are crafted to resemble your
                         natural teeth and gums. They are custom-made to fit your unique mouth shape
@@ -49,10 +49,10 @@ function Testimonialslider() {
                         </p>
                     </div>
                 </div>
-                <div className='col-lg-4 col-md-12'>
+                <div className='col-lg-4 col-md-12 '>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6 col-12 text-center'>
-                            <h4 className='size-18 theme-dark text-left' style={{fontWeight:"700"}}>Emilio &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-lg-start' style={{fontWeight:"700"}}>Emilio &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6 col-12'>
                             {stars}
@@ -66,7 +66,7 @@ function Testimonialslider() {
                             height='500px'
                         />
                     </div>
-                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>
+                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim test-mob-moveup'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         Dentures are removable dental appliances that are crafted to resemble your
                         natural teeth and gums. They are custom-made to fit your unique mouth shape

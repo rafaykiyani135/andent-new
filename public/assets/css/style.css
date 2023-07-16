@@ -517,6 +517,9 @@ label {
     .mob-bottom-pad{
         padding-bottom: 40px;
     }
+    .mob-top-pad{
+        padding-top: 25px;
+    }
     .mob-slider{
         position: relative;
         right: 25px;
@@ -526,6 +529,10 @@ label {
     }
     .mob-left{
         text-align: left;
+    }
+    .test-mob-moveup{
+        position: relative;
+        bottom: 25px;
     }
   }
 
