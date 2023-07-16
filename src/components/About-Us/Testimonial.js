@@ -40,7 +40,7 @@ function Testimonialslider() {
                             height='500px'
                         />
                     </div>
-                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim test-mob-moveup'>
+                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim   '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         Dentures are removable dental appliances that are crafted to resemble your
                         natural teeth and gums. They are custom-made to fit your unique mouth shape
@@ -66,7 +66,7 @@ function Testimonialslider() {
                             height='500px'
                         />
                     </div>
-                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim test-mob-moveup'>
+                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim   '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         Dentures are removable dental appliances that are crafted to resemble your
                         natural teeth and gums. They are custom-made to fit your unique mouth shape

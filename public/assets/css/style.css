@@ -609,7 +609,7 @@ label {
         width: 525.87px;
     }
     .testimon-dim{
-        height: 160px;
+        height: auto;
         width: 400px;
     }
     .header-logo{
