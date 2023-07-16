@@ -6,7 +6,7 @@ function Main (){
         <div>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-lg-5 col-md-10 col-sm-10" style={{paddingRight:"50px"}}>
+                    <div className="col-lg-5 col-md-10 col-sm-10" >
                         <img src={img1} alt='dbimg' className='img-fluid' style={{height:"402px",width:"402px"}}/>
                     </div>
                     <div className="col-lg-5 col-md-10 col-sm-10" style={{paddingTop:"70px"}}>
@@ -36,8 +36,8 @@ function Main (){
                          are independently anchored into the jawbone, offering enhanced durability
                         </p>
                     </div>
-                    <div className="col-lg-5 col-md-10 col-sm-10" style={{paddingRight:"50px"}}>
-                        <img src={img2} alt='dbimg' className='img-fluid' style={{height:"318px",width:"476px"}}/>
+                    <div className="col-lg-5 col-md-10 col-sm-10" style={{}}>
+                        <img src={img2} alt='dbimg' className='' style={{height:"318px",width:"476px"}}/>
                     </div>
                 </div>
             </div>

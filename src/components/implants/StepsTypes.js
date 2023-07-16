@@ -88,13 +88,13 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-center upper-padding text-left">
-                    <div className="col-lg-3 text-center move-left">
+                    <div className="col-lg-3 text-center move-left mob-bottom-pad">
                         <img src={d1} alt="teeth1" style={{ width: "100%", maxWidth: "321px", height: "auto" }} />
                         <div style={{ paddingTop: "20px" }}>
                             <h3 className="theme-dark size-18 text-center decent-pad">Zirconia Implants</h3>
-                            <div className="row decent-pad">
+                            <div className="row decent-pad ">
                             <div className="col-lg-12 col-md-12 col-sm-12">
-                                <div className="d-flex align-items-center">
+                                <div className="d-flex align-items-center justify-content-center text-lg-start">
                                 <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
@@ -108,7 +108,7 @@ function Main(){
                             </div>
                             <div className="row decent-pad">
                             <div className="col-lg-12 col-md-12 col-sm-12">
-                                <div className="d-flex align-items-center">
+                                <div className="d-flex align-items-center justify-content-center text-lg-start">
                                 <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
@@ -122,7 +122,7 @@ function Main(){
                             </div>
                             <div className="row decent-pad">
                             <div className="col-lg-12 col-md-12 col-sm-12">
-                                <div className="d-flex align-items-center">
+                                <div className="d-flex align-items-center justify-content-center text-lg-start">
                                 <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
@@ -144,7 +144,7 @@ function Main(){
                                 </h3>
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center justify-content-center text-lg-start">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
@@ -158,7 +158,7 @@ function Main(){
                                 </div>
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center justify-content-center text-lg-start">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
@@ -172,7 +172,7 @@ function Main(){
                                 </div>
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center justify-content-center text-lg-start">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>

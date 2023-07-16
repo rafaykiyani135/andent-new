@@ -14,10 +14,10 @@ function Make() {
                     <div className='row justify-content-center'>
                       <div className='col-lg-4 col-8'>
                       <div className="f-cta-icon">
-                        <img src={iconone} alt='none'/>
+                        <img src={iconone} alt='none' className='mob-bottom-icon'/>
                       </div>
                       </div>
-                      <div className='col-lg-8 col-12'>
+                      <div className='col-lg-8 col-12 mob-bottom-text'>
                         <div className='apt-text'>
                             <h5 className='theme-dark' style={{color:"#4E4E50"}}>Clinic Address</h5>
                             <p className='size-16 theme-dark' style={{width:"263px",height:"64px",lineHeight:"20px",fontWeight:"400"}}>
@@ -34,7 +34,7 @@ function Make() {
                         <img src={icontwo} alt='none'/>
                       </div>
                       </div>
-                      <div className='col-lg-8 col-12'>
+                      <div className='col-lg-8 col-12 mob-bottom-text'>
                         <div style={{position:"relative",bottom:"20px"}} className='apt-text'>
                           <h5 className='theme-dark' style={{color:"#4E4E50"}}>Contact Us</h5>
                           <p className='size-16 theme-dark' style={{width:"263px",height:"100px",lineHeight:"20px",fontWeight:"400"}}>

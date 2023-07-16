@@ -65,7 +65,7 @@ function Main() {
                         <div className="col-lg-4 col-md-3">
                             <input className='input-box form-control mb-3' placeholder='Your Name...' />
                         </div>
-                        <div className="col-lg-4 col-md-4">
+                        <div className="col-lg-4 col-md-4 text-center text-lg-start">
                             <button className='btn' style={{height:"66px"}}>
                             <Link to="/contact" >
                             <p style={{color:"white"}}>
@@ -77,7 +77,7 @@ function Main() {
                         </div>
                     </div>
                     </div>
-                    <div className="col-lg-5 col-md-4 col-12 upper-padding move-down">
+                    <div className="col-lg-5 col-md-4 col-12 upper-padding move-down mob-slider">
                         <div className='slider-container2'>
                         <Slider {...settings}>
                                 <div style={{height:"394px",width:"484px"}} className='upper-container'>

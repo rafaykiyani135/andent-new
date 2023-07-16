@@ -34,7 +34,7 @@ function Main(props) {
                     <div className="col-lg-4 col-md-4">
                     <input className="input-box form-control mb-3" placeholder="Your Name..." />
                     </div>
-                    <div className="col-lg-4 col-md-4" style={{paddingBottom:"150px"}}>
+                    <div className="col-lg-4 col-md-4 text-center text-lg-start" style={{paddingBottom:"150px"}}>
                     <button className="btn" style={{height:"66px"}}>
                         <Link to="/contact">
                         <p style={{ color: "white" }}>
