@@ -71,7 +71,7 @@ function Main() {
                                                     <Link to="/">Home</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-tourism">Denal Tourism</Link>
+                                                    <Link to="/dental-tourism">Dental Tourism</Link>
                                                 </li>
                                                 <li className='has-sub'>
                                                     <Link to="/dental-crowns-bridges">Dental Crowns</Link>
