@@ -1,6 +1,4 @@
 import React from 'react'
-import Breadcrumb from '../Menhome/breadcrumb'
-import Sideone from '../Menblog/Sideone'
 //import { useLocation } from 'react-router'
 import ReactHtmlParser from 'react-html-parser';
 import { useParams } from 'react-router';
@@ -44,27 +42,23 @@ function Main() {
 
 
     <>
-        <Breadcrumb
-            subtitle="Blog Details"
-            title="Home"
-            subtitledown="Blog Details"
-        />
+
 
         { isLoading ? (
           <div className='container' style={{padding:"100px"}}>
           <div className='row justify-content-center text-center'>
-            <div className='col-lg-8'>
-              <h1 className='theme-dark size-60 mob-heading'>Loading...</h1>
+            <div className='col-lg-12'>
+              <h1 className='theme-dark size-60 mob-heading upper-padding'>Loading...</h1>
             </div>
           </div>
         </div>
         ) : (
           <div>
           { connected ? (
-            <section className="inner-blog b-details-p pt-120 pb-120">
+            <section className="inner-blog b-details-p pt-120 pb-120 upper-padding">
               <div className="container"> 
                 <div className="row">
-                <div className='col-sm-12 col-md-12 col-lg-8'>
+                <div className='col-sm-12 col-md-12 col-lg-12'>
                 <h1 style={{paddingBottom:"50px"}}>
                 { blog.title }
                 </h1>
@@ -72,27 +66,17 @@ function Main() {
                   { ReactHtmlParser(blog.content) }
                 </div>
                 </div>
-                <div className="col-sm-12 col-md-12 col-lg-4">
-                    <aside className="sidebar-widget">
-                        <Sideone/>
-                    </aside>
-                </div>
                 </div>
               </div>
             </section>
           ) : (
-            <section className="inner-blog b-details-p pt-120 pb-120">
+            <section className="inner-blog b-details-p pt-120 pb-120 upper-padding">
               <div className="container"> 
                 <div className="row">
-                <div className='col-sm-12 col-md-12 col-lg-8'>
+                <div className='col-sm-12 col-md-12 col-lg-12'>
                 <h1 className='theme-dark size-60 mob-heading'>
                   Sorry, we could not find the post your are looking for.
                 </h1>
-                </div>
-                <div className="col-sm-12 col-md-12 col-lg-4">
-                    <aside className="sidebar-widget">
-                        <Sideone/>
-                    </aside>
                 </div>
                 </div>
               </div>

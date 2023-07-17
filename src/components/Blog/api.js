@@ -2,7 +2,6 @@ import React from "react";
 import { useState,useEffect } from 'react'
 import axios from 'axios'
 import First from "../Menblog/First";
-import Sideone from "../Menblog/Sideone";
 
 function Blogchild (props) {
 
@@ -37,7 +36,7 @@ function Blogchild (props) {
 { isLoading? (
   <div className="container" style={{ padding: "100px" }}>
     <div className="row justify-content-center text-center">
-      <div className="col-lg-8">
+      <div className="col-lg-12">
         <h1 className="size-60 mob-heading theme-dark">Loading...</h1>
       </div>
     </div>
@@ -64,11 +63,6 @@ function Blogchild (props) {
                   </div>
                 ))}
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-4">
-              <aside className="sidebar-widget">
-                <Sideone />
-              </aside>
-            </div>
           </div>
         </div>
       </section>
@@ -76,13 +70,8 @@ function Blogchild (props) {
       <section className="inner-blog pt-120 pb-120">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <h1 className="size-60 mob-heading theme-dark">Blog is coming soon!</h1>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4">
-              <aside className="sidebar-widget">
-                <Sideone />
-              </aside>
             </div>
           </div>
         </div>

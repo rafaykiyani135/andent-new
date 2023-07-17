@@ -1,6 +1,5 @@
 import React from 'react'
 import Make from '../MenContact-Us/Make'
-import Bredcm from '../Menhome/breadcrumb'
 import Map from '../MenContact-Us/Map'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import 'react-floating-whatsapp-button/dist/index.css'
@@ -8,11 +7,7 @@ import 'react-floating-whatsapp-button/dist/index.css'
 function Main() {
   return (
     <>
-         <Bredcm
-            subtitle="Contact Us"
-            title="Home"
-            subtitledown="about-Us"
-          />
+
         <Make/>
         <Map/>
         <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>

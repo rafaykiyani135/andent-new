@@ -1,7 +1,6 @@
 import React from 'react'
 //import Three from '../Menblog/Three'
 // import Search from '../Menblog/Search'
-import Bredcm from '../Menhome/breadcrumb'
 import { useState,useEffect } from 'react'
 import Blogchild from './api'
 import axios from 'axios'
@@ -43,12 +42,7 @@ function Main() {
 
     <>
 
-      <Bredcm
-          subtitle="Blog"
-          title="Home"
-          subtitledown="Blog" 
-        />
-        <div>
+        <div className='andent-padding'>
           <Blogchild page={paramPage} pageCount={pages}/>
             <section className="inner-blog pt-120 pb-120">
                 <div className="container">
