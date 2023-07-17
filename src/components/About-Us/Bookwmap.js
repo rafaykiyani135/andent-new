@@ -9,7 +9,7 @@ function Make() {
     <>
             <div className="container pad-20">
               <div className="row justify-content-around align-items-center">
-              <div className="col-lg-4 order-2 d-flex justify-content-center wow fadeInUp animated upper-padding" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
+              <div className="col-lg-4 col-8 order-2 d-flex justify-content-center wow fadeInUp animated upper-padding" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
                   <div >
                     <div className='row justify-content-center'>
                       <div className='col-lg-4 col-8'>
@@ -31,7 +31,7 @@ function Make() {
                     <div className='row justify-content-center'>
                       <div className='col-lg-4 col-8'>
                       <div className="f-cta-icon">
-                        <img src={icontwo} alt='none'/>
+                        <img src={icontwo} alt='none' className='mob-bottom-icon'/>
                       </div>
                       </div>
                       <div className='col-lg-8 col-12 mob-bottom-text'>

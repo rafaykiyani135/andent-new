@@ -67,20 +67,20 @@ function Main() {
                               return (
                                 <li key={pageNumber} className="page-item">
                                   
-                                  <Link to={`/blog/${pageNumber}`}> 
+                                  <Link to={`/blog/${pageNumber}`} className='theme-andent'>
                                   {pageNumber}
                                   </Link>
                                 </li>
                               );
                             })}
-                            <li className="page-item">
+                            <li className="page-item"  > 
                                 <a href="#top">
-                                <i className="fas fa-angle-double-right" />
+                                <i className="fas fa-angle-double-right"/>
                                 </a>
                             </li>
                             </ul>
                         </nav>
-              </div>
+                      </div>
                     </div>
                   </div>
                 </div>

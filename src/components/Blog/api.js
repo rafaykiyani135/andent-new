@@ -38,7 +38,7 @@ function Blogchild (props) {
   <div className="container" style={{ padding: "100px" }}>
     <div className="row justify-content-center text-center">
       <div className="col-lg-8">
-        <h1>Loading...</h1>
+        <h1 className="size-60 mob-heading theme-dark">Loading...</h1>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@ function Blogchild (props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
-              <h1>Blog is coming soon!</h1>
+              <h1 className="size-60 mob-heading theme-dark">Blog is coming soon!</h1>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4">
               <aside className="sidebar-widget">

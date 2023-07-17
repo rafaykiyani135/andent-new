@@ -17,24 +17,26 @@ function First({published,by,cover,title,abstract,id}) {
       <div className="bsingle__content">
         <div className="meta-info">
           <ul>
-            <li>
+            <li className='theme-dark'>
               <i className="fal fa-user" />
               By {by}
             </li>
-            <li>
+            <li className='theme-dark'>
               <i className="fal fa-calendar-alt" /> {formattedDate}
             </li>
           </ul>
         </div>
         <h2>
-          <Link to={`/blogdetails/${id}`}>
+          <Link to={`/blogdetails/${id}`} className='theme-dark'>
             {title}
           </Link>
         </h2>
         <p>{abstract}</p>
-        <div className="blog__btn">
-        <Link to={`/blogdetails/${id}`} className='btn'>
+        <div className='text-center text-lg-start'>
+        <Link to={`/blogdetails/${id}`} className='btn' style={{height:"62px"}}>
+          <p>
             Read More
+          </p>
           </Link>
         </div>
       </div>

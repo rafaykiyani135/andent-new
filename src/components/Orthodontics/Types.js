@@ -8,7 +8,7 @@ function Main () {
 
 
     return(
-        <div className='container' style={{paddingBottom:"125px"}}>
+        <div className='container mob-top-pad orth-types-bot-pad'>
             <div className='row justify-content-center'>
                 <div className='col-lg-10 col-md-10'>
                     <h3 className='theme-dark size-60 mob-heading text-center decent-pad'>

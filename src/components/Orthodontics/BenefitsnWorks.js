@@ -55,7 +55,7 @@ function Main (){
                     </div>     
                 </div>
                 <div className="row align-items-center">
-                <div className="col-lg-12">
+                <div className="col-lg-12 mob-top-pad">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
                     <h2 className='theme-dark mob-heading'>How Invisible Aligners Work</h2>
                     </div>

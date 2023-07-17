@@ -4,7 +4,7 @@ import redtick from '../../assets/andent-data/tick.png'
 function Main (){
     return(
         <div>
-            <div className="container">
+            <div className="container mob-top-pad">
                 <div className='row justify-content-center text-center'>
                     <div className='col-lg-12 col-md-12 col-12'>
                         <h4 className='size-60 theme-dark mob-heading' style={{fontWeight:"700"}}>

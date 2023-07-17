@@ -6,17 +6,17 @@ function Sideone() {
   return (
     <>
         <section id="search-3" className="widget widget_search">
-                <h2 className="widget-title">Search</h2>
+                <h2 className="widget-title theme-dark">Search</h2>
                 <form role="search" method="get" className="search-form" action="http://wordpress.zcube.in/finco/" >
                 <label>
-                    <span className="screen-reader-text">Search for:</span>
+                    <span className="screen-reader-text ">Search for:</span>
                     <input type="search" className="search-field" placeholder="Search …" name="s" />
                 </label>
                 <input type="submit" className="search-submit" defaultValue="Search" />
                 </form>
         </section>
         <section id="custom_html-5" className="widget_text widget widget_custom_html">
-                <h2 className="widget-title">Follow Us</h2>
+                <h2 className="widget-title theme-dark">Follow Us</h2>
                 <div className="textwidget custom-html-widget">
                 <div className="widget-social">
                     <Link to="#">
@@ -38,7 +38,7 @@ function Sideone() {
                 </div>
         </section>
         <section id="categories-1" className="widget widget_categories">
-                <h2 className="widget-title">Categories</h2>
+                <h2 className="widget-title theme-dark">Categories</h2>
                 <ul>
                 <li className="cat-item cat-item-16">
                     <Link to="#">Branding</Link> (4)
@@ -55,7 +55,7 @@ function Sideone() {
                 </ul>
         </section>
         <section id="recent-posts-4" className="widget widget_recent_entries">
-            <h2 className="widget-title">Recent Posts</h2>
+            <h2 className="widget-title theme-dark">Recent Posts</h2>
             <ul>
             <li>
                 <Link to="#">User Experience Psychology And Performance Smshing</Link>
@@ -72,7 +72,7 @@ function Sideone() {
             </ul>
         </section>
         <section id="tag_cloud-1" className="widget widget_tag_cloud">
-            <h2 className="widget-title">Tag</h2>
+            <h2 className="widget-title theme-dark">Tag</h2>
             <div className="tagcloud">
                 <Link to="#" className="tag-cloud-link tag-link-28 tag-link-position-1" style={{ fontSize: "8pt" }} aria-label="app (1 item)" >
                     app

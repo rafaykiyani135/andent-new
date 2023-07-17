@@ -13,7 +13,7 @@ function Main() {
 
   return (
     <>
-        <div style={{paddingTop:"200px"}}>
+        <div className='contactsm-upperpad'>
             <div className="container contact-dim" style={{backgroundColor:"#A7CCC8",borderRadius:"20px"}}>
                 <div className="row align-items-center">
                 <div className="col-lg-5 col-md-5 col-sm-12 pad-20-sm text-center">

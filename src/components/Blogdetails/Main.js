@@ -54,7 +54,7 @@ function Main() {
           <div className='container' style={{padding:"100px"}}>
           <div className='row justify-content-center text-center'>
             <div className='col-lg-8'>
-              <h1>Loading...</h1>
+              <h1 className='theme-dark size-60 mob-heading'>Loading...</h1>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ function Main() {
                 <h1 style={{paddingBottom:"50px"}}>
                 { blog.title }
                 </h1>
-                <div>
+                <div className='api-html'>
                   { ReactHtmlParser(blog.content) }
                 </div>
                 </div>
@@ -85,7 +85,7 @@ function Main() {
               <div className="container"> 
                 <div className="row">
                 <div className='col-sm-12 col-md-12 col-lg-8'>
-                <h1>
+                <h1 className='theme-dark size-60 mob-heading'>
                   Sorry, we could not find the post your are looking for.
                 </h1>
                 </div>

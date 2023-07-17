@@ -83,6 +83,9 @@ function Main() {
                                                     <Link to="/testimonials">Testimonials</Link>
                                                 </li>
                                                 <li className='has-sub'>
+                                                    <Link to="/blog/1">Blogs</Link>
+                                                </li>
+                                                <li className='has-sub'>
                                                     <Link to="/contact">Other Services &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
                                                     <ul>
                                                         <li>
@@ -144,6 +147,9 @@ function Main() {
                                                         </li>
                                                         <li className="has-sub">
                                                             <Link to="/testimonials">Testimonials</Link>
+                                                        </li>
+                                                        <li className="has-sub">
+                                                            <Link to="/blog/1">Blogs</Link>
                                                         </li>
                                                         <li className="mean-last has-sub">
                                                             <Link to="/contact">Other Services</Link>
