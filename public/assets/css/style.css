@@ -549,6 +549,9 @@ label {
         align-items: center;
         text-align: center;
     }
+    .mob-heading{
+        font-size: 40px;
+    }
   }
 
 

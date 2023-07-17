@@ -26,7 +26,7 @@ function Review() {
     <div className='container'>
     <div className="row justify-content-center">
       <div className="col-lg-8 text-center">
-        <h1 className="theme-dark" style={{fontSize:"57px"}}>
+        <h1 className="theme-dark size-60 mob-heading">
           See What Others Have to Say
         </h1>
       </div>
