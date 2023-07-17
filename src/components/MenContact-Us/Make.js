@@ -50,7 +50,7 @@ function Make() {
                 <div className='row justify-content-center text-center'>
                   <div className='col-lg-8'>
                 <div className="section-title center-align">
-                      <h2 className='size-60 theme-dark'>Book an Appointment</h2>
+                      <h2 className='size-60 theme-dark mob-heading'>Book an Appointment</h2>
                     </div>
                     </div>
                 </div>

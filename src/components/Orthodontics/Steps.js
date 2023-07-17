@@ -10,7 +10,7 @@ function Main (){
             <div className="container andent-padding">
             <div className='row justify-content-center text-center'>
                 <div className='col-lg-12 col-md-10'>
-                <h3 className='size-60 theme-dark'>
+                <h3 className='size-60 theme-dark mob-heading'>
                     Step by Step Procedure with Andent
                 </h3>
                 </div>

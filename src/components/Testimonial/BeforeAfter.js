@@ -27,7 +27,7 @@ function Main (){
             <div className="row align-items-center justify-content-center text-center andent-padding">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h2 className='theme-dark'>Before & After Pictures of Clients</h2>
+                    <h2 className='theme-dark mob-heading'>Before & After Pictures of Clients</h2>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ function Tourism() {
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
                     <h5 className='theme-andent' style={{color:"#6DA7A2",fontSize:"20px"}}>MAKE THE MOST OUT OF YOUR TRIP</h5>
-                    <h2 className='theme-dark'>Dental Toursim</h2>
+                    <h2 className='theme-dark mob-heading'>Dental Toursim</h2>
                     </div>
                 </div>
                 </div>

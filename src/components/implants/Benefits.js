@@ -42,7 +42,7 @@ function Main (){
                 <div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h2 className='theme-dark'>Benefits of Dental Implants</h2>
+                    <h2 className='theme-dark mob-heading'>Benefits of Dental Implants</h2>
                     </div>
                 </div>
                 </div>

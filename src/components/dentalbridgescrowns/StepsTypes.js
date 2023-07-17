@@ -13,7 +13,7 @@ function Main(){
                 <div className="container andent-padding upper-pad-20">
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-12 col-md-10'>
-                        <h3 className='size-60 theme-dark'>
+                        <h3 className='size-60 theme-dark mob-heading'>
                             Step by Step Procedure with Andent
                         </h3>
                         </div>
@@ -78,7 +78,7 @@ function Main(){
                     </div>
                     <div className='row justify-content-center text-center upper-padding'>
                         <div className='col-lg-12 col-12'>
-                        <h3 className='size-60 theme-dark'>
+                        <h3 className='size-60 theme-dark mob-heading'>
                         Types of Dental Crowns and Bridges
                         </h3>
                         </div>

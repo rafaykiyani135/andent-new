@@ -16,7 +16,7 @@ function Main (){
                     <div className="row align-items-center justify-content-center text-center">
                     <div className="col-lg-8">
                         <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                        <h2 className='theme-dark'>Benefits of Dental Veneers</h2>
+                        <h2 className='theme-dark mob-heading'>Benefits of Dental Veneers</h2>
                         </div>
                         <p className="theme-andent size-20" style={{lineHeight:"30px",fontWeight:"700"}}>
                         Veneers are an effective solution for a range of
@@ -100,7 +100,7 @@ function Main (){
                 <div className="row align-items-center justify-content-center text-center upper-padding">
                     <div className="col-lg-12">
                         <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                        <h2 className='theme-dark'>Step by Step Procedure with Andent</h2>
+                        <h2 className='theme-dark mob-heading'>Step by Step Procedure with Andent</h2>
                         </div>
                     </div>
                 </div>

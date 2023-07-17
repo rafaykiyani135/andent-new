@@ -13,7 +13,7 @@ function Main (){
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-12 text-center">
-                        <h3 className="theme-dark size-60">
+                        <h3 className="theme-dark size-60 mob-heading">
                             Benefits of Dental Tourism with Andent
                         </h3>
                     </div>

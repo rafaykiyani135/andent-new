@@ -10,7 +10,7 @@ function Ourdr() {
         <div className='container andent-padding'>
             <div className='row justify-content-center text-center'>
             <div className='col-lg-8 col-12'>
-                <h2 className='theme-dark' style={{ fontSize: "60px" }}>
+                <h2 className='theme-dark size-60 mob-heading'>
                 Meet Our Team
                 </h2>
             </div>

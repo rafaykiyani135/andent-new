@@ -17,7 +17,7 @@ function Main (){
                     <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center">
                         <h5 style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"20px"}} >EXPERIENCE THESE AND MORE</h5>
-                        <h2 className='theme-dark' style={{fontSize:"60px"}}>Dental Treatments</h2>
+                        <h2 className='theme-dark size-60 mob-heading'>Dental Treatments</h2>
                     </div>
                     </div>
                    

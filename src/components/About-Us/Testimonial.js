@@ -17,7 +17,7 @@ function Testimonialslider() {
         <div className='container andent-padding pad-20'>
             <div className='row justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
                 <div className='col-lg-8 col-12 text-center'>
-                    <h3 className='size-60 theme-dark' style={{lineHeight:"72px",fontWeight:"700"}}>
+                    <h3 className='size-60 theme-dark mob-heading' style={{lineHeight:"72px",fontWeight:"700"}}>
                         Testimonials
                     </h3>
                 </div>

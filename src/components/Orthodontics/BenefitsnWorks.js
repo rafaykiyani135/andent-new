@@ -10,7 +10,7 @@ function Main (){
         <div>
             <div className="container andent-padding">
                 <div className="row justify-content-center align-items-center text-center">
-                    <h3 className='theme-dark size-60'>
+                    <h3 className='theme-dark size-60 mob-heading'>
                     Benefits of Invisible Aligners
                     </h3>
                 </div>
@@ -57,7 +57,7 @@ function Main (){
                 <div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h2 className='theme-dark'>How Invisible Aligners Work</h2>
+                    <h2 className='theme-dark mob-heading'>How Invisible Aligners Work</h2>
                     </div>
                 </div>
                 </div>

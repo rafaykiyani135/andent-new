@@ -11,7 +11,7 @@ function Main () {
         <div className='container' style={{paddingBottom:"125px"}}>
             <div className='row justify-content-center'>
                 <div className='col-lg-10 col-md-10'>
-                    <h3 className='theme-dark size-60 text-center decent-pad'>
+                    <h3 className='theme-dark size-60 mob-heading text-center decent-pad'>
                         Types of Orthodontic Treatments
                     </h3>
                 </div>

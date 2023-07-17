@@ -596,6 +596,10 @@ label {
         width: 150px ;
         height: 120px;
     }
+    .wel-andent{
+        line-height: 60pt;
+        font-size: 65px;
+    }
     .reviews-pos {
         position: relative;
         bottom: 100px;

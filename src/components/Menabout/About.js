@@ -24,7 +24,7 @@ function About() {
                             <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                             Experience Exceptional Dental Care
                             </h5>
-                            <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"65px",lineHeight:"60pt"}}>
+                            <h2 data-animation="fadeInUp" data-delay=".4s" className='wel-andent theme-dark mob-heading'>
                             Welcome to Andent
                             </h2>
                             <p data-animation="fadeInUp" data-delay=".6s" style={{color:"#000000",lineHeight:"20px",fontSize:"16px",fontWeight:"400"}}>

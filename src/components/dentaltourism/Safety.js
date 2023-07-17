@@ -21,7 +21,7 @@ function Main (){
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-10 col-md-8 text-center">
-                        <h3 className="theme-dark size-60" style={{fontWeight:"700"}}>
+                        <h3 className="theme-dark size-60 mob-heading" style={{fontWeight:"700"}}>
                         Security Protocol & Technology
                         </h3>
                     </div>
