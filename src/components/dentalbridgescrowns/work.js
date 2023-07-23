@@ -4,7 +4,14 @@ import img2 from '../../assets/andent-data/dbwork1.png'
 function Main (){
     return(
         <div>
-            <div className="container">
+            <div className="container andent-padding">
+            <div className='row justify-content-center text-center'>
+                    <div className='col-lg-12 col-md-10'>
+                    <h3 className='size-60 theme-dark mob-heading'>
+                        How Dental Bridges and Crowns Work
+                    </h3>
+                    </div>
+                </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-5 col-md-10 col-sm-10" >
                         <img src={img1} alt='dbimg' className='img-fluid' style={{height:"402px",width:"402px"}}/>

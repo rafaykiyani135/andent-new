@@ -351,8 +351,9 @@ label {
 }
 
 .player-wrapper {
-    position: relative !important;
-    padding-top: 56.25% !important; /* Player ratio: 100 / (1280 / 720) */
+    position: relative;
+    padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+    border-radius: 5px;
 }
 
 .top-wrap{
@@ -552,18 +553,21 @@ label {
     .mob-heading{
         font-size: 40px;
     }
-  }
-
-
-@media (min-width: 1680px) and (max-width: 1920px) and (min-height: 1050px) and (max-height: 1080px) {
-    .exp-vid {
-        position:relative;
-        top: 100px;
-        left: 80px;
-        width: 600px;
-        height: 400px;
+    .mob-player-wrapper{
+        position: relative;
+        padding-top: 56.25%;
+        width: 100%; 
+    }
+    .mob-player{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        overflow: hidden;
     }
   }
+
+
   
 @media (min-width: 992px) {
     .reviews{
@@ -635,7 +639,7 @@ label {
     }
     .testimon-dim{
         height: auto;
-        width: 400px;
+        width: 300px;
     }
     .header-logo{
         position: relative;
@@ -767,8 +771,15 @@ label {
         padding-top: 200px;
         padding-bottom: 40px;
     }
+    .web-vid{
+        height: 347px;
+        width: 584px;
+        border-radius: 20px;
+    }
 
   }
+
+
 
 .slider-container {
 width: 251px; /* Set the desired width */
@@ -815,9 +826,11 @@ flex-direction: column;
 }
 
 .react-player {
-position: absolute;
-top: 0;
-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .left-video{

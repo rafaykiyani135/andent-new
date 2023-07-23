@@ -36,13 +36,16 @@ function Main() {
                             <div className="col-lg-4 col-md-4 d-none d-lg-block text-right">
                                 <div className="header-social header-btn-pos">
                                     <span>
-                                        <Link to='https://instagram.com/andent_clinic?igshid=MzRlODBiNWFlZA' title="instgram">
+                                        <Link to='https://instagram.com/andent_clinic?igshid=MzRlODBiNWFlZA' target="_blank" 
+                                        rel="noreferrer"title="instgram">
                                         <img src={ig} alt='phone' className='icon2' style={{width:"45px",height:"45px"}}/>
                                         </Link>
-                                        <Link to='https://www.facebook.com/andentclinic?mibextid=LQQJ4d' title="Facebook">
+                                        <Link to='https://www.facebook.com/andentclinic?mibextid=LQQJ4d' target="_blank"
+                                        rel="noreferrer"title="Facebook">
                                         <img src={fb} alt='phone' className='icon3' style={{width:"45px",height:"45px"}}/>
                                         </Link>
-                                        <Link to='https://www.tiktok.com/@andentclinic' title="tiktok">
+                                        <Link to='https://www.tiktok.com/@andentclinic' target="_blank"
+                                        rel="noreferrer"title="tiktok">
                                         <img src={tiktok} alt='phone' className='icon2' style={{width:"45px",height:"45px"}} />
                                         </Link>
                                     </span>
@@ -56,49 +59,46 @@ function Main() {
                     <div className="container">
                         <div className="second-menu">
                             <div className="row align-items-center">
-                                <div className="col-xl-2 col-lg-2 justify-content-start">
+                                <div className="col-xl-1 col-lg-1 justify-content-start">
                                     <div className="logo header-logo">
                                         <Link to="/">
                                             <img src={Logo} alt="logo" style={{height:"35px",width:"145px"}}/>
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-xl-7 col-lg-7">
-                                    <div className="main-menu text-right text-xl-right header-nav">
+                                <div className="col-xl-9 col-lg-9">
+                                    <div className="main-menu text-right text-xl-right">
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li className='has-sub'>
-                                                    <Link to="/">Home</Link>
+                                                    <Link to="/" >Home</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="/dental-implants">Dental Implants</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="/dental-crowns-bridges">Dental Bridges</Link>
+                                                </li>
+                                                <li className='has-sub'>
+                                                    <Link to="/about">Why Us</Link>
                                                 </li>
                                                 <li className='has-sub'>
                                                     <Link to="/dental-tourism">Dental Tourism</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-crowns-bridges">Dental Crowns</Link>
-                                                </li>
-                                                <li className='has-sub'>
-                                                    <Link to="/about">About</Link>
-                                                </li>
-                                                <li className='has-sub'>
                                                     <Link to="/testimonials">Testimonials</Link>
-                                                </li>
-                                                <li className='has-sub'>
-                                                    <Link to="/blog/1">Blog</Link>
                                                 </li>
                                                 <li className='has-sub'>
                                                     <Link to="/contact">Other Services &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
                                                     <ul>
                                                         <li>
-                                                            <Link to="/dental-implants">Dental Implants</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/dental-veneers">Cosmetic Dentistry and Veneers</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/orthodontics">Orthodontic Treatment</Link>
+                                                            <Link to="/orthodontics">Orthodontics</Link>
                                                         </li>
                                                         <li>
                                                             <Link to="/dentures">Dentures</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/dental-veneers">Dental Veneers</Link>
                                                         </li>
                                                         <li>
                                                             <Link to="/general-dentistry">General Dentistry</Link>
@@ -109,7 +109,7 @@ function Main() {
                                         </nav>
                                     </div>
                                 </div>
-                                <div className="col-xl-3 col-lg-3 text-right d-none d-lg-block mt-25 mb-25 text-right text-xl-right">
+                                <div className="col-xl-2 col-lg-2 text-right d-none d-lg-block mt-25 mb-25 text-right text-xl-right">
                                     <div className='header-btn-pos'>
                                         <ul>
                                             <li>

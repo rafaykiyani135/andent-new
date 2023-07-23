@@ -18,7 +18,7 @@ function Main (){
                 <div className="col-lg-7 col-md-12 order-lg-2">
                     <div className="single-counter-img fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                     <div className="d-flex justify-content-center">
-                        <ReactPlayer url="https://streamable.com/cnka92" controls={true} width="100%" style={{ maxWidth: "800px" }} />
+                        <ReactPlayer url="https://streamable.com/cnka92" controls={true} width="100%" style={{ maxWidth: "800px"}} />
                     </div>
                     </div>
                 </div>

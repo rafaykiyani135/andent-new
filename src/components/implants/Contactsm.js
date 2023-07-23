@@ -18,7 +18,7 @@ function Main() {
                 <div className="row align-items-center">
                 <div className="col-lg-5 col-md-12 col-sm-12 pad-20-sm">
                     <div className="single-counter-img fadeInUp animated text-center" data-animation="fadeInDown animated" data-delay=".2s" >
-                    <img src={Callmenone} alt="img" className="img contact-lg" style={{height:"504px",width:"378px"}}/>
+                    <img src={Callmenone} alt="img" className="img contact-lg" style={{height:"504px",width:"378px",borderRadius:"10px"}}/>
                     </div>
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12 d-flex align-items-start justify-content-start ">

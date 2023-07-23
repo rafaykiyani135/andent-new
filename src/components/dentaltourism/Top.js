@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import bg from '../../assets/andent-data/xhulio-selenica-dwJ0imjVifs-unsplash-3.jpg'
+import bg from '../../assets/andent-data/darkenedbg.png'
 
 
 function Main(props) {

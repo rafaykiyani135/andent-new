@@ -30,8 +30,8 @@ function Main (){
         dots: true,
         infinite: true,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 5000,
+        autoplaySpeed: 4000,
         slidesToShow: isMobile ? 1 : 3,
         slidesToScroll: isMobile ? 1 : 3
       };

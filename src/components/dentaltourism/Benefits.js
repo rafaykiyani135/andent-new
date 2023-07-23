@@ -65,7 +65,7 @@ function Main (){
                     </div>
                 </div>
                 <div className='row justify-content-center text-center upper-padding'>
-                <div className='col-lg-8 col-md-12 col-12 d-flex justify-content-center upper-padding'>
+                <div className='col-lg-8 col-md-12 col-12 d-flex justify-content-center upper-padding web-vid'>
                     <div style={{ position: 'relative', paddingTop: '56.25%', width: '100%' }}>
                     <ReactPlayer
                         url="https://streamable.com/yp0ty3"
