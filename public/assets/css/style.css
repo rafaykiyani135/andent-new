@@ -704,6 +704,10 @@ label {
         position: relative;
         right: 50px;
     }
+    .move-header-left {
+        position: relative;
+        right: 65px;
+    }
     .move-right {
         position: relative;
         left: 50px;

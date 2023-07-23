@@ -66,7 +66,7 @@ function Main() {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-xl-9 col-lg-9">
+                                <div className="col-xl-10 col-lg-10 move-header-left">
                                     <div className="main-menu text-right text-xl-right">
                                         <nav id="mobile-menu">
                                             <ul>
@@ -109,7 +109,7 @@ function Main() {
                                         </nav>
                                     </div>
                                 </div>
-                                <div className="col-xl-2 col-lg-2 text-right d-none d-lg-block mt-25 mb-25 text-right text-xl-right">
+                                <div className="col-xl-1 col-lg-1 text-right d-none d-lg-block mt-25 mb-25 text-right text-xl-right move-left">
                                     <div className='header-btn-pos'>
                                         <ul>
                                             <li>
@@ -137,35 +137,32 @@ function Main() {
                                                             <Link to="/"> Home </Link>
                                                         </li>
                                                         <li>
+                                                            <Link to="/dental-implants">Dental Implants</Link>
+                                                        </li>
+                                                        <li className="has-sub">
+                                                            <Link to="/dental-crowns-bridges">Dental Bridges</Link>
+                                                        </li>
+                                                        <li className="has-sub">
+                                                            <Link to="/about">Why Us</Link>
+                                                        </li>
+                                                        <li className="has-sub">
                                                             <Link to="/dental-tourism">Dental Tourism</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="/dental-crowns-bridges">Dental Crowns</Link>
-                                                        </li>
-                                                        <li className="has-sub">
-                                                            <Link to="/about">About</Link>
-                                                        </li>
-                                                        <li className="has-sub">
                                                             <Link to="/testimonials">Testimonials</Link>
-                                                        </li>
-                                                        <li className="has-sub">
-                                                            <Link to="/blog/1">Blog</Link>
                                                         </li>
                                                         <li className="mean-last has-sub">
                                                             <Link to="/contact">Other Services</Link>
                                                             {Services &&
                                                             <ul style={{ display: "block" }}>
                                                             <li>
-                                                                <Link to="/dental-implants">Dental Implants</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link to="/dental-veneers">Cosmetic Dentistry and Veneers</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link to="/orthodontics">Orthodontic Treatment</Link>
+                                                                <Link to="/orthodontics">Orthodontics</Link>
                                                             </li>
                                                             <li>
                                                                 <Link to="/dentures">Dentures</Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to="/dental-veneers">Dental Veneers</Link>
                                                             </li>
                                                             <li>
                                                                 <Link to="/general-dentistry">General Dentistry</Link>
