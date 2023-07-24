@@ -7,7 +7,7 @@ function Main (){
     return(
         <div>
             <div className="container upper-pad-20 mob-top-pad">
-                <div>
+                <div className='mob-top-pad-dentures'>
                     <div className="row align-items-center justify-content-center text-center">
                     <div className="col-lg-8">
                         <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >

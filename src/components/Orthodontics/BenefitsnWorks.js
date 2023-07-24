@@ -203,10 +203,10 @@ function Main (){
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         {isMobile ? (
                         <div>
-                        <div className='d-flex justify-content-center upper-padding' style={{paddingBottom:"50px"}}>
+                        <div className='d-flex justify-content-center upper-padding' >
                             <img src={b4} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                         </div>
-                        <div style={{paddingTop:"20px"}}>
+                        <div style={{paddingTop:"10px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Quality Check</h4>
                         </div>
                         <div>

@@ -529,6 +529,9 @@ label {
         text-align: center;
         align-items: center;
     }
+    .mob-top-pad-dentures{
+        padding-top: 40px;
+    }
     .mob-left{
         text-align: left;
     }
