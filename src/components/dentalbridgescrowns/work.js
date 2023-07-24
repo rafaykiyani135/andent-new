@@ -16,7 +16,7 @@ function Main (){
                     <div className="col-lg-5 col-md-10 col-sm-10" >
                         <img src={img1} alt='dbimg' className='img-fluid' style={{height:"402px",width:"402px"}}/>
                     </div>
-                    <div className="col-lg-5 col-md-10 col-sm-10" style={{paddingTop:"70px"}}>
+                    <div className="col-lg-5 col-md-10 col-sm-10 text-center text-lg-start" style={{paddingTop:"70px"}}>
                         <h4 className='theme-dark size-20' style={{fontWeight:"700"}}>
                             Bridges
                         </h4>   
@@ -34,7 +34,10 @@ function Main (){
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                <div className="col-lg-5 col-md-10 col-sm-10" style={{paddingTop:"70px"}}>
+                <div className="col-lg-5 col-md-10 col-sm-10" style={{}}>
+                        <img src={img2} alt='dbimg' className='' style={{height:"318px",width:"476px"}}/>
+                </div>
+                <div className="col-lg-5 col-md-10 col-sm-10 text-center text-lg-start order-lg-first" style={{paddingTop:"70px"}}>
                         <h4 className='theme-dark size-20' style={{fontWeight:"700"}}>
                         How bridges are different than implants
                         </h4>   
@@ -42,10 +45,7 @@ function Main (){
                         Dental bridges rely on adjacent teeth for support, while dental implants
                          are independently anchored into the jawbone, offering enhanced durability
                         </p>
-                    </div>
-                    <div className="col-lg-5 col-md-10 col-sm-10" style={{}}>
-                        <img src={img2} alt='dbimg' className='' style={{height:"318px",width:"476px"}}/>
-                    </div>
+                </div>
                 </div>
             </div>
         </div> 

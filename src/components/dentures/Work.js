@@ -17,7 +17,7 @@ function Main (){
                         <img src={img1} alt='img1' style={{height:"275px",width:"523px"}}/>
                     </div>
 
-                    <div className='col-lg-6 col-md-12'>
+                    <div className='col-lg-6 col-md-12 text-center text-lg-start'>
                     <h4 className='theme-dark size-20'>Natural Looking Design</h4>
                     <p className='size-16' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
                         Dentures are removable dental appliances that are crafted to resemble

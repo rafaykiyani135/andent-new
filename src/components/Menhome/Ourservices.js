@@ -178,7 +178,7 @@ function Ourservices() {
                         </Slider>
                     </div>
                     </div>
-                    <div className="col-lg-5 col-md-12 col-sm-12" style={{paddingTop:"35px",paddingLeft:"30px"}}>
+                    <div className="col-lg-5 col-md-12 col-sm-12 text-center text-lg-start" style={{paddingTop:"35px",paddingLeft:"30px"}}>
                         <div className="about-content s-about-content  wow fadeInRight  animated"  data-animation="fadeInRight" data-delay=".4s" >
                         <div className="about-title second-title pb-25">
                             <h5 className='theme-andent' style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"10px"}}>About Us</h5>
@@ -191,7 +191,7 @@ function Ourservices() {
                            and top-quality equipment ensure optimal oral health. Trust our skilled
                             team for a confident smile. 
                         </p>
-                        <div style={{ paddingTop: "10px" }}>
+                        <div style={{ paddingTop: "10px" }} className='d-flex justify-content-center justify-content-lg-start'>
                         <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }}>
                             <Link to="/about" style={{ color: "white" }}>
                             <p style={{transform:"translateY(8px)"}}>

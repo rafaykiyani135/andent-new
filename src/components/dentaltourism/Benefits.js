@@ -3,9 +3,25 @@ import img2 from '../../assets/andent-data/benefit2.png'
 import img3 from '../../assets/andent-data/benefit3.png'
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
+import { useState,useEffect } from 'react';
 
 function Main (){
 
+    const [isMobile, setIsMobile] = useState(false)
+    //choose the screen size 
+    const handleResize = () => {
+      if (window.innerWidth < 720) {
+          setIsMobile(true)
+      } else {
+          setIsMobile(false)
+      }
+    }
+  
+    // create an event listener
+    useEffect(() => {
+      window.addEventListener("resize", handleResize)
+
+    })
 
 
     return(
@@ -19,7 +35,10 @@ function Main (){
                     </div>
                 </div>
                 <div className="row upper-padding justify-content-center align-items-center">
-                    <div className="col-lg-6 col-md-12 col-12">
+                    <div className="col-lg-4 col-md-12 col-12">
+                        <img src={img1} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-12 order-lg-first order-md-first mob-top-pad text-center text-lg-start">
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
                         Affordability
                         </h2>
@@ -28,15 +47,12 @@ function Main (){
                          is one of the key factors driving our reputation as a leading destination for dental tourism.
                         </p>
                     </div>
-                    <div className="col-lg-4 col-md-12 col-12">
-                        <img src={img1} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
-                    </div>
                 </div>
                 <div className="row upper-padding justify-content-center align-items-center">
                     <div className="col-lg-4 col-md-12 col-12">
                         <img src={img2} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-12 move-up" style={{paddingTop:"20px"}}>
+                    <div className="col-lg-6 col-md-12 col-12 move-up text-center text-lg-start" style={{paddingTop:"20px"}}>
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
                         Quality Care
                         </h2>
@@ -48,7 +64,10 @@ function Main (){
                     </div>
                 </div>
                 <div className="row upper-padding justify-content-center  align-items-center">
-                    <div className="col-lg-6 col-md-12 col-12 move-up">
+                    <div className="col-lg-4 col-md-12 col-12">
+                        <img src={img3} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-12 move-up order-lg-first order-md-first mob-top-pad text-center text-lg-start">
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
                         Safety & Security
                         </h2>
@@ -60,21 +79,18 @@ function Main (){
                          is one of the key factors driving our reputation as a leading destination for dental tourism.
                         </p>
                     </div>
-                    <div className="col-lg-4 col-md-12 col-12">
-                        <img src={img3} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
-                    </div>
                 </div>
                 <div className='row justify-content-center text-center upper-padding'>
-                <div className='col-lg-8 col-md-12 col-12 d-flex justify-content-center upper-padding web-vid'>
-                    <div style={{ position: 'relative', paddingTop: '56.25%', width: '100%' }}>
+                <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center web-vid move-left-vid'>
+                <div className="web-vid" style={{ position: 'relative', paddingTop: '56.25%', width: '100%',borderRadius:"5px" }}>
                     <ReactPlayer
                         url="https://streamable.com/yp0ty3"
                         controls={true}
-                        width='100%'
-                        height='100%'
-                        style={{ position: 'absolute', top: 0, left: 0 }}
+                        width={isMobile? '100%': '640px'}
+                        height={isMobile? '100%' : '360px'}
+                        style={{  position: 'absolute', top: 0, left: 0,borderRadius: "10px", overflow:"hidden" }}
                     />
-                    </div>
+                </div>
                 </div>
                 </div>
                <div className='row justify-content-center text-center'>

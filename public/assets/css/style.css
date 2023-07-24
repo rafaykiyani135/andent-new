@@ -565,11 +565,29 @@ label {
         border-radius: 10px;
         overflow: hidden;
     }
+    .mob-hero1{
+        font-size: 40px;
+    }
+    .mob-hero2{
+        font-size: 45px;
+    }
+    .tourism-hero-pad{
+        padding-bottom: 60px;
+    }
   }
+
 
 
   
 @media (min-width: 992px) {
+    .mob-hero1{
+        font-size: 65px;
+        line-height: 60pt;
+    }
+    .mob-hero2{
+        font-size: 80px;
+        line-height: 70pt;
+    }
     .reviews{
         position:absolute;
         transform : translateY(-200px);
@@ -704,6 +722,10 @@ label {
         position: relative;
         right: 50px;
     }
+    .move-left-vid {
+        position: relative;
+        right: 40px;
+    }
     .move-header-left {
         position: relative;
         right: 65px;
@@ -779,6 +801,9 @@ label {
         height: 347px;
         width: 584px;
         border-radius: 20px;
+    }
+    .tourism-hero-pad{
+        padding-bottom: 150px;
     }
 
   }

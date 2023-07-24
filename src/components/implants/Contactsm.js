@@ -21,7 +21,7 @@ function Main() {
                     <img src={Callmenone} alt="img" className="img contact-lg" style={{height:"504px",width:"378px",borderRadius:"10px"}}/>
                     </div>
                 </div>
-                <div className="col-lg-7 col-md-12 col-sm-12 d-flex align-items-start justify-content-start ">
+                <div className="col-lg-7 col-md-12 col-sm-12 d-flex align-items-start justify-content-start text-center text-lg-start">
                     <div className='pad-20-sm'>
                     <h5 style={{fontSize:"25px",color:"#4E4E50"}} className='theme-dark'>Contact us to learn more about our services</h5>
                     <h2 style={{fontSize:"16px",color:"black",fontWeight:"400"}}>Guided by our expert team, we focus on your comfort and satisfaction.

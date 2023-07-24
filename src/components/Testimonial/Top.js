@@ -38,14 +38,14 @@ function Main() {
                 <div className="container">
                 <div className="row justify-content-center align-items-center">
                     <div className="col-lg-7 col-md-8">
-                    <div className="slider-content s-slider-content mt-20">
+                    <div className="slider-content s-slider-content mt-20 text-center text-lg-start">
                         <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                         welcome To Andent
                         </h5>
-                        <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"65px",lineHeight:"60pt"}}>
+                        <h4 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50"}} className='mob-hero1'>
                         Our Client
-                        </h2>
-                        <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E",fontSize:"80px",lineHeight:"70pt"}}>
+                        </h4>
+                        <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E"}} className='mob-hero2'>
                         Testimonials
                         </h2>
                         <div>

@@ -19,7 +19,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 move-right text-center text-lg-start" >
                             <h5 className="size-18 theme-dark">1. Comprehensive Assessment</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             We kickstart your journey with a detailed evaluation of your oral health,
@@ -35,7 +35,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center " style={{position:"relative",bottom:"30px"}}>
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left move-down'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                             <h5 className="size-18 theme-dark">2. Implant Surgery</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Our dental experts will then place the titanium implant into your jawbone.
@@ -45,7 +45,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">3. Healing and Integration</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Post-surgery, we allow time for osseointegration, where the implant fuses with the jawbone.
@@ -60,7 +60,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
                             <img src={s4} alt='step1' className='andent-icon-sq-1 steps-img-left move-down'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                             <h5 className="size-18 theme-dark">4. Abutment Placement</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Once healed, an abutment, a small connector, is attached to the implant.
@@ -69,7 +69,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">5. Beautiful Restoration</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             The final step is the placement of the prosthetic tooth, beautifully crafted to blend seamlessly with your natural teeth.
@@ -94,11 +94,11 @@ function Main(){
                             <h3 className="theme-dark size-18 text-center decent-pad">Zirconia Implants</h3>
                             <div className="row decent-pad ">
                             <div className="col-lg-12 col-md-12 col-sm-12">
-                                <div className="d-flex align-items-center justify-content-center text-lg-start">
+                                <div className="d-flex align-items-center justify-content-start justify-content-lg-start text-lg-start">
                                 <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
-                                <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                <div className="col-lg-9 col-md-9 col-sm-9 text-lg-start text-center implant-textbox">
                                     <h6 style={{ color: "black", fontWeight: "400" }} className="size-16 icon-text-pos">
                                     Metal-free option with excellent aesthetics.
                                     </h6>
@@ -108,11 +108,11 @@ function Main(){
                             </div>
                             <div className="row decent-pad">
                             <div className="col-lg-12 col-md-12 col-sm-12">
-                                <div className="d-flex align-items-center justify-content-center text-lg-start">
+                                <div className="d-flex align-items-center justify-content-start justify-content-lg-start text-lg-start">
                                 <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
-                                <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                <div className="col-lg-9 col-md-9 col-sm-9 text-lg-start text-center implant-textbox">
                                     <h6 style={{ color: "black", fontWeight: "400" }} className="size-16 icon-text-pos">
                                     Biocompatible ceramic material.
                                     </h6>
@@ -122,11 +122,11 @@ function Main(){
                             </div>
                             <div className="row decent-pad">
                             <div className="col-lg-12 col-md-12 col-sm-12">
-                                <div className="d-flex align-items-center justify-content-center text-lg-start">
+                                <div className="d-flex align-items-center justify-content-start justify-content-lg-start text-lg-start">
                                 <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
-                                <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                <div className="col-lg-9 col-md-9 col-sm-9 text-lg-start text-center implant-textbox">
                                     <h6 style={{ color: "black", fontWeight: "400" }} className="size-16 icon-text-pos">
                                     Perfect for patients seeking a natural look and feel.
                                     </h6>
@@ -144,11 +144,11 @@ function Main(){
                                 </h3>
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center justify-content-center text-lg-start">
+                                    <div className="d-flex align-items-center justify-content-start justify-content-lg-start text-lg-start">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                    <div className="col-lg-9 col-md-9 col-sm-9 text-lg-start text-center implant-textbox">
                                         <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
                                         Long lasting solution for natural tooth replacement
                                         </h6>
@@ -158,11 +158,11 @@ function Main(){
                                 </div>
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center justify-content-center text-lg-start">
+                                    <div className="d-flex align-items-center justify-content-start justify-content-lg-start text-lg-start">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                    <div className="col-lg-9 col-md-9 col-sm-9 text-lg-start text-center implant-textbox">
                                         <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
                                         Reduced risk of rejection or allergic reactions
                                         </h6>
@@ -172,11 +172,11 @@ function Main(){
                                 </div>
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
-                                    <div className="d-flex align-items-center justify-content-center text-lg-start">
+                                    <div className="d-flex align-items-center justify-content-start justify-content-lg-start text-lg-start">
                                     <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
-                                    <div className="col-lg-9 col-md-9 col-sm-9 text-left implant-textbox">
+                                    <div className="col-lg-9 col-md-9 col-sm-9 text-lg-start text-center implant-textbox">
                                         <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">
                                         Prevents bone loss from missing teeth
                                         </h6>

@@ -15,7 +15,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">Consultation</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Our team will evaluate your oral health and discuss your
@@ -30,7 +30,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
                             <img src={s2} alt='step1' className='andent-icon-circ move-img-right steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                             <h5 className="size-18 theme-dark">Impressions and Measurements</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Precise impressions and measurements of your mouth are taken
@@ -39,7 +39,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6text-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">Denture Fabrication</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Using advanced dental technology and high-quality materials, your dentures will
@@ -54,7 +54,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
                             <img src={s4} alt='step1' className='andent-icon-circ move-img-right steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                             <h5 className="size-18 theme-dark">Fitting and Adjustments</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Once your dentures are ready, we will ensure they fit properly

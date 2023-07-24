@@ -19,7 +19,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">1. Consultation</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Our experienced dental team will assess your oral health and discuss your goals and concerns.
@@ -33,7 +33,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                             <h5 className="size-18 theme-dark">2. Treatment Planning</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             A personalized treatment plan will be developed based on your unique needs and preferences
@@ -41,7 +41,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">3. Tooth Preparation</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             For crowns, the damaged tooth is reshaped to create space for the crown.
@@ -56,7 +56,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
                             <img src={s4} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                             <h5 className="size-18 theme-dark">4. Impressions to ensure optimal fit</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             An impression of your teeth is taken to ensure the crowns or bridges are 
@@ -65,7 +65,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">5. Placement of crowns or bridges </h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             Once your custom crowns or bridges are ready, they will be securely bonded 

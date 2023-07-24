@@ -19,7 +19,7 @@ function About() {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 align-items-start">
+                    <div className="col-lg-6 col-md-12 col-sm-12 align-items-start text-center text-lg-start">
                     <div className="">
                             <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                             Experience Exceptional Dental Care
@@ -36,7 +36,7 @@ function About() {
                             <br/>
                             <br/>
                             <div className="row justify-content-lg-start justify-content-center">
-                            <div className="col-lg-3 col-md-3" >
+                            <div className="col-lg-3 col-md-3">
                                 <input className='input-box form-control mb-3' placeholder='Phone No...' />
                             </div>
                             <div className="col-lg-3 col-md-3">

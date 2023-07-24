@@ -33,22 +33,22 @@ function Main(props) {
     <>
    <section id="home" className="slider-area fix p-relative mob-bottom-pad">
                 <div className="slider-active">
-                <div className="single-slider slider-bg d-flex align-items-center">
+                <div className="single-slider slider-bg d-flex align-items-start align-items-lg-center">
                    <div className="container">
                     <div className="row justify-content-center align-items-center">
-                        <div className="col-lg-7 col-md-12 col-12">
+                        <div className="col-lg-7 col-md-12 col-12 text-center text-lg-start text-md-start">
                         <div className="slider-content s-slider-content mt-20">
                             <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                             welcome To Andent
                             </h5>
                             <div className='slider-head'>
-                                <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50",fontSize:"65px",lineHeight:"60pt"}}>
+                                <h4 data-animation="fadeInUp" data-delay=".4s" style={{color:"#4E4E50"}} className='mob-hero1'>
                                 {props.heading}
-                                </h2>
+                                </h4>
                             </div>
-                            <h2 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E",fontSize:"80px",lineHeight:"70pt"}}>
+                            <h4 data-animation="fadeInUp" data-delay=".4s" style={{color:"#F9665E"}} className='mob-hero2'>
                             Save Up to 70%
-                            </h2>
+                            </h4>
                             <div className='slider-para'>
                                  <p data-animation="fadeInUp" data-delay=".6s" style={{color:"#000000",lineHeight:"17pt",fontSize:"16px"}}>
                                 {props.description}

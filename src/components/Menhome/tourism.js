@@ -4,9 +4,28 @@ import Innertwo from '../../assets/andent-data/dt2.png'
 import Innerthree from '../../assets/andent-data/dt3.png'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
+import { useState,useEffect } from 'react'
 
 
 function Tourism() {
+
+    const [isMobile, setIsMobile] = useState(false)
+    //choose the screen size 
+    const handleResize = () => {
+      if (window.innerWidth < 720) {
+          setIsMobile(true)
+      } else {
+          setIsMobile(false)
+      }
+    }
+  
+    // create an event listener
+    useEffect(() => {
+      window.addEventListener("resize", handleResize)
+
+    })
+
+
   return (
     <>
         <section className="andent-padding">
@@ -70,13 +89,13 @@ function Tourism() {
                 </div>
                 </div>
                 <div className='row justify-content-center text-center upper-padding'>
-                <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center web-vid'>
-                <div style={{ position: 'relative', paddingTop: '56.25%', width: '100%' }}>
+                <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center web-vid move-left-vid'>
+                <div className="web-vid" style={{ position: 'relative', paddingTop: '56.25%', width: '100%',borderRadius:"5px" }}>
                     <ReactPlayer
                         url="https://streamable.com/yp0ty3"
                         controls={true}
-                        width='100%'
-                        height='100%'
+                        width={isMobile? '100%': '640px'}
+                        height={isMobile? '100%' : '360px'}
                         style={{  position: 'absolute', top: 0, left: 0,borderRadius: "10px", overflow:"hidden" }}
                     />
                 </div>

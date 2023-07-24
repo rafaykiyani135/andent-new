@@ -16,7 +16,7 @@ function Main (){
             <div className='row justify-content-center text-center'>
             <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center'>
                 <div>
-                <img src={gif} alt="loading.."/>
+                <img src={gif} alt="loading.." style={{borderRadius:"10px"}}/>
                 </div>
             </div>
             </div>

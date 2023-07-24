@@ -21,7 +21,7 @@ function Main() {
                     <img src={Callmenone} alt="img" className="img contact-lg" style={{borderRadius:"10px"}}/>
                     </div>
                 </div>
-                <div className="col-lg-6 col-md-7 col-sm-12 d-flex align-items-start justify-content-start">
+                <div className="col-lg-6 col-md-7 col-sm-12 d-flex align-items-start justify-content-start text-lg-start text-center">
                     <div className='pad-20-sm'>
                     <h5 style={{fontSize:"25px",color:"#4E4E50"}} className='theme-dark'>Achieve the smile you've always wanted with our dental veneers</h5>
                     <h2 style={{fontSize:"16px",color:"black",fontWeight:"400"}}>Contact us today to schedule a consultation

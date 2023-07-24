@@ -4,8 +4,27 @@ import b2 from '../../assets/andent-data/a2.png'
 import b3 from '../../assets/andent-data/a3.png'
 import b4 from '../../assets/andent-data/a4.png'
 import arrow from '../../assets/andent-data/arrow.png'
+import { useEffect,useState } from 'react'
 
 function Main (){
+
+    const [isMobile, setIsMobile] = useState(false)
+    //choose the screen size 
+    const handleResize = () => {
+      if (window.innerWidth < 720) {
+          setIsMobile(true)
+      } else {
+          setIsMobile(false)
+      }
+    }
+  
+    // create an event listener
+    useEffect(() => {
+      window.addEventListener("resize", handleResize)
+
+    })
+
+
     return(
         <div>
             <div className="container andent-padding">
@@ -73,23 +92,61 @@ function Main (){
                 <div className="row justify-content-around">
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
-                        <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>3D Impression</h4>
-                        </div>
-                        <div>
-                            <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                            We begin with a 3D scan of your mouth to capture an exact
-                            model of your teeth and gums, forming the basis for your
-                            treatment plan.
-                            </p>
-                        </div>
-                        <div className='d-flex justify-content-center upper-padding'>
+                    {isMobile ? (
+                    <div>
+                    <div className='d-flex justify-content-center upper-padding'>
                         <img src={b1} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
-                        </div>
+                    </div>
+                    <div style={{paddingTop:"20px"}}>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>3D Impression</h4>
+                    </div>
+                    <div>
+                        <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
+                        We begin with a 3D scan of your mouth to capture an exact
+                        model of your teeth and gums, forming the basis for your
+                        treatment plan.
+                        </p>
+                    </div>
+                    </div>
+                    ) : (
+                        <div>
+                    <div style={{paddingTop:"20px"}}>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>3D Impression</h4>
+                    </div>
+                    <div>
+                        <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
+                        We begin with a 3D scan of your mouth to capture an exact
+                        model of your teeth and gums, forming the basis for your
+                        treatment plan.
+                        </p>
+                    </div>
+                    <div className='d-flex justify-content-center upper-padding'>
+                        <img src={b1} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                    </div>
+                    </div>
+                    )}
                     </div>
                     </div>
                     <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
+                        {isMobile ? (
+                        <div>
+                        <div className='d-flex justify-content-center upper-padding'>
+                        <img src={b2} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        </div>
+                        <div style={{paddingTop:"20px"}}>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Treatment Plan Design</h4>
+                        </div>
+                        <div>
+                            <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
+                            We map out the precise, step-by-step movement of your
+                            teeth from their current position to their final desired
+                            alignment.
+                            </p>
+                        </div>
+                        </div>
+                        ) : (
+                            <div>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Treatment Plan Design</h4>
                         </div>
@@ -103,10 +160,29 @@ function Main (){
                         <div className='d-flex justify-content-center upper-padding'>
                         <img src={b2} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                         </div>
+                        </div>
+                        )}
                     </div>
                     </div>
                     <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
+                        {isMobile ? (
+                        <div>
+                        <div className='d-flex justify-content-center upper-padding'>
+                            <img src={b3} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        </div>
+                        <div style={{paddingTop:"20px"}}>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Aligner Fabrication</h4>
+                        </div>
+                        <div>
+                            <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
+                            A series of aligners are crafted using biocompatible, BPA-free,
+                             clear plastic material which are manufactured to ensure an exact fit. 
+                            </p>
+                        </div>
+                        </div>
+                        ) : (
+                            <div>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Aligner Fabrication</h4>
                         </div>
@@ -119,10 +195,17 @@ function Main (){
                         <div className='d-flex justify-content-center upper-padding'>
                         <img src={b3} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                         </div>
+                        </div>
+                        )}
                     </div>
                     </div>
                     <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
+                        {isMobile ? (
+                        <div>
+                        <div className='d-flex justify-content-center upper-padding' style={{paddingBottom:"50px"}}>
+                            <img src={b4} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                        </div>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Quality Check</h4>
                         </div>
@@ -132,9 +215,23 @@ function Main (){
                             quality check to ensure a perfect fit and optimal performance.
                             </p>
                         </div>
-                        <div className='d-flex justify-content-center upper-padding' style={{paddingBottom:"50px"}}>
-                        <img src={b4} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                         </div>
+                        ) : (
+                            <div>
+                            <div style={{paddingTop:"20px"}}>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Quality Check</h4>
+                            </div>
+                            <div>
+                                <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
+                                Before you receive your aligners, each set undergoes a rigorous
+                                quality check to ensure a perfect fit and optimal performance.
+                                </p>
+                            </div>
+                            <div className='d-flex justify-content-center upper-padding' style={{paddingBottom:"50px"}}>
+                            <img src={b4} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
+                            </div>
+                            </div>
+                        )}
                     </div>
                     </div>
                 </div>

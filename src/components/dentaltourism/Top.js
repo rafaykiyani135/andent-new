@@ -11,12 +11,12 @@ function Main(props) {
         <div className="single-slider slider-bg d-flex align-items-center bg-pos" style={{ backgroundImage: `url(${bg})`,height:"100%",width:"100%",backgroundAttachment:"fixed"}}>
         <div className="container">
             <div className="row justify-content-left text-left align-items-start">
-            <div className="col-lg-7 col-md-7">
+            <div className="col-lg-7 col-md-7 text-lg-start text-center">
                 <div className="slider-content s-slider-content mt-20">
                 <h5 data-animation="fadeInUp" data-delay=".4s" className="theme" style={{ color: "#6DA7A2" }}>
                     welcome To Andent
                 </h5>
-                <h2 data-animation="fadeInUp" data-delay=".4s" style={{ color: "#4E4E50", fontSize: "65px", lineHeight: "70pt" }}>
+                <h2 data-animation="fadeInUp" data-delay=".4s" style={{ color: "#4E4E50"}} className='mob-hero1'>
                 Experience Dental Tourism at Andent
                 </h2>
                 <div className='slider-para'>
@@ -34,7 +34,7 @@ function Main(props) {
                     <div className="col-lg-4 col-md-4">
                     <input className="input-box form-control mb-3" placeholder="Your Name..." />
                     </div>
-                    <div className="col-lg-4 col-md-4 text-center text-lg-start" style={{paddingBottom:"150px"}}>
+                    <div className="col-lg-4 col-md-4 text-center text-lg-start tourism-hero-pad">
                     <button className="btn" style={{height:"66px"}}>
                         <Link to="/contact">
                         <p style={{ color: "white" }}>

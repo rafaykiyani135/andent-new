@@ -16,7 +16,7 @@ function Main (){
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
-                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                     <h5 className="size-18 theme-dark">Consultation</h5>
                     <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                     Our orthodontic experts will assess your teeth and discuss your smile goals.
@@ -30,7 +30,7 @@ function Main (){
                 <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
                     <img src={s2} alt='step1' className='andent-icon-circ move-right'/>
                 </div>
-                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                     <h5 className="size-18 theme-dark">Custom Treatment Plan</h5>
                     <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                     Using advanced technology, we create a personalized treatment plan tailored to your unique needs.
@@ -38,7 +38,7 @@ function Main (){
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
-                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                     <h5 className="size-18 theme-dark">Fabrication Process</h5>
                     <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                     Your custom Invisible aligners or your metal braces will be be
@@ -53,7 +53,7 @@ function Main (){
                 <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
                     <img src={s4} alt='step1' className='andent-icon-circ move-right'/>
                 </div>
-                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left" >
+                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
                     <h5 className="size-18 theme-dark">Aligner Wear or Placing Braces</h5>
                     <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                     You will wear your aligners for 20-22 hours a day or our
@@ -62,7 +62,7 @@ function Main (){
                 </div>
             </div>
             <div className="row justify-content-around upper-padding">
-                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-left move-right" >
+                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
                     <h5 className="size-18 theme-dark">Smile Transformation</h5>
                     <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                     Over time, you will notice your teeth gradually moving into their proper alignment,
