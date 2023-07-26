@@ -12,6 +12,11 @@ import Book from './Bookwmap'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 function Main() {
+
+  componentDidMount() {
+    window.analytics.page('Why-Us');
+  }
+
   return (
     <>
       <About/>
