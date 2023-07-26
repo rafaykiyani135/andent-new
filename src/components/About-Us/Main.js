@@ -10,12 +10,13 @@ import Tourism from '../Menhome/tourism'
 import Contact from '../implants/Contactsm'
 import Book from './Bookwmap'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { useEffect } from 'react'
 
 function Main() {
 
-  componentDidMount() {
+  useEffect(() => {
     window.analytics.page('Why-Us');
-  }
+  });
 
   return (
     <>
