@@ -577,12 +577,105 @@ label {
     .tourism-hero-pad{
         padding-bottom: 60px;
     }
+    .about-text {
+        position: absolute;
+        bottom: 0px;
+        right: 30px;
+        width: 242px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+      }
+      
+      .about-text span {
+      font-size: 48px;
+      color: #3660d9;
+      position: relative;
+      display: inline-block;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      float: left;
+      }
+      .about-text span sub {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 800;
+      margin-left: -10px;
+      bottom: 5px;
+      }
+
+      .second-about {
+        transform:translate(150%,-120px);
+        left: 0;
+        right: 25px;
+        bottom: 0;
+        }
+        .second-about p {
+        margin-bottom: 0;
+        color: #0e264f;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        float: left;
+        width: 55%;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    
   }
 
 
 
   
 @media (min-width: 992px) {
+
+    .second-about {
+        transform:translate(150%,-120px);
+        left: 0;
+        right: 25px;
+        bottom: 0;
+    }
+    .second-about p {
+    margin-bottom: 0;
+    color: #0e264f;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    width: 55%;
+    margin-top: -10px;
+    margin-left: 10px;
+    }
+
+    .about-text {
+        position: absolute;
+        bottom: 0px;
+        right: 30px;
+        width: 242px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+      }
+      
+      .about-text span {
+      font-size: 48px;
+      color: #3660d9;
+      position: relative;
+      display: inline-block;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      float: left;
+      }
+      .about-text span sub {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 800;
+      margin-left: -10px;
+      bottom: 5px;
+      }
+
     .mob-hero1{
         font-size: 65px;
         line-height: 60pt;
@@ -2177,33 +2270,7 @@ left: 12% !important;
 	margin-left: -50px;
 }
 
-.about-text {
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
-  width: 242px;
-  background: #fff;
-  padding: 30px;
-  border-radius: 4px;
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
-}
 
-.about-text span {
-font-size: 48px;
-color: #3660d9;
-position: relative;
-display: inline-block;
-font-weight: 800;
-font-family: 'Poppins', sans-serif;
-float: left;
-}
-.about-text span sub {
-font-size: 30px;
-color: #fff;
-font-weight: 800;
-margin-left: -10px;
-bottom: 5px;
-}
 .about-title > span {
 	font-size: 14px;
 	font-weight: 500;
@@ -2417,23 +2484,7 @@ width: 50%;
 	top: -35px;
 	line-height: 1;
 }
-.second-about {
-    transform:translate(150%,-120px);
-    left: 0;
-    right: 25px;
-    bottom: 0;
-}
-.second-about p {
-margin-bottom: 0;
-color: #0e264f;
-font-size: 18px;
-font-weight: 600;
-font-family: 'Poppins', sans-serif;
-float: left;
-width: 55%;
-margin-top: -10px;
-margin-left: 10px;
-}
+
 .second-atitle > span {
 	font-size: 16px;
 	font-weight: 500;

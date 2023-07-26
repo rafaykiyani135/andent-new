@@ -34,7 +34,7 @@ function Main (){
                             </div>
                             <div className="col-lg-9 col-md-9 col-sm-9">
                                 <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon2-text-pos">
-                                <b>Biocompatible ceramic material.</b>
+                                <b>Custom Made Design</b>
                                 </h6>
                             </div>
                             </div>

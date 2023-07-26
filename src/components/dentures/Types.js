@@ -14,8 +14,8 @@ function Main (){
                         <h2 className='theme-dark'>Types of Dentures</h2>
                         </div>
                         <p className="theme-andent size-20" style={{lineHeight:"30px",fontWeight:"700"}}>
-                        Veneers are an effective solution for a range of cosmetic
-                        dental concerns like discolored, chipped, or misaligned teeth
+                        Dentures provide a reliable remedy for dental issues like missing,
+                        damaged, or decaying teeth, restoring both functionality and aesthetics
                         </p>
                     </div>
                     </div>

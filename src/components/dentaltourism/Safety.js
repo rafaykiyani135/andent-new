@@ -51,7 +51,7 @@ function Main (){
                             <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>Intra and Extra Oral Scanner</h4>
                             <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
-                                Durable, artificial tooth roots to support natural-looking replacement teeth.
+                            Our advanced scanning technology allows for thorough planning and execution.
                             </p>
                             <Link to="/" style={{ position: "relative", bottom: "15px" }}>
                                 <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
@@ -67,7 +67,7 @@ function Main (){
                             <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>DNA and Bacterial Testing</h4>
                             <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
-                                High-quality prosthetics for damaged or missing teeth, ensuring durability.
+                            Our DNA and bacterial tests are used to identify potential oral infections at the earliest stages.
                             </p>
                             <Link to="/" style={{ position: "relative", bottom: "15px" }}>
                                 <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
@@ -84,7 +84,7 @@ function Main (){
                             <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>Guarantee for Dental Services</h4>
                             <div className='upper-pad-lg'>
                                 <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
-                                    Custom-made replacements for comfortable chewing, speaking, and smiling.
+                                We offer guarantees for our dental services, reflecting our commitment to you.
                                 </p>
                                 <Link to="/" style={{ position: "relative", bottom: "15px" }}>
                                     <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
@@ -108,7 +108,7 @@ function Main (){
                             <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>Laser Technology</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                            Transform your smile with whitening, veneers, and personalized makeovers.
+                            We ensure quick recovery and minimal discomfort by using state of the art laser technology
                             </p>
                             <Link to="/" style={{position:"relative",bottom:"15px"}}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
@@ -126,7 +126,7 @@ function Main (){
                             <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>Intraoral Camera</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                            Achieve straighter teeth and correct bites with orthodontic treatments, including Invisalign
+                            Our use of intraoral cameras allows for real-time, close-up visuals of your oral cavity.
                             </p>
                             <Link to="/" style={{position:"relative",bottom:"15px"}}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
@@ -144,7 +144,7 @@ function Main (){
                             <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>3D Dental CT Scan</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                            Preventive care, treatments, and maintenance for optimal oral health and a beautiful smile.
+                            Our 3D dental CT scans provide a comprehensive, three-dimensional view of your teeth.
                             </p>
                             <Link to="/" style={{position:"relative",bottom:"15px"}}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
