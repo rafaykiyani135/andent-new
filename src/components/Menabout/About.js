@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function About() {
   return (
     <>
-        <section className="about-area about-p pt-120 pb-120 p-relative fix">
+        <section className=" pt-120 pb-120">
             <div className="container">
                     <div className="row justify-content-center align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12 text-center text-lg-start">

@@ -581,7 +581,6 @@ label {
         position: absolute;
         bottom: 0px;
         right: 30px;
-        width: 242px;
         background: #fff;
         padding: 30px;
         border-radius: 4px;
@@ -594,6 +593,7 @@ label {
       position: relative;
       display: inline-block;
       font-weight: 800;
+      transform: translateY(-13px);
       font-family: 'Poppins', sans-serif;
       float: left;
       }
@@ -606,15 +606,16 @@ label {
       }
 
       .second-about {
-        transform:translate(150%,-120px);
+        transform:translate(170px,-60px);
         left: 0;
         right: 25px;
         bottom: 0;
-        }
+        display: block !important;
+    }
         .second-about p {
         margin-bottom: 0;
         color: #0e264f;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
         float: left;
@@ -622,6 +623,7 @@ label {
         margin-top: -10px;
         margin-left: 10px;
     }
+    
     
   }
 
