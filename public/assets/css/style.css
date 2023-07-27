@@ -554,7 +554,7 @@ label {
         text-align: center;
     }
     .mob-heading{
-        font-size: 40px;
+        font-size: 35px;
     }
     .mob-player-wrapper{
         position: relative;
@@ -569,7 +569,7 @@ label {
         overflow: hidden;
     }
     .mob-hero1{
-        font-size: 40px;
+        font-size: 35px;
     }
     .mob-hero2{
         font-size: 45px;
