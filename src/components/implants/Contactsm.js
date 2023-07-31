@@ -9,6 +9,11 @@ function Main() {
           top: document.documentElement.scrollHeight - window.innerHeight - 500,
           behavior: 'smooth',
         });
+        window.analytics.track("Link clicked", {
+            buttonText: "Learn More",
+            link: "Scrolled To Bottom",
+            clickedOnPage: window.location.pathname
+          });
       };
 
   return (

@@ -2,9 +2,54 @@ import React from 'react'
 import iconone from '../../assets/andent-data/address.png'
 import icontwo from '../../assets/andent-data/contactus.png'
 import Iframe from 'react-iframe'
+import { useState } from 'react'
 
 
 function Make() {
+
+  const [Fname,setFname]=useState("")
+  const [Lname,setLname]=useState("")
+  const [email,setEmail]=useState("")
+  const [num,setNum]=useState("")
+  const [comment,setComment]=useState("")
+  const [panoramex,setPanoramex]=useState("")
+
+  const chFN = (e) => {
+    setFname(e.target.value)
+  }
+
+  const chLN = (e) => {
+    setLname(e.target.value)
+  }
+  
+  const chEmail = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const chPN = (e) => {
+    setNum(e.target.value)
+  }
+
+  const chCmnt = (e) => {
+    setComment(e.target.value)
+  }
+
+  const chPano = (e) => {
+    setPanoramex(e.target.value)
+  }
+
+
+  const bookNow = () =>{
+    window.analytics.identify("Appointment Form Data", {
+      firstName: Fname,
+      lastName: Lname,
+      phoneNum : num,
+      comments: comment,
+      email : email,
+      panoramex : panoramex
+    });
+  }
+
   return (
     <>
             <div className="container pad-20">
@@ -53,7 +98,8 @@ function Make() {
                            height={303} 
                            style={{ border : "0" }}
                           loading="lazy"
-                          className='contacts-map map-pos'>
+                          className='contacts-map map-pos'
+                          >
                     </Iframe>
                     </div>
                     </div>
@@ -72,39 +118,39 @@ function Make() {
                 
                 <div className="col-lg-6 order-1 pad-10">
                   <div className="contact">
-                    <form action="mail.php" method="post" className="contact-form mt-30">
+                  <form action="mail.php" method="post" className="contact-form mt-30">
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="text" id="firstn" name="firstn" placeholder="First Name" required="" style={{borderRadius:"15px"}} className='form-small'/>
+                            <input type="text" id="firstn" name="firstn" placeholder="First Name" style={{borderRadius:"15px"}} className='form-small' required onChange={chFN}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="text" id="lastn" name="lastn" placeholder="Last Name" required="" style={{borderRadius:"15px"}} className='form-small'/>
+                            <input type="text" id="lastn" name="lastn" placeholder="Last Name" style={{borderRadius:"15px"}} className='form-small' required onChange={chLN}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="text" id="Email" name="Email" placeholder="Email" required="" style={{borderRadius:"15px"}} className='form-small'/>
+                            <input type="text" id="Email" name="Email" placeholder="Email" style={{borderRadius:"15px"}} className='form-small' required onChange={chEmail}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="text" id="Phone Number" name="Phone Number" placeholder="Phone Number" className='input-box form-small' style={{borderRadius:"15px"}}/>
+                            <input type="number" id="Phone Number" name="Phone Number" placeholder="Phone Number" className='form-small' style={{borderRadius:"15px"}} required onChange={chPN}/>
                           </div>
                         </div>
                         <div className="col-lg-12">
                           <div className="contact-field pad-10">
-                            <textarea name="message" id="message" cols={30} rows={10} placeholder="Write comments" defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}}/>
+                            <textarea name="message" id="message" cols={30} rows={10} placeholder="Write comments" defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}} onChange={chCmnt}/>
                           </div>
                           <div className="col-lg-12">
                           <div className="contact-field" style={{paddingLeft:"10px"}}>
-                            <input type="text" id="panoramex" name="panoramex" placeholder="Panoramex" required="" style={{borderRadius:"15px"}} className='form-big2'/>
+                            <input type="text" id="panoramex" name="panoramex" placeholder="Panoramex" required style={{borderRadius:"15px"}} className='form-big2' onChange={chPano}/>
                           </div>
                         </div>
                           <div className='d-flex justify-content-center pad-20'>
-                            <button className="btn" data-animation="fadeInRight" data-delay=".8s" style={{width:"182px",height:"50px"}}>
+                            <button className="btn" data-animation="fadeInRight" data-delay=".8s" style={{width:"182px",height:"50px"}} onClick={bookNow}>
                               <p style={{transform:"translateY(-5px)"}}>
                                 BOOK NOW
                               </p>

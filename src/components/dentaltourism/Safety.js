@@ -8,6 +8,13 @@ import { Link } from 'react-router-dom'
 
 function Main (){
 
+    const linkClick = (e) =>{
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
+    }
 
     return(
         <div>
@@ -53,7 +60,7 @@ function Main (){
                             <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
                             Our advanced scanning technology allows for thorough planning and execution.
                             </p>
-                            <Link to="/" style={{ position: "relative", bottom: "15px" }}>
+                            <Link to="/about" style={{ position: "relative", bottom: "15px" }} title='Learn More' onClick={linkClick}>
                                 <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
                                 Learn More
                                 </p>
@@ -69,7 +76,7 @@ function Main (){
                             <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
                             Our DNA and bacterial tests are used to identify potential oral infections at the earliest stages.
                             </p>
-                            <Link to="/" style={{ position: "relative", bottom: "15px" }}>
+                            <Link to="/about" style={{ position: "relative", bottom: "15px" }} title='Learn More' onClick={linkClick}>
                                 <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
                                 Learn More
                                 </p>
@@ -86,7 +93,7 @@ function Main (){
                                 <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
                                 We offer guarantees for our dental services, reflecting our commitment to you.
                                 </p>
-                                <Link to="/" style={{ position: "relative", bottom: "15px" }}>
+                                <Link to="/about" style={{ position: "relative", bottom: "15px" }} title='Learn More' onClick={linkClick}>
                                     <p style={{ fontStyle: "italic", fontSize: "10px", color: "#6DA7A2" }}>
                                     Learn More
                                     </p>
@@ -110,7 +117,7 @@ function Main (){
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             We ensure quick recovery and minimal discomfort by using state of the art laser technology
                             </p>
-                            <Link to="/" style={{position:"relative",bottom:"15px"}}>
+                            <Link to="/about" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
@@ -128,7 +135,7 @@ function Main (){
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             Our use of intraoral cameras allows for real-time, close-up visuals of your oral cavity.
                             </p>
-                            <Link to="/" style={{position:"relative",bottom:"15px"}}>
+                            <Link to="/about" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
@@ -146,7 +153,7 @@ function Main (){
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             Our 3D dental CT scans provide a comprehensive, three-dimensional view of your teeth.
                             </p>
-                            <Link to="/" style={{position:"relative",bottom:"15px"}}>
+                            <Link to="/about" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>

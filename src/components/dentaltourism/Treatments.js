@@ -9,6 +9,16 @@ import { Link } from 'react-router-dom'
 
 
 function Main (){
+
+    const linkClick = (e) =>{
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
+    }
+
+
     return(
         <div>
             <section id="service-details2" className="andent-padding" >
@@ -37,7 +47,7 @@ function Main (){
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/dental-implants" style={{position:"relative",bottom:"15px"}}>
+                                <Link to="/dental-implants" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
@@ -60,7 +70,7 @@ function Main (){
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/dental-crowns-bridges" style={{position:"relative",bottom:"15px"}}>
+                                <Link to="/dental-crowns-bridges" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
@@ -82,7 +92,7 @@ function Main (){
                                     </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/dentures" style={{position:"relative",bottom:"15px"}}>
+                                <Link to="/dentures" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
@@ -110,7 +120,7 @@ function Main (){
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/dental-veneers" style={{position:"relative",bottom:"15px"}}>
+                                <Link to="/dental-veneers" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
@@ -132,7 +142,7 @@ function Main (){
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/orthodontics" style={{position:"relative",bottom:"15px"}}>
+                                <Link to="/orthodontics" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>
@@ -154,7 +164,7 @@ function Main (){
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/general-dentistry" style={{position:"relative",bottom:"15px"}}>
+                                <Link to="/general-dentistry" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                     Learn More
                                 </p>

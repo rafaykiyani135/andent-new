@@ -23,6 +23,14 @@ function Main (){
 
     })
 
+    const linkClick = (e) =>{
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
+    }
+
 
     return(
         <div>
@@ -97,7 +105,7 @@ function Main (){
                 <div className='col-lg-8 col-md-12 d-flex justify-content-center'>
                 <div className='upper-padding'>
                         <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }}>
-                            <Link to="/dental-tourism" style={{ color: "white" }}>
+                            <Link to="/dental-tourism" style={{ color: "white" }} title="Learn More" onClick={linkClick}>
                             <p style={{transform:"translateY(8px)"}}>
                                 Learn More
                             </p>

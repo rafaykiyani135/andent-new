@@ -10,6 +10,9 @@ function Testimonialslider() {
         <img index={index} src={star} alt="icons" style={{paddingRight:"10px",transform:"translateY(-5px)",height:"20px",width:"30px"}}  />
       ));
 
+
+      
+        
   return (
     
 

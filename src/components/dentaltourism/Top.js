@@ -1,9 +1,28 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import bg from '../../assets/andent-data/darkenedbg.png'
+import { useState } from 'react'
 
 
 function Main(props) {
+
+    const [number,setNumber] = useState("")
+    const [name,setName] = useState("")
+
+    const changeName = (e) => {
+        setName(e.target.value)
+    }
+
+    const changeNum = (e) => {
+        setNumber(e.target.value)
+    }
+
+    const getCallBack = () => {
+    window.analytics.identify("Call Back Form Data", {
+        Name : name,
+        Number : number
+    });
+    }
+
   return (
     <>
         <section id="home" className="slider-area fix p-relative">
@@ -27,23 +46,23 @@ function Main(props) {
                 </div>
                 <br />
                 <br />
+                <form action="mail.php" method="post">
                 <div className="row">
                     <div className="col-lg-4 col-md-4">
-                    <input className="input-box form-control mb-3" placeholder="Your Phone Number..." />
+                    <input type="number" className="input-box form-control mb-3" placeholder="Your Phone Number..." onChange={changeNum} required/>
                     </div>
                     <div className="col-lg-4 col-md-4">
-                    <input className="input-box form-control mb-3" placeholder="Your Name..." />
+                    <input type="text" className="input-box form-control mb-3" placeholder="Your Name..." onChange={changeName} required/>
                     </div>
                     <div className="col-lg-4 col-md-4 text-center text-lg-start tourism-hero-pad">
-                    <button className="btn" style={{height:"66px"}}>
-                        <Link to="/contact">
+                    <button className="btn" style={{height:"66px"}} onClick={getCallBack}>
                         <p style={{ color: "white" }}>
                             Get Call Back
                         </p>
-                        </Link>
                     </button>
                     </div>
                 </div>
+                </form>
                 </div>
             </div>
             </div>

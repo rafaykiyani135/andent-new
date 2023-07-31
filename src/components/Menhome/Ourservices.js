@@ -30,6 +30,14 @@ function Ourservices() {
         slidesToScroll: 1
       };
 
+      const linkClick = (e) =>{
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
+    }
+
 
   return (
     <div className='andent-padding'>
@@ -193,7 +201,7 @@ function Ourservices() {
                         </p>
                         <div style={{ paddingTop: "10px" }} className='d-flex justify-content-center justify-content-lg-start'>
                         <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }}>
-                            <Link to="/about" style={{ color: "white" }}>
+                            <Link to="/about" style={{ color: "white" }} title="Learn More" onClick={linkClick}>
                             <p style={{transform:"translateY(8px)"}}>
                                 Learn More
                             </p>

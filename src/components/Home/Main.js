@@ -7,8 +7,20 @@ import Testimonial from '../Menhome/Testimonial'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Appointment from '../MenContact-Us/Make'
 import Review from '../reviews/trustpilot'
+import { useEffect } from 'react'
 
 function Main() {
+
+  useEffect(() => {
+    window.analytics.page('Home');
+  });
+
+  const getMessage = (e) => {
+    window.analytics.track("WhatsApp", {
+      message : e.target[0].value
+    });
+  }
+
   return (
     <>
       <Slider heading="Discover Premium Dental Treatments" description="We are devoted to delivering remarkable results for all of our orthodontic treatments.
@@ -22,7 +34,7 @@ function Main() {
       <Testimonial/>
       <Appointment/>
       <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>
-      <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true"/>
+      <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true" onSubmit={getMessage}/>
       </div>
     </>
      

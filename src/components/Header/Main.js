@@ -13,6 +13,22 @@ function Main() {
     const [mobile, setmobile] = useState(false);
     const [Services, setServices] = useState(false)
 
+    const linkClick = (e) =>{
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
+    }
+
+    const linkTwoClick = (e) =>{
+        window.analytics.track("Link clicked", {
+            buttonText: "ContactUs",
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
+    }
+
     return (
         <>
             <header className="header-area header-three">
@@ -37,15 +53,15 @@ function Main() {
                                 <div className="header-social header-btn-pos">
                                     <span>
                                         <Link to='https://instagram.com/andent_clinic?igshid=MzRlODBiNWFlZA' target="_blank" 
-                                        rel="noreferrer"title="instgram">
+                                        rel="noreferrer"title="Instagram" onClick={linkClick}>
                                         <img src={ig} alt='phone' className='icon2' style={{width:"45px",height:"45px"}}/>
                                         </Link>
                                         <Link to='https://www.facebook.com/andentclinic?mibextid=LQQJ4d' target="_blank"
-                                        rel="noreferrer"title="Facebook">
+                                        rel="noreferrer"title="Facebook" onClick={linkClick}>
                                         <img src={fb} alt='phone' className='icon3' style={{width:"45px",height:"45px"}}/>
                                         </Link>
                                         <Link to='https://www.tiktok.com/@andentclinic' target="_blank"
-                                        rel="noreferrer"title="tiktok">
+                                        rel="noreferrer"title="Tiktok" onClick={linkClick}>
                                         <img src={tiktok} alt='phone' className='icon2' style={{width:"45px",height:"45px"}} />
                                         </Link>
                                     </span>
@@ -61,7 +77,7 @@ function Main() {
                             <div className="row align-items-center">
                                 <div className="col-xl-1 col-lg-1 justify-content-start">
                                     <div className="logo header-logo">
-                                        <Link to="/">
+                                        <Link to="/" title='AndentLogo' onClick={linkClick}>
                                             <img src={Logo} alt="logo" style={{height:"35px",width:"145px"}}/>
                                         </Link>
                                     </div>
@@ -71,37 +87,37 @@ function Main() {
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li className='has-sub'>
-                                                    <Link to="/" >Home</Link>
+                                                    <Link to="/" title='Home' onClick={linkClick} >Home</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-implants">Dental Implants</Link>
+                                                    <Link to="/dental-implants" title='Dental Implants' onClick={linkClick}>Dental Implants</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-crowns-bridges">Dental Bridges</Link>
+                                                    <Link to="/dental-crowns-bridges" title='Dental Bridges' onClick={linkClick}>Dental Bridges</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/about">Why Us</Link>
+                                                    <Link to="/about" title='Why Us' onClick={linkClick}>Why Us</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-tourism">Dental Tourism</Link>
+                                                    <Link to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>Dental Tourism</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/testimonials">Testimonials</Link>
+                                                    <Link to="/testimonials" title='Testimonials' onClick={linkClick}>Testimonials</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/contact">Other Services &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
+                                                    <Link to="/contact" title='Other Services' onClick={linkClick}>Other Services &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
                                                     <ul>
                                                         <li>
-                                                            <Link to="/orthodontics">Orthodontics</Link>
+                                                            <Link to="/orthodontics" title='Orthodontics' onClick={linkClick}>Orthodontics</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/dentures">Dentures</Link>
+                                                            <Link to="/dentures" title='Dentures' onClick={linkClick}>Dentures</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/dental-veneers">Dental Veneers</Link>
+                                                            <Link to="/dental-veneers" title='Dental Veneers' onClick={linkClick}>Dental Veneers</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/general-dentistry">General Dentistry</Link>
+                                                            <Link to="/general-dentistry" title='General Dentistry' onClick={linkClick}>General Dentistry</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -114,7 +130,7 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div>
-                                                    <Link to="/contact" className="header-btn">
+                                                    <Link to="/contact" className="header-btn" onClick={linkTwoClick}>
                                                         <p>
                                                         Contact Us
                                                         </p>
@@ -134,38 +150,38 @@ function Main() {
                                                 <nav className="mean-nav">
                                                     <ul style={{ display: "block" }}>
                                                         <li className="has-sub">
-                                                            <Link to="/"> Home </Link>
+                                                            <Link to="/" title='Home' onClick={linkClick} > Home </Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/dental-implants">Dental Implants</Link>
+                                                            <Link to="/dental-implants" title='Dental Implants' onClick={linkClick}>Dental Implants</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="/dental-crowns-bridges">Dental Bridges</Link>
+                                                            <Link to="/dental-crowns-bridges" title='Dental Bridges' onClick={linkClick}>Dental Bridges</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="/about">Why Us</Link>
+                                                            <Link to="/about" title='Why Us' onClick={linkClick}>Why Us</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="/dental-tourism">Dental Tourism</Link>
+                                                            <Link to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>Dental Tourism</Link>
                                                         </li>
                                                         <li className="has-sub">
-                                                            <Link to="/testimonials">Testimonials</Link>
+                                                            <Link to="/testimonials" title='Testimonials' onClick={linkClick}>Testimonials</Link>
                                                         </li>
                                                         <li className="mean-last has-sub">
-                                                            <Link to="/contact">Other Services</Link>
+                                                            <Link to="/contact" title='Other Services' onClick={linkClick}>Other Services</Link>
                                                             {Services &&
                                                             <ul style={{ display: "block" }}>
                                                             <li>
-                                                                <Link to="/orthodontics">Orthodontics</Link>
+                                                                <Link to="/orthodontics" title='Orthodontics' onClick={linkClick}>Orthodontics</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="/dentures">Dentures</Link>
+                                                                <Link to="/dentures" title='Dentures' onClick={linkClick}>Dentures</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="/dental-veneers">Dental Veneers</Link>
+                                                                <Link to="/dental-veneers" title='Dental Veneers' onClick={linkClick}>Dental Veneers</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="/general-dentistry">General Dentistry</Link>
+                                                                <Link to="/general-dentistry" title='General Dentistry' onClick={linkClick}>General Dentistry</Link>
                                                             </li>
                                                             </ul>  
                                                             }

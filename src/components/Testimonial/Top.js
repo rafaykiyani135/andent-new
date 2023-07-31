@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +10,7 @@ import imgright2 from '../../assets/andent-data/hero section videos/hero Images/
 import vid2 from '../../assets/andent-data/hero section videos/hero2.mp4'
 import vid3 from '../../assets/andent-data/hero section videos/hero3.mp4'
 import vid4 from '../../assets/andent-data/hero section videos/hero4.mp4'
+import { useState } from 'react';
 
 
 function Main() {
@@ -29,6 +29,24 @@ function Main() {
         verticalSwiping: true,
         pauseOnHover: false,
       };
+
+      const [number,setNumber] = useState("")
+      const [name,setName] = useState("")
+  
+      const changeName = (e) => {
+          setName(e.target.value)
+      }
+  
+      const changeNum = (e) => {
+          setNumber(e.target.value)
+      }
+  
+      const getCallBack = () => {
+      window.analytics.identify("Call Back Form Data", {
+          Name : name,
+          Number : number
+      });
+      }
 
   return (
     <>
@@ -58,23 +76,23 @@ function Main() {
                         </div>
                         <br/>
                         <br/>
+                        <form action="mail.php" method="post">
                         <div className="row">
                         <div className="col-lg-4 col-md-3">
-                            <input className='input-box form-control mb-3' placeholder='Your Phone Number...' />
+                            <input type="number" className='input-box form-control mb-3' placeholder='Your Phone Number...' onChange={changeNum} required/>
                         </div>
                         <div className="col-lg-4 col-md-3">
-                            <input className='input-box form-control mb-3' placeholder='Your Name...' />
+                            <input className='input-box form-control mb-3' placeholder='Your Name...' onChange={changeName} required/>
                         </div>
                         <div className="col-lg-4 col-md-4 text-center text-lg-start">
-                            <button className='btn' style={{height:"66px"}}>
-                            <Link to="/contact" >
+                            <button className='btn' style={{height:"66px"}} onClick={getCallBack}>
                             <p style={{color:"white"}}>
                                 Get Call Back
                             </p>
-                            </Link>
                             </button>
                         </div>
                         </div>
+                        </form>
                     </div>
                     </div>
                     <div className="col-lg-5 col-md-4 col-12 upper-padding move-down mob-slider">

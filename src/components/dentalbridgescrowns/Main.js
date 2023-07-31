@@ -7,8 +7,21 @@ import StepsProc from './StepsTypes';
 import Contact from '../implants/Contactsm';
 import Appt from '../MenContact-Us/Make';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import { useEffect } from 'react';
 
 function Main (){
+
+
+    useEffect(() => {
+        window.analytics.page('Dental-bridges');
+      });
+
+      const getMessage = (e) => {
+        window.analytics.track("WhatsApp", {
+          message : e.target[0].value
+        });
+      }
+
     return(
         <div>
             <Slider heading="Discover Dental Bridges & Crowns" description="Say goodbye to the challenges of missing or damaged teeth.
@@ -23,7 +36,7 @@ function Main (){
             <Contact/>
             <Appt/>
             <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>
-            <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true"/>
+            <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true" onSubmit={getMessage}/>
             </div>
         </div>
     )

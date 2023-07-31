@@ -9,6 +9,15 @@ import mail from '../../assets/andent-data/mail.png'
 
 
 function Main() {
+
+    const linkClick = (e) =>{
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+            });
+    }
+
   return (
     <>
         <footer className="footer-bg footer-p pt-90" style={{ backgroundColor: "#A7CCC84D" }}>
@@ -51,16 +60,16 @@ function Main() {
                                 <div className="footer-link">
                                 <ul style={{fontWeight:"600"}}>
                                     <li className='size-16' style={{color:"black"}}>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/" title='Home' onClick={linkClick}>Home</Link>
                                     </li>
                                     <li  className='size-16' style={{color:"black"}}>
-                                    <Link to="/about">About Us</Link>
+                                    <Link to="/about" title='About Us' onClick={linkClick}>About Us</Link>
                                     </li>
                                     <li  className='size-16' style={{color:"black"}}>
-                                    <Link to="/testimonials">Testimonials</Link>
+                                    <Link to="/testimonials" title='Testimonials' onClick={linkClick}>Testimonials</Link>
                                     </li>
                                     <li  className='size-16' style={{color:"black"}}>
-                                    <Link to="/dental-tourism">Dental Tourism</Link>
+                                    <Link to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>Dental Tourism</Link>
                                     </li>
                                 </ul>
                                 </div>
@@ -74,22 +83,22 @@ function Main() {
                                 <div className="footer-link">
                                 <ul style={{fontWeight:"600"}}>
                                     <li>
-                                    <Link to="/dental-implants">Dental Implants</Link>
+                                    <Link to="/dental-implants" title='Dental Implants' onClick={linkClick}>Dental Implants</Link>
                                     </li>
                                     <li>
-                                    <Link to="/dental-crowns-bridges">Dental Bridges</Link>
+                                    <Link to="/dental-crowns-bridges" title='Dental Bridges' onClick={linkClick}>Dental Bridges</Link>
                                     </li>
                                     <li>
-                                    <Link to="/general-dentistry">General Dentistry</Link>
+                                    <Link to="/general-dentistry" title='General Dentistry' onClick={linkClick}>General Dentistry</Link>
                                     </li>
                                     <li>
-                                    <Link to="/orthodontics">Orthodontics</Link>
+                                    <Link to="/orthodontics" title='Orthodontics' onClick={linkClick}>Orthodontics</Link>
                                     </li>
                                     <li>
-                                    <Link to="/dental-veneers">Dental Veneers</Link>
+                                    <Link to="/dental-veneers" title='Dental Veneers' onClick={linkClick}>Dental Veneers</Link>
                                     </li>
                                     <li>
-                                    <Link to="/dentures">Dentures</Link>
+                                    <Link to="/dentures" title='Dentures' onClick={linkClick}>Dentures</Link>
                                     </li>
                                 </ul>
                                 </div>

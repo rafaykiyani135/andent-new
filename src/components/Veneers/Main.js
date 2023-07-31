@@ -6,8 +6,20 @@ import Info from './Info'
 import Contactus from './Contactus'
 import Book from '../MenContact-Us/Make'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { useEffect } from 'react'
 
 function Main (){
+
+    useEffect(() => {
+        window.analytics.page('Veneers');
+      });
+
+      const getMessage = (e) => {
+        window.analytics.track("WhatsApp", {
+          message : e.target[0].value
+        });
+      }
+
     return (
         <div>
             <Slider heading="Discover Premium Dental Veneers" description="We are devoted to
@@ -20,7 +32,7 @@ function Main (){
             <Contactus/>
             <Book/>
             <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>
-            <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true"/>
+            <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true" onSubmit={getMessage}/>
             </div>
         </div>
     )

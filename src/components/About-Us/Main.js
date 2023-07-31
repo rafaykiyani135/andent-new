@@ -18,6 +18,12 @@ function Main() {
     window.analytics.page('Why-Us');
   });
 
+  const getMessage = (e) => {
+    window.analytics.track("WhatsApp", {
+      message : e.target[0].value
+    });
+  }
+
   return (
     <>
       <About/>
@@ -30,7 +36,7 @@ function Main() {
       <Contact/>
       <Book/>
       <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>
-      <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true"/>
+      <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true" onSubmit={getMessage}/>
       </div>
     </>
   )
