@@ -137,17 +137,17 @@ function Make() {
                           <div className="contact-field pad-10">
                             <textarea name="message" id="message" cols={30} rows={10} placeholder="Write comments" defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}} onChange={chCmnt}/>
                           </div>
-                          <div className='row justify-content-center'>
-                          <div className="col-lg-8 col-12 col-sm-12">
-                          <div className="contact-field form-input-pad text-start">
+                          <div className='row justify-content-around'>
+                          <div className="col-lg-7 col-12 col-sm-12 col-md-12 d-flex justify-content-center justify-content-lg-start">
+                          <div className="contact-field form-input-pad">
                            <div className='form-big2' style={{borderStyle:"solid"}}>
-                              <h4 className="input-text-pad text-start" style={{fontSize:"12px",lineHeight:"18px",fontWeight:"700"}}>
+                              <h4 className="input-text-pad text-start input-text-sides" style={{fontSize:"12px",lineHeight:"18px",fontWeight:"700"}}>
                               Upload Dental Scan or X-Ray;<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {file?<p>Uploaded!</p>:<p></p>}</i>
                               </h4>
                            </div>
                           </div>
                           </div>
-                          <div className="col-lg-4 col-12 col-sm-12 d-flex justify-content-center text-center align-items-center form-input-pad-mob">
+                          <div className="col-lg-5 col-12 col-sm-12 col-md-12 d-flex justify-content-lg-end justify-content-center text-center align-items-center form-input-pad-mob">
                             <input type="file" id="file-input" name="file-input" onChange={chPano}/>
                             <label id="file-input-label" for="file-input" className='text-center'>Upload</label>
                           </div>
