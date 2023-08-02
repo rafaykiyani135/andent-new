@@ -132,7 +132,7 @@ function Main() {
                                     </span>
                                     </li>
                                     <li>
-                                    <img src={mail} className='icon' alt='mailicon' style={{width:"60px",height:"60px"}}/>
+                                    <img src={mail} className='icon' alt='mailicon' style={{width:"65px",height:"55px"}}/>
                                     <span>
                                         <Link to="mailto:info@andent.al" style={{color:"black",fontWeight:"400"}}>
                                             <p style={{paddingTop:"25px",lineHeight:"20px",color:"black"}}>

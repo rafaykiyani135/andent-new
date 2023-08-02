@@ -105,6 +105,9 @@ function Main() {
                                                     <Link to="/testimonials" title='Testimonials' onClick={linkClick}>Testimonials</Link>
                                                 </li>
                                                 <li className='has-sub'>
+                                                    <Link to="/blog/1" title='Blogs' onClick={linkClick}>Blog</Link>
+                                                </li>
+                                                <li className='has-sub'>
                                                     <Link to="/contact" title='Other Services' onClick={linkClick}>Other Services &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
                                                     <ul>
                                                         <li>
@@ -166,6 +169,9 @@ function Main() {
                                                         </li>
                                                         <li className="has-sub">
                                                             <Link to="/testimonials" title='Testimonials' onClick={linkClick}>Testimonials</Link>
+                                                        </li>
+                                                        <li className='has-sub'>
+                                                        <Link to="/blog/1" title='Blogs' onClick={linkClick}>Blog</Link>
                                                         </li>
                                                         <li className="mean-last has-sub">
                                                             <Link to="/contact" title='Other Services' onClick={linkClick}>Other Services</Link>

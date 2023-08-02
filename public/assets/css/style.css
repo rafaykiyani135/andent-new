@@ -623,15 +623,95 @@ label {
         margin-top: -10px;
         margin-left: 10px;
     }
+    .form-big2 {
+        height: auto;
+        width: 100%;
+        border-radius: 15px;
+        border: 1px;
+        border-style: solid;
+        text-align: center;
+    }
+    .input-text-pad{
+        padding-top: 11px;
+        padding-right: 1px;
+    }
+
     
+
+    #file-input {
+    display: none;
+    }
+    
+    #file-input-label {
+        font-family: poppins;
+        border-radius: 15px;
+        font-size: 16px;
+        height: auto;
+        width: 250px;
+        letter-spacing: 0;
+        line-height: 1;
+        margin-bottom: 0;
+        padding: 7px 35px;
+        text-transform: unset;
+        touch-action: manipulation;
+        transition: all 0.3s ease 0s;
+        vertical-align:middle;
+        white-space: nowrap;
+        position: relative;
+        z-index: 999;
+        border: none;
+        background: #A7CCC8;
+        color: white;
+    }
+    .form-input-pad-mob{
+        padding-top: 20px;
+    }
     
   }
+  .form-big2 {
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+}
 
+
+#file-input {
+    display: none;
+}
+
+#file-input-label {
+    font-family: poppins;
+    border-radius: 15px;
+    font-size: 16px;
+    height: auto;
+    width: 250px;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 7px 35px;
+    text-transform: unset;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align:middle;
+    white-space: nowrap;
+    position: relative;
+    z-index: 999;
+    border: none;
+    background: #A7CCC8;
+    color: white;
+}
 
 
   
 @media (min-width: 992px) {
 
+
+    .form-input-pad{
+        padding-left: 10px;
+    }
     .second-about {
         transform:translate(150%,-120px);
         left: 0;
@@ -750,9 +830,17 @@ label {
         width: 525.87px;
     }
     .form-big2 {
-        height: 46px;
-        width: 525.87px;
+        height: auto;
+        width: 385px;
+        border-radius: 15px;
+        border: 1px;
+        border-style: solid;
     }
+    .input-text-pad{
+        padding-top: 14px;
+        padding-left: 15px;
+    }
+
     .testimon-dim{
         height: auto;
         width: 300px;
@@ -903,6 +991,32 @@ label {
     .tourism-hero-pad{
         padding-bottom: 150px;
     }
+    #file-input {
+        display: none;
+        }
+        
+        #file-input-label {
+            font-family: poppins;
+            border-radius: 15px;
+            display: inline-block;
+            font-size: 16px;
+            height: 31px;
+            width: 300px;
+            letter-spacing: 0;
+            line-height: 1;
+            margin-bottom: 0;
+            padding: 7px 35px;
+            text-transform: unset;
+            touch-action: manipulation;
+            transition: all 0.3s ease 0s;
+            vertical-align:middle;
+            white-space: nowrap;
+            position: relative;
+            z-index: 999;
+            border: none;
+            background: #A7CCC8;
+            color: white;
+        }
 
   }
 

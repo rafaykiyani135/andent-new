@@ -12,7 +12,7 @@ function Make() {
   const [email,setEmail]=useState("")
   const [num,setNum]=useState("")
   const [comment,setComment]=useState("")
-  const [panoramex,setPanoramex]=useState("")
+  const [file,setFile]=useState("")
 
   const chFN = (e) => {
     setFname(e.target.value)
@@ -35,8 +35,9 @@ function Make() {
   }
 
   const chPano = (e) => {
-    setPanoramex(e.target.value)
+    setFile(e.target.files[0])
   }
+
 
 
   const bookNow = () =>{
@@ -46,7 +47,7 @@ function Make() {
       phoneNum : num,
       comments: comment,
       email : email,
-      panoramex : panoramex
+      panoramex : file
     });
   }
 
@@ -132,7 +133,7 @@ function Make() {
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="text" id="Email" name="Email" placeholder="Email" style={{borderRadius:"15px"}} className='form-small' required onChange={chEmail}/>
+                            <input type="email" id="Email" name="Email" placeholder="Email" style={{borderRadius:"15px"}} className='form-small' required onChange={chEmail}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
@@ -144,11 +145,21 @@ function Make() {
                           <div className="contact-field pad-10">
                             <textarea name="message" id="message" cols={30} rows={10} placeholder="Write comments" defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}} onChange={chCmnt}/>
                           </div>
-                          <div className="col-lg-12">
-                          <div className="contact-field" style={{paddingLeft:"10px"}}>
-                            <input type="text" id="panoramex" name="panoramex" placeholder="Panoramex" required style={{borderRadius:"15px"}} className='form-big2' onChange={chPano}/>
+                          <div className='row justify-content-center'>
+                          <div className="col-lg-8 col-12 col-sm-12">
+                          <div className="contact-field form-input-pad text-start">
+                           <div className='form-big2' style={{borderStyle:"solid"}}>
+                              <h4 className="input-text-pad text-start" style={{fontSize:"12px",lineHeight:"18px",fontWeight:"700"}}>
+                              Upload Dental Scan or X-Ray;<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {file?<p>Uploaded!</p>:<p></p>}</i>
+                              </h4>
+                           </div>
                           </div>
-                        </div>
+                          </div>
+                          <div className="col-lg-4 col-12 col-sm-12 d-flex justify-content-center text-center align-items-center form-input-pad-mob">
+                            <input type="file" id="file-input" name="file-input" onChange={chPano}/>
+                            <label id="file-input-label" for="file-input" className='text-center'>Upload</label>
+                          </div>
+                          </div>
                           <div className='d-flex justify-content-center pad-20'>
                             <button className="btn" data-animation="fadeInRight" data-delay=".8s" style={{width:"182px",height:"50px"}} onClick={bookNow}>
                               <p style={{transform:"translateY(-5px)"}}>
