@@ -11,6 +11,7 @@ import vid2 from '../../assets/andent-data/hero section videos/hero2.mp4'
 import vid3 from '../../assets/andent-data/hero section videos/hero3.mp4'
 import vid4 from '../../assets/andent-data/hero section videos/hero4.mp4'
 import { useState } from 'react';
+import { useAlert } from 'react-alert';
 
 function Main(props) {
 
@@ -29,6 +30,7 @@ function Main(props) {
 
     const [number,setNumber] = useState("")
     const [name,setName] = useState("")
+    const alert=useAlert();
 
     const changeName = (e) => {
         setName(e.target.value)
@@ -38,18 +40,43 @@ function Main(props) {
         setNumber(e.target.value)
     }
 
-    const getCallBack = () => {
-    window.analytics.identify("Call Back Form Data", {
-        Name : name,
-        Number : number
-    });
+    const getCallBack = async (e) => {
+        e.preventDefault();
+
+        window.analytics.identify("Call Back Form Data", {
+            Name : name,
+            Number : number
+        });
+
+        const res = await fetch("/getcallback",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                phoneNum: number,
+                Name: name
+            })
+        });
+
+        const data=await res.json();
+
+        if(data.status===401 || !data){
+        console.log("error sending email")
+        alert.show("Error Sending Email")
+        }
+        else{
+        console.log("email sent")
+        alert.show("Email Sent Successfully")
+        }
+
     }
       
   return (
 
 
     <>
-   <section id="home" className="slider-area fix p-relative mob-bottom-pad">
+            <section id="home" className="slider-area fix p-relative mob-bottom-pad">
                 <div className="slider-active">
                 <div className="single-slider slider-bg d-flex align-items-start align-items-lg-center">
                    <div className="container">
@@ -75,7 +102,7 @@ function Main(props) {
                            
                             <br/>
                             <br/>
-                            <form action="mail.php" method="post">
+                            <form method="post" onSubmit={getCallBack}>
                             <div className="row">
                             <div className="col-lg-4 col-md-3">
                                 <input type="number" className='input-box form-control mb-3' placeholder='Your Phone Number...' onChange={changeNum} required/>
@@ -84,7 +111,7 @@ function Main(props) {
                                 <input className='input-box form-control mb-3' placeholder='Your Name...' onChange={changeName} required/>
                             </div>
                             <div className="col-lg-4 col-md-4 text-center text-lg-start">
-                                <button className='btn' style={{height:"66px"}} onClick={getCallBack}>
+                                <button className='btn' style={{height:"66px"}} type='submit'>
                                 <p style={{color:"white"}}>
                                     Get Call Back
                                 </p>

@@ -1,12 +1,14 @@
 import React from 'react'
 import bg from '../../assets/andent-data/darkenedbg.png'
 import { useState } from 'react'
+import { useAlert } from 'react-alert'
 
 
 function Main(props) {
 
     const [number,setNumber] = useState("")
     const [name,setName] = useState("")
+    const alert=useAlert();
 
     const changeName = (e) => {
         setName(e.target.value)
@@ -16,11 +18,35 @@ function Main(props) {
         setNumber(e.target.value)
     }
 
-    const getCallBack = () => {
-    window.analytics.identify("Call Back Form Data", {
-        Name : name,
-        Number : number
-    });
+    const getCallBack = async (e) => {
+        e.preventDefault();
+
+        window.analytics.identify("Call Back Form Data", {
+            Name : name,
+            Number : number
+        });
+
+        const res = await fetch("/getcallback",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                phoneNum: number,
+                Name: name
+            })
+        });
+
+        const data=await res.json();
+
+        if(data.status===401 || !data){
+        console.log("error sending email")
+        alert.show("Error Sending Email")
+        }
+        else{
+        console.log("email sent")
+        alert.show("Email Sent Successfully")
+        }
     }
 
   return (
@@ -46,7 +72,7 @@ function Main(props) {
                 </div>
                 <br />
                 <br />
-                <form action="mail.php" method="post">
+                <form method="post" onSubmit={getCallBack}>
                 <div className="row">
                     <div className="col-lg-4 col-md-4">
                     <input type="number" className="input-box form-control mb-3" placeholder="Your Phone Number..." onChange={changeNum} required/>
@@ -55,7 +81,7 @@ function Main(props) {
                     <input type="text" className="input-box form-control mb-3" placeholder="Your Name..." onChange={changeName} required/>
                     </div>
                     <div className="col-lg-4 col-md-4 text-center text-lg-start tourism-hero-pad">
-                    <button className="btn" style={{height:"66px"}} onClick={getCallBack}>
+                    <button className="btn" style={{height:"66px"}} type='submit'>
                         <p style={{ color: "white" }}>
                             Get Call Back
                         </p>

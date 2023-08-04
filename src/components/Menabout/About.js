@@ -1,14 +1,14 @@
 import React from 'react'
 import FeaturesservicesTwo from '../../assets/andent-data/aboutustop.png'
 import { useState } from 'react'
-
+import { useAlert } from 'react-alert'
 
 
 function About() {
 
     const [number,setNumber] = useState("")
     const [name,setName] = useState("")
-
+    const alert=useAlert();
     const changeName = (e) => {
         setName(e.target.value)
     }
@@ -17,11 +17,36 @@ function About() {
         setNumber(e.target.value)
     }
 
-    const getCallBack = () => {
-    window.analytics.identify("Call Back Form Data", {
-        Name : name,
-        Number : number
-    });
+    const getCallBack = async (e) => {
+        e.preventDefault();
+
+        window.analytics.identify("Call Back Form Data", {
+            Name : name,
+            Number : number
+        });
+
+        const res = await fetch("/getcallback",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                phoneNum: number,
+                Name: name
+            })
+        });
+
+        const data=await res.json();
+
+        if(data.status===401 || !data){
+        console.log("error sending email")
+        alert.show("Error Sending Email")
+        }
+        else{
+        console.log("email sent")
+        alert.show("Email Sent Successfully")
+        }
+
     }
 
   return (
@@ -54,7 +79,7 @@ function About() {
                             </p>
                             <br/>
                             <br/>
-                            <form action="mail.php" method="post">
+                            <form method="post" onSubmit={getCallBack}>
                             <div className="row justify-content-lg-start justify-content-center">
                             <div className="col-lg-3 col-md-3">
                                 <input type="number" className='input-box form-control mb-3' placeholder='Phone No...' onChange={changeNum} required/>
@@ -63,7 +88,7 @@ function About() {
                                 <input type="text" className='input-box form-control mb-3' placeholder='Your Name...' onChange={changeName} required/>
                             </div>
                             <div className="col-lg-3 col-md-4 text-center text-lg-start">
-                                <button className='btn' style={{height:"66px"}} onClick={getCallBack}>
+                                <button className='btn' style={{height:"66px"}} type='submit'>
                                 <p style={{color:"white",position:"relative",top:"4px"}}>
                                     Get Call Back
                                 </p>

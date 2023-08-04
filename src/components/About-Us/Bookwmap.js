@@ -3,7 +3,7 @@ import iconone from '../../assets/andent-data/address.png'
 import icontwo from '../../assets/andent-data/contactus.png'
 import Iframe from 'react-iframe'
 import { useState } from 'react'
-
+import { useAlert } from 'react-alert'
 
 function Make() {
 
@@ -12,7 +12,8 @@ function Make() {
   const [email,setEmail]=useState("")
   const [num,setNum]=useState("")
   const [comment,setComment]=useState("")
-  const [file,setFile]=useState("")
+  const [imgfile,setFile]=useState(null)
+  const alert=useAlert();
 
   const chFN = (e) => {
     setFname(e.target.value)
@@ -37,18 +38,43 @@ function Make() {
   const chPano = (e) => {
     setFile(e.target.files[0])
   }
+  const bookNow = async (e) =>{
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append('file', imgfile);
+    formData.append('userEmail',email)
+    formData.append('firstName',Fname)
+    formData.append('lastName',Lname)
+    formData.append('phoneNum',num)
+    formData.append('message',comment)
 
 
-
-  const bookNow = () =>{
     window.analytics.identify("Appointment Form Data", {
       firstName: Fname,
       lastName: Lname,
       phoneNum : num,
       comments: comment,
       email : email,
-      panoramex : file
+      panoramex : imgfile
     });
+
+    const res = await fetch("/appointment",{
+      method:"POST",
+      body: formData,
+    });
+
+    const data=await res.json();
+
+    if(data.status===401 || !data){
+      console.log("error sending email")
+      alert.show("Error Sending Email")
+    }
+    else{
+      console.log("email sent")
+      alert.show("Email Sent Successfully")
+    }
+
   }
 
   return (
@@ -119,7 +145,7 @@ function Make() {
                 
                 <div className="col-lg-6 order-1 pad-10">
                   <div className="contact">
-                  <form action="mail.php" method="post" className="contact-form mt-30">
+                  <form  method="post" className="contact-form mt-30" onSubmit={bookNow}>
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
@@ -150,7 +176,7 @@ function Make() {
                           <div className="contact-field form-input-pad">
                            <div className='form-big2' style={{borderStyle:"solid"}}>
                               <h4 className="input-text-pad text-start input-text-sides" style={{fontSize:"12px",lineHeight:"18px",fontWeight:"700"}}>
-                              Upload Dental Scan or X-Ray;<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {file?<p>Uploaded!</p>:<p></p>}</i>
+                              Upload Dental Scan or X-Ray;<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {imgfile?<p>Uploaded!</p>:<p></p>}</i>
                               </h4>
                            </div>
                           </div>
@@ -161,7 +187,7 @@ function Make() {
                           </div>
                           </div>
                           <div className='d-flex justify-content-center pad-20'>
-                            <button className="btn" data-animation="fadeInRight" data-delay=".8s" style={{width:"182px",height:"50px"}} onClick={bookNow}>
+                            <button className="btn" data-animation="fadeInRight" data-delay=".8s" style={{width:"182px",height:"50px"}} type='submit'>
                               <p style={{transform:"translateY(-5px)"}}>
                                 BOOK NOW
                               </p>

@@ -15,6 +15,8 @@ import Orthodontic from '../components/Orthodontics/Main';
 import Veneers from '../components/Veneers/Main'
 import Dentures from '../components/dentures/Main'
 import Testimonial from '../components/Testimonial/Main'
+import { types,transitions, positions, Provider as AlertProvider } from 'react-alert'
+import AlertTemplate from 'react-alert-template-basic'
 
 function Index() {
 
@@ -24,12 +26,23 @@ function Index() {
     window.scroll(0, 0)
 }, [path]);
 
+const options = {
+  position: positions.BOTTOM_CENTER,
+  timeout: 5000,
+  offset: '30px',
+  type: types.SUCCESS,
+  transition: transitions.SCALE,
+  containerStyle: {
+    zIndex: 1000, // Set a higher value
+  },
+};
+
+
   return (
     <>
+    <AlertProvider template={AlertTemplate} {...options}>
       <Header/>
-
       <Routes>
-
         <Route path="/" element={<Home />} />
         <Route path='/dental-implants' element={<Implants/>}/>
         <Route path='dental-crowns-bridges' element={<BrdigesCrowns/>}/>
@@ -44,8 +57,8 @@ function Index() {
         <Route path="/blog/:page" element={ <Blog/>} />
         <Route path="/blogdetails/:id" element={ <BlogDdeatils/>} />
       </Routes>
-
       <Footer/>
+    </AlertProvider>
     </>
   )
 }
