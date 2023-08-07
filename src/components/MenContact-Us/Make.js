@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import iconone from '../../assets/andent-data/address.png'
 import icontwo from '../../assets/andent-data/contactus.png'
 import { useState } from 'react'

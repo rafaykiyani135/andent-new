@@ -34,9 +34,9 @@ function Main() {
             <header className="header-area header-three">
                 <div className="header-top second-header d-none d-md-block" style={{backgroundColor:"#6DA7A2"}}>
                     <div className="container">
-                        <div className="row align-items-center">
+                        <div className="row align-items-start">
                             <div className="col-lg-8 col-md-8 d-none d-lg-block">
-                                <div className="header-cta">
+                                <div className="header-cta" style={{position:"relative",right:"45px"}}>
                                     <ul>
                                         <li>
                                             <img src={phone} alt='phone' className='icon' style={{paddingRight:"10px"}}/>
@@ -49,20 +49,20 @@ function Main() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-4 d-none d-lg-block text-right">
-                                <div className="header-social header-btn-pos">
+                            <div className="col-lg-4 col-md-4 d-none d-lg-block text-end" style={{position:"relative",left:"22px"}}>
+                                <div className="header-social header-btn-pos" style={{position:"relative",bottom:"24px"}}>
                                     <span>
                                         <Link to='https://instagram.com/andent_clinic?igshid=MzRlODBiNWFlZA' target="_blank" 
                                         rel="noreferrer"title="Instagram" onClick={linkClick}>
-                                        <img src={ig} alt='phone' className='icon2' style={{width:"45px",height:"45px"}}/>
+                                        <img src={ig} alt='phone' className='icon2' style={{width:"40px",height:"40px"}}/>
                                         </Link>
                                         <Link to='https://www.facebook.com/andentclinic?mibextid=LQQJ4d' target="_blank"
                                         rel="noreferrer"title="Facebook" onClick={linkClick}>
-                                        <img src={fb} alt='phone' className='icon3' style={{width:"45px",height:"45px"}}/>
+                                        <img src={fb} alt='phone' className='icon3' style={{width:"40px",height:"40px"}}/>
                                         </Link>
                                         <Link to='https://www.tiktok.com/@andentclinic' target="_blank"
                                         rel="noreferrer"title="Tiktok" onClick={linkClick}>
-                                        <img src={tiktok} alt='phone' className='icon2' style={{width:"45px",height:"45px"}} />
+                                        <img src={tiktok} alt='phone' className='icon2' style={{width:"40px",height:"40px"}} />
                                         </Link>
                                     </span>
                                 </div>
@@ -83,7 +83,7 @@ function Main() {
                                     </div>
                                 </div>
                                 <div className="col-xl-10 col-lg-10 move-header-left">
-                                    <div className="main-menu text-right text-xl-right">
+                                    <div className="main-menu text-right text-xl-right adjust-header">
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li className='has-sub'>

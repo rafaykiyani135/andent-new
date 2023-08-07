@@ -11,7 +11,6 @@ import { useEffect } from 'react'
 
 
 function Main() {
-
   useEffect(() => {
     window.analytics.page('Home');
   });

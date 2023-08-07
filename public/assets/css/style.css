@@ -859,7 +859,7 @@ label {
     }
     .header-btn-pos{
         position: relative;
-        left: 50px;
+        left: 30px;
     }
     .exp-text-pos{
         position: relative;
@@ -919,6 +919,10 @@ label {
     .move-header-left {
         position: relative;
         right: 65px;
+    }
+    .adjust-header{
+        position: relative;
+        right: 20px;
     }
     .move-right {
         position: relative;
@@ -1439,6 +1443,7 @@ top: -3px;
 	font-size: 14px;
 display: inline-block;
 margin-left: 15px;
+align-items: start;
 text-align: center;
 color: #191D3B;
 }
@@ -1620,6 +1625,7 @@ padding-bottom: 15px;
 background: #6DA7A2;
 padding-top: 15px;
 color: #fff;
+height: 55px;
 position: relative;
 z-index: 1;
 }
