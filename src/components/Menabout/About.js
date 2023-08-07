@@ -81,15 +81,15 @@ function About() {
                             <br/>
                             <form method="post" onSubmit={getCallBack}>
                             <div className="row justify-content-lg-start justify-content-center">
-                            <div className="col-lg-3 col-md-3">
-                                <input type="number" className='input-box form-control mb-3' placeholder='Phone No...' onChange={changeNum} required/>
+                            <div className="col-lg-4 col-md-3">
+                                <input type="number" style={{height:"58px"}} className='input-box form-control mb-3' placeholder='Phone Number...' onChange={changeNum} required/>
                             </div>
-                            <div className="col-lg-3 col-md-3">
-                                <input type="text" className='input-box form-control mb-3' placeholder='Your Name...' onChange={changeName} required/>
+                            <div className="col-lg-4 col-md-3">
+                                <input type="text" style={{height:"58px"}} className='input-box form-control mb-3' placeholder='Your Name...' onChange={changeName} required/>
                             </div>
                             <div className="col-lg-3 col-md-4 text-center text-lg-start">
-                                <button className='btn' style={{height:"66px"}} type='submit'>
-                                <p style={{color:"white",position:"relative",top:"4px"}}>
+                                <button className='btn' style={{height:"58px"}} type='submit'>
+                                <p style={{color:"white"}}>
                                     Get Call Back
                                 </p>
                                 </button>
