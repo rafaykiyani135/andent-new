@@ -60,8 +60,8 @@ function Main (){
                              and bridges and enjoy your favorite foods without discomfort
                             </p>
                         </div>
-                        <div className='d-flex justify-content-center upper-padding'>
-                        <img src={b1} alt="dt1" className='andent-icon-sq'/>
+                        <div className='d-flex justify-content-center upper-padding' >
+                        <img src={b1} alt="dt1" className='andent-icon-sq' style={{position:"relative",bottom:"15px"}}/>
                         </div>
                     </div>
                 </div>
