@@ -126,13 +126,13 @@ function Main(props) {
                         <div className="slider-content-new col-lg-6 col-6 text-lg-center slider-left justify-content-lg-center">
                             <img className='slider-content-dim' alt='imgleft1' src={imgleft1}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidleft1}  type="video/quicktime" />
+                                <source src={vidleft1}  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgleft2' src={imgleft2}></img>
                             <img className='slider-content-dim' alt='imgleft3' src={imgleft3}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidleft2}  type="video/quicktime" />
+                                <source src={vidleft2}  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgleft4' src={imgleft4}></img>
@@ -143,13 +143,13 @@ function Main(props) {
                             <img className='slider-content-dim' alt='imgright1' src={imgright1}></img>
                             <img className='slider-content-dim' alt='imgright2' src={imgright2}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidright1}  type="video/quicktime" />
+                                <source src={vidright1}  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgright3' src={imgright3}></img>
                             <img className='slider-content-dim' alt='imgright4' src={imgright4}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidright2}  type="video/quicktime" />
+                                <source src={vidright2}  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
