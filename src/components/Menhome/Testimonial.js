@@ -1,6 +1,8 @@
 import React from 'react'
 import star from '../../assets/andent-data/star.png'
 import ReactPlayer from 'react-player'
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 
 
 
@@ -10,8 +12,12 @@ function Testimonialslider() {
         <img index={index} src={star} alt="icons" style={{paddingRight:"10px",transform:"translateY(-5px)",height:"20px",width:"30px"}}  />
       ));
 
-
-      
+      const {t,i18n}=useTranslation();
+  
+        useEffect(() => {
+            const lng= navigator.language;
+            i18n.changeLanguage(lng)
+        });
         
   return (
     
@@ -21,7 +27,7 @@ function Testimonialslider() {
             <div className='row justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
                 <div className='col-lg-8 col-12 text-center'>
                     <h3 className='size-60 theme-dark mob-heading' style={{lineHeight:"72px",fontWeight:"700"}}>
-                        Testimonials
+                       {t("testimonial")}
                     </h3>
                 </div>
             </div>
@@ -29,7 +35,7 @@ function Testimonialslider() {
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>Gaetano &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{t("test1name")} &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6 text-lg-start'>
                             {stars}
@@ -46,10 +52,7 @@ function Testimonialslider() {
                     <div className='d-flex justify-content-center'>
                     <div style={{paddingTop:"10px"}} className='andent-text text-center testimon-dim   '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
-                        Dentures are removable dental appliances that are crafted to resemble your
-                        natural teeth and gums. They are custom-made to fit your unique mouth shape
-                        and are designed to restore your smile and ability to chew and speak properly.
-                        Dentures are made from durable materials that are both comfortable and functional.
+                        {t("test1desc")}
                         </p>
                     </div>
                     </div>
@@ -57,7 +60,7 @@ function Testimonialslider() {
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>Roberta &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{t("test2name")} &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6 text-lg-start'>
                             {stars}
@@ -74,10 +77,7 @@ function Testimonialslider() {
                     <div className='d-flex justify-content-center'>
                         <div style={{paddingTop:"10px"}} className='andent-text text-center testimon-dim   '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
-                        Dentures are removable dental appliances that are crafted to resemble your
-                        natural teeth and gums. They are custom-made to fit your unique mouth shape
-                        and are designed to restore your smile and ability to chew and speak properly.
-                        Dentures are made from durable materials that are both comfortable and functional.
+                        {t("test2desc")}
                         </p>
                         </div>
                     </div>

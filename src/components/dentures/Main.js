@@ -8,12 +8,20 @@ import Contact from '../implants/Contactsm'
 import Book from '../MenContact-Us/Make'
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Main (){
 
 
     useEffect(() => {
         window.analytics.page('Dentures');
+      },[]);
+
+      const {t,i18n}=useTranslation();
+
+      useEffect(() => {
+          const lng= navigator.language;
+          i18n.changeLanguage(lng)
       });
 
       const getMessage = (e) => {
@@ -24,9 +32,7 @@ function Main (){
 
     return (
         <div>
-            <Slider heading="Discover Premium Dentures" description="We are dedicated to providing you with carefully
-            crafted dentures to fit your mouth and replicate the appearance of natural teeth. Take the first step towards
-            your dream smile with our personalized care"/>
+            <Slider heading={t("denturesheroh")} description={t("denturesherop")}/>
             <Review/>
             <Work/>
             <Types/>

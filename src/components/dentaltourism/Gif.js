@@ -1,7 +1,16 @@
 import gif from '../../assets/andent-data/s.gif';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 function Main (){
+
+    const {t,i18n}=useTranslation();
+
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+      });
 
     
     const scrollToBottom = () => {
@@ -30,7 +39,7 @@ function Main (){
                 <div className='upper-padding'>
                         <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }} onClick={scrollToBottom}>
                             <p style={{transform:"translateY(8px)"}}>
-                                Learn More
+                                {t("learnmore")}
                             </p>
                         </button>
                         </div>

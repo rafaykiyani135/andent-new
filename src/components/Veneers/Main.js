@@ -7,11 +7,19 @@ import Contactus from './Contactus'
 import Book from '../MenContact-Us/Make'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Main (){
 
     useEffect(() => {
         window.analytics.page('Veneers');
+      },[]);
+
+      const {t,i18n}=useTranslation();
+
+      useEffect(() => {
+          const lng= navigator.language;
+          i18n.changeLanguage(lng)
       });
 
       const getMessage = (e) => {
@@ -22,9 +30,7 @@ function Main (){
 
     return (
         <div>
-            <Slider heading="Discover Premium Dental Veneers" description="We are devoted to
-            delivering remarkable results for all of our orthodontic treatments. Take the first
-            step towards your dream smile with our personalized care"/>
+            <Slider heading={t("veneersheroh")} description={t("veneersherop")}/>
             <Review/>
             <BenefitsnSteps/>
             <Exp/>

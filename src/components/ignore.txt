@@ -63,4 +63,66 @@ upload btn
                             <input type="file" id="file-input" multiple name="file-input" onChange={chPano}/>
                             <label id="file-input-label" for="file-input" className='text-center'>Upload</label>
                           </div>
+old design figma slider : 
+<div className="col-lg-5 col-md-4 col-12 upper-padding move-down mob-slider">
+                        <div className='slider-container2'>
+                            <Slider {...settings}>
+                                <div style={{height:"394px",width:"484px"}} className='upper-container'>
+                                    <div className=' d-flex'>
+                                    <div className='slider-picture' style={{paddingRight:"5px"}}>
+                                        <img src={imgleft} style={{}} alt='leftimg1'/>
+                                    </div>
+                                    <div className="slider-video">
+                                    <video  autoPlay loop muted style={{}}>
+                                        <source src={vid} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                    </div>
+                                    <div className='d-flex'>
+                                        <div className="slider-video" >
+                                        <video  autoPlay loop muted style={{width:"234px",height:"251px",position:"relative",bottom:"128px",paddingTop:"12px"}}>
+                                            <source src={vid2} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        </div>
+                                        <div className='slider-picture2' style={{position:"relative",bottom:"18px",right:"34px"}}>
+                                            <img src={imgright} style={{height:"139px",width:"277px",paddingTop:"6px"}} alt='rightimg1'/>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style={{height:"394px",width:"484px"}} className=''>
+                                <div className='d-flex'>
+                                    <div className='slider-picture' style={{paddingRight:"5px"}}>
+                                        <img src={imgleft2} alt='leftimg2' style={{}}/>
+                                    </div>
+                                    <div className="slider-video">
+                                    <video  autoPlay loop muted style={{}}>
+                                        <source src={vid3} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                </div>
+                                <div className='d-flex'>
+                                    <div className="slider-video" >
+                                    <video  autoPlay loop muted style={{width:"234px",height:"251px",position:"relative",bottom:"128px",paddingTop:"12px"}}>
+                                        <source src={vid4} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </div>
+                                    <div className='slider-picture2' style={{position:"relative",bottom:"18px",right:"34px"}}>
+                                        <img src={imgright2} style={{height:"139px",width:"277px",paddingTop:"6px"}} alt='rightimg2'/>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                
+                            </Slider>
+                        </div>
+                        </div>
+
+
+//for backend connecting to nodemailer 
+  //"proxy": "http://localhost:8004",
 

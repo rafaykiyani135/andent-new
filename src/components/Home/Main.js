@@ -8,12 +8,23 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Appointment from '../MenContact-Us/Make'
 import Review from '../reviews/trustpilot'
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 
 function Main() {
+  const {t,i18n}=useTranslation();
+
   useEffect(() => {
-    window.analytics.page('Home');
-  });
+    var referrer = document.referrer;
+    window.analytics.page('Home',{
+        referrer: referrer, // Pass the referrer URL here
+    });
+  },[]);
+  
+  useEffect(() => {
+    const lng= navigator.language;
+    i18n.changeLanguage(lng)
+  },[i18n]);
 
   const getMessage = (e) => {
     window.analytics.track("WhatsApp", {
@@ -23,8 +34,7 @@ function Main() {
 
   return (
     <>
-      <Slider heading="Discover Premium Dental Treatments" description="We are devoted to delivering remarkable results for all of our orthodontic treatments.
-                            Take the first step towards your dream smile with our personalized care"/>
+      <Slider heading={t('homehero')} description={t("homeherop")} span={true} quality={t("homeheroh2")} and={t("homehero2")} comfort={t("homeheroh22")} />
       <Review/>
       <Ourservish/>
       <OurDr/>

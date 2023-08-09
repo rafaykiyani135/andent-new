@@ -8,14 +8,24 @@ import Contact from './Contactsm';
 import Apt from '../MenContact-Us/Make';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 function Main (){
 
+  const {t,i18n}=useTranslation();
 
-    useEffect(() => {
-        window.analytics.page('Dental-implants');
-    });
+  
+  useEffect(() => {
+    window.analytics.page('Dental-implants');
+  },[]);
+  
+  useEffect(() => {
+    const lng= navigator.language;
+    i18n.changeLanguage(lng)
+  });
+
+
 
     const getMessage = (e) => {
         window.analytics.track("WhatsApp", {
@@ -26,10 +36,7 @@ function Main (){
 
     return(
         <div>
-            <Intro heading="Discover Exceptional Dental Implants" description="Say goodbye to the challenges
-             of missing or damaged teeth. We restore your
-             smile with our affordable and long lasting implants for improved oral health."/>
-
+            <Intro heading={t("implantshero")} description={t("implantsherop")} span={false}/>
              <Reviews/>
              <Benefits/>
              <Work/>

@@ -6,10 +6,12 @@ import b4 from '../../assets/andent-data/b4.png'
 import b5 from '../../assets/andent-data/b5.png'
 import Slider from 'react-slick'
 import { useState,useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Main (){
 
     const [isMobile, setIsMobile] = useState(false)
+    const {t,i18n}=useTranslation();
     //choose the screen size 
     const handleResize = () => {
       if (window.innerWidth < 720) {
@@ -18,6 +20,11 @@ function Main (){
           setIsMobile(false)
       }
     }
+
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+    });
   
     // create an event listener
     useEffect(() => {
@@ -42,7 +49,7 @@ function Main (){
                 <div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h2 className='theme-dark mob-heading'>Benefits of Dental Implants</h2>
+                    <h2 className='theme-dark mob-heading'>{t("implantsbenefits")}</h2>
                     </div>
                 </div>
                 </div>
@@ -51,12 +58,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Permanent and Sturdy Foundation</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben1")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center offset-fix-1' style={{lineHeight:"20px"}}>
-                            Dental implants provide a long-lasting solution for replacing missing teeth,
-                            offering a secure and stable base.
+                            {t("impben1p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -67,12 +73,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Improved Functionality</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben2")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            With dental implants, you can regain full chewing ability and restore
-                            proper speech, enhancing your overall quality of life.
+                            {t("impben2p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -83,12 +88,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Prevents Dental Complications</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben3")}</h4>
                         </div>
                         <div className='andent-sq-icon-text offset-fix-2'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            By replacing missing teeth, dental implants prevent surrounding teeth from shifting,
-                            maintaining proper bite alignment and avoiding potential jawbone deterioration.
+                            {t("impben3p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -99,12 +103,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Preserves Dental Structure</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben4")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            Dental implants help preserve the integrity of your dental structure, preventing the
-                            loss of adjacent teeth and supporting optimal oral health.
+                            {t("impben4p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -115,12 +118,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Stimulates Jawbone Health</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben5")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            Implants stimulate the jawbone, promoting healthy bone growth and
-                            preventing bone loss commonly associated with missing teeth.
+                            {t("impben5p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>

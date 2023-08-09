@@ -8,12 +8,22 @@ import Contact from '../implants/Contactsm'
 import Book from '../MenContact-Us/Make';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Main (){
 
+  const {t,i18n}=useTranslation();
+
+  useEffect(() => {
+    window.analytics.page('Orthodontics');
+  },[]);
+
     useEffect(() => {
-        window.analytics.page('Orthodontics');
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
       });
+
+    
 
       const getMessage = (e) => {
         window.analytics.track("WhatsApp", {
@@ -23,9 +33,7 @@ function Main (){
 
     return(
         <div>
-            <Welcome heading="Discover Premium Orthodontic Treatments" description="We are devoted to delivering
-             remarkable results for all of our orthodontic treatments. Take the first step towards your dream smile
-              with our personalized care"/>
+            <Welcome heading={t("orthheroh")} description={t("orthherop")}/>
             <Review/>
             <Types/>
             <Benefitsnworks/>

@@ -1,8 +1,33 @@
 import React from 'react'
 import Callmenone from '../../assets/andent-data/contactgirl.png'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 function Main() {
+
+    const {t,i18n}=useTranslation();
+    const [transform, setTransform] = useState("translate(-2px,-10px)");
+
+    useEffect(() => {
+        //"translate(-5px,-5px)"
+          const lng= navigator.language;
+          i18n.changeLanguage(lng)
+    
+          if (navigator.language.startsWith('it')) {
+            setTransform("translate(-2px,-8px)");
+          }
+          
+          else if (navigator.language.startsWith('sq')) {
+            setTransform("translate(-15px,-8px)");
+          }
+    
+           else {
+            setTransform("translate(-2px,-10px)");
+          }
+      },[i18n,setTransform]);
+    
 
     const scrollToBottom = () => {
         window.scrollTo({
@@ -28,13 +53,12 @@ function Main() {
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12 d-flex align-items-start justify-content-start text-center text-lg-start">
                     <div className='pad-20-sm'>
-                    <h5 style={{fontSize:"25px",color:"#4E4E50"}} className='theme-dark'>Contact us to learn more about our services</h5>
-                    <h2 style={{fontSize:"16px",color:"black",fontWeight:"400"}}>Guided by our expert team, we focus on your comfort and satisfaction.
-                    Achieve a confident smile with Andent.</h2>
+                    <h5 style={{fontSize:"25px",color:"#4E4E50"}} className='theme-dark'>{t("heartgirlh")}</h5>
+                    <h2 style={{fontSize:"16px",color:"black",fontWeight:"400"}}>{t("heartgirlp")}</h2>
                     <div className='decent-pad mob-bottom-pad'>
                         <Link href="#" className="btn" style={{ height: "40px", width: "169px" }} onClick={scrollToBottom}>
-                        <p style={{ transform: "translate(-2px,-10px)", fontSize: "18px" }}>
-                            Contact Us
+                        <p style={{ transform: transform, fontSize: "18px" }}>
+                            {t("contactus")}
                         </p>
                         </Link>
                     </div>

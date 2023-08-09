@@ -10,8 +10,16 @@ import dr6 from '../../assets/andent-data/dr6.jpg'
 import dr7 from '../../assets/andent-data/dr7.jpg'
 import dr8 from '../../assets/andent-data/dr8.jpg'
 import dr9 from '../../assets/andent-data/dr9.jpg'
+import { useTranslation } from 'react-i18next'
 
 function Ourdr() {
+
+    const {t,i18n}=useTranslation();
+  
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+    });
     
     const [isMobile, setIsMobile] = useState(false)
     //choose the screen size 
@@ -46,9 +54,9 @@ function Ourdr() {
         <>
         <div className='container andent-padding'>
             <div className='row justify-content-center text-center'>
-            <div className='col-lg-8 col-12'>
+            <div className='col-lg-12 col-12'>
                 <h2 className='theme-dark size-60 mob-heading'>
-                Meet Our Team
+                {t("meetTeam")}
                 </h2>
             </div>
             </div>
@@ -61,10 +69,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Anduela Çurmaku
+                    {t("staff1")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Dentistry
+                    {t("dentist")}
                     </p>
                 </div>
             </div>
@@ -74,10 +82,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Blerta Çurmaku
+                    {t("staff2")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Secretary
+                    {t("secretary")}
                     </p>
                 </div>
             </div>
@@ -87,10 +95,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Ermal Cuadari
+                    {t("staff3")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Dental technician
+                    {t("tech")}
                     </p>
                 </div>
             </div>
@@ -100,10 +108,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Laurent Bixheku
+                    {t("staff4")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Dentistry
+                    {t("dentist")}
                     </p>
                 </div>
             </div>
@@ -113,10 +121,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Leonard Maci
+                    {t("staff5")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Dental tourism clinic coordinator
+                    {t("dentaltourismcoord")}
                     </p>
                 </div>
             </div>
@@ -126,10 +134,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Manuela Manjani
+                    {t("staff6")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                        Dentistry
+                    {t("dentist")}
                     </p>
                 </div>
             </div>
@@ -139,10 +147,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Marvin Dedaj
+                    {t("staff7")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Dental Assistant
+                    {t("assistant")}
                     </p>
                 </div>
             </div>
@@ -152,10 +160,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Rudina Bitri
+                    {t("staff8")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Front desk clerk
+                    {t("clerk")}
                     </p>
                 </div>
             </div>
@@ -165,10 +173,10 @@ function Ourdr() {
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
-                    Safjela Baja
+                    {t("staff9")}
                     </h3>
                     <p className='theme-andent' style={{ fontSize: "16px" }}>
-                    Dentistry
+                    {t("dentist")}
                     </p>
                 </div>
             </div>

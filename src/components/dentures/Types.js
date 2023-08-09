@@ -1,9 +1,19 @@
 import b1 from '../../assets/andent-data/dentures2.png'
 import b2 from '../../assets/andent-data/dentures3.png'
 import b3 from '../../assets/andent-data/dentures4.png'
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 function Main (){
+
+    const {t,i18n}=useTranslation();
+
+      useEffect(() => {
+          const lng= navigator.language;
+          i18n.changeLanguage(lng)
+      });
+
     return(
         <div>
             <div className="container upper-pad-20 mob-top-pad">
@@ -11,11 +21,10 @@ function Main (){
                     <div className="row align-items-center justify-content-center text-center">
                     <div className="col-lg-8">
                         <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                        <h2 className='theme-dark'>Types of Dentures</h2>
+                        <h2 className='theme-dark'>{t("denturestype")}</h2>
                         </div>
                         <p className="theme-andent size-20" style={{lineHeight:"30px",fontWeight:"700"}}>
-                        Dentures provide a reliable remedy for dental issues like missing,
-                        damaged, or decaying teeth, restoring both functionality and aesthetics
+                        {t("denturestypep")}
                         </p>
                     </div>
                     </div>
@@ -27,13 +36,11 @@ function Main (){
                             <img src={b1} alt="dt1" style={{height:"144px",width:"240px"}} className='img-fluid'/>
                             </div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Complete Dentures</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("denturestype1")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                Complete dentures replace all of your natural teeth and are
-                                custom-made to fit your mouth perfectly, providing a full and
-                                natural-looking smile.
+                                {t("denturestype1p")}
                                 </p>
                             </div>
                         </div>
@@ -44,13 +51,11 @@ function Main (){
                             <img src={b2} alt="dt1" style={{height:"144px",width:"240px"}} className='img-fluid'/>
                             </div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Partial Dentures</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("denturestype2")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                If you have some natural teeth remaining, partial dentures are
-                                designed to fill in the gaps, restoring both aesthetics and
-                                functionality.
+                                {t("denturestype2p")}
                                 </p>
                             </div>
                         </div>
@@ -61,12 +66,11 @@ function Main (){
                             <img src={b3} alt="dt1" style={{height:"144px",width:"240px"}} className='img-fluid'/>
                             </div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Implant-Supported Dentures</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("denturestype3")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                Implant-supported dentures are attached to dental implants for
-                                enhanced stability and comfort providing improved chewing ability.
+                                {t("denturestype3p")}
                                 </p>
                             </div>
                         </div>

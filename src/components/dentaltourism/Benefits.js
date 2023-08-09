@@ -4,8 +4,11 @@ import img3 from '../../assets/andent-data/benefit3.png'
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
 import { useState,useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Main (){
+
+    const {t,i18n}=useTranslation();
 
     const [isMobile, setIsMobile] = useState(false)
     //choose the screen size 
@@ -16,6 +19,11 @@ function Main (){
           setIsMobile(false)
       }
     }
+
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+      });
   
     // create an event listener
     useEffect(() => {
@@ -38,7 +46,7 @@ function Main (){
                 <div className="row justify-content-center">
                     <div className="col-lg-12 text-center">
                         <h3 className="theme-dark size-60 mob-heading">
-                            Benefits of Dental Tourism with Andent
+                            {t("tourismbenefits")}
                         </h3>
                     </div>
                 </div>
@@ -48,11 +56,10 @@ function Main (){
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 order-lg-first order-md-first mob-top-pad text-center text-lg-start">
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
-                        Affordability
+                        {t("tourismben1")}
                         </h2>
                         <p className="decent-pad size-16 tourism-benefits" style={{fontWeight:"400",lineHeight:"20px",color:"black"}}>
-                        We provide top-tier dental services at up 70% of the cost you'd expect to pay locally. This affordability
-                         is one of the key factors driving our reputation as a leading destination for dental tourism.
+                        {t("tourismben1p")}
                         </p>
                     </div>
                 </div>
@@ -62,12 +69,10 @@ function Main (){
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 move-up text-center text-lg-start" style={{paddingTop:"20px"}}>
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
-                        Quality Care
+                        {t("tourismben2")}
                         </h2>
                         <p className="decent-pad size-16 tourism-benefits" style={{fontWeight:"400",lineHeight:"20px",color:"black"}}>
-                        Our staff brings over 15 years of experience in various fields of dentistry. Using advanced technology
-                         and staying up-to-date with the latest techniques,
-                         we ensure that every patient receives the best treatment possible.
+                        {t("tourismben2p")}
                         </p>
                     </div>
                 </div>
@@ -77,14 +82,10 @@ function Main (){
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 move-up order-lg-first order-md-first mob-top-pad text-center text-lg-start">
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
-                        Safety & Security
+                        {t("tourismben3")}
                         </h2>
                         <p className="decent-pad size-16 tourism-benefits" style={{fontWeight:"400",lineHeight:"20px",color:"black"}}>
-                        We follow stringent security protocols and hygiene standards to ensure a safe environment for all our clients.
-                         Our clinic is equipped with state-of-the-art dental technology
-                         to facilitate accurate diagnosis and precise treatments, making your visit to worry-free.We provide
-                          top-tier dental services at up 70% of the cost you'd expect to pay locally. This affordability
-                         is one of the key factors driving our reputation as a leading destination for dental tourism.
+                        {t("tourismben3p")}
                         </p>
                     </div>
                 </div>
@@ -107,7 +108,7 @@ function Main (){
                         <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }}>
                             <Link to="/dental-tourism" style={{ color: "white" }} title="Learn More" onClick={linkClick}>
                             <p style={{transform:"translateY(8px)"}}>
-                                Learn More
+                            {t("learnmore")}
                             </p>
                             </Link>
                         </button>

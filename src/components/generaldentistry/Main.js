@@ -5,11 +5,18 @@ import ContactUs from '../implants/Contactsm';
 import Appt from '../MenContact-Us/Make';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Main (){
+    const {t,i18n}=useTranslation();
 
     useEffect(() => {
         window.analytics.page('GeneralDentistry');
+      },[]);
+
+      useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
       });
       
       const getMessage = (e) => {
@@ -20,8 +27,7 @@ function Main (){
 
     return(
         <div>
-            <Slider heading="Discover Premium Dentistry Services" description="Say goodbye to the challenges of missing or damaged teeth. We
-             restore your smile with our affordable and long lasting implants for improved oral health."/>
+            <Slider heading={t("generaldentistryhero")} description={t("generaldentistryherop")}/>
             <Review/>
             <Content/>
             <ContactUs/>

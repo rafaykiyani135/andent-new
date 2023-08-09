@@ -7,10 +7,12 @@ import b5 from '../../assets/andent-data/s4.png'
 import b6 from '../../assets/andent-data/b6.png'
 import Slider from 'react-slick'
 import { useState,useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Main (){
 
     const [isMobile, setIsMobile] = useState(false)
+    const {t,i18n}=useTranslation();
     //choose the screen size 
     const handleResize = () => {
       if (window.innerWidth < 720) {
@@ -19,6 +21,11 @@ function Main (){
           setIsMobile(false)
       }
     }
+
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+      });
   
     // create an event listener
     useEffect(() => {
@@ -43,7 +50,7 @@ function Main (){
                 <div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h2 className='theme-dark mob-heading'>Importance of Dental Crowns and Bridges</h2>
+                    <h2 className='theme-dark mob-heading'>{t("bridgesimportance")}</h2>
                     </div>
                 </div>
                 </div>
@@ -52,12 +59,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Restored Chewing Function </h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp1")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            Experience better biting and chewing capabilities with durable dental crowns
-                             and bridges and enjoy your favorite foods without discomfort
+                            {t("bridgesimp1p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding' >
@@ -68,11 +74,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Improved Speech</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp2")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            Dental crowns and bridges fill gaps which ensure confident and articulate communication
+                            {t("bridgesimp2p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -83,12 +89,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center text-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Enhanced Aesthetics and Confidence</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp3")}</h4>
                         </div>
                         <div className='andent-sq-icon-text text-center offset-fix'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            Achieve a natural-looking smile that boosts self-confidence
-                            and engage confidently in social interactions
+                            {t("bridgesimp3p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -99,12 +104,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Longevity and Reliability</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp4")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            Our expertly crafted dental crowns and bridges
-                            provide durability and reliable performance for years
+                            {t("bridgesimp4p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -115,11 +119,11 @@ function Main (){
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Preservation of Oral Health</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp5")}</h4>
                         </div>
                         <div className='andent-sq-icon-text'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
-                            Preserve jawbone and facial structure, preventing bone loss and maintaining natural tooth alignment
+                            {t("bridgesimp5p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>

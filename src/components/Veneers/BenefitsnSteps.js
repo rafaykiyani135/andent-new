@@ -6,9 +6,19 @@ import s1 from '../../assets/andent-data/dvs1.png'
 import s2 from '../../assets/andent-data/dvs2.png'
 import s3 from '../../assets/andent-data/dvs3.png'
 import s4 from '../../assets/andent-data/dvs4.png'
-
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Main (){
+
+    const {t,i18n}=useTranslation();
+
+      useEffect(() => {
+          const lng= navigator.language;
+          i18n.changeLanguage(lng)
+      });
+
+
     return(
         <div>
             <div className="container andent-padding">
@@ -16,12 +26,10 @@ function Main (){
                     <div className="row align-items-center justify-content-center text-center">
                     <div className="col-lg-8">
                         <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                        <h2 className='theme-dark mob-heading'>Benefits of Dental Veneers</h2>
+                        <h2 className='theme-dark mob-heading'>{t("veneersbenefit")}</h2>
                         </div>
                         <p className="theme-andent size-20" style={{lineHeight:"30px",fontWeight:"700"}}>
-                        Veneers are an effective solution for a range of
-                        cosmetic dental concerns like discolored, chipped,
-                        or misaligned teeth
+                        {t("veneersbenefitp")}
                         </p>
                     </div>
                     </div>
@@ -33,13 +41,11 @@ function Main (){
                             <img src={b1} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                             </div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Aesthetics</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("veneersbenefit1")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                Our expertly crafted veneers enhance the appearance of teeth
-                                that are discolored, stained, chipped, cracked, or have gaps
-                                between them.
+                                {t("veneersbenefit1p")}
                                 </p>
                             </div>
                         </div>
@@ -50,13 +56,11 @@ function Main (){
                             <img src={b2} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                             </div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Customization</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("veneersbenefit2")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                Each veneer is custom-made to match the color, shape,
-                                size, and texture of your natural teeth ensuring a
-                                seamless integration with your smile
+                                {t("veneersbenefit2p")}
                                 </p>
                             </div>
                         </div>
@@ -67,13 +71,11 @@ function Main (){
                             <img src={b3} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                             </div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Durability</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("veneersbenefit3")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                We use high-quality materials, such as porcelain
-                                or composite resin, known for their strength and
-                                longevity. 
+                                {t("veneersbenefit3p")}
                                 </p>
                             </div>
                         </div>
@@ -84,13 +86,11 @@ function Main (){
                             <img src={b4} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                             </div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Minimally Invasive</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("veneersbenefit4")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                Our minimally invasive approach preserves the majority
-                                of your natural tooth structure by bonding the veneers
-                                to the front surface of your teeth
+                                {t("veneersbenefit4p")}
                                 </p>
                             </div>
                         </div>
@@ -100,17 +100,16 @@ function Main (){
                 <div className="row align-items-center justify-content-center text-center upper-padding">
                     <div className="col-lg-12">
                         <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                        <h2 className='theme-dark mob-heading'>Step by Step Procedure with Andent</h2>
+                        <h2 className='theme-dark mob-heading'>{t("stepbystep")}</h2>
                         </div>
                     </div>
                 </div>
 
                 <div className="row justify-content-around upper-padding">
                     <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
-                        <h5 className="size-18 theme-dark">Consultation</h5>
+                        <h5 className="size-18 theme-dark">{t("veneersstep1")}</h5>
                         <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
-                        The process starts with a thorough examination of your oral health.
-                        We'll discuss your goals and the best type of veneers.
+                        {t("veneersstep1p")}
                         </p>
                     </div>
                     <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
@@ -122,19 +121,17 @@ function Main (){
                     <img src={s2} alt='step1' className='andent-icon-circ move-img-right'/>
                 </div>
                 <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
-                    <h5 className="size-18 theme-dark">Preparation</h5>
+                    <h5 className="size-18 theme-dark">{t("veneersstep2")}</h5>
                     <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
-                    Preparation may involve removing enamel from the tooth's surface to accommodate the veneer.
-                    We will then take an impression or digital scan of your teeth.
+                    {t("veneersstep2p")}
                     </p>
                 </div>
                 </div>
                 <div className="row justify-content-around upper-padding">
                     <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
-                        <h5 className="size-18 theme-dark">Creation</h5>
+                        <h5 className="size-18 theme-dark">{t("veneersstep3")}</h5>
                         <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
-                        Using the impressions, we will craft the veneers using durable
-                        materials that fit in with the rest of your teeth.
+                        {t("veneersstep3p")}
                         </p>
                     </div>
                     <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
@@ -146,10 +143,9 @@ function Main (){
                         <img src={s4} alt='step1' className='andent-icon-circ move-img-right steps-img-left2'/>
                     </div>
                     <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
-                        <h5 className="size-18 theme-dark">Placement</h5>
+                        <h5 className="size-18 theme-dark">{t("veneersstep4")}</h5>
                         <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
-                        We then clean your teeth and bond the veneers to the tooth's
-                        surface using a special adhesive.
+                        {t("veneersstep4p")}
                         </p>
                     </div>
                  </div>

@@ -4,6 +4,8 @@ import icontwo from '../../assets/andent-data/contactus.png'
 import Iframe from 'react-iframe'
 import { useState } from 'react'
 import { useAlert } from 'react-alert'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Make() {
 
@@ -14,6 +16,27 @@ function Make() {
   const [comment,setComment]=useState("")
   const [imgfile,setFile]=useState(null)
   const alert=useAlert();
+  const {t,i18n}=useTranslation();
+  const [transform, setTransform] = useState("translateY(-5px)");
+
+  
+  useEffect(() => {
+    //"translate(-5px,-5px)"
+      const lng= navigator.language;
+      i18n.changeLanguage(lng)
+
+      if (navigator.language.startsWith('it')) {
+        setTransform("translate(-5px,-5px)");
+      }
+      
+      else if (navigator.language.startsWith('sq')) {
+        setTransform("translate(-13px,-5px)");
+      }
+
+       else {
+        setTransform("translateY(-5px)");
+      }
+  },[i18n,setTransform]);
 
   const chFN = (e) => {
     setFname(e.target.value)
@@ -50,7 +73,7 @@ function Make() {
     formData.append('message',comment)
 
 
-    window.analytics.identify("Appointment Form Data", {
+    window.analytics.identify(email, {
       firstName: Fname,
       lastName: Lname,
       phoneNum : num,
@@ -91,7 +114,7 @@ function Make() {
                       </div>
                       <div className='col-lg-8 col-12 mob-bottom-text'>
                         <div className='apt-text'>
-                            <h5 className='theme-dark' style={{color:"#4E4E50"}}>Clinic Address</h5>
+                            <h5 className='theme-dark' style={{color:"#4E4E50"}}>{t("address")}</h5>
                             <p className='size-16 theme-dark' style={{width:"263px",height:"64px",lineHeight:"20px",fontWeight:"400"}}>
                             Rruga Bardhok Biba, Pall. Golden<br/> Trema,
                             Shk. B, Kati 4, Tiranë 
@@ -110,8 +133,8 @@ function Make() {
                         <div style={{position:"relative",bottom:"20px"}} className='apt-text'>
                           <h5 className='theme-dark' style={{color:"#4E4E50"}}>Contact Us</h5>
                           <p className='size-16 theme-dark' style={{width:"263px",height:"100px",lineHeight:"20px",fontWeight:"400"}}>
-                          Phone Number:<br/> +355(0) 69 375 5065<br/><br/>
-                          Email:<br/>info@andent.al
+                          {t("phnum")}<br/> +355(0) 69 375 5065<br/><br/>
+                          {t("email")}:<br/>info@andent.al
                           </p>
                         </div>
                         
@@ -136,9 +159,9 @@ function Make() {
                 </div>
 
                 <div className='row justify-content-center text-center'>
-                <div className='col-lg-8'>
+                <div className='col-lg-12'>
                 <div className="section-title center-align">
-                      <h2 className='size-60 theme-dark'>Book an Appointment</h2>
+                      <h2 className='size-60 theme-dark'>{t("bookaptmnt")}</h2>
                     </div>
                     </div>
                 </div>
@@ -149,47 +172,47 @@ function Make() {
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="text" id="firstn" name="firstn" placeholder="First Name" style={{borderRadius:"15px"}} className='form-small' required onChange={chFN}/>
+                            <input type="text" id="firstn" name="firstn" placeholder={t("fname")} style={{borderRadius:"15px"}} className='form-small' required onChange={chFN}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="text" id="lastn" name="lastn" placeholder="Last Name" style={{borderRadius:"15px"}} className='form-small' required onChange={chLN}/>
+                            <input type="text" id="lastn" name="lastn" placeholder={t("lname")} style={{borderRadius:"15px"}} className='form-small' required onChange={chLN}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="email" id="Email" name="Email" placeholder="Email" style={{borderRadius:"15px"}} className='form-small' required onChange={chEmail}/>
+                            <input type="email" id="Email" name="Email" placeholder={t("email")} style={{borderRadius:"15px"}} className='form-small' required onChange={chEmail}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
                           <div className="contact-field pad-10">
-                            <input type="number" id="Phone Number" name="Phone Number" placeholder="Phone Number" className='form-small' style={{borderRadius:"15px"}} required onChange={chPN}/>
+                            <input type="number" id="Phone Number" name="Phone Number" placeholder={t("number")} className='form-small' style={{borderRadius:"15px"}} required onChange={chPN}/>
                           </div>
                         </div>
                         <div className="col-lg-12">
                           <div className="contact-field pad-10">
-                            <textarea name="message" id="message" cols={30} rows={10} placeholder="Write comments" defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}} onChange={chCmnt}/>
+                            <textarea name="message" id="message" cols={30} rows={10} placeholder={t("comments")} defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}} onChange={chCmnt}/>
                           </div>
                           <div className='row justify-content-around'>
                           <div className="col-lg-7 col-12 col-sm-12 col-md-12 d-flex justify-content-center justify-content-lg-start">
                           <div className="contact-field form-input-pad">
                            <div className='form-big2' style={{borderStyle:"solid"}}>
                               <h4 className="input-text-pad text-start input-text-sides" style={{fontSize:"12px",lineHeight:"18px",fontWeight:"700"}}>
-                              Upload Dental Scan or X-Ray;<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {imgfile?<p>Uploaded!</p>:<p></p>}</i>
+                              {t("file")}<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {imgfile?<p>{t("uploaded")}</p>:<p></p>}</i>
                               </h4>
                            </div>
                           </div>
                           </div>
                           <div className="col-lg-5 col-12 col-sm-12 col-md-12 d-flex justify-content-lg-end justify-content-center text-center align-items-center form-input-pad-mob">
                             <input type="file" id="file-input" name="file-input" onChange={chPano}/>
-                            <label id="file-input-label" for="file-input" className='text-center'>Upload</label>
+                            <label id="file-input-label" for="file-input" className='text-center'>{t("upload")}</label>
                           </div>
                           </div>
                           <div className='d-flex justify-content-center pad-20'>
                             <button className="btn" data-animation="fadeInRight" data-delay=".8s" style={{width:"182px",height:"50px"}} type='submit'>
-                              <p style={{transform:"translateY(-5px)"}}>
-                                BOOK NOW
+                              <p style={{transform:transform}}>
+                              {t("booknow")}
                               </p>
                             </button>
                           </div>

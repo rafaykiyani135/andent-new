@@ -1,9 +1,16 @@
 import { useState,useEffect } from "react"
+import { useTranslation } from "react-i18next";
 
 
 
 
 function Review() {
+  const {t,i18n}=useTranslation();
+  
+  useEffect(() => {
+    const lng= navigator.language;
+    i18n.changeLanguage(lng)
+  });
 
   const [isMobile, setIsMobile] = useState(false)
  
@@ -19,15 +26,15 @@ function Review() {
   // create an event listener
   useEffect(() => {
     window.addEventListener("resize", handleResize)
-  })
+  },)
 
 
   return (
     <div className='container andent-padding'>
     <div className="row justify-content-center">
-      <div className="col-lg-10 text-center">
+      <div className="col-lg-12 text-center">
         <h1 className="theme-dark size-60 mob-heading">
-          See What Others Have to Say
+          {t("reviews")}
         </h1>
       </div>
     </div>

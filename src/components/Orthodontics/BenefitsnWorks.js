@@ -5,10 +5,32 @@ import b3 from '../../assets/andent-data/a3.png'
 import b4 from '../../assets/andent-data/a4.png'
 import arrow from '../../assets/andent-data/arrow.png'
 import { useEffect,useState } from 'react'
+import { useTranslation } from 'react-i18next';
+
 
 function Main (){
 
     const [isMobile, setIsMobile] = useState(false)
+
+    const {t,i18n}=useTranslation();
+    const [topPadding,setTopPadding]=useState(0);
+    
+
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+
+        if (navigator.language.startsWith('sq') && !isMobile) {
+            setTopPadding(240);
+          }
+           else if(isMobile){
+            setTopPadding(35);
+          }
+          else {
+            setTopPadding(0);
+          }
+    },[topPadding,i18n,isMobile]);
+
     //choose the screen size 
     const handleResize = () => {
       if (window.innerWidth < 720) {
@@ -27,10 +49,10 @@ function Main (){
 
     return(
         <div>
-            <div className="container andent-padding">
+            <div className="container andent-padding" style={{paddingTop:topPadding}}>
                 <div className="row justify-content-center align-items-center text-center">
                     <h3 className='theme-dark size-60 mob-heading'>
-                    Benefits of Invisible Aligners
+                    {t("orthben")}
                     </h3>
                 </div>
                 <div className="row justify-content-center align-items-center text-center upper-padding">
@@ -43,13 +65,11 @@ function Main (){
                     <div className="col-lg-3 col-md-10 d-flex justify-content-center text-center move-up orth-benefits-textbox">
                         <div>
                             <h3 className='size-25 theme-dark' style={{fontWeight:"700"}}>
-                                Superior Design
+                            {t("orthinfo1")}
                             </h3>
                             <div className='orth-benefits-p text-center'>
                                  <p style={{color:"black",fontWeight:"400",lineHeight:"20px"}}>
-                                    Invisible aligners offer a <span className='theme-andent'>revolutionary, aesthetic, and convenient</span> orthodontic treatment.
-                                    With their clear design, comfortable fit, and advanced 3D technology, these aligners enable discreet,
-                                    predictable, and personalized teeth alignment, redefining your orthodontic journey.
+                                 {t("orthinfo1p")} <span className='theme-andent'>{t("orthinfo1pspan")}</span> {t("orthinfo1p2")}
                                 </p>
                             </div>
                            
@@ -58,15 +78,12 @@ function Main (){
                     <div className="col-lg-3 col-md-10 d-flex justify-content-center text-center move-up orth-benefits-textbox move-right">
                         <div>
                             <h3 className='size-25 theme-dark' style={{fontWeight:"700"}}>
-                            Convenience
+                            {t("orthinfo2")}
                             </h3>
                             <div className='orth-benefits-p text-center'>
                             <p style={{color:"black",fontWeight:"400",lineHeight:"20px"}}>
-                                Invisible aligners at seamlessly integrate into your lifestyle.
-                                They offer the <span className='theme-andent'>convenience of removability for daily activities</span>,
-                                require fewer orthodontist visits compared to traditional braces,
-                                and promote better oral hygiene by reducing the risks of tooth decay
-                                and gum disease during treatment.
+                            {t("orthinfo2p")} <span className='theme-andent'>{t("orthinfo2pspan")}</span>,
+                            {t("orthinfo2p2")}
                             </p>
                             </div>
                            
@@ -76,7 +93,7 @@ function Main (){
                 <div className="row align-items-center">
                 <div className="col-lg-12 mob-top-pad">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h2 className='theme-dark mob-heading'>How Invisible Aligners Work</h2>
+                    <h2 className='theme-dark mob-heading'>{t("howalignerswork")}</h2>
                     </div>
                 </div>
                 </div>
@@ -98,26 +115,22 @@ function Main (){
                         <img src={b1} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                     </div>
                     <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>3D Impression</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners1")}</h4>
                     </div>
                     <div>
                         <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                        We begin with a 3D scan of your mouth to capture an exact
-                        model of your teeth and gums, forming the basis for your
-                        treatment plan.
+                        {t("aligners1p")}
                         </p>
                     </div>
                     </div>
                     ) : (
                         <div>
                     <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>3D Impression</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners1")}</h4>
                     </div>
                     <div>
                         <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                        We begin with a 3D scan of your mouth to capture an exact
-                        model of your teeth and gums, forming the basis for your
-                        treatment plan.
+                        {t("aligners1p")}
                         </p>
                     </div>
                     <div className='d-flex justify-content-center upper-padding'>
@@ -135,26 +148,22 @@ function Main (){
                         <img src={b2} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Treatment Plan Design</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners2")}</h4>
                         </div>
                         <div>
                             <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                            We map out the precise, step-by-step movement of your
-                            teeth from their current position to their final desired
-                            alignment.
+                            {t("aligners2p")}
                             </p>
                         </div>
                         </div>
                         ) : (
                             <div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Treatment Plan Design</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners2")}</h4>
                         </div>
                         <div>
                             <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                            We map out the precise, step-by-step movement of your
-                            teeth from their current position to their final desired
-                            alignment.
+                            {t("aligners2p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -172,24 +181,22 @@ function Main (){
                             <img src={b3} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Aligner Fabrication</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners3")}</h4>
                         </div>
                         <div>
                             <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                            A series of aligners are crafted using biocompatible, BPA-free,
-                             clear plastic material which are manufactured to ensure an exact fit. 
+                            {t("aligners3p")} 
                             </p>
                         </div>
                         </div>
                         ) : (
                             <div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Aligner Fabrication</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners3")}</h4>
                         </div>
                         <div>
                             <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                            A series of aligners are crafted using biocompatible, BPA-free,
-                             clear plastic material which are manufactured to ensure an exact fit. 
+                            {t("aligners3p")}
                             </p>
                         </div>
                         <div className='d-flex justify-content-center upper-padding'>
@@ -207,24 +214,22 @@ function Main (){
                             <img src={b4} alt="dt1" style={{height:"120px",width:"120px"}} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"10px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Quality Check</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners4")}</h4>
                         </div>
                         <div>
                             <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                            Before you receive your aligners, each set undergoes a rigorous
-                            quality check to ensure a perfect fit and optimal performance.
+                            {t("aligners4p")}
                             </p>
                         </div>
                         </div>
                         ) : (
                             <div>
                             <div style={{paddingTop:"20px"}}>
-                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Quality Check</h4>
+                            <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("aligners4")}</h4>
                             </div>
                             <div>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
-                                Before you receive your aligners, each set undergoes a rigorous
-                                quality check to ensure a perfect fit and optimal performance.
+                                {t("aligners4p")}
                                 </p>
                             </div>
                             <div className='d-flex justify-content-center upper-padding' style={{paddingBottom:"50px"}}>

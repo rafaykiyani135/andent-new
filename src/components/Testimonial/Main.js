@@ -5,11 +5,16 @@ import Book from '../MenContact-Us/Make'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { useEffect } from 'react'
 
+
 function Main (){
+
+
 
     useEffect(() => {
         window.analytics.page('Testimonials');
-      });
+      },[]);
+
+      
 
       const getMessage = (e) => {
         window.analytics.track("WhatsApp", {

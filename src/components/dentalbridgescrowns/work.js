@@ -1,14 +1,24 @@
 import img1 from '../../assets/andent-data/dbwork.png'
 import img2 from '../../assets/andent-data/dbwork1.png'
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 
 function Main (){
+
+    const {t,i18n}=useTranslation();
+
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+      });
+
     return(
         <div>
             <div className="container andent-padding">
             <div className='row justify-content-center text-center'>
                     <div className='col-lg-12 col-md-10'>
                     <h3 className='size-60 theme-dark mob-heading'>
-                        How Dental Bridges and Crowns Work
+                        {t("howbridgeswork")}
                     </h3>
                     </div>
                 </div>
@@ -18,18 +28,16 @@ function Main (){
                     </div>
                     <div className="col-lg-5 col-md-10 col-sm-10 text-center text-lg-start" style={{paddingTop:"70px"}}>
                         <h4 className='theme-dark size-20' style={{fontWeight:"700"}}>
-                            Bridges
+                            {t("bridges")}
                         </h4>   
                         <p className='size-16' style={{lineHeight:"20px",color:"black"}}>
-                        Bridges are fixed prostheses that replace missing teeth by using artificial
-                         teeth to bridge the gap, supported by neighboring teeth or implants.
+                        {t("bridgesp")}
                         </p>
                         <h4 className='theme-dark size-20 upper-padding' style={{fontWeight:"700"}}>
-                            Crowns
+                        {t("crowns")}
                         </h4>   
                         <p className='size-16' style={{lineHeight:"20px",color:"black"}}>
-                        Crowns are custom-made tooth-shaped restorations that protect and 
-                        strengthen damaged teeth, while enhancing their appearance.
+                        {t("crownsp")}
                         </p>
                     </div>
                 </div>
@@ -39,11 +47,10 @@ function Main (){
                 </div>
                 <div className="col-lg-5 col-md-10 col-sm-10 text-center text-lg-start order-lg-first" style={{paddingTop:"70px"}}>
                         <h4 className='theme-dark size-20' style={{fontWeight:"700"}}>
-                        How bridges are different than implants
+                        {t("howbridgesdifferent")}
                         </h4>   
                         <p className='size-16' style={{lineHeight:"20px",color:"black"}}>
-                        Dental bridges rely on adjacent teeth for support, while dental implants
-                         are independently anchored into the jawbone, offering enhanced durability
+                        {t("howbridgesdifferentp")}
                         </p>
                 </div>
                 </div>

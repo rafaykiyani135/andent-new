@@ -3,10 +3,13 @@ import w2 from '../../assets/andent-data/w2.png'
 import w3 from '../../assets/andent-data/w3.png'
 import w4 from '../../assets/andent-data/w41.png'
 import { useEffect,useState } from 'react'
+import { useTranslation } from 'react-i18next';
 
 function Main(){
 
     const [isMobile, setIsMobile] = useState(false)
+    const {t,i18n}=useTranslation();
+
     //choose the screen size 
     const handleResize = () => {
       if (window.innerWidth < 720) {
@@ -15,6 +18,11 @@ function Main(){
           setIsMobile(false)
       }
     }
+
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+      });
   
     // create an event listener
     useEffect(() => {
@@ -34,7 +42,7 @@ function Main(){
                 <div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h2 className='theme-dark mob-heading'>How Dental Implants Work</h2>
+                    <h2 className='theme-dark mob-heading'>{t("implantswork")}</h2>
                     </div>
                 </div>
                 </div>
@@ -45,7 +53,7 @@ function Main(){
                         <img src={w1} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Implant is inserted into the bone</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impwork1")}</h4>
                         </div>
                     </div>
                 </div>
@@ -55,7 +63,7 @@ function Main(){
                         <img src={w2} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Healing Process of the bone (osseointegration)</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impwork2")}</h4>
                         </div>
                     </div>
                 </div>
@@ -65,7 +73,7 @@ function Main(){
                         <img src={w3} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Dental Abutment is places on the implant</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impwork3")}</h4>
                         </div>
                     </div>
                 </div>
@@ -75,7 +83,7 @@ function Main(){
                         <img src={w4} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}} className=''>
-                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>Ceramic Crown is placed which replaces the real tooth</h4>
+                        <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impwork4")}</h4>
                         </div>
                     </div>
                 </div>

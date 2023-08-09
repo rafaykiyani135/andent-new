@@ -14,9 +14,17 @@ import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react'
 
 function Ourservices() {
+
+    const {t,i18n}=useTranslation()
+  
+    useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
+    });
 
 
     const settings = {
@@ -46,8 +54,8 @@ function Ourservices() {
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center">
-                        <h5 style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"20px"}} >EXPERIENCE THESE AND MORE</h5>
-                        <h2 className='theme-dark size-60 mob-heading'>Dental Treatments</h2>
+                        <h5 style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"20px"}} >{t("servicesh3")}</h5>
+                        <h2 className='theme-dark size-60 mob-heading'>{t("servicesh2")}</h2>
                     </div>
                     </div>
                     <div className="col-lg-5 col-md-6 col-sm-12 move-right">
@@ -59,10 +67,10 @@ function Ourservices() {
                             <img src={Icontwo} alt="icon01" className='services-icon sm-icon'/>
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Dental Implants</h4>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service1")}</h4>
                             <div style={{width:"263px",height:"60px"}}>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                                Durable, artificial tooth roots to support natural-looking replacement teeth.
+                                {t("service1p")}
                                 </p>
                             </div>
                             
@@ -75,10 +83,10 @@ function Ourservices() {
                             <img src={Iconthree} alt="icon01" className='services-icon sm-icon'/>
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Dental Crowns and Bridges</h4>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service2")}</h4>
                             <div style={{width:"263px",height:"60px"}}>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                                High-quality prosthetics for damaged or missing teeth, ensuring durability.
+                                {t("service2p")}
                                 </p>
                             </div>
                             
@@ -91,10 +99,10 @@ function Ourservices() {
                             <img src={Iconfour} alt="icon01" className='services-icon sm-icon'/>
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Dentures</h4>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service3")}</h4>
                             <div style={{width:"263px",height:"60px"}}>
                                   <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                                    Custom-made replacements for comfortable chewing, speaking, and smiling.
+                                  {t("service3p")}
                                     </p>
                             </div>
                           
@@ -113,10 +121,10 @@ function Ourservices() {
                             <img src={Iconone} alt="icon01" className='services-icon sm-icon'/>
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Cosmetic Dentistry and Veneers</h4>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service4")}</h4>
                             <div style={{width:"263px",height:"60px"}}>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                                Transform your smile with whitening, veneers, and personalized makeovers.
+                                {t("service4p")}
                                 </p>
                             </div>
                             
@@ -129,10 +137,10 @@ function Ourservices() {
                             <img src={Iconsix} alt="icon01" className='services-icon sm-icon'/>
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>Orthodontic Treatment</h4>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service5")}</h4>
                             <div style={{width:"263px",height:"60px"}}>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                                Achieve straighter teeth and correct bites with orthodontic treatments, including Invisalign
+                                {t("service5p")}
                                 </p>
                             </div>
                             
@@ -145,10 +153,10 @@ function Ourservices() {
                             <img src={Iconfive} alt="icon01" className='services-icon sm-icon'/>
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>General Dentistry</h4>
+                            <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service6")}</h4>
                             <div style={{width:"263px",height:"60px"}}>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                                Preventive care, treatments, and maintenance for optimal oral health and a beautiful smile.
+                                {t("service6p")}
                                 </p>
                             </div>
                             
@@ -189,21 +197,17 @@ function Ourservices() {
                     <div className="col-lg-5 col-md-12 col-sm-12 text-center text-lg-start" style={{paddingTop:"35px",paddingLeft:"30px"}}>
                         <div className="about-content s-about-content  wow fadeInRight  animated"  data-animation="fadeInRight" data-delay=".4s" >
                         <div className="about-title second-title pb-25">
-                            <h5 className='theme-andent' style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"10px"}}>About Us</h5>
-                            <h2 className='theme-dark' style={{fontSize:"25px"}}>Why Andent?</h2>
+                            <h5 className='theme-andent' style={{fontSize:"20px",color:"#6DA7A2",paddingBottom:"10px"}}>{t("aboutUs")}</h5>
+                            <h2 className='theme-dark' style={{fontSize:"25px"}}>{t("whyandent")}</h2>
                         </div>
                         <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
-                        Your Trusted Dental Clinic in Albania. With 10+ years of expertise,
-                         our renowned dentist Dr. Anduela Çurmaku leads our exceptional team.
-                          From painless implants to advanced treatments, our precision, safety,
-                           and top-quality equipment ensure optimal oral health. Trust our skilled
-                            team for a confident smile. 
+                        {t("whyandentp")}
                         </p>
                         <div style={{ paddingTop: "10px" }} className='d-flex justify-content-center justify-content-lg-start'>
                         <button className='btn d-flex align-items-center justify-content-center' style={{ height: "50px" }}>
                             <Link to="/about" style={{ color: "white" }} title="Learn More" onClick={linkClick}>
                             <p style={{transform:"translateY(8px)"}}>
-                                Learn More
+                            {t("learnmore")}
                             </p>
                             </Link>
                         </button>

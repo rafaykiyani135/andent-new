@@ -8,13 +8,22 @@ import Contact from '../implants/Contactsm';
 import Appt from '../MenContact-Us/Make';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Main (){
+
+    const {t,i18n}=useTranslation();
 
 
     useEffect(() => {
         window.analytics.page('Dental-bridges');
+      },[]);
+
+      useEffect(() => {
+        const lng= navigator.language;
+        i18n.changeLanguage(lng)
       });
+    
 
       const getMessage = (e) => {
         window.analytics.track("WhatsApp", {
@@ -24,8 +33,7 @@ function Main (){
 
     return(
         <div>
-            <Slider heading="Discover Dental Bridges & Crowns" description="Say goodbye to the challenges of missing or damaged teeth.
-             We restore your smile with our affordable and long lasting implants for improved oral health."/>
+            <Slider heading={t("bridgeshero")} description={t("bridgesherop")}/>
              <Reviews/>
             <Importance/>
             <Work/>

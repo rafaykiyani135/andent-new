@@ -556,6 +556,7 @@ label {
     .mob-heading{
         font-size: 35px;
     }
+    
     .mob-player-wrapper{
         position: relative;
         padding-top: 56.25%;
@@ -569,9 +570,12 @@ label {
         overflow: hidden;
     }
     .mob-hero1{
-        font-size: 35px;
+        font-size: 50px;
     }
     .mob-hero2{
+        font-size: 35px;
+    }
+    .mob-hero2span{
         font-size: 45px;
     }
     .tourism-hero-pad{
@@ -670,6 +674,62 @@ label {
     .form-input-pad-mob{
         padding-top: 20px;
     }
+
+    .slider-container {
+        width: 100%;
+        height: 70vh; /* Set height to auto for responsiveness */
+        overflow: hidden;
+      }
+      
+      .slider-content-new {
+        animation: moveImage 20s linear infinite;
+        transform-style: preserve-3d;
+        will-change: transform;
+      }
+      
+      .slider-content-dim {
+        max-height: 200px; /* Set max-height for responsiveness */
+        width: 100%;
+        padding-top: 20px;
+      }
+      
+      .slider-content-vid-dim {
+        max-height: 220px; /* Set max-height for responsiveness */
+        width: 100%;
+        padding-top: 20px;
+      }
+      
+      .slider-content-filler-dim {
+        max-height: 110px; /* Set max-height for responsiveness */
+        width: 100%;
+      }
+      
+      .slider-content-left-filler-dim {
+        max-height: 110px; /* Set max-height for responsiveness */
+        width: 190px;
+        padding-top: 20px;
+      }
+      
+      @keyframes moveImage {
+        0% {
+          transform: translateY(-10%);
+        }
+        100% {
+          transform: translateY(-170%);
+        }
+      }
+      
+      .slider-left {
+        height: 90%;
+        width: 50%; /* Adjust the width for responsiveness */
+      }
+      
+      .slider-right {
+        height: 90%;
+        width: 50%; /* Adjust the width for responsiveness */
+      }
+      
+
     
   }
   .form-big2 {
@@ -712,7 +772,14 @@ label {
   
 @media (min-width: 992px) {
 
-
+    .hero-left-pos{
+        position: relative;
+        right: 50px;
+    }
+    .hero-right-pos{
+        position: relative;
+        left: 45px;
+    }
     .form-input-pad{
         padding-left: 10px;
     }
@@ -725,8 +792,8 @@ label {
     .second-about p {
     margin-bottom: 0;
     color: #0e264f;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     float: left;
     width: 55%;
@@ -763,12 +830,16 @@ label {
       }
 
     .mob-hero1{
-        font-size: 65px;
+        font-size: 70px;
         line-height: 60pt;
     }
     .mob-hero2{
-        font-size: 80px;
+        font-size: 60px;
         line-height: 70pt;
+    }
+    .mob-hero2span{
+        font-size: 60px;
+        line-height: 60pt;
     }
     .reviews{
         position:absolute;
@@ -1014,18 +1085,67 @@ label {
         background: #A7CCC8;
         color: white;
     }
+       .slider-container {
+        width: 620px; /* Set the desired width */
+        height: 100vh; /* Set the desired height */
+        overflow: hidden;
+        }
+        
+        .slider-content-new {
+            animation: moveImage 20s linear infinite;
+            transform-style: preserve-3d;
+            will-change: transform;
+        }
+        
+        .slider-content-dim {
+            height: 400px !important;
+            width: 295px  !important;
+            padding-top: 20px;
+            margin-left: 10px;
+        }
+        
+        .slider-content-vid-dim {
+            height: 400px !important;
+            width: 295px  !important;
+            padding-top: 20px;
+            margin-left: 5px;
+        }
+        
+        .slider-content-filler-dim {
+            height: 200px !important;
+            width: 295px  !important;
+            margin-left: 10px;
+        }
+        
+        .slider-content-left-filler-dim {
+            padding-top: 20px;
+            height: 200px !important;
+            width: 295px  !important;
+            margin-left: 10px;
+        }
+        
+        @keyframes moveImage {
+            0% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(-270%);
+            }
+        }
+        
+        .slider-left {
+            height: 100%;
+            width: 310px;
+        }
+        
+        .slider-right {
+            height: 100%;
+            width: 310px;
+        }
 
   }
 
 
-
-.slider-container {
-width: 251px; /* Set the desired width */
-height: 484px; /* Set the desired height */
-overflow: hidden;
-display: flex;
-flex-direction: column;
-}
 
 .upper-container{
     margin-bottom: 50px !important;
@@ -1042,6 +1162,8 @@ flex-direction: column;
     height: 252px;
     display: flex;
 }
+
+
 
 
 .slider-video {
