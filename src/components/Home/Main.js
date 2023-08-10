@@ -9,15 +9,16 @@ import Appointment from '../MenContact-Us/Make'
 import Review from '../reviews/trustpilot'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-
+import reactReferer from 'react-referer';
+import { useState } from 'react'
 
 function Main() {
   const {t,i18n}=useTranslation();
+  const [referer] = useState(reactReferer.referer());
 
   useEffect(() => {
-    var referrer = document.referrer;
     window.analytics.page('Home',{
-        referrer: referrer, // Pass the referrer URL here
+        referrer: referer, // Pass the referrer URL here
     });
   },[]);
   

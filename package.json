@@ -45,6 +45,7 @@
     "react-i18next": "^13.0.3",
     "react-iframe": "^1.8.5",
     "react-player": "^2.12.0",
+    "react-referer": "^1.0.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router": "^6.6.1",
     "react-router-dom": "^6.6.1",
