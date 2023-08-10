@@ -28,7 +28,7 @@ function About() {
     const getCallBack = async (e) => {
         e.preventDefault();
 
-        window.analytics.identify(name, {
+        window.analytics.identify(number, {
             Name : name,
             Number : number
         });

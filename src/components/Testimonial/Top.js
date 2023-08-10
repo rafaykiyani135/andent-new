@@ -12,10 +12,6 @@ import imgright2 from '../../assets/andent-data/herosectionimg/Images/slider ima
 import imgright3 from '../../assets/andent-data/herosectionimg/Images/slider image 7.png'
 import imgright4 from '../../assets/andent-data/herosectionimg/Images/slider image 8.png'
 import filler from '../../assets/andent-data/herosectionimg/Images/last image 200px.png'
-import vidleft1 from '../../assets/andent-data/hero section videos/Videos/video1.mov'
-import vidleft2 from '../../assets/andent-data/hero section videos/Videos/video2.mov'
-import vidright1 from '../../assets/andent-data/hero section videos/Videos/video3.mov'
-import vidright2 from '../../assets/andent-data/hero section videos/Videos/video4.mov'
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
@@ -45,7 +41,7 @@ function Main() {
       const getCallBack = async (e) => {
         e.preventDefault();
 
-        window.analytics.identify(name,{
+        window.analytics.identify(number,{
             Name : name,
             Number : number
         });
@@ -123,13 +119,13 @@ function Main() {
                         <div className="slider-content-new col-lg-6 col-6 text-lg-center slider-left justify-content-lg-center">
                             <img className='slider-content-dim' alt='imgleft1' src={imgleft1}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidleft1}  type="video/mp4" />
+                                <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+1.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgleft2' src={imgleft2}></img>
                             <img className='slider-content-dim' alt='imgleft3' src={imgleft3}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidleft2}  type="video/mp4" />
+                                <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+2.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgleft4' src={imgleft4}></img>
@@ -140,13 +136,13 @@ function Main() {
                             <img className='slider-content-dim' alt='imgright1' src={imgright1}></img>
                             <img className='slider-content-dim' alt='imgright2' src={imgright2}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidright1}  type="video/mp4" />
+                                <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+3.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgright3' src={imgright3}></img>
                             <img className='slider-content-dim' alt='imgright4' src={imgright4}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src={vidright2}  type="video/mp4" />
+                                <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+4.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
