@@ -7,8 +7,6 @@ import phone from '../../assets/andent-data/phone.png'
 import mail from '../../assets/andent-data/mail.png'
 import { useTranslation } from 'react-i18next'
 
-
-
 function Main() {
 
     const linkClick = (e) =>{
