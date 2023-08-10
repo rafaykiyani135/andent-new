@@ -8,7 +8,6 @@ import s7 from '../../assets/andent-data/gd7.png'
 import s8 from '../../assets/andent-data/gd8.png'
 import s9 from '../../assets/andent-data/gd9.png'
 import s10 from '../../assets/andent-data/gd10.png'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Exp from '../implants/Exp';
@@ -16,12 +15,8 @@ import Exp from '../implants/Exp';
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
 
     return(
         <div>

@@ -10,10 +10,9 @@ function Main () {
     const {t,i18n}=useTranslation();
 
     useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
+        const lng= i18n.language;
 
-        if (navigator.language.startsWith('it'))  {
+        if (lng==='it')  {
             setBottomPadding(160);
           }
            else {

@@ -6,17 +6,11 @@ import s1 from '../../assets/andent-data/dvs1.png'
 import s2 from '../../assets/andent-data/dvs2.png'
 import s3 from '../../assets/andent-data/dvs3.png'
 import s4 from '../../assets/andent-data/dvs4.png'
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
-
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
+    const {t}=useTranslation();
 
 
     return(

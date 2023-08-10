@@ -18,10 +18,9 @@ function Main (){
 
     useEffect(() => {
         //"translate(-5px,-5px)"
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
+          const lng= i18n.language;
 
-          if (navigator.language.startsWith('sq')) {
+          if (lng==='sq') {
             setHeight("36%")
           }
     

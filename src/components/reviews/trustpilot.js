@@ -5,12 +5,8 @@ import { useTranslation } from "react-i18next";
 
 
 function Review() {
-  const {t,i18n}=useTranslation();
-  
-  useEffect(() => {
-    const lng= navigator.language;
-    i18n.changeLanguage(lng)
-  });
+  const {t}=useTranslation();
+
 
   const [isMobile, setIsMobile] = useState(false)
  

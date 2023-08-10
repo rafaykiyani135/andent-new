@@ -6,17 +6,12 @@ import s5 from '../../assets/andent-data/s5.png'
 import d1 from '../../assets/andent-data/d1.png'
 import d2 from '../../assets/andent-data/d2.png'
 import redtick from '../../assets/andent-data/tick.png'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Main(){
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
 
     return(
         <div>

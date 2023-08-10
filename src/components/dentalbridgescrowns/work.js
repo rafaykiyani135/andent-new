@@ -1,16 +1,10 @@
 import img1 from '../../assets/andent-data/dbwork.png'
 import img2 from '../../assets/andent-data/dbwork1.png'
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
-
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
+    const {t}=useTranslation();
 
     return(
         <div>

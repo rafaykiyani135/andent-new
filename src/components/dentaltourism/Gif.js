@@ -1,16 +1,10 @@
 import gif from '../../assets/andent-data/s.gif';
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
-
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
+    const {t}=useTranslation();
 
     
     const scrollToBottom = () => {

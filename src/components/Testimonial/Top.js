@@ -13,7 +13,6 @@ import imgright3 from '../../assets/andent-data/herosectionimg/Images/slider ima
 import imgright4 from '../../assets/andent-data/herosectionimg/Images/slider image 8.png'
 import filler from '../../assets/andent-data/herosectionimg/Images/last image 200px.png'
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
 
 function Main() {
 
@@ -23,12 +22,9 @@ function Main() {
       const [name,setName] = useState("")
       const alert=useAlert();
 
-      const {t,i18n}=useTranslation();
+      const {t}=useTranslation();
 
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
+
 
       const changeName = (e) => {
           setName(e.target.value)

@@ -5,17 +5,12 @@ import img4 from '../../assets/andent-data/sec4.png'
 import img5 from '../../assets/andent-data/sec5.png'
 import img6 from '../../assets/andent-data/sec6.png'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
 
     const linkClick = (e) =>{
         window.analytics.track("Link clicked", {

@@ -15,12 +15,7 @@ function Main (){
         window.analytics.page('Veneers');
       },[]);
 
-      const {t,i18n}=useTranslation();
-
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
+      const {t}=useTranslation();
 
       const getMessage = (e) => {
         window.analytics.track("WhatsApp", {

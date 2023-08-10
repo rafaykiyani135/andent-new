@@ -2,17 +2,11 @@ import s1 from '../../assets/andent-data/denture5.png'
 import s2 from '../../assets/andent-data/denture6.png'
 import s3 from '../../assets/andent-data/denture7.png'
 import s4 from '../../assets/andent-data/denture8.png'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Main(){
 
-    const {t,i18n}=useTranslation();
-
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
+    const {t}=useTranslation();
 
     return(
         <div>

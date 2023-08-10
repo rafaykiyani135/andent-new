@@ -12,14 +12,13 @@ function Main() {
 
     useEffect(() => {
         //"translate(-5px,-5px)"
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
+          const lng= i18n.language
     
-          if (navigator.language.startsWith('it')) {
+          if (lng==='it') {
             setTransform("translate(-2px,-8px)");
           }
           
-          else if (navigator.language.startsWith('sq')) {
+          else if (lng==='sq') {
             setTransform("translate(-15px,-8px)");
           }
     

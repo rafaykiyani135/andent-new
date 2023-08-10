@@ -1332,6 +1332,30 @@ height: 100%;
     color:White;
 }
 
+.language-btn{
+    font-family: poppins;
+	border-radius: 15px;
+	display: inline-block;
+	font-size: 12px;
+    height: 47px;
+    width: auto;
+	letter-spacing: 0;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 15px 30px;
+	text-align:justify;
+	text-transform: unset;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align:middle;
+	white-space: nowrap;
+	position: relative;
+    z-index: 999;
+    border: none;
+    background: #6DA7A2;
+    color:White;
+}
+
 
 .btn {
     font-family: poppins;

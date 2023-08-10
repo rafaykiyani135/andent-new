@@ -5,7 +5,7 @@ import Iconthree from '../../assets/img/icon/dentalcrowns-bridges.png'
 import Iconfour from '../../assets/img/icon/dentures.png'
 import Iconfive from '../../assets/img/icon/general-dentistry.png'
 import Iconsix from '../../assets/img/icon/orthodontic-treatment.png'
-import slider1 from '../../assets/andent-data/slider1.png'
+import slider1 from '../../assets/andent-data/slider1.jpg'
 import slider2 from '../../assets/andent-data/slider2.jpg'
 import slider3 from '../../assets/andent-data/slider3.jpg'
 import slider4 from '../../assets/andent-data/slider4.jpg'
@@ -15,16 +15,11 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from 'react-i18next'
-import { useEffect } from 'react'
 
 function Ourservices() {
 
-    const {t,i18n}=useTranslation()
+    const {t}=useTranslation()
   
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-    });
 
 
     const settings = {

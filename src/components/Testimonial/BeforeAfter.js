@@ -2,7 +2,6 @@ import React from "react";
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Main (){
@@ -21,12 +20,8 @@ function Main (){
         slidesToScroll: 1
       };
 
-      const {t,i18n}=useTranslation();
-  
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
+      const {t}=useTranslation();
+
 
 
     return(

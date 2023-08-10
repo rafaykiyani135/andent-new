@@ -1,16 +1,10 @@
 import img1 from '../../assets/andent-data/dentures1.png'
 import redtick from '../../assets/andent-data/tick.png'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
-
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
+    const {t}=useTranslation();
 
     return(
         <div>

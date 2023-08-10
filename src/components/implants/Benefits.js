@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 function Main (){
 
     const [isMobile, setIsMobile] = useState(false)
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
     //choose the screen size 
     const handleResize = () => {
       if (window.innerWidth < 720) {
@@ -21,10 +21,6 @@ function Main (){
       }
     }
 
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-    });
   
     // create an event listener
     useEffect(() => {

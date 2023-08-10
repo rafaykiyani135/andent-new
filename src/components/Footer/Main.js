@@ -5,7 +5,6 @@ import time from '../../assets/andent-data/timing.png'
 import location from '../../assets/andent-data/address.png'
 import phone from '../../assets/andent-data/phone.png'
 import mail from '../../assets/andent-data/mail.png'
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 
@@ -21,11 +20,26 @@ function Main() {
     }
 
     const {t,i18n}=useTranslation();
-  
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
+
+
+    const setLang = (e) => {
+        const lng= e.target.value;
+        if(lng==="english"){
+            i18n.changeLanguage('en-US')
+            window.location.reload(true)
+        }
+        else if(lng==="italian"){
+            i18n.changeLanguage('it')
+            window.location.reload(true)
+        }
+        else {
+            i18n.changeLanguage('sq')
+            window.location.reload(true)
+        }
+          //en-US english
+          //it  italian 
+          //sq albanian
+    }
 
   return (
     <>
@@ -53,6 +67,22 @@ function Main() {
                                         <br/>
                                         9:00am - 10:00pm
                                         </span>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <div className="f-contact" style={{paddingTop:"25px"}}>
+                                    <ul>
+                                    <li>
+                                        <h4 style={{fontSize:"14px"}}>Change Language</h4>
+                                    </li>
+                                    <li className='theme-dark'>
+                                        <button className='language-btn' value="english" onClick={setLang}>English</button>
+                                    </li>
+                                    <li>
+                                        <button className='language-btn' value="italian" onClick={setLang}>Italian</button>
+                                    </li>
+                                    <li>
+                                        <button className='language-btn' value="albanian" onClick={setLang}>Albanian</button>
                                     </li>
                                     </ul>
                                 </div>

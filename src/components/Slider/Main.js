@@ -13,16 +13,12 @@ import filler from '../../assets/andent-data/herosectionimg/Images/last image 20
 import { useState } from 'react';
 import { useAlert } from 'react-alert';
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
 
 function Main(props) {
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
   
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-    });
+
 
     const [number,setNumber] = useState("")
     const [name,setName] = useState("")

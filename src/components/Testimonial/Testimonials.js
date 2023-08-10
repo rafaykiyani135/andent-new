@@ -1,7 +1,6 @@
 import React from 'react'
 import star from '../../assets/andent-data/star.png'
 import ReactPlayer from 'react-player'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
@@ -12,12 +11,8 @@ function Testimonialslider() {
         <img index={index} src={star} alt="icons" style={{paddingRight:"10px",transform:"translateY(-5px)",height:"20px",width:"30px"}}  />
       ));
 
-      const {t,i18n}=useTranslation();
+      const {t}=useTranslation();
   
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
   
 
   return (

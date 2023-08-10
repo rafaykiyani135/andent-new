@@ -11,7 +11,7 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 function Main() {
-  const {t,i18n}=useTranslation();
+  const {t}=useTranslation();
 
   useEffect(() => {
     let referrer = document.referrer;
@@ -20,10 +20,7 @@ function Main() {
     });
   },[]);
   
-  useEffect(() => {
-    const lng= navigator.language;
-    i18n.changeLanguage(lng)
-  },[i18n]);
+
 
   const getMessage = (e) => {
     window.analytics.track("WhatsApp", {

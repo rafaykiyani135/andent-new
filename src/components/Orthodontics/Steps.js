@@ -3,17 +3,13 @@ import s2 from '../../assets/andent-data/os2.png'
 import s3 from '../../assets/andent-data/os3.png'
 import s4 from '../../assets/andent-data/os4.png'
 import s5 from '../../assets/andent-data/os5.png'
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-    });
+
 
     return (
         <div>

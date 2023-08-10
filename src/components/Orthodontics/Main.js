@@ -12,18 +12,11 @@ import { useTranslation } from 'react-i18next';
 
 function Main (){
 
-  const {t,i18n}=useTranslation();
+  const {t}=useTranslation();
 
   useEffect(() => {
     window.analytics.page('Orthodontics');
   },[]);
-
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
-
-    
 
       const getMessage = (e) => {
         window.analytics.track("WhatsApp", {

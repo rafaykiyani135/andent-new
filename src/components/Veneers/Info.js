@@ -1,17 +1,12 @@
 import s1 from '../../assets/andent-data/dvi1.png'
 import s2 from '../../assets/andent-data/dvi2.png'
 import s3 from '../../assets/andent-data/dvi3.png'
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
 
     return(
         <div>

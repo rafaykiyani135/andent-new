@@ -10,12 +10,9 @@ import { useTranslation } from 'react-i18next'
 
 function Tourism() {
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
   
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-    });
+
 
     const [isMobile, setIsMobile] = useState(false)
     //choose the screen size 

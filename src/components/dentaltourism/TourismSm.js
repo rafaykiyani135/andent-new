@@ -2,17 +2,11 @@ import React from 'react'
 import Innerone from '../../assets/andent-data/dt1.png'
 import Innertwo from '../../assets/andent-data/dt2.png'
 import Innerthree from '../../assets/andent-data/dt3.png'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Tourism() {
 
-    const {t,i18n}=useTranslation();
-
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
+    const {t}=useTranslation();
 
   return (
     <>

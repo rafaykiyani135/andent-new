@@ -7,16 +7,11 @@ import d1 from '../../assets/andent-data/crown1.png'
 import d2 from '../../assets/andent-data/crown2.png'
 import d3 from '../../assets/andent-data/crown3.png'
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
 
 function Main(){
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
 
     return(
         <div>

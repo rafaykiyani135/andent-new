@@ -6,17 +6,12 @@ import Iconfour from '../../assets/img/icon/dentures.png'
 import Iconfive from '../../assets/img/icon/general-dentistry.png'
 import Iconsix from '../../assets/img/icon/orthodontic-treatment.png'
 import { useTranslation } from 'react-i18next'
-import { useEffect } from 'react'
 
 
 function Ourservices() {
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
 
   return (
     <>

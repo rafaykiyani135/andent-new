@@ -2,7 +2,6 @@ import React from 'react'
 import bg from '../../assets/andent-data/darkenedbg.png'
 import { useState } from 'react'
 import { useAlert } from 'react-alert'
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 
@@ -11,13 +10,7 @@ function Main(props) {
     const [number,setNumber] = useState("")
     const [name,setName] = useState("")
     const alert=useAlert();
-    const {t,i18n}=useTranslation();
-
-
-    useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
-      });
+    const {t}=useTranslation()
     
 
     const changeName = (e) => {

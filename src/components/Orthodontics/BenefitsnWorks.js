@@ -1,4 +1,4 @@
-import Aligner from '../../assets/andent-data/aligners.png'
+import Aligner from '../../assets/andent-data/aligners.jpg'
 import b1 from '../../assets/andent-data/a1.png'
 import b2 from '../../assets/andent-data/a2.png'
 import b3 from '../../assets/andent-data/a3.png'
@@ -17,17 +17,17 @@ function Main (){
     
 
     useEffect(() => {
-        const lng= navigator.language;
-        i18n.changeLanguage(lng)
+        const lng= i18n.language;
+        
 
-        if (navigator.language.startsWith('sq') && !isMobile) {
+        if (lng==='sq' && !isMobile) {
             setTopPadding(240);
           }
            else if(isMobile){
             setTopPadding(35);
           }
           else {
-            setTopPadding(0);
+            setTopPadding(160);
           }
     },[topPadding,i18n,isMobile]);
 

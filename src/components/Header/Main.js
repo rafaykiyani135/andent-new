@@ -19,15 +19,16 @@ function Main() {
   
     useEffect(() => {
         //"translate(-5px,-5px)"
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
+          const lng= i18n.language;
     
-          if (navigator.language.startsWith('sq')) {
+          if (lng==='sq') {
             setTransform("translateX(-8px)");
           } else {
             setTransform("");
           }
       },[i18n,setTransform]);
+
+
     const linkClick = (e) =>{
         window.analytics.track("Link clicked", {
             buttonText: e.currentTarget.title,

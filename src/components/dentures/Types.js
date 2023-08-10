@@ -1,18 +1,13 @@
 import b1 from '../../assets/andent-data/dentures2.png'
 import b2 from '../../assets/andent-data/dentures3.png'
 import b3 from '../../assets/andent-data/dentures4.png'
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
 function Main (){
 
-    const {t,i18n}=useTranslation();
+    const {t}=useTranslation();
 
-      useEffect(() => {
-          const lng= navigator.language;
-          i18n.changeLanguage(lng)
-      });
 
     return(
         <div>
