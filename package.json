@@ -28,7 +28,7 @@
     "i18next-http-backend": "^2.2.1",
     "multer": "^1.4.5-lts.1",
     "net": "^1.0.2",
-    "node": "^20.5.0",
+    "node": "^16.13.2",
     "nodemailer": "^6.9.4",
     "nodemailer-react": "^1.0.2",
     "path": "^0.12.7",
