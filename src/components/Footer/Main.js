@@ -6,6 +6,7 @@ import location from '../../assets/andent-data/address.png'
 import phone from '../../assets/andent-data/phone.png'
 import mail from '../../assets/andent-data/mail.png'
 import { useTranslation } from 'react-i18next'
+import { useState,useEffect } from 'react'
 
 function Main() {
 
@@ -18,20 +19,36 @@ function Main() {
     }
 
     const {t,i18n}=useTranslation();
+    const [currentLang,setCurrentLanguage]=useState("");
 
+    useEffect(() => {
+        const language = i18n.language;
+        if(language==="en-US"){
+            setCurrentLanguage("english")
+        }
+        else if(language==="sq"){
+            setCurrentLanguage("albanian")
+        }
+        else {
+            setCurrentLanguage("italian")
+        }
+      },[setCurrentLanguage,i18n]);
 
-    const setLang = (e) => {
+    const handleLanguageChange = (e) => {
         const lng= e.target.value;
         if(lng==="english"){
             i18n.changeLanguage('en-US')
+            setCurrentLanguage("english")
             window.location.reload(true)
         }
         else if(lng==="italian"){
             i18n.changeLanguage('it')
+            setCurrentLanguage("italian")
             window.location.reload(true)
         }
         else {
             i18n.changeLanguage('sq')
+            setCurrentLanguage("albanian")
             window.location.reload(true)
         }
           //en-US english
@@ -68,21 +85,13 @@ function Main() {
                                     </li>
                                     </ul>
                                 </div>
-                                <div className="f-contact" style={{paddingTop:"25px"}}>
-                                    <ul>
-                                    <li>
-                                        <h4 style={{fontSize:"14px"}}>Change Language</h4>
-                                    </li>
-                                    <li className='theme-dark'>
-                                        <button className='language-btn' value="english" onClick={setLang}>English</button>
-                                    </li>
-                                    <li>
-                                        <button className='language-btn' value="italian" onClick={setLang}>Italian</button>
-                                    </li>
-                                    <li>
-                                        <button className='language-btn' value="albanian" onClick={setLang}>Albanian</button>
-                                    </li>
-                                    </ul>
+                                <div className="f-contact below-logo" style={{ paddingTop: "25px"}}>
+                                <h4 style={{ fontSize: "14px" }}>Change Language</h4>
+                                <select className='language-dropdown' value={currentLang} onChange={handleLanguageChange} >
+                                    <option value="english">English</option>
+                                    <option value="italian">Italian</option>
+                                    <option value="albanian">Albanian</option>
+                                </select>
                                 </div>
                                 </div>
                             </div>

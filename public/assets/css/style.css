@@ -505,7 +505,8 @@ label {
         width: auto;
     }
     .implant-textbox{
-        height: 40px;
+        height: auto;
+        max-height: 100%;
         width: 234px;
     }
     .move-up2 {
@@ -1354,6 +1355,23 @@ height: 100%;
     border: none;
     background: #6DA7A2;
     color:White;
+}
+
+.language-dropdown {
+    max-width: 50% !important;
+    width: auto !important;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #A7CCC84D;
+    color: #000;
+    cursor: pointer;
+    
+  }
+
+.below-logo{
+    display: flex;
+    flex-direction: column;
 }
 
 

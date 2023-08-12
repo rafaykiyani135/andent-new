@@ -23,8 +23,8 @@ function Main (){
         if (lng==='sq' && !isMobile) {
             setTopPadding(240);
           }
-           else if(isMobile){
-            setTopPadding(35);
+           else if(isMobile && lng==='it'){
+            setTopPadding(0);
           }
           else {
             setTopPadding(160);

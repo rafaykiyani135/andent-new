@@ -101,7 +101,8 @@ function Make() {
 
   return (
     <>
-            <div className="container pad-20">
+            <section id="contact" className="andent-padding">
+            <div className="container">
               <div className="row justify-content-around align-items-center">
               <div className="col-lg-4 col-8 order-2 d-flex justify-content-center wow fadeInUp animated upper-padding" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
                   <div >
@@ -158,7 +159,7 @@ function Make() {
                 </div>
 
                 <div className='row justify-content-center text-center'>
-                <div className='col-lg-12'>
+                <div className='col-lg-12 col-12'>
                 <div className="section-title center-align">
                       <h2 className='size-60 theme-dark'>{t("bookaptmnt")}</h2>
                     </div>
@@ -225,7 +226,7 @@ function Make() {
 
               </div>
             </div>
-
+            </section>
     </>
   )
 }

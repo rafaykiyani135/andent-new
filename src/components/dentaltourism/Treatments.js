@@ -110,7 +110,7 @@ function Main (){
                                   {t("service3p")}
                                     </p>
                             </div>
-                            <div style={{paddingTop:"15px"}}>
+                            <div>
                                 <Link to="/dentures" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                 {t("learnmore")}

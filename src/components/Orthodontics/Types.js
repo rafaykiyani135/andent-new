@@ -6,19 +6,38 @@ import { useState } from 'react';
 
 function Main () {
     const [bottomPadding, setBottomPadding] = useState(0);
+    const [isMobile, setIsMobile] = useState(false)
 
     const {t,i18n}=useTranslation();
 
     useEffect(() => {
         const lng= i18n.language;
 
-        if (lng==='it')  {
+        if (lng==='it' && !isMobile)  {
             setBottomPadding(160);
+          }
+        else  if (lng==='it' && isMobile)  {
+            setBottomPadding(50);
           }
            else {
             setBottomPadding(0);
           }
-    },[bottomPadding,i18n]);
+    },[bottomPadding,i18n,isMobile]);
+
+     //choose the screen size 
+     const handleResize = () => {
+        if (window.innerWidth < 720) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+      }
+    
+      // create an event listener
+      useEffect(() => {
+        window.addEventListener("resize", handleResize)
+  
+      })
 
 
 
