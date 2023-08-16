@@ -67,13 +67,13 @@ function Main() {
 
   return (
     <>
-        <section id="home" className="slider-area fix p-relative">
+        <section id="home" className="slider-area fix p-relative hero-md-pad">
             <div className="slider-active">
             <div className="single-slider slider-bg d-flex align-items-center" style={{backgroundImage: "url(img/slider/slider_bg.png)", backgroundSize: "cover"}}>
                 <div className="container">
-                <div className="row justify-content-around align-items-center">
-                    <div className="col-lg-6 col-md-8 hero-left-pos">
-                    <div className="slider-content s-slider-content mt-20 text-center text-lg-start">
+                <div className="row justify-content-around align-items-center justify-content-md-start">
+                    <div className="col-lg-6 col-md-11 hero-left-pos">
+                    <div className="slider-content s-slider-content mt-20 text-center text-lg-start text-md-start">
                         <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
                         {t("welcome")}
                         </h5>

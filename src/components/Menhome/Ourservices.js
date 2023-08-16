@@ -63,12 +63,11 @@ function Ourservices() {
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service1")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service1p")}
                                 </p>
                             </div>
-                            
                             </div>
                         </li>
                         </div>
@@ -79,7 +78,7 @@ function Ourservices() {
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service2")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service2p")}
                                 </p>
@@ -95,7 +94,7 @@ function Ourservices() {
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service3")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                   <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                   {t("service3p")}
                                     </p>
@@ -117,7 +116,7 @@ function Ourservices() {
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service4")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service4p")}
                                 </p>
@@ -133,7 +132,7 @@ function Ourservices() {
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service5")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service5p")}
                                 </p>
@@ -149,7 +148,7 @@ function Ourservices() {
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service6")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service6p")}
                                 </p>
@@ -174,16 +173,16 @@ function Ourservices() {
                         <div className='d-flex justify-content-center'>
                             <img src={slider1} className="img-fluid" alt="Slider Image6" />
                         </div>
-                        <div>
+                        <div className='d-flex justify-content-center'>
                              <img src={slider2} className="img-fluid" alt="Slider Image1" />
                         </div>
-                        <div>
+                        <div className='d-flex justify-content-center'>
                         <img src={slider3} className="img-fluid" alt="Slider Image2" />
                         </div>
-                        <div>
+                        <div className='d-flex justify-content-center'>
                         <img src={slider4} className="img-fluid" alt="Slider Image3" />
                         </div>
-                        <div>
+                        <div className='d-flex justify-content-center'>
                         <img src={slider5} className="img-fluid" alt="Slider Image4" />
                         </div>
                         </Slider>

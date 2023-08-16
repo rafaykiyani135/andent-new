@@ -52,29 +52,33 @@ function Main () {
             </div>
             <div className="row justify-content-center upper-pad-20 orth-type">
                 <div className='col-lg-6 col-md-12 move-right'>
-                    <div className='orth-types'>
+                    <div className='orth-types text-center text-lg-start'>
                         <img src={d1} alt='traditional bracer' style={{width:"240px",height:"144px",borderRadius:"10px"}}/>
                     </div>
                     <div className='decent-pad orth-text-head'>
                         <h3 className='theme-dark size-25 text-center upper-pad-10' style={{lineHeight:"37.5px"}}>
                         {t("ortht1")}
                         </h3>
+                        <div className='tourism-text'>
                         <p className='size-16 text-center' style={{lineHeight:"20px",fontWeight:"400",color:"black"}}>
                         {t("ortht1p")}
                         </p>
+                        </div>
                     </div>
                 </div>
                 <div className='col-lg-6 col-md-12 move-left'>
-                    <div className='orth-types'>
+                    <div className='orth-types text-center text-lg-start'>
                         <img src={d2} alt='traditional bracer' style={{width:"240px",height:"144px",borderRadius:"10px"}}/>
                     </div>
                     <div className='decent-pad orth-text-head'>
                         <h3 className='theme-dark size-25 text-center upper-pad-10' style={{lineHeight:"37.5px"}}>
                         {t("ortht2")}<br/> {t("ortht21")}
                         </h3>
-                        <p className='size-16 text-center' style={{lineHeight:"20px",fontWeight:"400",color:"black"}}>
+                        <div className='tourism-text'>
+                        <p className='size-16 text-center ' style={{lineHeight:"20px",fontWeight:"400",color:"black"}}>
                         {t("ortht2p")}
                         </p>
+                        </div>
                     </div>
                 </div>
             </div>

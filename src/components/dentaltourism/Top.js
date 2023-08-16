@@ -59,7 +59,7 @@ function Main(props) {
         <div className="single-slider slider-bg d-flex align-items-center bg-pos" style={{ backgroundImage: `url(${bg})`,height:"100%",width:"100%",backgroundAttachment:"fixed"}}>
         <div className="container">
             <div className="row justify-content-left text-left align-items-start">
-            <div className="col-lg-7 col-md-7 text-lg-start text-center">
+            <div className="col-lg-7 col-md-11 text-lg-start text-center text-md-start">
                 <div className="slider-content s-slider-content mt-20">
                 <h5 data-animation="fadeInUp" data-delay=".4s" className="theme" style={{ color: "#6DA7A2" }}>
                     {t("welcome")}

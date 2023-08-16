@@ -11,24 +11,34 @@ import { useTranslation } from 'react-i18next'
 
 function Main (){
 
-    const [isMobile, setIsMobile] = useState(false)
-    const {t}=useTranslation();
-    //choose the screen size 
+    const [isMobile, setIsMobile] = useState(false);
+    const [isTablet, setIsTablet] = useState(false);
+    const { t } = useTranslation();
+
+    // Choose the screen size
     const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
-    }
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 720) { // Mobile devices
+        setIsMobile(true);
+        setIsTablet(false);
+        } else if (screenWidth < 1024) { // Tablets
+        setIsMobile(false);
+        setIsTablet(true);
+        } else { // Large screens
+        setIsMobile(false);
+        setIsTablet(false);
+        }
+    };
 
-   
-  
-    // create an event listener
+    // Create an event listener
     useEffect(() => {
-      window.addEventListener("resize", handleResize)
+        handleResize(); // Initial check
+        window.addEventListener('resize', handleResize);
 
-    })
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const settings = {
         dots: true,
@@ -36,9 +46,9 @@ function Main (){
         autoplay: true,
         speed: 5000,
         autoplaySpeed: 4000,
-        slidesToShow: isMobile ? 1 : 3,
-        slidesToScroll: isMobile ? 1 : 3
-      };
+        slidesToShow: isMobile ? 1 : isTablet ? 2 : 3,
+        slidesToScroll: isMobile ? 1 : isTablet ? 2 : 3,
+    };
 
     return(
         <div>

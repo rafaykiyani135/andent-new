@@ -35,12 +35,12 @@ function Main (){
                             {t("treatment1p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstep">
                             <img src={s1} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep">
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
@@ -57,12 +57,12 @@ function Main (){
                             {t("treatment3p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstep" >
                             <img src={s3} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep">
                             <img src={s4} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
@@ -79,7 +79,7 @@ function Main (){
                             {t("treatment5p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstep">
                             <img src={s5} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
@@ -94,12 +94,12 @@ function Main (){
                             {t("treatment6p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstep">
                             <img src={s6} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep"  >
                             <img src={s7} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
@@ -116,12 +116,12 @@ function Main (){
                             {t("treatment8p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstep">
                             <img src={s8} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep" >
                             <img src={s9} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
@@ -139,7 +139,7 @@ function Main (){
                             {t("treatment10p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstep" >
                             <img src={s10} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>

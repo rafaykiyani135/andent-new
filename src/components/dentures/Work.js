@@ -17,7 +17,7 @@ function Main (){
                     </div>
                 </div>
                 <div className="row justify-content-center text-left upper-padding">
-                    <div className="col-lg-6 col-md-12 move-right" style={{paddingBottom:"35px"}}>
+                    <div className="col-lg-6 col-md-12 move-right text-lg-start text-md-center" style={{paddingBottom:"35px"}}>
                         <img src={img1} alt='img1' style={{height:"275px",width:"523px"}}/>
                     </div>
 
@@ -28,11 +28,11 @@ function Main (){
                     </p>
                     <div className="row decent-pad">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <div className="d-flex align-items-center">
-                            <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                            <div className="d-flex align-items-center justify-content-start justify-content-md-center">
+                            <div className="col-lg-3 col-md-1 col-sm-3 d-flex justify-content-lg-start justify-content-md-end" >
                                 <img src={redtick} className="d-flex justify-content-center icon-size" alt="phoneicon" />
                             </div>
-                            <div className="col-lg-9 col-md-9 col-sm-9">
+                            <div className="col-lg-9 col-md-4 col-sm-9">
                                 <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon2-text-pos">
                                 <b>{t("denturesworkp1")}</b>
                                 </h6>
@@ -42,11 +42,11 @@ function Main (){
                     </div>
                     <div className="row decent-pad">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <div className="d-flex align-items-center">
-                            <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                            <div className="d-flex align-items-center justify-content-start justify-content-md-center">
+                            <div className="col-lg-3 col-md-1 col-sm-3 d-flex justify-content-lg-start justify-content-md-end">
                                 <img src={redtick} className="d-flex justify-content-center icon-size" alt="phoneicon" />
                             </div>
-                            <div className="col-lg-9 col-md-9 col-sm-9">
+                            <div className="col-lg-9 col-md-4 col-sm-9">
                                 <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon2-text-pos">
                                 <b>{t("denturesworkp2")}</b>
                                 </h6>

@@ -16,31 +16,36 @@ function Ourdr() {
 
     const {t}=useTranslation();
  
-    const [isMobile, setIsMobile] = useState(false)
-    //choose the screen size 
+    const [isMobile, setIsMobile] = useState(false);
+    const [isTablet, setIsTablet] = useState(false);
+
+    // choose the screen size
     const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
-    }
-  
+    const width = window.innerWidth;
+
+    setIsMobile(width < 720);
+    setIsTablet(width >= 720 && width < 1024);
+    };
+
     // create an event listener
     useEffect(() => {
-      window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial call to set initial states
 
-    })
+    return () => {
+        window.removeEventListener("resize", handleResize);
+    };
+    }, []);
 
     const settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        speed: 4000,
-        autoplaySpeed: 2000,
-        slidesToShow: isMobile ? 1 : 3,
-        slidesToScroll: isMobile ? 1 : 1
-      };
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 4000,
+    autoplaySpeed: 2000,
+    slidesToShow: isMobile ? 1 : isTablet ? 2 : 3,
+    slidesToScroll: isMobile ? 1 : 1,
+    };
 
     return (
 

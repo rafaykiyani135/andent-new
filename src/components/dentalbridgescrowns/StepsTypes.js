@@ -30,12 +30,12 @@ function Main(){
                             {t("bridges1p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstepimg">
                             <img src={s1} alt='step1' className='andent-icon-sq steps-img-left2'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstepimg">
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
@@ -52,12 +52,12 @@ function Main(){
                             {t("bridges3p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbstepimg">
                             <img src={s3} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstepimg">
                             <img src={s4} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
@@ -74,7 +74,7 @@ function Main(){
                             {t("bridges5p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs  stepbstepimg">
                             <img src={s5} alt='step1' className='andent-icon-sq'/>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ function Main(){
                                 <h3 className='theme-dark size-18 text-center'>
                                 {t("bridgest1")}
                                 </h3>
-                                <div className='types-textbox'>
+                                <div className='types-textbox tourism-text'>
                                      <p style={{color:"black",lineHeight:"20px"}} className='size-16'>
                                      {t("bridgest1p")}
                                     </p>
@@ -106,12 +106,11 @@ function Main(){
                                 <h3 className='theme-dark size-18 text-center'>
                                 {t("bridgest2")}
                                 </h3>
-                                <div className='types-textbox'>
+                                <div className='types-textbox tourism-text'>
                                       <p style={{color:"black",lineHeight:"20px"}} className='size-16'>
                                       {t("bridgest2p")}
                                       </p>
                                 </div>
-                              
                             </div>
                         </div>
                         <div className="col-lg-3 text-center move-right" >
@@ -120,7 +119,7 @@ function Main(){
                                 <h3 className='theme-dark size-18 text-center'>
                                 {t("bridgest3")}
                                 </h3>
-                                <div className='types-textbox'>
+                                <div className='types-textbox tourism-text'>
                                     <p style={{color:"black",lineHeight:"20px"}} className='size-16'>
                                     {t("bridgest3p")}
                                     </p>

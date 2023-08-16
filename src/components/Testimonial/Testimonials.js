@@ -45,7 +45,7 @@ function Testimonialslider() {
                             height='400px'
                         />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center tourism-text'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test5desc")}
@@ -71,7 +71,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center tourism-text'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test6desc")}
@@ -99,7 +99,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center tourism-text'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test7desc")}
@@ -125,7 +125,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center tourism-text'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test8desc")}
@@ -154,7 +154,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center tourism-text'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test9desc")}
@@ -180,7 +180,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center tourism-text'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center  testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test10desc")}

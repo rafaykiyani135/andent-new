@@ -105,45 +105,48 @@ function Make() {
             <div className="container">
               <div className="row justify-content-around align-items-center">
               <div className="col-lg-4 col-8 order-2 d-flex justify-content-center wow fadeInUp animated upper-padding" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
-                  <div >
-                    <div className='row justify-content-center'>
-                      <div className='col-lg-4 col-8'>
+                  <div className='contact-info'>
+                  <div className='row justify-content-center'>
+                      <div className='col-lg-4 col-8 d-flex justify-content-md-center'>
                       <div className="f-cta-icon">
+                        <div>
                         <img src={iconone} alt='none' className='mob-bottom-icon'/>
+                        </div>
                       </div>
                       </div>
-                      <div className='col-lg-8 col-12 mob-bottom-text'>
-                        <div className='apt-text'>
-                            <h5 className='theme-dark' style={{color:"#4E4E50"}}>{t("address")}</h5>
-                            <p className='size-16 theme-dark' style={{width:"263px",height:"64px",lineHeight:"20px",fontWeight:"400"}}>
+                      <div className='col-lg-8 col-12 mob-bottom-text clinic-address'>
+                        <div className='apt-text text-start'>
+                            <h5 className='theme-dark text-center text-sm-center text-lg-start text-md-center' style={{color:"#4E4E50"}}>{t("address")}</h5>
+                            <p className='size-16 theme-dark text-center text-lg-start text-md-center address-text' style={{lineHeight:"20px",fontWeight:"400"}}>
                             Rruga Bardhok Biba, Pall. Golden<br/> Trema,
-                            Shk. B, Kati 4, Tiranë 
+                            Shk. B, Kati 4, Tiranë
                             </p>
                         </div>
                       </div>
                     </div>
                     <br/>
                     <div className='row justify-content-center'>
-                      <div className='col-lg-4 col-8'>
+                      <div className='col-lg-4 col-8 d-flex justify-content-md-center'>
                       <div className="f-cta-icon">
+                        <div>
                         <img src={icontwo} alt='none' className='mob-bottom-icon'/>
+                        </div>
                       </div>
                       </div>
-                      <div className='col-lg-8 col-12 mob-bottom-text'>
+                      <div className='col-lg-8 col-12 mob-bottom-text contact-us'>
                         <div style={{position:"relative",bottom:"20px"}} className='apt-text'>
-                          <h5 className='theme-dark' style={{color:"#4E4E50"}}>Contact Us</h5>
-                          <p className='size-16 theme-dark' style={{width:"263px",height:"100px",lineHeight:"20px",fontWeight:"400"}}>
+                          <h5 className='theme-dark text-sm-center text-lg-start text-md-center' style={{color:"#4E4E50"}}>{t("contactus")}</h5>
+                          <p className='size-16 theme-dark text-sm-center text-lg-start text-md-center address-text' style={{lineHeight:"20px",fontWeight:"400"}}>
                           {t("phnum")}<br/> +355(0) 69 375 5065<br/><br/>
                           {t("email")}:<br/>info@andent.al
                           </p>
                         </div>
-                        
                       </div>
                     </div>
 
                     <div className='row upper-padding' style={{position:"relative"}}>
                     <div className="col-lg-12 text-center">
-                    <Iframe id="contactsMap"frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.004518759625!2d19.814192096789547!3d41.3305151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031303fe86d0b%3A0x7d2830bb4995e303!2sDentisti%20in%20Albania%20-%20Andent%20Clinic!5e0!3m2!1sen!2s!4v1688988361448!5m2!1sen!2s"
+                    <Iframe id="contactsMap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.004518759625!2d19.814192096789547!3d41.3305151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031303fe86d0b%3A0x7d2830bb4995e303!2sDentisti%20in%20Albania%20-%20Andent%20Clinic!5e0!3m2!1sen!2s!4v1688988361448!5m2!1sen!2s"
                            width={322}
                            height={303} 
                            style={{ border : "0" }}
@@ -204,7 +207,7 @@ function Make() {
                            </div>
                           </div>
                           </div>
-                          <div className="col-lg-5 col-12 col-sm-12 col-md-12 d-flex justify-content-lg-end justify-content-center text-center align-items-center form-input-pad-mob">
+                          <div className="col-lg-5 col-12 col-sm-12 col-md-12 d-flex justify-content-lg-end justify-content-center text-center align-items-center form-input-pad-mob upload-top-pad">
                             <input type="file" id="file-input" name="file-input" onChange={chPano}/>
                             <label id="file-input-label" for="file-input" className='text-center'>{t("upload")}</label>
                           </div>

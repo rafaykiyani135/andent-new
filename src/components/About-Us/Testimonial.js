@@ -46,7 +46,7 @@ function Testimonialslider() {
                         />
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim   '>
+                        <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim tourism-text'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test3desc")}
                         </p>
@@ -72,7 +72,7 @@ function Testimonialslider() {
                         />
                     </div>
                     <div className='d-flex justify-content-center'>
-                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim   '>
+                    <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim tourism-text'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test4desc")}
                         </p>

@@ -45,12 +45,12 @@ function Main() {
         <div className='contactsm-upperpad'>
             <div className="container contact-dim" style={{backgroundColor:"#A7CCC8",borderRadius:"20px"}}>
                 <div className="row align-items-center">
-                <div className="col-lg-5 col-md-12 col-sm-12 pad-20-sm">
+                <div className="col-lg-5 col-md-12 col-sm-12 pad-20-sm exp-top-pad">
                     <div className="single-counter-img fadeInUp animated text-center" data-animation="fadeInDown animated" data-delay=".2s" >
                     <img src={Callmenone} alt="img" className="img contact-lg" style={{height:"504px",width:"378px",borderRadius:"10px"}}/>
                     </div>
                 </div>
-                <div className="col-lg-7 col-md-12 col-sm-12 d-flex align-items-start justify-content-start text-center text-lg-start">
+                <div className="col-lg-7 col-md-12 col-sm-12 d-flex align-items-start justify-content-start text-center text-lg-start exp-top-pad exp-bot-pad">
                     <div className='pad-20-sm'>
                     <h5 style={{fontSize:"25px",color:"#4E4E50"}} className='theme-dark'>{t("heartgirlh")}</h5>
                     <h2 style={{fontSize:"16px",color:"black",fontWeight:"400"}}>{t("heartgirlp")}</h2>

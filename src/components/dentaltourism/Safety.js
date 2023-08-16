@@ -54,7 +54,7 @@ function Main (){
                     <div>
                         <ul className="text-left">
                         <li style={{ paddingBottom: "40px", display: "flex" }}>
-                            <div>
+                            <div className='d-md-flex align-items-md-center'>
                             <img src={img1} alt="icon01" className='andent-icon-circ andent-icon-circ-sm ' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
                             <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
@@ -70,7 +70,7 @@ function Main (){
                             </div>
                         </li>
                         <li style={{ paddingBottom: "40px", display: "flex" }}>
-                            <div>
+                            <div className='d-md-flex align-items-md-center'>
                             <img src={img3} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
                             <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
@@ -86,7 +86,7 @@ function Main (){
                             </div>
                         </li>
                         <li style={{ paddingBottom: "40px", display: "flex" }}>
-                            <div>
+                            <div className='d-md-flex align-items-md-center'>
                             <img src={img5} alt="icon01" className='andent-icon-circ andent-icon-circ-sm move-down-lg' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
                             <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
@@ -111,7 +111,7 @@ function Main (){
                         <ul className='text-left'>
                         <div>
                         <li style={{paddingBottom:"40px",display:"flex"}}>
-                            <div>
+                            <div className='d-md-flex align-items-md-center'>
                             <img src={img2} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
                             <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
@@ -129,7 +129,7 @@ function Main (){
                         </div>
                         <div>
                         <li style={{paddingBottom:"40px",display:"flex"}}>
-                            <div>
+                            <div className='d-md-flex align-items-md-center'>
                             <img src={img4} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }}/>
                             </div>
                             <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
@@ -147,7 +147,7 @@ function Main (){
                         </div>
                         <div>
                         <li style={{paddingBottom:"40px",display:"flex"}}>
-                            <div>
+                            <div className='d-md-flex align-items-md-center'>
                             <img src={img6} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }}/>
                             </div>
                             <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>

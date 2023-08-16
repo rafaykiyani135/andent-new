@@ -30,12 +30,12 @@ function Main(){
                             {t("imp1p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbystepimg">
                             <img src={s1} alt='step1' className='andent-icon-sq move-down'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center " style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbystepimg">
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left move-down'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
@@ -52,12 +52,12 @@ function Main(){
                             {t("imp3p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbystepimg">
                             <img src={s3} alt='step1' className='andent-icon-sq-1 steps-img-left move-down'/>
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbystepimg">
                             <img src={s4} alt='step1' className='andent-icon-sq-1 steps-img-left move-down'/>
                         </div>
                         <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
@@ -74,7 +74,7 @@ function Main(){
                             {t("imp5p")}
                             </p>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs"  style={{position:"relative",bottom:"30px"}}>
+                        <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs stepbystepimg">
                             <img src={s5} alt='step1' className='andent-icon-sq move-down'/>
                         </div>
                     </div>
@@ -90,10 +90,10 @@ function Main(){
                         <img src={d1} alt="teeth1" style={{ width: "100%", maxWidth: "321px", height: "auto" }} />
                         <div style={{ paddingTop: "20px" }}>
                             <h3 className="theme-dark size-18 text-center decent-pad">{t("impt1")}</h3>
-                            <div className="row decent-pad ">
+                            <div className="row decent-pad">
                             <div className="col-lg-12 col-md-12 col-sm-12">
                                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
-                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-lg-start justify-content-md-end red-tick-md">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
                                 <div className="col-lg-9 col-md-9 col-sm-9 text-start implant-textbox">
@@ -107,7 +107,7 @@ function Main(){
                             <div className="row decent-pad">
                             <div className="col-lg-12 col-md-12 col-sm-12">
                                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
-                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-lg-start justify-content-md-end red-tick-md">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
                                 <div className="col-lg-9 col-md-9 col-sm-9 text-start implant-textbox">
@@ -121,7 +121,7 @@ function Main(){
                             <div className="row decent-pad">
                             <div className="col-lg-12 col-md-12 col-sm-12">
                                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
-                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-lg-start justify-content-md-end red-tick-md">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                 </div>
                                 <div className="col-lg-9 col-md-9 col-sm-9 text-start implant-textbox">
@@ -134,7 +134,7 @@ function Main(){
                             </div>
                         </div>
                         </div>
-                        <div className="col-lg-3 text-center move-right">
+                        <div className="col-lg-3 text-center move-right exp-top-pad">
                             <img src={d2} alt='teeth1' style={{ width: "100%", maxWidth: "321px", height: "auto" }} />
                             <div style={{paddingTop:"20px"}}>
                                 <h3 className='theme-dark size-18 text-center decent-pad'>
@@ -143,7 +143,7 @@ function Main(){
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
                                     <div className="d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
-                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-lg-start justify-content-md-end red-tick-md">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
                                     <div className="col-lg-9 col-md-9 col-sm-9 text-start implant-textbox">
@@ -157,7 +157,7 @@ function Main(){
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
                                     <div className="d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
-                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
+                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-lg-start justify-content-md-end red-tick-md">
                                     <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
                                     </div>
                                     <div className="col-lg-9 col-md-9 col-sm-9 text-start implant-textbox">
@@ -171,8 +171,8 @@ function Main(){
                                 <div className="row decent-pad">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
                                     <div className="d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
-                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-left">
-                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon" alt="phoneicon" />
+                                    <div className="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-lg-start justify-content-md-end">
+                                    <img src={redtick} className="d-flex justify-content-center icon-size footer-mob-icon red-tick-md" alt="phoneicon" />
                                     </div>
                                     <div className="col-lg-9 col-md-9 col-sm-9 text-start implant-textbox">
                                         <h6 style={{ color: "black", fontWeight: "400"}} className="size-16 icon-text-pos">

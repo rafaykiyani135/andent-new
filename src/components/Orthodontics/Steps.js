@@ -3,6 +3,8 @@ import s2 from '../../assets/andent-data/os2.png'
 import s3 from '../../assets/andent-data/os3.png'
 import s4 from '../../assets/andent-data/os4.png'
 import s5 from '../../assets/andent-data/os5.png'
+
+
 import { useTranslation } from 'react-i18next';
 
 function Main (){
@@ -72,7 +74,7 @@ function Main (){
                     {t("orthstep5p")}
                     </p>
                 </div>
-                <div className="col-lg-2 col-md-6 col-6 col-sm-6text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
                     <img src={s5} alt='step1' className='andent-icon-circ move-left'/>
                 </div>
             </div>

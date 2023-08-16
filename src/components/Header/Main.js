@@ -48,7 +48,7 @@ function Main() {
     return (
         <>
             <header className="header-area header-three">
-                <div className="header-top second-header d-none d-md-block" style={{backgroundColor:"#6DA7A2"}}>
+                <div className="header-top second-header d-none d-lg-block" style={{backgroundColor:"#6DA7A2"}}>
                     <div className="container">
                         <div className="row align-items-start">
                             <div className="col-lg-8 col-md-8 d-none d-lg-block">

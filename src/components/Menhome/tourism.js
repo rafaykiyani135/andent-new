@@ -14,21 +14,27 @@ function Tourism() {
   
 
 
-    const [isMobile, setIsMobile] = useState(false)
-    //choose the screen size 
+    const [isMobile, setIsMobile] = useState(false);
+    const [isTablet, setIsTablet] = useState(false);
+
+    // choose the screen size
     const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
-    }
-  
+    const width = window.innerWidth;
+
+    setIsMobile(width < 720);
+    setIsTablet(width >= 720 && width < 1024);
+    };
+
     // create an event listener
     useEffect(() => {
-      window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial call to set initial states
 
-    })
+    return () => {
+        window.removeEventListener("resize", handleResize);
+    };
+    }, []);
+
 
     const linkClick = (e) =>{
         window.analytics.track("Link clicked", {
@@ -52,7 +58,7 @@ function Tourism() {
                 </div>
                 </div>
                 <div className="row justify-content-around">
-                <div className="col-lg-3 col-md-6 d-flex text-center">
+                <div className="col-lg-3 col-md-12 d-flex text-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innerone} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
@@ -60,14 +66,14 @@ function Tourism() {
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("freeaccom")}</h4>
                         </div>
-                        <div style={{paddingTop:"0px"}}>
+                        <div style={{paddingTop:"0px"}} className='tourism-text'>
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>
                         {t("freeaccomp")}
                         </p>
                         </div>
                     </div>
                     </div>
-                    <div className="col-lg-3 col-md-6 text-center">
+                    <div className="col-lg-3 col-md-12 text-center">
                 <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innertwo} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
@@ -75,14 +81,14 @@ function Tourism() {
                         <div style={{paddingTop:"20px"}} className='justify-content-md-center'>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("assistancewithtravel")}</h4>
                         </div>
-                        <div style={{paddingTop:"0px"}}>
+                        <div style={{paddingTop:"0px"}} className='tourism-text'>
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>
                         {t("assistancewithtravelp")}
                         </p>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-6 text-center">
+                <div className="col-lg-3 col-md-12 text-center">
                 <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innerthree} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
@@ -90,7 +96,7 @@ function Tourism() {
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("traveltips")}</h4>
                         </div>
-                        <div style={{paddingTop:"0px"}}>
+                        <div style={{paddingTop:"0px"}} className='tourism-text'>
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>
                         {t("traveltipsp")}
                         </p>
@@ -99,16 +105,23 @@ function Tourism() {
                 </div>
                 </div>
                 <div className='row justify-content-center text-center upper-padding'>
-                <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center web-vid move-left-vid'>
-                <div className="web-vid" style={{ position: 'relative', paddingTop: '56.25%', width: '100%',borderRadius:"5px" }}>
+                <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center'>
+                    <div
+                    className="web-vid"
+                    style={{
+                        position: 'relative',
+                        paddingTop: isMobile ? '56.25%' : isTablet? '56.25%' : '',
+                        width: isMobile ? '100%' : '584px', // Width for mobile remains 100%, for others it's 640px
+                    }}
+                    >
                     <ReactPlayer
                         url="https://streamable.com/yp0ty3"
                         controls={true}
-                        width={isMobile? '100%': '640px'}
-                        height={isMobile? '100%' : '360px'}
-                        style={{  position: 'absolute', top: 0, left: 0,borderRadius: "10px", overflow:"hidden" }}
+                        width="100%" // Keep the width consistent, it will adjust according to its parent container
+                        height="100%" // Keep the height consistent, it will adjust according to its parent container
+                        style={{ position: 'absolute', top: 0, left: 0, borderRadius: '10px', overflow: 'hidden' }}
                     />
-                </div>
+                    </div>
                 </div>
                 </div>
                <div className='row justify-content-center text-center'>

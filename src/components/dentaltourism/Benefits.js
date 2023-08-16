@@ -10,22 +10,24 @@ function Main (){
 
     const {t}=useTranslation();
 
-    const [isMobile, setIsMobile] = useState(false)
-    //choose the screen size 
+    const [isMobile, setIsMobile] = useState(false);
+    const [isTablet, setIsTablet] = useState(false);
+
+    // choose the screen size 
     const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
+        const screenWidth = window.innerWidth;
+        setIsMobile(screenWidth < 720);
+        setIsTablet(screenWidth >= 720 && screenWidth < 1024);
     }
 
-  
     // create an event listener
     useEffect(() => {
-      window.addEventListener("resize", handleResize)
-
-    })
+        window.addEventListener("resize", handleResize);
+        handleResize(); // Initial check
+        return () => {
+        window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     const linkClick = (e) =>{
         window.analytics.track("Link clicked", {
@@ -47,7 +49,7 @@ function Main (){
                     </div>
                 </div>
                 <div className="row upper-padding justify-content-center align-items-center">
-                    <div className="col-lg-4 col-md-12 col-12">
+                    <div className="col-lg-4 col-md-12 col-12 text-lg-start text-md-center">
                         <img src={img1} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 order-lg-first order-md-first mob-top-pad text-center text-lg-start">
@@ -60,10 +62,10 @@ function Main (){
                     </div>
                 </div>
                 <div className="row upper-padding justify-content-center align-items-center">
-                    <div className="col-lg-4 col-md-12 col-12">
+                    <div className="col-lg-4 col-md-12 col-12 text-lg-start text-md-center">
                         <img src={img2} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-12 move-up text-center text-lg-start" style={{paddingTop:"20px"}}>
+                    <div className="col-lg-6 col-md-12 col-12 move-up text-center text-lg-start order-md-first" style={{paddingTop:"20px"}}>
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
                         {t("tourismben2")}
                         </h2>
@@ -73,7 +75,7 @@ function Main (){
                     </div>
                 </div>
                 <div className="row upper-padding justify-content-center  align-items-center">
-                    <div className="col-lg-4 col-md-12 col-12">
+                    <div className="col-lg-4 col-md-12 col-12 text-lg-start text-md-center">
                         <img src={img3} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 move-up order-lg-first order-md-first mob-top-pad text-center text-lg-start">
@@ -86,16 +88,23 @@ function Main (){
                     </div>
                 </div>
                 <div className='row justify-content-center text-center upper-padding'>
-                <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center web-vid move-left-vid'>
-                <div className="web-vid" style={{ position: 'relative', paddingTop: '56.25%', width: '100%',borderRadius:"5px" }}>
+                <div className='col-lg-8 col-md-8 col-12 d-flex justify-content-center'>
+                    <div
+                    className="web-vid"
+                    style={{
+                        position: 'relative',
+                        paddingTop: isMobile ? '56.25%' : isTablet? '56.25%' : '',
+                        width: isMobile ? '100%' : '584px', // Width for mobile remains 100%, for others it's 640px
+                    }}
+                    >
                     <ReactPlayer
                         url="https://streamable.com/yp0ty3"
                         controls={true}
-                        width={isMobile? '100%': '640px'}
-                        height={isMobile? '100%' : '360px'}
-                        style={{  position: 'absolute', top: 0, left: 0,borderRadius: "10px", overflow:"hidden" }}
+                        width="100%" // Keep the width consistent, it will adjust according to its parent container
+                        height="100%" // Keep the height consistent, it will adjust according to its parent container
+                        style={{ position: 'absolute', top: 0, left: 0, borderRadius: '10px', overflow: 'hidden' }}
                     />
-                </div>
+                    </div>
                 </div>
                 </div>
                <div className='row justify-content-center text-center'>

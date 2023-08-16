@@ -26,7 +26,7 @@ function Main (){
                 </div>
 
                 <div className="row justify-content-around" style={{paddingTop:"100px"}}>
-                    <div className="col-lg-3 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                    <div className="col-lg-3 text-center upper-padding-rs veneer-info-pad" style={{position:"relative",bottom:"30px"}}>
                         <img src={s1} alt='step1' style={{height:"144px",width:"240px"}}/>
                     </div>
                     <div className="col-lg-6 text-center text-lg-start move-right mob-top-pad order-lg-first order-md-first" >
@@ -38,10 +38,10 @@ function Main (){
                 </div>
 
                 <div className="row justify-content-around upper-padding">
-                    <div className="col-lg-3 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                    <div className="col-lg-3 text-center upper-padding-rs veneer-info-pad" style={{position:"relative",bottom:"30px"}}>
                         <img src={s3} alt='step1' style={{height:"144px",width:"240px"}} className='move-img-right'/>
                     </div>
-                    <div className="col-lg-6 text-center text-lg-start" >
+                    <div className="col-lg-6 text-center text-lg-start order-md-first" >
                         <h5 className="size-18 theme-dark">{t("veneersinfo2")}</h5>
                         <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                         {t("veneersinfo2p")}
@@ -50,7 +50,7 @@ function Main (){
                 </div>
 
                 <div className="row justify-content-around upper-padding">
-                    <div className="col-lg-3 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
+                    <div className="col-lg-3 text-center upper-padding-rs veneer-info-pad" style={{position:"relative",bottom:"30px"}}>
                         <img src={s2} alt='step1' style={{height:"144px",width:"240px"}}/>
                     </div>
                     <div className="col-lg-6 text-lg-start text-center move-right order-lg-first order-md-first" >

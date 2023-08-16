@@ -17,7 +17,7 @@ function Main (){
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-lg-5 col-md-10 col-sm-10" >
+                    <div className="col-lg-5 col-md-10 col-sm-10 text-start text-md-center" >
                         <img src={img1} alt='dbimg' className='img-fluid' style={{height:"402px",width:"402px"}}/>
                     </div>
                     <div className="col-lg-5 col-md-10 col-sm-10 text-center text-lg-start" style={{paddingTop:"70px"}}>
@@ -36,10 +36,10 @@ function Main (){
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                <div className="col-lg-5 col-md-10 col-sm-10" style={{}}>
+                <div className="col-lg-5 col-md-10 col-sm-10 text-start text-md-center" style={{}}>
                         <img src={img2} alt='dbimg' className='' style={{height:"318px",width:"476px"}}/>
                 </div>
-                <div className="col-lg-5 col-md-10 col-sm-10 text-center text-lg-start order-lg-first" style={{paddingTop:"70px"}}>
+                <div className="col-lg-5 col-md-10 col-sm-10 text-center text-lg-start order-lg-first order-md-first" style={{paddingTop:"70px"}}>
                         <h4 className='theme-dark size-20' style={{fontWeight:"700"}}>
                         {t("howbridgesdifferent")}
                         </h4>   

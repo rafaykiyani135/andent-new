@@ -68,7 +68,7 @@ function Main(props) {
 
 
     <>
-            <section id="home" className="slider-area fix p-relative mob-bottom-pad">
+            <section id="home" className="slider-area fix p-relative mob-bottom-pad hero-md-pad">
                 <div className="slider-active">
                 <div className="single-slider slider-bg d-flex align-items-start align-items-lg-center">
                    <div className="container">

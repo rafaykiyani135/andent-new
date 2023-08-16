@@ -549,10 +549,8 @@ label {
         padding-bottom: 30px;
     }
     .mob-bottom-icon{
-        height: 135px;
-        width: 150px;
-        align-items: center;
-        text-align: center;
+        height: 100%;
+        width: 100%;
     }
     .mob-heading{
         font-size: 35px;
@@ -630,7 +628,7 @@ label {
     }
     .form-big2 {
         height: auto;
-        width: 250px;
+        width: auto !important;
         border-radius: 15px;
         border: 1px;
         border-style: solid;
@@ -729,18 +727,23 @@ label {
         height: 90%;
         width: 50%; /* Adjust the width for responsiveness */
       }
+      .stepbstepimg {
+        position: relative;
+        bottom: 30px;
+    }
+    .contacts-map {
+        width: 250px;
+        height:303px;
+    }
+    #contactsMap {
+        width: 250px;
+        height: 303px;
+    }
       
 
     
   }
-  .form-big2 {
-    height: auto;
-    width: 100%;
-    border-radius: 15px;
-    border: 1px;
-    border-style: solid;
-    text-align: center;
-}
+
 
 
 #file-input {
@@ -769,9 +772,161 @@ label {
     color: white;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-md-pad{
+        padding-top: 80px;
+    }
+    .slider-container {
+        width: 100%; /* Set the desired width */
+        height: 100vh; /* Set the desired height */
+        overflow: hidden;
+        }
+        
+        .slider-content-new {
+            animation: moveImage 20s linear infinite;
+            transform-style: preserve-3d;
+            will-change: transform;
+        }
+        
+        .slider-content-dim {
+            height: 400px !important;
+            width: 100%  !important;
+            padding-top: 20px;
+        }
+        
+        .slider-content-vid-dim {
+            height: 400px !important;
+            width: 100%  !important;
+            padding-top: 20px;
+        }
+        
+        .slider-content-filler-dim {
+            height: 200px !important;
+            width: 100%  !important;
+        }
+        
+        .slider-content-left-filler-dim {
+            padding-top: 20px;
+            height: 200px !important;
+            width: 100%  !important;
+        }
+        
+        @keyframes moveImage {
+            0% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(-135%);
+            }
+        }
+        
+        .slider-left {
+            height: 100%;
+            width:50%;
+        }
+        
+        .slider-right {
+            height: 100%;
+            width: 50%;
+        }
+        .services-icon {
+            height: 100px !important;
+            width: 200px !important;
+        }
+        .tourism-text {
+            height: auto;
+            width: auto;
+            max-width: 70%;
+            margin: 0 auto; /* Add this line to center the div horizontally */
+            display: flex;
+            justify-content: center; /* Center its children horizontally */
+            align-items: center; /* Center its children vertically */
+        }
+        .form-big2 {
+            height: auto;
+            width: auto !important;
+            border-radius: 15px;
+            border: 1px;
+            border-style: solid;
+            text-align: center;
+        }
+        .input-text-pad{
+            padding-top: 11px;
+            padding-right: 1px;
+        }
+        .input-text-sides{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .upload-top-pad{
+            padding-top: 20px;
+        }
+        .mob-bottom-icon{
+            height: 150px;
+            width: 150px;
+        }
+        .clinic-address{
+            padding-top: 10px;
+            position: relative;
+            right: 16px;
+        }
+        .contact-us{
+            padding-top: 30px;
+            position: relative;
+            right: 15px;
+        }
+        .exp-top-pad{
+            padding-top: 25px;
+        }
+        .exp-bot-pad{
+            padding-bottom:  25px;
+        }
+        .red-tick-md {
+            position: relative;
+            right: 10px;
+        }
+        #contactsMap {
+            width: 600px;
+            float:left;
+            height: 500px;
+            position:relative;
+            right: 15px;
+        }
+        .contacts-map {
+            width: 600px;
+            float:left;
+            height: 500px;
+            position:relative;
+        }
+        .learn-more-btn{
+            position: relative;
+            bottom: 25px;
+        }
+        .veneer-info-pad{
+            padding-top: 50px;
+        }
+        
+}
+
 
   
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
+    .learn-more-btn{
+        position: relative;
+        bottom: 15px;
+    }
+    .stepbstepimg {
+        position: relative;
+        bottom: 30px;
+    }
+    .address-text{
+        width : 264px;
+        height: 64px;
+    }
+    .services-text{
+        height: 60px;
+        width: 263px;
+    }
 
     .hero-left-pos{
         position: relative;
@@ -1143,6 +1298,20 @@ label {
             height: 100%;
             width: 310px;
         }
+        .contacts-map {
+            width: 100%;
+            float:left;
+            height:300px;
+            position:relative;
+        }
+        #contactsMap {
+            width: 100%;
+            float:left;
+            height:400px;
+            position:relative;
+        }
+        
+    
 
   }
 
@@ -1254,12 +1423,7 @@ height: 100%;
     padding: 20px;
 }
 
-.contacts-map {
-    width: 100%;
-    float:left;
-    height:300px;
-    position:relative;
-}
+
 
 .andent-icon-sq {
     height: 120px;
@@ -1271,12 +1435,6 @@ height: 100%;
     width: 100px;
 }
 
-#contactsMap {
-    width: 100%;
-    float:left;
-    height:300px;
-    position:relative;
-}
 
 
 

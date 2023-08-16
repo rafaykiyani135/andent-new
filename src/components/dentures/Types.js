@@ -25,7 +25,7 @@ function Main (){
                     </div>
 
                     <div className="row justify-content-center">
-                    <div className="col-lg-3 col-md-6 d-flex justify-content-center">
+                    <div className="col-lg-3 col-md-12 d-flex justify-content-center">
                         <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                             <div className='d-flex justify-content-center upper-padding'>
                             <img src={b1} alt="dt1" style={{height:"144px",width:"240px"}} className='img-fluid'/>
@@ -33,14 +33,14 @@ function Main (){
                             <div style={{paddingTop:"20px"}}>
                             <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("denturestype1")}</h4>
                             </div>
-                            <div>
+                            <div className='tourism-text'>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
                                 {t("denturestype1p")}
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6 d-flex justify-content-center">
+                    <div className="col-lg-3 col-md-12 d-flex justify-content-center">
                         <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                             <div className='d-flex justify-content-center upper-padding'>
                             <img src={b2} alt="dt1" style={{height:"144px",width:"240px"}} className='img-fluid'/>
@@ -48,14 +48,14 @@ function Main (){
                             <div style={{paddingTop:"20px"}}>
                             <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("denturestype2")}</h4>
                             </div>
-                            <div>
+                            <div className='tourism-text'>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
                                 {t("denturestype2p")}
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6 d-flex justify-content-center">
+                    <div className="col-lg-3 col-md-12 d-flex justify-content-center">
                         <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                             <div className='d-flex justify-content-center upper-padding'>
                             <img src={b3} alt="dt1" style={{height:"144px",width:"240px"}} className='img-fluid'/>
@@ -63,7 +63,7 @@ function Main (){
                             <div style={{paddingTop:"20px"}}>
                             <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("denturestype3")}</h4>
                             </div>
-                            <div>
+                            <div className='tourism-text'>
                                 <p className='size-16 text-center' style={{color:"black",lineHeight:"20px",fontWeight:"400"}}>
                                 {t("denturestype3p")}
                                 </p>

@@ -7,29 +7,30 @@ import { useTranslation } from 'react-i18next';
 
 function Main(){
 
-    const [isMobile, setIsMobile] = useState(false)
-    const {t}=useTranslation();
+    const [isMobile, setIsMobile] = useState(false);
+    const [isTablet, setIsTablet] = useState(false); // Added isTablet state variable
+    const { t } = useTranslation();
 
-    //choose the screen size 
+    // Choose the screen size 
     const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
+    const screenWidth = window.innerWidth;
+    setIsMobile(screenWidth < 720);
+    setIsTablet(screenWidth >= 720 && screenWidth < 1024);
     }
 
-  
-    // create an event listener
+    // Create an event listener
     useEffect(() => {
-      window.addEventListener("resize", handleResize)
-
-    })
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => {
+        window.removeEventListener("resize", handleResize);
+    };
+    }, []);
 
     const customStyle = {
-        height: isMobile ? '100%' : '200px',
-        width: isMobile ? '100%' : '400px'
-      };
+    height: isMobile ? '300px' : isTablet ? '350px' : '200px',
+    width: isMobile ? '100%' : isTablet ? '400px' : '400px'
+    };
 
     return(
         <div>

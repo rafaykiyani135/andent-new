@@ -10,33 +10,35 @@ import { useTranslation } from 'react-i18next'
 
 function Main (){
 
-    const [isMobile, setIsMobile] = useState(false)
-    const {t}=useTranslation();
-    //choose the screen size 
+    const [isMobile, setIsMobile] = useState(false);
+    const { t } = useTranslation();
+
+    // Choose the screen size 
     const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
+    if (window.innerWidth < 720) {
+        setIsMobile(true);
+    } else {
+        setIsMobile(false);
+    }
     }
 
-  
-    // create an event listener
+    // Create an event listener
     useEffect(() => {
-      window.addEventListener("resize", handleResize)
-
-    })
+    window.addEventListener("resize", handleResize);
+    return () => {
+        window.removeEventListener("resize", handleResize);
+    };
+    }, []);
 
     const settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        slidesToShow: isMobile ? 1 : 3,
-        slidesToScroll: isMobile ? 1 : 3
-      };
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    slidesToShow: isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3,
+    slidesToScroll: isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3
+    };
 
     return(
         <div>
@@ -49,9 +51,9 @@ function Main (){
                     </div>
                 </div>
                 </div>
-                <div className="row justify-content-center">
+                <div className="row justify-content0-around">
                 <Slider {...settings}>
-                <div className="col-lg-2 col-md-6 d-flex justify-content-center">
+                <div className="col-lg-2 col-md-5 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben1")}</h4>

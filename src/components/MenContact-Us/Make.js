@@ -118,15 +118,15 @@ function Make() {
                 <div className="col-lg-4 col-8 order-2 d-flex justify-content-center wow fadeInUp animated pad-10" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
                   <div className="contact-info">
                     <div className='row justify-content-center'>
-                      <div className='col-lg-4 col-8'>
+                      <div className='col-lg-4 col-8 d-flex justify-content-md-center'>
                       <div className="f-cta-icon">
                         <img src={iconone} alt='none' className='mob-bottom-icon'/>
                       </div>
                       </div>
-                      <div className='col-lg-8 col-12 mob-bottom-text'>
-                        <div className='apt-text'>
-                            <h5 className='theme-dark' style={{color:"#4E4E50"}}>{t("address")}</h5>
-                            <p className='size-16 theme-dark' style={{width:"263px",height:"64px",lineHeight:"20px",fontWeight:"400"}}>
+                      <div className='col-lg-8 col-12 mob-bottom-text clinic-address'>
+                        <div className='apt-text text-start'>
+                            <h5 className='theme-dark text-center text-sm-center text-lg-start text-md-center' style={{color:"#4E4E50"}}>{t("address")}</h5>
+                            <p className='size-16 theme-dark text-center text-lg-start text-md-center address-text' style={{lineHeight:"20px",fontWeight:"400"}}>
                             Rruga Bardhok Biba, Pall. Golden<br/> Trema,
                             Shk. B, Kati 4, Tiranë
                             </p>
@@ -135,15 +135,15 @@ function Make() {
                     </div>
                     <br/>
                     <div className='row justify-content-center'>
-                      <div className='col-lg-4 col-8'>
+                      <div className='col-lg-4 col-8 d-flex justify-content-md-center'>
                       <div className="f-cta-icon">
-                        <img src={icontwo} alt='none'/>
+                        <img src={icontwo} alt='none' className='mob-bottom-icon'/>
                       </div>
                       </div>
-                      <div className='col-lg-8 col-12 mob-bottom-text'>
+                      <div className='col-lg-8 col-12 mob-bottom-text contact-us'>
                         <div style={{position:"relative",bottom:"20px"}} className='apt-text'>
-                          <h5 className='theme-dark' style={{color:"#4E4E50"}}>{t("contactus")}</h5>
-                          <p className='size-16 theme-dark' style={{width:"263px",height:"100px",lineHeight:"20px",fontWeight:"400"}}>
+                          <h5 className='theme-dark text-sm-center text-lg-start text-md-center' style={{color:"#4E4E50"}}>{t("contactus")}</h5>
+                          <p className='size-16 theme-dark text-sm-center text-lg-start text-md-center address-text' style={{lineHeight:"20px",fontWeight:"400"}}>
                           {t("phnum")}<br/> +355(0) 69 375 5065<br/><br/>
                           {t("email")}:<br/>info@andent.al
                           </p>
@@ -190,7 +190,7 @@ function Make() {
                           </div>
                           <div className='row justify-content-around'>
                           <div className="col-lg-7 col-12 col-sm-12 col-md-12 d-flex justify-content-center justify-content-lg-start">
-                          <div className="contact-field form-input-pad">
+                          <div className=" form-input-pad">
                            <div className='form-big2' style={{borderStyle:"solid"}}>
                               <h4 className="input-text-pad text-start input-text-sides" style={{fontSize:"12px",lineHeight:"18px",fontWeight:"700"}}>
                               {t("file")}<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {imgfile?<p>Uploaded!</p>:<p></p>}</i>
@@ -198,7 +198,7 @@ function Make() {
                            </div>
                           </div>
                           </div>
-                          <div className="col-lg-5 col-12 col-sm-12 col-md-12 d-flex justify-content-lg-end justify-content-center text-center align-items-center form-input-pad-mob">
+                          <div className="col-lg-5 col-12 col-sm-12 col-md-12 d-flex justify-content-lg-end justify-content-center text-center align-items-center form-input-pad-mob upload-top-pad">
                             <input type="file" id="file-input" multiple name="file-input" onChange={chPano}/>
                             <label id="file-input-label" for="file-input" className='text-center'>{t("upload")}</label>
                           </div>

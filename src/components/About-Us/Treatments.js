@@ -34,7 +34,7 @@ function Ourservices() {
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service1")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service1p")}
                                 </p>
@@ -50,7 +50,7 @@ function Ourservices() {
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service2")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service2p")}
                                 </p>
@@ -66,7 +66,7 @@ function Ourservices() {
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service3")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                   <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                   {t("service3p")}
                                     </p>
@@ -88,7 +88,7 @@ function Ourservices() {
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service4")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service4p")}
                                 </p>
@@ -104,7 +104,7 @@ function Ourservices() {
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service5")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service5p")}
                                 </p>
@@ -120,7 +120,7 @@ function Ourservices() {
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service6")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service6p")}
                                 </p>

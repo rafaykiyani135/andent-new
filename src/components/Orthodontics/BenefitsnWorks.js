@@ -10,41 +10,48 @@ import { useTranslation } from 'react-i18next';
 
 function Main (){
 
-    const [isMobile, setIsMobile] = useState(false)
-
-    const {t,i18n}=useTranslation();
-    const [topPadding,setTopPadding]=useState(0);
-    
-
-    useEffect(() => {
-        const lng= i18n.language;
-        
-
-        if (lng==='sq' && !isMobile) {
-            setTopPadding(240);
-          }
-           else if(isMobile && lng==='it'){
-            setTopPadding(0);
-          }
-          else {
-            setTopPadding(160);
-          }
-    },[topPadding,i18n,isMobile]);
-
-    //choose the screen size 
-    const handleResize = () => {
-      if (window.innerWidth < 720) {
-          setIsMobile(true)
-      } else {
-          setIsMobile(false)
-      }
-    }
+    const [isMobile, setIsMobile] = useState(false);
+    const [isTablet, setIsTablet] = useState(false);
+    const { t, i18n } = useTranslation();
+    const [topPadding, setTopPadding] = useState(0);
   
-    // create an event listener
     useEffect(() => {
-      window.addEventListener("resize", handleResize)
-
-    })
+      // Update isTablet state based on window width
+      const handleResize = () => {
+        if (window.innerWidth < 720) {
+          setIsMobile(true);
+          setIsTablet(false);
+        } else if (window.innerWidth >= 720 && window.innerWidth < 1024) {
+          setIsMobile(false);
+          setIsTablet(true);
+        } else {
+          setIsMobile(false);
+          setIsTablet(false);
+        }
+      }
+  
+      // Set up the initial isTablet state and add the resize listener
+      handleResize();
+      window.addEventListener("resize", handleResize);
+  
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+  
+    useEffect(() => {
+      // Update topPadding based on language and device type
+      const lng = i18n.language;
+  
+      if (lng === 'sq' && !isMobile) {
+        setTopPadding(isTablet ? 60 : 240);
+      } else if (isMobile && lng === 'it') {
+        setTopPadding(0);
+      } else {
+        setTopPadding(isTablet ? 60 : isMobile? 50 : 160);
+      }
+    }, [isTablet, i18n, isMobile]);
 
 
     return(
@@ -97,11 +104,11 @@ function Main (){
                     </div>
                 </div>
                 </div>
-
+                
                 <div className="row align-items-center">
                 <div className="col-lg-12">
-                    <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <img src={arrow} alt='arrow' />
+                    <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
+                    {!isMobile && <img src={arrow} alt='arrow' />}
                     </div>
                 </div>
                 </div>

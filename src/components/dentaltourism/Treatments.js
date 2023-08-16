@@ -6,15 +6,15 @@ import Iconfour from '../../assets/img/icon/dentures.png'
 import Iconfive from '../../assets/img/icon/general-dentistry.png'
 import Iconsix from '../../assets/img/icon/orthodontic-treatment.png'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react'
+//import { useState } from 'react'
 
 function Main (){
 
 
-    const {t,i18n}=useTranslation();
-    const [height,setHeight]=useState("60px")
+    const {t}=useTranslation();
+   /* const [height,setHeight]=useState("60px")
 
     useEffect(() => {
         //"translate(-5px,-5px)"
@@ -27,7 +27,7 @@ function Main (){
            else {
             setHeight("60px")
           }
-      },[i18n,setHeight]);
+      },[i18n,setHeight]);*/
 
     const linkClick = (e) =>{
         window.analytics.track("Link clicked", {
@@ -55,18 +55,18 @@ function Main (){
                         <ul className="text-left">
                         <div>
                         <li style={{paddingBottom:"40px"}}>
-                            <div className="icon">
+                        <div className="icon">
                             <img src={Icontwo} alt="icon01" className='services-icon sm-icon'/>
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service1")}</h4>
-                            <div style={{width:"263px",height:height}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service1p")}
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/dental-implants" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
+                                <Link to="/dental-implants" className='learn-more-btn' title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                 {t("learnmore")}
                                 </p>
@@ -83,13 +83,13 @@ function Main (){
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service2")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service2p")}
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/dental-crowns-bridges" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
+                                <Link to="/dental-crowns-bridges" className='learn-more-btn' title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                 {t("learnmore")}
                                 </p>
@@ -105,13 +105,13 @@ function Main (){
                             </div>
                             <div className="text" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service3")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                   <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                   {t("service3p")}
                                     </p>
                             </div>
-                            <div>
-                                <Link to="/dentures" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
+                            <div style={{paddingTop:"15px"}}>
+                                <Link to="/dental-crowns-bridges" className='learn-more-btn' title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                 {t("learnmore")}
                                 </p>
@@ -133,13 +133,13 @@ function Main (){
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service4")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service4p")}
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/dental-veneers" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
+                                <Link to="/dental-veneers" className='learn-more-btn' title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                 {t("learnmore")}
                                 </p>
@@ -155,13 +155,13 @@ function Main (){
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service5")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service5p")}
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/orthodontics" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
+                                <Link to="/orthodontics" className='learn-more-btn' title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                 {t("learnmore")}
                                 </p>
@@ -177,13 +177,13 @@ function Main (){
                             </div>
                             <div className="text pt-10" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service6")}</h4>
-                            <div style={{width:"263px",height:"60px"}}>
+                            <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service6p")}
                                 </p>
                             </div>
                             <div style={{paddingTop:"15px"}}>
-                                <Link to="/general-dentistry" style={{position:"relative",bottom:"15px"}} title='Learn More' onClick={linkClick}>
+                                <Link to="/general-dentistry" className='learn-more-btn' title='Learn More' onClick={linkClick}>
                                 <p style={{fontStyle:"italic",fontSize:"10px",color:"#6DA7A2"}}>
                                 {t("learnmore")}
                                 </p>
