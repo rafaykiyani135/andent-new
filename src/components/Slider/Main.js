@@ -117,12 +117,10 @@ function Main(props) {
                         <div className="row justify-content-lg-center justify-content-start">
                         <div className="slider-content-new col-lg-6 col-6 text-lg-center slider-left justify-content-lg-center">
                             <img className='slider-content-dim' alt='imgleft1' src={imgleft1}></img>
-                            <div className='slider-content-vid-dim'>
-                            <video style={{height:"100%",width:"296px"}} autoPlay loop muted>
-                                <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+1.mov" type="video/mp4" />
+                            <video className='slider-content-vid-dim' autoPlay loop muted>
+                                <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+1.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
-                            </div>
                             <img className='slider-content-dim' alt='imgleft2' src={imgleft2}></img>
                             <img className='slider-content-dim' alt='imgleft3' src={imgleft3}></img>
                             <video className='slider-content-vid-dim' autoPlay loop muted>
