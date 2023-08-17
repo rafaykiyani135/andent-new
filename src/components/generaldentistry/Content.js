@@ -29,7 +29,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("treatment1h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment1p")}
@@ -43,7 +43,7 @@ function Main (){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep">
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-left" >
                             <h5 className="size-18 theme-dark">{t("treatment2h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment2p")}
@@ -51,7 +51,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("treatment3h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment3p")}
@@ -65,7 +65,7 @@ function Main (){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep">
                             <img src={s4} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-left" >
                             <h5 className="size-18 theme-dark">{t("treatment4h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment4p")}
@@ -73,7 +73,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("treatment5h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment5p")}
@@ -88,7 +88,7 @@ function Main (){
 
                     <div className='decent-pad'>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("treatment6h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment6p")}
@@ -102,7 +102,7 @@ function Main (){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep"  >
                             <img src={s7} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-left" >
                             <h5 className="size-18 theme-dark">{t("treatment7h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment7p")}
@@ -110,7 +110,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("treatment8h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment8p")}
@@ -124,7 +124,7 @@ function Main (){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstep" >
                             <img src={s9} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-left" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-left" >
                             <h5 className="size-18 theme-dark">{t("treatment9h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             Enhance the appearance and functionality of your teeth with dental bonding. Our skilled dentists use tooth-colored 
@@ -133,7 +133,7 @@ function Main (){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("treatment10h")}</h5>
                             <p className="size-16" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("treatment10p")}

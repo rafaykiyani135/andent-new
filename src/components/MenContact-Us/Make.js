@@ -115,7 +115,7 @@ function Make() {
         <section id="contact" className="andent-padding" style={{paddingTop: paddingTopValue}}>
             <div className="container">
               <div className="row justify-content-around align-items-center">
-                <div className="col-lg-4 col-8 order-2 d-flex justify-content-center wow fadeInUp animated pad-10" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
+                <div className="col-lg-4 col-8 order-2 d-flex justify-content-center wow fadeInUp animated contact-us-pad" data-animation="fadeInDown animated" data-delay=".2s" style={{paddingLeft:"50px",position:"relative",bottom:"20px"}}>
                   <div className="contact-info">
                     <div className='row justify-content-center'>
                       <div className='col-lg-4 col-8 d-flex justify-content-md-center'>
@@ -160,32 +160,32 @@ function Make() {
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-6 order-1 pad-10">
+                <div className="col-lg-6 order-1 contact-us-pad">
                   <div className="contact">
                     <form method="post" className="contact-form mt-30" onSubmit={bookNow}>
                       <div className="row">
                         <div className="col-lg-6">
-                          <div className="contact-field pad-10">
+                          <div className="contact-field contact-us-pad">
                             <input type="text" id="firstn" name="firstn" placeholder={t("fname")} style={{borderRadius:"15px"}} className='form-small' required onChange={chFN}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="contact-field pad-10">
+                          <div className="contact-field contact-us-pad">
                             <input type="text" id="lastn" name="lastn" placeholder={t("lname")} style={{borderRadius:"15px"}} className='form-small' required onChange={chLN}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="contact-field pad-10">
+                          <div className="contact-field contact-us-pad">
                             <input type="email" id="Email" name="Email" placeholder={t("email")} style={{borderRadius:"15px"}} className='form-small' required onChange={chEmail}/>
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="contact-field pad-10">
+                          <div className="contact-field contact-us-pad">
                             <input type="number" id="Phone Number" name="Phone Number" placeholder={t("number")} className='form-small' style={{borderRadius:"15px"}} required onChange={chPN}/>
                           </div>
                         </div>
                         <div className="col-lg-12">
-                          <div className="contact-field pad-10">
+                          <div className="contact-field contact-us-pad">
                             <textarea name="message" id="message" cols={30} rows={10} placeholder={t("comments")} defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}} onChange={chCmnt}/>
                           </div>
                           <div className='row justify-content-around'>

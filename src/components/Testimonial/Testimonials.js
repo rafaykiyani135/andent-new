@@ -27,7 +27,7 @@ function Testimonialslider() {
                     </h3>
                 </div>
             </div>
-            <div className='row upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
+            <div className='row test-upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
@@ -45,7 +45,7 @@ function Testimonialslider() {
                             height='400px'
                         />
                     </div>
-                    <div className='d-flex justify-content-center tourism-text'>
+                    <div className='d-flex justify-content-center tourism-text test-top-pad'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test5desc")}
@@ -71,7 +71,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center tourism-text'>
+                    <div className='d-flex justify-content-center tourism-text test-top-pad'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test6desc")}
@@ -81,8 +81,8 @@ function Testimonialslider() {
                     
                 </div>
 
-            <div className='row upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
-                <div className='col-lg-4 col-md-12'>
+            <div className='row test-upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
+                <div className='col-lg-4 col-md-12 mob-top-pad'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
                             <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{t("test7name")} &nbsp; &nbsp;</h4>
@@ -99,7 +99,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center tourism-text'>
+                    <div className='d-flex justify-content-center tourism-text test-top-pad'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test7desc")}
@@ -125,7 +125,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center tourism-text'>
+                    <div className='d-flex justify-content-center tourism-text test-top-pad'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test8desc")}
@@ -136,8 +136,8 @@ function Testimonialslider() {
                 </div>
             </div>
 
-            <div className='row upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
-                <div className='col-lg-4 col-md-12'>
+            <div className='row test-upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
+                <div className='col-lg-4 col-md-12 mob-top-pad'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6 text-lg-start'>
                             <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{t("test9name")} &nbsp; &nbsp;</h4>
@@ -154,7 +154,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center tourism-text'>
+                    <div className='d-flex justify-content-center tourism-text test-top-pad'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test9desc")}
@@ -180,7 +180,7 @@ function Testimonialslider() {
                                 height='400px'
                             />
                     </div>
-                    <div className='d-flex justify-content-center tourism-text'>
+                    <div className='d-flex justify-content-center tourism-text test-top-pad'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center  testimon-dim  '>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test10desc")}

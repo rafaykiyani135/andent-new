@@ -296,9 +296,7 @@ label {
     color: #6DA7A2;
 }
 
-.upper-padding {
-    padding-top:50px;
-}
+
 
 .size-20 {
     font-size: 20px;
@@ -460,7 +458,7 @@ label {
         right: 15px;
     }
     .contact-lg{
-        height: auto;
+        height: 50% !important;
         width: auto;
     }
     .pad-20-sm{
@@ -522,6 +520,9 @@ label {
     .mob-top-pad{
         padding-top: 25px;
     }
+    .test-top-pad{
+        padding-top: 15px;
+    }
     .mob-slider{
         position: relative;
         right: 25px;
@@ -539,6 +540,10 @@ label {
     .test-mob-moveup{
         position: relative;
         bottom: 25px;
+    }
+    .mob-moveright{
+        position: relative;
+        left: 10px;
     }
     .mob-bottom-text{
         text-align: center;
@@ -569,13 +574,13 @@ label {
         overflow: hidden;
     }
     .mob-hero1{
-        font-size: 50px;
-    }
-    .mob-hero2{
         font-size: 35px;
     }
+    .mob-hero2{
+        font-size: 25px;
+    }
     .mob-hero2span{
-        font-size: 45px;
+        font-size: 35px;
     }
     .tourism-hero-pad{
         padding-bottom: 60px;
@@ -609,7 +614,7 @@ label {
       }
 
       .second-about {
-        transform:translate(170px,-60px);
+        transform:translate(150px,-60px);
         left: 0;
         right: 25px;
         bottom: 0;
@@ -738,6 +743,44 @@ label {
     #contactsMap {
         width: 250px;
         height: 303px;
+    }
+    .dentures-work{
+        height: 275px;
+        width: 523px;
+    }
+    .dentures-work{
+        height: 175px;
+        width: 400px;
+    }
+    .orth-stepbstep{
+        position: relative;
+        bottom: 50px;
+    }
+    .safety-mob-dim{
+        max-width: 70%;
+        width: auto;
+        height: auto;
+        padding-right: 15px;
+    }
+    .upper-padding {
+        padding-top:50px;
+    }
+    .test-upper-padding {
+        padding-top:0px;
+    }
+    .crowns-img{
+        height: 150px;
+        width: 280px;
+    }
+    .contact-us-pad{
+        padding: 10px;
+    }
+    .move-up-exp{
+        position: relative;
+        bottom: 25px;
+    }
+    .why-andent{
+        padding-top: 65px;
     }
       
 
@@ -905,12 +948,73 @@ label {
         .veneer-info-pad{
             padding-top: 50px;
         }
+        .orth-stepbstep{
+            position: relative;
+            bottom: 30px;
+        }
+        .upper-padding {
+            padding-top:50px;
+        }
+        .test-upper-padding {
+            padding-top:50px;
+        }
+        .crowns-img{
+            height: 195px;
+            width: 319px;
+        }
+        .pad-10 {
+            padding: 10px;
+        }
+        .contact-us-pad{
+            padding: 10px;
+        }
+        .treat-pad-left{
+            padding-left: 20px;
+        }
+        .why-andent{
+            padding-top: 35px;
+            padding-left: 30px;
+        }
         
 }
 
 
   
 @media (min-width: 1025px) {
+    .why-andent{
+        padding-top: 35px;
+        padding-left: 30px;
+    }
+    .tourism-treat{
+        padding-bottom: 40px;
+    }
+    .treat-pad-left{
+        padding-left: 20px;
+    }
+    .contact-us-pad{
+        padding: 10px;
+    }
+    .pad-10 {
+        padding: 10px;
+    }
+    .crowns-img{
+        height: 195px;
+        width: 319px;
+    }
+    .upper-padding {
+        padding-top:50px;
+    }
+    .test-upper-padding {
+        padding-top:50px;
+    }
+    .orth-stepbstep{
+        position: relative;
+        bottom: 30px;
+    }
+    .dentures-work{
+        height: 275px;
+        width: 523px;
+    }
     .header-social-pos{
         position: relative;
         bottom: 24px;
@@ -1405,9 +1509,7 @@ height: 100%;
     margin: 0 auto;
   } 
 
-.pad-10 {
-    padding: 10px;
-}
+
 
 .upper-pad-20 {
     padding-top: 20px;

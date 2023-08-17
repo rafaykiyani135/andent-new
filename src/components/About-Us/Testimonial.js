@@ -27,7 +27,7 @@ function Testimonialslider() {
                     </h3>
                 </div>
             </div>
-            <div className='row upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
+            <div className='row test-upper-padding justify-content-center fadeInUp animated' data-animation="fadeInDown animated" data-delay=".2s">
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
@@ -45,7 +45,7 @@ function Testimonialslider() {
                             height='400px'
                         />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center test-top-pad'>
                         <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim tourism-text'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test3desc")}
@@ -54,7 +54,7 @@ function Testimonialslider() {
                     </div>
                     
                 </div>
-                <div className='col-lg-4 col-md-12 '>
+                <div className='col-lg-4 col-md-12 mob-top-pad'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6 col-12 text-center'>
                             <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{t("test4name")} &nbsp; &nbsp;</h4>
@@ -71,7 +71,7 @@ function Testimonialslider() {
                             height='400px'
                         />
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center test-top-pad'>
                     <div style={{paddingTop:"5px"}} className='andent-text text-center testimon-dim tourism-text'>
                         <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
                         {t("test4desc")}

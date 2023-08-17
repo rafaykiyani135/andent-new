@@ -41,14 +41,14 @@ function Main (){
         <div className="container andent-padding">
             <div style={{ backgroundColor: "#6DA7A2", borderRadius: "20px" }}>
                 <div className="row align-items-center">
-                <div className="col-lg-7 col-md-12 order-lg-2 exp-top-pad">
+                <div className="col-lg-7 col-md-12 order-lg-2">
                     <div className="single-counter-img fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                     <div className="d-flex justify-content-center" style={{}}>
                         <ReactPlayer url="https://streamable.com/cnka92" controls={true}  style={{ maxWidth: "800px",borderRadius:"10px",overflow:"hidden"}} />
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-5 col-md-12 order-lg-1 exp-top-pad" style={{paddingBottom:"40px"}}>
+                <div className="col-lg-5 col-md-12 order-lg-1 exp-top-pad move-up-exp" style={{paddingBottom:"40px"}}>
                     <div className="justify-content-center text-center exp-text-size">
                     <h5 className="theme-dark size-25" style={{ color: "#4E4E50" }}>
                         {t("experiencelifechanging")} <span style={{ color: "#F9665E" }}>{t("experiencelifechanging1")}</span> {t("experiencelifechanging3")}

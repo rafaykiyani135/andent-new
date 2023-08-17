@@ -52,7 +52,7 @@ function Tourism() {
                 <div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
-                    <h5 className='theme-andent' style={{color:"#6DA7A2",fontSize:"20px"}}>{t("makethemosttrip")}</h5>
+                    <h5 className='theme-andent' style={{color:"#6DA7A2",fontSize:"18px"}}>{t("makethemosttrip")}</h5>
                     <h2 className='theme-dark mob-heading'>{t("tourism")}</h2>
                     </div>
                 </div>
@@ -63,6 +63,7 @@ function Tourism() {
                         <div>
                         <img src={Innerone} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
+                        <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("freeaccom")}</h4>
                         </div>
@@ -71,13 +72,15 @@ function Tourism() {
                         {t("freeaccomp")}
                         </p>
                         </div>
+                        </div>
                     </div>
                     </div>
                     <div className="col-lg-3 col-md-12 text-center">
-                <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
+                    <div className="fadeInUp animated mob-top-pad" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innertwo} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
+                        <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}} className='justify-content-md-center'>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("assistancewithtravel")}</h4>
                         </div>
@@ -86,13 +89,15 @@ function Tourism() {
                         {t("assistancewithtravelp")}
                         </p>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-12 text-center">
-                <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
+                <div className="fadeInUp animated mob-top-pad" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innerthree} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
+                        <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("traveltips")}</h4>
                         </div>
@@ -100,6 +105,7 @@ function Tourism() {
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>
                         {t("traveltipsp")}
                         </p>
+                        </div>
                         </div>
                     </div>
                 </div>

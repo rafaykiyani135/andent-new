@@ -100,7 +100,7 @@ function Main (){
                 </div>
 
                 <div className="row justify-content-around upper-padding">
-                    <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                    <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                         <h5 className="size-18 theme-dark">{t("veneersstep1")}</h5>
                         <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                         {t("veneersstep1p")}
@@ -114,7 +114,7 @@ function Main (){
                 <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
                     <img src={s2} alt='step1' className='andent-icon-circ move-img-right'/>
                 </div>
-                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start" >
                     <h5 className="size-18 theme-dark">{t("veneersstep2")}</h5>
                     <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                     {t("veneersstep2p")}
@@ -122,7 +122,7 @@ function Main (){
                 </div>
                 </div>
                 <div className="row justify-content-around upper-padding">
-                    <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                    <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                         <h5 className="size-18 theme-dark">{t("veneersstep3")}</h5>
                         <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                         {t("veneersstep3p")}
@@ -136,7 +136,7 @@ function Main (){
                     <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center upper-padding-rs" style={{position:"relative",bottom:"30px"}}>
                         <img src={s4} alt='step1' className='andent-icon-circ move-img-right steps-img-left2'/>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                    <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start" >
                         <h5 className="size-18 theme-dark">{t("veneersstep4")}</h5>
                         <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                         {t("veneersstep4p")}

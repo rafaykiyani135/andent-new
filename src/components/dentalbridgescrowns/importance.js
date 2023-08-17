@@ -62,6 +62,7 @@ function Main (){
                 </div>
                 </div>
                 <div className="row justify-content-center">
+                <div style={{touchAction:"none"}}>
                 <Slider {...settings}>
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
@@ -139,6 +140,7 @@ function Main (){
                     </div>
                 </div>
                     </Slider>
+                    </div>
                 </div>
                 </div>
         </section>

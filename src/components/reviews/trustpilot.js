@@ -36,13 +36,13 @@ function Review() {
     </div>
     <div className="row justify-content-center">
     <div className='col-lg-12 text-center'>
-    <iframe src="https://cdn.trustindex.io/amp-widget.html#14a092a12fb16057ce863991d95" title="trustpilot reviews" sandbox='allow-scripts allow-same-origin' scrolling="no" height={isMobile ?  "506": "225"}></iframe>
+    <iframe src="https://cdn.trustindex.io/amp-widget.html#14a092a12fb16057ce863991d95" title="trustpilot reviews" sandbox='allow-scripts allow-same-origin' scrolling="no" height={isMobile ?  "450": "225"}></iframe>
     </div>
     </div>
     
     <div className="row justify-content-center">
     <div className='col-lg-12 text-center'>
-    <iframe src='https://cdn.trustindex.io/amp-widget.html#492565312cf460514b764dc37a2' title="trustpilot reviews" sandbox='allow-scripts allow-same-origin'  scrolling="no" height={isMobile ?  "506": "225"}></iframe>
+    <iframe src='https://cdn.trustindex.io/amp-widget.html#492565312cf460514b764dc37a2' title="trustpilot reviews" sandbox='allow-scripts allow-same-origin'  scrolling="no" height={isMobile ?  "400": "225"}></iframe>
     </div>
     </div>
     </div>

@@ -105,13 +105,14 @@ function Main (){
                 </div>
                 </div>
                 
-                <div className="row align-items-center">
+                {isMobile? ("") : (<div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                     {!isMobile && <img src={arrow} alt='arrow' />}
                     </div>
                 </div>
-                </div>
+                </div>)}
+                
 
                 <div className="row justify-content-around">
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">

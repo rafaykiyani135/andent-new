@@ -24,7 +24,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 move-right text-center text-lg-start" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 move-right text-start text-md-center text-lg-start" >
                             <h5 className="size-18 theme-dark">{t("imp1")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("imp1p")}
@@ -38,7 +38,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbystepimg">
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left move-down'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start" >
                             <h5 className="size-18 theme-dark">{t("imp2")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("imp2p")}
@@ -46,7 +46,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("imp3")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("imp3p")}
@@ -60,7 +60,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbystepimg">
                             <img src={s4} alt='step1' className='andent-icon-sq-1 steps-img-left move-down'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start" >
                             <h5 className="size-18 theme-dark">{t("imp4")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("imp4p")}
@@ -68,7 +68,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("imp5")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("imp5p")}

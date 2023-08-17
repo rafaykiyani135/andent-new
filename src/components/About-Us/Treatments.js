@@ -32,23 +32,22 @@ function Ourservices() {
                             <div className="icon">
                             <img src={Icontwo} alt="icon01" className='services-icon sm-icon'/>
                             </div>
-                            <div className="text" style={{paddingLeft:"20px"}}>
+                            <div className="text safety-mob-dim" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service1")}</h4>
                             <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service1p")}
                                 </p>
                             </div>
-                            
                             </div>
                         </li>
                         </div>
                         <div>
                         <li style={{paddingBottom:"40px"}}>
-                            <div className="icon">
+                            <div className="icon order-md-first">
                             <img src={Iconthree} alt="icon01" className='services-icon sm-icon'/>
                             </div>
-                            <div className="text" style={{paddingLeft:"20px"}}>
+                            <div className="text order-first safety-mob-dim" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service2")}</h4>
                             <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
@@ -60,11 +59,11 @@ function Ourservices() {
                         </li>
                         </div>
                         <div>
-                        <li>
+                        <li className='mob-moveright'>
                             <div className="icon">
                             <img src={Iconfour} alt="icon01" className='services-icon sm-icon'/>
                             </div>
-                            <div className="text" style={{paddingLeft:"20px"}}>
+                            <div className="text " style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service3")}</h4>
                             <div className='services-text'>
                                   <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
@@ -83,10 +82,10 @@ function Ourservices() {
                         <ul>
                         <div>
                         <li style={{paddingBottom:"40px"}}>
-                            <div className="icon">
+                            <div className="icon order-md-first">
                             <img src={Iconone} alt="icon01" className='services-icon sm-icon'/>
                             </div>
-                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
+                            <div className="text pt-10 order-first safety-mob-dim" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service4")}</h4>
                             <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
@@ -102,9 +101,9 @@ function Ourservices() {
                             <div className="icon">
                             <img src={Iconsix} alt="icon01" className='services-icon sm-icon'/>
                             </div>
-                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
-                            <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service5")}</h4>
-                            <div className='services-text'>
+                            <div className="text pt-10 " style={{paddingLeft:"20px"}}>
+                            <h4 className='theme-dark ' style={{fontSize:"18px"}}>{t("service5")}</h4>
+                            <div className='services-text '>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                                 {t("service5p")}
                                 </p>
@@ -115,10 +114,10 @@ function Ourservices() {
                         </div>
                         <div>
                         <li>
-                            <div className="icon">
+                            <div className="icon order-md-first">
                             <img src={Iconfive} alt="icon01" className='services-icon sm-icon'/>
                             </div>
-                            <div className="text pt-10" style={{paddingLeft:"20px"}}>
+                            <div className="text pt-10 order-first" style={{paddingLeft:"20px"}}>
                             <h4 className='theme-dark' style={{fontSize:"18px"}}>{t("service6")}</h4>
                             <div className='services-text'>
                                 <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>

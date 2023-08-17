@@ -24,7 +24,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-lg-start text-md-center move-right" >
                             <h5 className="size-18 theme-dark">{t("bridges1")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("bridges1p")}
@@ -38,7 +38,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstepimg">
                             <img src={s2} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-lg-start text-md-center" >
                             <h5 className="size-18 theme-dark">{t("bridges2")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("bridges2p")}
@@ -46,7 +46,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-lg-start text-md-center move-right" >
                             <h5 className="size-18 theme-dark">{t("bridges3")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("bridges3p")}
@@ -60,7 +60,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center stepbstepimg">
                             <img src={s4} alt='step1' className='andent-icon-sq steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-lg-start text-md-center" >
                             <h5 className="size-18 theme-dark">{t("bridges4")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("bridges4p")}
@@ -68,7 +68,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-lg-start text-md-center move-right" >
                             <h5 className="size-18 theme-dark">{t("bridges5")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("bridges5p")}
@@ -87,8 +87,8 @@ function Main(){
                     </div>
                     <div className="row justify-content-center upper-padding text-left">
                         <div className="col-lg-3 text-center move-left" >
-                            <img src={d1} alt='teeth1' style={{width:"319px",height:"195px"}}/>
-                            <div className='pad-10'>
+                            <img src={d1} alt='teeth1' className='crowns-img'/>
+                            <div className='pad-10 mob-top-pad'>
                                 <h3 className='theme-dark size-18 text-center'>
                                 {t("bridgest1")}
                                 </h3>
@@ -100,9 +100,9 @@ function Main(){
                                
                             </div>
                         </div>
-                        <div className="col-lg-3 text-center" >
-                            <img src={d2} alt='teeth1' style={{width:"319px",height:"195px"}}/>
-                            <div className='pad-10'>
+                        <div className="col-lg-3 text-center mob-top-pad" >
+                            <img src={d2} alt='teeth1' className='crowns-img'/>
+                            <div className='pad-10 mob-top-pad'>
                                 <h3 className='theme-dark size-18 text-center'>
                                 {t("bridgest2")}
                                 </h3>
@@ -113,9 +113,9 @@ function Main(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 text-center move-right" >
-                            <img src={d3} alt='teeth1' style={{width:"319px",height:"195px"}}/>
-                            <div className='pad-10'>
+                        <div className="col-lg-3 text-center move-right mob-top-pad" >
+                            <img src={d3} alt='teeth1' className='crowns-img'/>
+                            <div className='pad-10 mob-top-pad'>
                                 <h3 className='theme-dark size-18 text-center'>
                                 {t("bridgest3")}
                                 </h3>

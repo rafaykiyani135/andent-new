@@ -26,6 +26,7 @@ function Tourism() {
                         <div>
                         <img src={Innerone} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
+                        <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("freeaccom")}</h4>
                         </div>
@@ -34,13 +35,15 @@ function Tourism() {
                         {t("freeaccomp")}
                         </p>
                         </div>
+                        </div>
                     </div>
                     </div>
-                <div className="col-lg-3 col-md-12 text-center">
+                <div className="col-lg-3 col-md-12 text-center mob-top-pad">
                 <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innertwo} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
+                        <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("assistancewithtravel")}</h4>
                         </div>
@@ -49,13 +52,15 @@ function Tourism() {
                         {t("assistancewithtravelp")}
                         </p>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-12 text-center">
+                <div className="col-lg-3 col-md-12 text-center mob-top-pad">
                 <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innerthree} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
                         </div>
+                        <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("traveltips")}</h4>
                         </div>
@@ -63,6 +68,7 @@ function Tourism() {
                         <p className='theme-dark text-center' style={{lineHeight:"20px"}}>
                         {t("traveltipsp")}
                         </p>
+                        </div>
                         </div>
                     </div>
                 </div>

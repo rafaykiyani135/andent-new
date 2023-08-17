@@ -57,8 +57,8 @@ function Main (){
                             <div className='d-md-flex align-items-md-center'>
                             <img src={img1} alt="icon01" className='andent-icon-circ andent-icon-circ-sm ' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
-                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>{t("tech1")}</h4>
+                            <div className="text sec-icon-text safety-mob-dim" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "16px" }}>{t("tech1")}</h4>
                             <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
                             {t("tech1p")}
                             </p>
@@ -70,10 +70,10 @@ function Main (){
                             </div>
                         </li>
                         <li style={{ paddingBottom: "40px", display: "flex" }}>
-                            <div className='d-md-flex align-items-md-center'>
+                            <div className='d-md-flex align-items-md-center order-md-first'>
                             <img src={img3} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
+                            <div className="text sec-icon-text safety-mob-dim order-first" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "16px" }}>{t("tech2")}</h4>
                             <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px"}} >
                             {t("tech2p")}
@@ -89,8 +89,8 @@ function Main (){
                             <div className='d-md-flex align-items-md-center'>
                             <img src={img5} alt="icon01" className='andent-icon-circ andent-icon-circ-sm move-down-lg' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text sec-icon-text" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
-                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "18px" }}>{t("tech3")}</h4>
+                            <div className="text sec-icon-text safety-mob-dim" style={{ paddingLeft: "20px", position: "relative", top: "20px" }}>
+                            <h4 className='theme-dark sec-icon-text-heading' style={{ fontSize: "16px" }}>{t("tech3")}</h4>
                             <div className='upper-pad-lg'>
                                 <p style={{ color: "#4E4E50", lineHeight: "20px", fontSize: "16px" }}>
                                 {t("tech3p")}
@@ -101,7 +101,6 @@ function Main (){
                                     </p>
                                 </Link>
                             </div>
-                            
                             </div>
                         </li>
                         </ul>
@@ -109,12 +108,12 @@ function Main (){
                     </div>
                     <div className="col-lg-5 col-md-6 col-sm-12">
                         <ul className='text-left'>
-                        <div>
+                        <div className=''>
                         <li style={{paddingBottom:"40px",display:"flex"}}>
-                            <div className='d-md-flex align-items-md-center'>
+                            <div className='d-md-flex align-items-md-center order-md-first'>
                             <img src={img2} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
+                            <div className="text sec-icon-text order-first safety-mob-dim" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>{t("tech4")}</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             {t("tech4p")}
@@ -132,7 +131,7 @@ function Main (){
                             <div className='d-md-flex align-items-md-center'>
                             <img src={img4} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }}/>
                             </div>
-                            <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
+                            <div className="text sec-icon-text safety-mob-dim" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>{t("tech5")}</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             {t("tech5p")}
@@ -147,10 +146,10 @@ function Main (){
                         </div>
                         <div>
                         <li style={{paddingBottom:"40px",display:"flex"}}>
-                            <div className='d-md-flex align-items-md-center'>
-                            <img src={img6} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }}/>
+                            <div className='d-md-flex align-items-md-center order-md-first'>
+                            <img src={img6} alt="icon01" className='andent-icon-circ andent-icon-circ-sm' style={{ maxWidth: "100%", height: "auto" }} />
                             </div>
-                            <div className="text sec-icon-text" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
+                            <div className="text sec-icon-text order-first safety-mob-dim" style={{paddingLeft:"20px",position:"relative",top:"20px"}}>
                             <h4 className='theme-dark sec-icon-text-heading' style={{fontSize:"18px"}}>{t("tech6")}</h4>
                             <p style={{color:"#4E4E50",lineHeight:"20px",fontSize:"16px"}}>
                             {t("tech6p")}

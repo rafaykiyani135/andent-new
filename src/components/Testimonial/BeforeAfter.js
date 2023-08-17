@@ -36,7 +36,7 @@ function Main (){
                 </div>
             </div>
 
-            <div className="row justify-content-center text-center">
+            <div className="row justify-content-center text-center mob-bottom-pad">
             <div className="col-lg-12 col-md-12 justify-content-center">
                 <Slider {...settings}>
                 {imageList.map((image, index) => (

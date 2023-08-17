@@ -35,6 +35,7 @@ function Main() {
             link: e.currentTarget.href,
             clickedOnPage: window.location.pathname
           });
+          setmobile(false)
     }
 
     const linkTwoClick = (e) =>{

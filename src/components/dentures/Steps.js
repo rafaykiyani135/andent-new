@@ -19,7 +19,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("denturestep1")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("denturestep1p")}
@@ -33,7 +33,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
                             <img src={s2} alt='step1' className='andent-icon-circ move-img-right steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start" >
                             <h5 className="size-18 theme-dark">{t("denturestep2")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("denturestep2p")}
@@ -41,7 +41,7 @@ function Main(){
                         </div>
                     </div>
                     <div className="row justify-content-around upper-padding">
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6text-center text-lg-start move-right" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6text-start text-md-center text-lg-start move-right" >
                             <h5 className="size-18 theme-dark">{t("denturestep3")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("denturestep3p")}
@@ -55,7 +55,7 @@ function Main(){
                         <div className="col-lg-2 col-md-6 col-6 col-sm-6 text-center" style={{position:"relative",bottom:"30px"}}>
                             <img src={s4} alt='step1' className='andent-icon-circ move-img-right steps-img-left'/>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-center text-lg-start" >
+                        <div className="col-lg-6 col-md-6 col-6 col-sm-6 text-start text-md-center text-lg-start" >
                             <h5 className="size-18 theme-dark">{t("denturestep4")}</h5>
                             <p className="size-16 tourism-benefits" style={{color:"#000000",lineHeight:"20px"}}>
                             {t("denturestep4p")}

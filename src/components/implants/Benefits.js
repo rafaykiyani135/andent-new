@@ -34,8 +34,8 @@ function Main (){
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 4000,
     slidesToShow: isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3,
     slidesToScroll: isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3
     };
@@ -52,6 +52,7 @@ function Main (){
                 </div>
                 </div>
                 <div className="row justify-content0-around">
+                <div style={{touchAction:"none"}}>
                 <Slider {...settings}>
                 <div className="col-lg-2 col-md-5 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
@@ -128,7 +129,8 @@ function Main (){
                         </div>
                     </div>
                 </div>
-                    </Slider>
+                </Slider>
+                </div>
                 </div>
                 </div>
         </section>
