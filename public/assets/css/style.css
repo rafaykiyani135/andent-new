@@ -911,6 +911,10 @@ label {
 
   
 @media (min-width: 1025px) {
+    .header-social-pos{
+        position: relative;
+        bottom: 24px;
+    }
     .learn-more-btn{
         position: relative;
         bottom: 15px;
@@ -1242,9 +1246,9 @@ label {
         color: white;
     }
        .slider-container {
-        width: 620px; /* Set the desired width */
-        height: 100vh; /* Set the desired height */
         overflow: hidden;
+        width: 620px; /* Set the desired width */
+        height: 750px; /* Set the desired height */
         }
         
         .slider-content-new {
@@ -1262,7 +1266,7 @@ label {
         
         .slider-content-vid-dim {
             height: 400px !important;
-            width: 295px  !important;
+            width: 298px  !important;
             padding-top: 20px;
             margin-left: 5px;
         }

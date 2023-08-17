@@ -48,25 +48,25 @@ function Main() {
     return (
         <>
             <header className="header-area header-three">
-                <div className="header-top second-header d-none d-lg-block" style={{backgroundColor:"#6DA7A2"}}>
+                <div className=" d-none d-lg-block" style={{backgroundColor:"#6DA7A2"}}>
                     <div className="container">
-                        <div className="row align-items-start">
+                        <div className="row align-items-center">
                             <div className="col-lg-8 col-md-8 d-none d-lg-block">
                                 <div className="header-cta" style={{position:"relative",right:"45px"}}>
                                     <ul>
                                         <li>
                                             <img src={phone} alt='phone' className='icon' style={{paddingRight:"10px"}}/>
-                                            <span>+355(0) 69 375 5065</span>
+                                            <span style={{color:"white"}}>+355(0) 69 375 5065</span>
                                         </li>
                                         <li>
                                            <img src={mail} alt='mail' className='icon1' style={{paddingRight:"10px"}}/>
-                                            <span>info@andent.com</span>
+                                            <span style={{color:"white"}}>info@andent.com</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 d-none d-lg-block text-end" style={{position:"relative",left:"22px"}}>
-                                <div className="header-social header-btn-pos" style={{position:"relative",bottom:"24px"}}>
+                                <div className="header-social header-btn-pos header-social-pos" style={{position:"relative",bottom:"2px"}}>
                                     <span>
                                         <Link to='https://instagram.com/andent_clinic?igshid=MzRlODBiNWFlZA' target="_blank" 
                                         rel="noreferrer"title="Instagram" onClick={linkClick}>
@@ -124,7 +124,7 @@ function Main() {
                                                     <Link to="/blog/1" title='Blogs' onClick={linkClick}>{t("blog")}</Link>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/contact" title='Other Services' onClick={linkClick}>{t("otherserv")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
+                                                    <Link to="#" title='Other Services' onClick={linkClick}>{t("otherserv")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
                                                     <ul>
                                                         <li>
                                                             <Link to="/orthodontics" title='Orthodontics' onClick={linkClick}>{t("orthodontics")}</Link>
