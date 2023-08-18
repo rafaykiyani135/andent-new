@@ -8,7 +8,6 @@ import fb from '../../assets/andent-data/facebook.png'
 import tiktok from '../../assets/andent-data/tiktok.png'
 import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
 
@@ -18,13 +17,9 @@ function Main() {
     const [Services, setServices] = useState(false)
     const {t,i18n}=useTranslation();
     const [transform, setTransform] = useState("");
-    const location = useLocation();
-    const [activeUrl, setActiveUrl] = useState(location.pathname);
   
     useEffect(() => {
         //"translate(-5px,-5px)"
-          setActiveUrl(location.pathname)
-          console.log(activeUrl)
           const lng= i18n.language;
     
           if (lng==='sq') {
@@ -32,7 +27,7 @@ function Main() {
           } else {
             setTransform("");
           }
-      },[i18n,setTransform,setActiveUrl,activeUrl,location.pathname]);
+      },[i18n,setTransform]);
 
 
     const linkClick = (e) =>{
