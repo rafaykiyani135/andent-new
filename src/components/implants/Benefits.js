@@ -32,12 +32,15 @@ function Main (){
 
     const settings = {
     dots: true,
+    swipeToSlide : true,
     infinite: true,
     autoplay: true,
-    speed: 4000,
+    speed: 1000,
     autoplaySpeed: 4000,
+    cssEase: "linear",
+    pauseOnHover: false,
     slidesToShow: isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3,
-    slidesToScroll: isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3
+    slidesToScroll: isMobile ? 1 : window.innerWidth < 1024 ? 2 : 1
     };
 
     return(

@@ -745,10 +745,6 @@ label {
         height: 303px;
     }
     .dentures-work{
-        height: 275px;
-        width: 523px;
-    }
-    .dentures-work{
         height: 175px;
         width: 400px;
     }
@@ -816,7 +812,7 @@ label {
     color: white;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
     .hero-md-pad{
         padding-top: 80px;
     }
@@ -989,8 +985,12 @@ nav ul li.active {
     color:#6DA7A2 !important;
 }
 
+
+
+
+
   
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
     .active{
         color:#6DA7A2;
         font-weight: bold;

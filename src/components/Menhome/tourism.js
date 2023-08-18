@@ -61,7 +61,7 @@ function Tourism() {
                 <div className="col-lg-3 col-md-12 d-flex text-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
-                        <img src={Innerone} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
+                        <img src={Innerone} alt="dt1" style={{height:"auto",width:"320px"}} className='img-fluid'/>
                         </div>
                         <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}}>
@@ -78,7 +78,7 @@ function Tourism() {
                     <div className="col-lg-3 col-md-12 text-center">
                     <div className="fadeInUp animated mob-top-pad" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
-                        <img src={Innertwo} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
+                        <img src={Innertwo} alt="dt1" style={{height:"auto",width:"320px"}} className='img-fluid'/>
                         </div>
                         <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}} className='justify-content-md-center'>
@@ -95,7 +95,7 @@ function Tourism() {
                 <div className="col-lg-3 col-md-12 text-center">
                 <div className="fadeInUp animated mob-top-pad" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
-                        <img src={Innerthree} alt="dt1" style={{height:"200px",width:"320px"}} className='img-fluid'/>
+                        <img src={Innerthree} alt="dt1" style={{height:"auto",width:"320px"}} className='img-fluid'/>
                         </div>
                         <div className='test-top-pad'>
                         <div style={{paddingTop:"20px"}}>

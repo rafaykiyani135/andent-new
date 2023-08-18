@@ -134,7 +134,7 @@ function Main(){
                             </div>
                         </div>
                         </div>
-                        <div className="col-lg-3 text-center move-right exp-top-pad">
+                        <div className="col-lg-3 text-center move-right " style={{ padding: window.innerWidth > 1024 ? '' : '30px' }}>
                             <img src={d2} alt='teeth1' style={{ width: "100%", maxWidth: "321px", height: "auto" }} />
                             <div style={{paddingTop:"20px"}}>
                                 <h3 className='theme-dark size-18 text-center decent-pad'>

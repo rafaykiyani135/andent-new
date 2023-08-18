@@ -41,13 +41,16 @@ function Main (){
     }, []);
 
     const settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        speed: 5000,
-        autoplaySpeed: 4000,
-        slidesToShow: isMobile ? 1 : isTablet ? 2 : 3,
-        slidesToScroll: isMobile ? 1 : isTablet ? 2 : 3,
+    dots: true,
+    swipeToSlide : true,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    pauseOnHover: false,
+    slidesToShow: isMobile ? 1 : isTablet ? 2 : 3,
+    slidesToScroll: isMobile ? 1 : isTablet ? 2 : 1
     };
 
     return(
