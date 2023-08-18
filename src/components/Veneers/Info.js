@@ -38,7 +38,7 @@ function Main (){
                 </div>
 
                 <div className="row justify-content-around upper-padding">
-                    <div className="col-lg-3 text-center upper-padding-rs veneer-info-pad" style={{position:"relative",bottom:"30px"}}>
+                    <div className="col-lg-3 text-center upper-padding-rs veneer-info-pad order-lg-first" style={{position:"relative",bottom:"30px"}}>
                         <img src={s3} alt='step1' style={{height:"144px",width:"240px"}} className='move-img-right'/>
                     </div>
                     <div className="col-lg-6 text-center text-lg-start order-md-first" >

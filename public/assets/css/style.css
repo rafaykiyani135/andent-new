@@ -991,6 +991,9 @@ nav ul li.active {
 
   
 @media (min-width: 1400px) {
+    .before-after-pad{
+        padding-bottom: 50px;
+    }
     .active{
         color:#6DA7A2;
         font-weight: bold;
