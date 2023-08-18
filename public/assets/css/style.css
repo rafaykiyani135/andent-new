@@ -980,20 +980,21 @@ label {
         
 }
 
-.active{
-    color:#6DA7A2;
-    font-weight: bold;
-}
 
-.active-link{
+nav ul li.active {
     color:#6DA7A2;
-    font-weight: bold;
-}
+  }
 
+.active {
+    color:#6DA7A2 !important;
+}
 
   
 @media (min-width: 1025px) {
-
+    .active{
+        color:#6DA7A2;
+        font-weight: bold;
+    }
     .why-andent{
         padding-top: 35px;
         padding-left: 30px;

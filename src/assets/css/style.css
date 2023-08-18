@@ -6369,6 +6369,11 @@ section:hover .section-title h2::before {
     font-size: 18px;
 }
 
+.active{
+    color:#6DA7A2;
+    font-weight: bold;
+}
+
 .footer-link ul li a:hover {
     color: black;
 }
