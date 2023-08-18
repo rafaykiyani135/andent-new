@@ -8,6 +8,7 @@ import fb from '../../assets/andent-data/facebook.png'
 import tiktok from '../../assets/andent-data/tiktok.png'
 import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 function Main() {
@@ -60,8 +61,8 @@ function Main() {
                                             <span style={{color:"white"}}>+355(0) 69 375 5065</span>
                                         </li>
                                         <li>
-                                           <img src={mail} alt='mail' className='icon1' style={{paddingRight:"10px"}}/>
-                                            <span style={{color:"white"}}>info@andent.com</span>
+                                            <img src={mail} alt='mail' className='icon1' style={{ paddingRight: "10px" }} />
+                                            <a href="mailto:info@andent.com" style={{ color: "white", textDecoration: "none" }}>info@andent.com</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -104,40 +105,40 @@ function Main() {
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li className='has-sub'>
-                                                    <Link to="/" title='Home' onClick={linkClick} >{t("home")}</Link>
+                                                    <NavLink to="/" title='Home' onClick={linkClick}>{t("home")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-implants" title='Dental Implants' onClick={linkClick}>{t("implants")}</Link>
+                                                    <NavLink to="/dental-implants" title='Dental Implants' onClick={linkClick}>{t("implants")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-crowns-bridges" title='Dental Bridges' onClick={linkClick}>{t("dentalbridges")}</Link>
+                                                    <NavLink to="/dental-crowns-bridges" title='Dental Bridges' onClick={linkClick}>{t("dentalbridges")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/about" title='Why Us' onClick={linkClick}>{t("aboutus")}</Link>
+                                                    <NavLink to="/about" title='Why Us' onClick={linkClick}>{t("aboutus")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>{t("tourism")}</Link>
+                                                    <NavLink to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>{t("tourism")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/testimonials" title='Testimonials' onClick={linkClick}>{t("testimonial")}</Link>
+                                                    <NavLink to="/testimonials" title='Testimonials' onClick={linkClick}>{t("testimonial")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="/blog/1" title='Blogs' onClick={linkClick}>{t("blog")}</Link>
+                                                    <NavLink to="/blog/1" title='Blogs' onClick={linkClick}>{t("blog")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="#" title='Other Services' onClick={linkClick}>{t("otherserv")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
+                                                    <NavLink to="#" title='Other Services' onClick={linkClick}>{t("otherserv")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></NavLink>
                                                     <ul>
                                                         <li>
-                                                            <Link to="/orthodontics" title='Orthodontics' onClick={linkClick}>{t("orthodontics")}</Link>
+                                                            <NavLink to="/orthodontics" title='Orthodontics' onClick={linkClick}>{t("orthodontics")}</NavLink>
                                                         </li>
                                                         <li>
-                                                            <Link to="/dentures" title='Dentures' onClick={linkClick}>{t("dentures")}</Link>
+                                                            <NavLink to="/dentures" title='Dentures' onClick={linkClick}>{t("dentures")}</NavLink>
                                                         </li>
                                                         <li>
-                                                            <Link to="/dental-veneers" title='Dental Veneers' onClick={linkClick}>{t("veneers")}</Link>
+                                                            <NavLink to="/dental-veneers" title='Dental Veneers' onClick={linkClick}>{t("veneers")}</NavLink>
                                                         </li>
                                                         <li>
-                                                            <Link to="/general-dentistry" title='General Dentistry' onClick={linkClick}>{t("general")}</Link>
+                                                            <NavLink to="/general-dentistry" title='General Dentistry' onClick={linkClick}>{t("general")}</NavLink>
                                                         </li>
                                                     </ul>
                                                 </li>

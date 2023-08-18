@@ -65,7 +65,7 @@ function Main (){
                     <div className="col-lg-4 col-md-12 col-12 text-lg-start text-md-center">
                         <img src={img2} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-12 move-up text-center text-lg-start order-md-first" style={{paddingTop:"20px"}}>
+                    <div className="col-lg-6 col-md-12 col-12 move-up text-center text-lg-start" style={{paddingTop:"20px"}}>
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
                         {t("tourismben2")}
                         </h2>

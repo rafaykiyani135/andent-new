@@ -782,6 +782,7 @@ label {
     .why-andent{
         padding-top: 65px;
     }
+    
       
 
     
@@ -975,12 +976,24 @@ label {
             padding-top: 35px;
             padding-left: 30px;
         }
+
         
+}
+
+.active{
+    color:#6DA7A2;
+    font-weight: bold;
+}
+
+.active-link{
+    color:#6DA7A2;
+    font-weight: bold;
 }
 
 
   
 @media (min-width: 1025px) {
+
     .why-andent{
         padding-top: 35px;
         padding-left: 30px;
