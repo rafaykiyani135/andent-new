@@ -778,6 +778,7 @@ label {
     .why-andent{
         padding-top: 65px;
     }
+   
     
       
 
@@ -972,6 +973,62 @@ label {
             padding-top: 35px;
             padding-left: 30px;
         }
+        .tourism-pad{
+            padding-top: 25px;
+        }
+        .slider-text-dim{
+            height: auto;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .second-about-tab {
+            transform:translate(150%,-120px);
+            left: 0;
+            right: 25px;
+            bottom: 0;
+        }
+        .second-about-tab p {
+        margin-bottom: 0;
+        color: #0e264f;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        float: left;
+        width: 55%;
+        margin-top: -10px;
+        margin-left: 10px;
+        }
+    
+        .about-text {
+            position: absolute;
+            bottom: 0px;
+            right: 30px;
+            width: 242px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+          }
+          
+          .about-text span {
+          font-size: 48px;
+          color: #3660d9;
+          position: relative;
+          display: inline-block;
+          font-weight: 800;
+          font-family: 'Poppins', sans-serif;
+          float: left;
+          }
+          .about-text span sub {
+          font-size: 30px;
+          color: #fff;
+          font-weight: 800;
+          margin-left: -10px;
+          bottom: 5px;
+          }
+
+
 
         
 }
@@ -991,6 +1048,7 @@ nav ul li.active {
 
   
 @media (min-width: 1400px) {
+    
     .before-after-pad{
         padding-bottom: 50px;
     }
@@ -8967,11 +9025,7 @@ p.checkout-coupon input[type="text"] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .zcube-login {
-    padding: 40px;
-  }
-}
+
 
 @media (max-width: 767px) {
   .zcube-login {

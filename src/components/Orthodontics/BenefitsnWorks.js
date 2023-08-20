@@ -108,7 +108,7 @@ function Main (){
                 {isMobile? ("") : (<div className="row align-items-center">
                 <div className="col-lg-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
-                    {!isMobile && <img src={arrow} alt='arrow' />}
+                    {!isMobile && !isTablet && <img src={arrow} alt='arrow' />}
                     </div>
                 </div>
                 </div>)}

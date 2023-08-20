@@ -72,7 +72,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp1")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("bridgesimp1p")}
                             </p>
@@ -87,7 +87,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp2")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("bridgesimp2p")}
                             </p>
@@ -102,7 +102,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp3")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text text-center offset-fix'>
+                        <div className='andent-sq-icon-text slider-text-dim text-center offset-fix'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("bridgesimp3p")}
                             </p>
@@ -117,7 +117,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp4")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("bridgesimp4p")}
                             </p>
@@ -132,7 +132,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("bridgesimp5")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("bridgesimp5p")}
                             </p>

@@ -1,6 +1,6 @@
 import React from 'react'
 import bg from '../../assets/andent-data/darkenedbg.png'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import { useAlert } from 'react-alert'
 import { useTranslation } from 'react-i18next'
 
@@ -11,6 +11,28 @@ function Main(props) {
     const [name,setName] = useState("")
     const alert=useAlert();
     const {t}=useTranslation()
+    const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1400) {
+        setIsTablet(true);
+      } else {
+        setIsTablet(false);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener to handle resizing
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     
 
     const changeName = (e) => {
@@ -56,7 +78,7 @@ function Main(props) {
     <>
         <section id="home" className="slider-area fix p-relative">
         <div className="slider-active">
-        <div className="single-slider slider-bg d-flex align-items-center bg-pos" style={{ backgroundImage: `url(${bg})`,height:"100%",width:"100%",backgroundAttachment:"fixed"}}>
+        <div className="single-slider slider-bg d-flex align-items-center bg-pos" style={{ backgroundImage: `url(${bg})`,height:"100%",width:"100%",backgroundAttachment:"fixed",backgroundSize: isTablet ? "auto" : ""}}>
         <div className="container">
             <div className="row justify-content-left text-left align-items-start">
             <div className="col-lg-7 col-md-11 text-lg-start text-center text-md-start">

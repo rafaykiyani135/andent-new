@@ -62,7 +62,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben1")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center offset-fix-1' style={{lineHeight:"20px"}}>
                             {t("impben1p")}
                             </p>
@@ -77,7 +77,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben2")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("impben2p")}
                             </p>
@@ -92,7 +92,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben3")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text offset-fix-2'>
+                        <div className='andent-sq-icon-text slider-text-dim offset-fix-2'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("impben3p")}
                             </p>
@@ -107,7 +107,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben4")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("impben4p")}
                             </p>
@@ -122,7 +122,7 @@ function Main (){
                         <div style={{paddingTop:"20px"}}>
                         <h4 className='theme-dark size-18' style={{textAlign:"center"}}>{t("impben5")}</h4>
                         </div>
-                        <div className='andent-sq-icon-text'>
+                        <div className='andent-sq-icon-text slider-text-dim'>
                             <p className='theme-dark size-16 text-center' style={{lineHeight:"20px"}}>
                             {t("impben5p")}
                             </p>

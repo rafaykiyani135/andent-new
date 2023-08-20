@@ -69,9 +69,6 @@
     {
         display: none !important;
     }
-    .second-about{
-        display: none;
-    }
     .portfolio-active .slick-next {
   right: 13%;
   left: inherit;
@@ -561,9 +558,6 @@ margin-right: 8px;
     }
     .sidebar-widget .widget{
         margin-top: 50px;
-    }
-    .second-about,.class-active .slick-arrow{
-        display: none !important;
     }
     .gallery-image img {
   width: 100%;

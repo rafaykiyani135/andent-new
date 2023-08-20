@@ -41,7 +41,7 @@ function Main (){
         <div className="container andent-padding">
             <div style={{ backgroundColor: "#6DA7A2", borderRadius: "20px" }}>
                 <div className="row align-items-center">
-                <div className="col-lg-7 col-md-12 order-lg-2">
+                <div className="col-lg-7 col-md-12 order-lg-2 exp-top-pad">
                     <div className="single-counter-img fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                     <div className="d-flex justify-content-center" style={{}}>
                         <ReactPlayer url="https://streamable.com/cnka92" controls={true}  style={{ maxWidth: "800px",borderRadius:"10px",overflow:"hidden"}} />

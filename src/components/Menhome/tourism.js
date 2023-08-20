@@ -75,7 +75,7 @@ function Tourism() {
                         </div>
                     </div>
                     </div>
-                    <div className="col-lg-3 col-md-12 text-center">
+                    <div className="col-lg-3 col-md-12 text-center tourism-pad">
                     <div className="fadeInUp animated mob-top-pad" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innertwo} alt="dt1" style={{height:"auto",width:"320px"}} className='img-fluid'/>
@@ -92,7 +92,7 @@ function Tourism() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-12 text-center">
+                <div className="col-lg-3 col-md-12 text-center tourism-pad">
                 <div className="fadeInUp animated mob-top-pad" data-animation="fadeInUp" data-delay=".4s" >
                         <div>
                         <img src={Innerthree} alt="dt1" style={{height:"auto",width:"320px"}} className='img-fluid'/>
