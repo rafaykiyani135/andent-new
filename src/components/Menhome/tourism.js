@@ -102,7 +102,7 @@ function Tourism() {
                         <h4 className='theme-dark' style={{textAlign:"center",fontSize:"17px"}}>{t("traveltips")}</h4>
                         </div>
                         <div style={{paddingTop:"0px"}} className='tourism-text'>
-                        <p className='theme-dark text-center' style={{lineHeight:"20px"}}>
+                        <p className='theme-dark text-center ' style={{lineHeight:"20px"}}>
                         {t("traveltipsp")}
                         </p>
                         </div>

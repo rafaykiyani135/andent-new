@@ -72,7 +72,7 @@ function Main () {
                     </>
                     ) : (
                     <>
-                        <div className='orth-types text-center text-lg-start'>
+                        <div className='orth-types text-center text-lg-start orth-center'>
                         <img src={d1} alt='traditional bracer' style={{ width: "240px", height: "144px", borderRadius: "10px" }} />
                         </div>
                         <div className='decent-pad orth-text-head'>
@@ -109,7 +109,7 @@ function Main () {
                     </>
                     ) : (
                     <>
-                        <div className='orth-types text-center text-lg-start'>
+                        <div className='orth-types text-center text-lg-start orth-center'>
                         <img src={d2} alt='traditional bracer' style={{ width: "240px", height: "144px", borderRadius: "10px" }} />
                         </div>
                         <div className='decent-pad orth-text-head'>

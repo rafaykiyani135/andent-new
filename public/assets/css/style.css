@@ -413,6 +413,9 @@ label {
 }
 
 @media (max-width: 767px) {
+    .before-after-pic-pad{
+        padding-bottom: 75px;
+    }
     .reviews {
         transform: translateY(-65px);
     }
@@ -586,11 +589,13 @@ label {
         padding-bottom: 60px;
     }
     .about-text {
+        height: 50px;
+        width: 50px;
         position: absolute;
         bottom: 0px;
         right: 30px;
         background: #fff;
-        padding: 30px;
+        padding: 15px;
         border-radius: 4px;
         box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
       }
@@ -606,6 +611,7 @@ label {
       float: left;
       }
       .about-text span sub {
+        
       font-size: 30px;
       color: #fff;
       font-weight: 800;
@@ -616,11 +622,11 @@ label {
       .second-about {
         transform:translate(150px,-60px);
         left: 0;
-        right: 25px;
         bottom: 0;
         display: block !important;
     }
         .second-about p {
+            
         margin-bottom: 0;
         color: #0e264f;
         font-size: 15px;
@@ -633,12 +639,18 @@ label {
     }
     .form-big2 {
         height: auto;
-        width: auto !important;
+        width: calc(100vw - 82px) !important;
         border-radius: 15px;
-        border: 1px;
+        border: 1px solid;
         border-style: solid;
         text-align: center;
-    }
+
+        
+        /* Center horizontally and vertically using flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     .input-text-pad{
         padding-top: 11px;
         padding-right: 1px;
@@ -699,17 +711,15 @@ label {
       
       .slider-content-vid-dim {
         max-height: 220px; /* Set max-height for responsiveness */
-        width: 100%;
+        width: 100% !important;
         padding-top: 20px;
       }
       
       .slider-content-filler-dim {
-        max-height: 110px; /* Set max-height for responsiveness */
-        width: 100%;
+        width: 190px;
       }
       
       .slider-content-left-filler-dim {
-        max-height: 110px; /* Set max-height for responsiveness */
         width: 190px;
         padding-top: 20px;
       }
@@ -778,6 +788,11 @@ label {
     .why-andent{
         padding-top: 65px;
     }
+    .team-image{
+        border-radius: 10px;
+        height: 188px;
+        width: auto;
+    }
    
     
       
@@ -814,6 +829,11 @@ label {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .team-image{
+        border-radius: 10px;
+        height: 188px;
+        width: 312px;
+    }
     .hero-md-pad{
         padding-top: 80px;
     }
@@ -982,13 +1002,242 @@ label {
             text-align: center;
             margin: 0 auto;
         }
-        .second-about-tab {
+        .second-about {
             transform:translate(150%,-120px);
             left: 0;
             right: 25px;
             bottom: 0;
         }
-        .second-about-tab p {
+        .second-about p {
+        margin-bottom: 0;
+        color: #0e264f;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        float: left;
+        width: 55%;
+        margin-top: -10px;
+        margin-left: 10px;
+        }
+    
+        .about-text {
+            position: absolute;
+            bottom: 0px;
+            right: 30px;
+            width: 242px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+          }
+          
+          .about-text span {
+          font-size: 48px;
+          color: #3660d9;
+          position: relative;
+          display: inline-block;
+          font-weight: 800;
+          font-family: 'Poppins', sans-serif;
+          float: left;
+          }
+          .about-text span sub {
+          font-size: 30px;
+          color: #fff;
+          font-weight: 800;
+          margin-left: -10px;
+          bottom: 5px;
+          }
+
+
+
+        
+}
+
+@media all and (orientation : landscape) and (min-width: 768px) and (max-width: 1400px) {
+    .orth-center{
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    .team-image{
+        border-radius: 10px;
+        height: 188px;
+        width: auto;
+    }
+    .hero-md-pad{
+        padding-top: 0px;
+    }
+    .slider-container {
+        width: 100%; /* Set the desired width */
+        height: 90vh; /* Set the desired height */
+        overflow: hidden;
+        }
+        
+        .slider-content-new {
+            animation: moveImage 20s linear infinite;
+            transform-style: preserve-3d;
+            will-change: transform;
+        }
+        
+        .slider-content-dim {
+            height: auto !important;
+            width: 100%  !important;
+            padding-top: 20px;
+        }
+        
+        .slider-content-vid-dim {
+            height: auto !important;
+            width: 100%  !important;
+            padding-top: 20px;
+        }
+        
+        .slider-content-filler-dim {
+            height: auto !important;
+            width: 100%  !important;
+        }
+        
+        .slider-content-left-filler-dim {
+            padding-top: 20px;
+            height: auto !important;
+            width: 100%  !important;
+        }
+        
+        @keyframes moveImage {
+            0% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(-500%);
+            }
+        }
+        
+        .slider-left {
+            height: 100%;
+            width:50%;
+        }
+        
+        .slider-right {
+            height: 100%;
+            width: 50%;
+        }
+        .services-icon {
+            height: auto !important;
+            width: 200px !important;
+        }
+        .tourism-text {
+            height: auto;
+            width: auto;
+            max-width: 70%;
+            margin: 0 auto; /* Add this line to center the div horizontally */
+            display: flex;
+            justify-content: center; /* Center its children horizontally */
+            align-items: center; /* Center its children vertically */
+        }
+        .form-big2 {
+            height: auto;
+            width: auto !important;
+            border-radius: 15px;
+            border: 1px;
+            border-style: solid;
+            text-align: center;
+        }
+        .input-text-pad{
+            padding-top: 11px;
+            padding-right: 1px;
+        }
+        .input-text-sides{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .upload-top-pad{
+            padding-top: 20px;
+        }
+        .mob-bottom-icon{
+            height: auto;
+            width: auto;
+        }
+        .clinic-address{
+            padding-top: 10px;
+            position: relative;
+            right: 16px;
+        }
+        .contact-us{
+            padding-top: 30px;
+            position: relative;
+            right: 15px;
+        }
+        .exp-top-pad{
+            padding-top: 25px;
+        }
+        .exp-bot-pad{
+            padding-bottom:  25px;
+        }
+        .red-tick-md {
+            position: relative;
+            right: 10px;
+        }
+        #contactsMap {
+            width: auto;
+            height: auto;
+            
+        }
+        .contacts-map {
+            width: auto;
+            height: auto;
+        }
+        .learn-more-btn{
+            position: relative;
+            bottom: 25px;
+        }
+        .veneer-info-pad{
+            padding-top: 50px;
+        }
+        .orth-stepbstep{
+            position: relative;
+            bottom: 30px;
+        }
+        .upper-padding {
+            padding-top:50px;
+        }
+        .test-upper-padding {
+            padding-top:50px;
+        }
+        .crowns-img{
+            height: auto;
+            width: auto;
+        }
+        .landscape-text{
+            height: auto;
+            width: auto;
+        }
+        .pad-10 {
+            padding: 10px;
+        }
+        .contact-us-pad{
+            padding: 10px;
+        }
+        .treat-pad-left{
+            padding-left: 20px;
+        }
+        .why-andent{
+            padding-top: 35px;
+            padding-left: 30px;
+        }
+        .tourism-pad{
+            padding-top: 25px;
+        }
+        .slider-text-dim{
+            height: auto;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .second-about {
+            transform:translate(150%,-120px);
+            left: 0;
+            right: 25px;
+            bottom: 0;
+        }
+        .second-about p {
         margin-bottom: 0;
         color: #0e264f;
         font-size: 15px;
@@ -1048,7 +1297,11 @@ nav ul li.active {
 
   
 @media (min-width: 1400px) {
-    
+    .team-image{
+        border-radius: 10px;
+        height: 188px;
+        width: 312px;
+    }
     .before-after-pad{
         padding-bottom: 50px;
     }

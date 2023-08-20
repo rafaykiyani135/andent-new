@@ -65,7 +65,7 @@ function Ourdr() {
             <Slider {...settings}>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr1} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr1} alt='team-img' className='img-fluid team-image' />
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -78,7 +78,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr2} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr2} alt='team-img' className='img-fluid team-image' />
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -91,7 +91,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr3} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr3} alt='team-img' className='img-fluid team-image'/>
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -104,7 +104,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr4} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr4} alt='team-img' className='img-fluid team-image' />
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -117,7 +117,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr5} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr5} alt='team-img' className='img-fluid team-image' />
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -130,7 +130,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr6} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr6} alt='team-img' className='img-fluid team-image' />
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -143,7 +143,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr7} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr7} alt='team-img' className='img-fluid team-image'  />
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -156,7 +156,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr8} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr8} alt='team-img' className='img-fluid team-image'/>
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>
@@ -169,7 +169,7 @@ function Ourdr() {
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-center'>
                 <div className='d-flex justify-content-center'>
-                <img src={dr9} alt='team-img' className='img-fluid' style={{ height: "188px", width: "312px", borderRadius: "10px" }} />
+                <img src={dr9} alt='team-img' className='img-fluid team-image' />
                 </div>
                 <div style={{ paddingTop: "15px" }}>
                     <h3 className='theme-dark' style={{ fontSize: "18px" }}>

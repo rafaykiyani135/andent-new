@@ -72,7 +72,7 @@ function Main(props) {
                 <div className="slider-active">
                 <div className="single-slider slider-bg d-flex align-items-start align-items-lg-center">
                    <div className="container">
-                    <div className="row justify-content-around align-items-center">
+                    <div className="row justify-content-around align-items-center justify-content-md-start">
                         <div className="col-lg-6 col-md-12 col-12 text-center text-lg-start text-md-start hero-left-pos">
                         <div className="slider-content s-slider-content mt-20">
                             <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
@@ -134,8 +134,8 @@ function Main(props) {
                             <img className='slider-content-filler-dim' alt='imgrightfiller' src={filler}></img>
                             <img className='slider-content-dim' alt='imgright1' src={imgright1}></img>
                             <img className='slider-content-dim' alt='imgright2' src={imgright2}></img>
-                            <video className='slider-content-vid-dim' autoPlay loop muted>
-                                <source src="https://s3.console.aws.amazon.com/s3/object/andent-media?region=us-east-2&prefix=video+3.mov"  type="video/mp4" />
+                            <video className='slider-content-vid-dim' autoPlay loop muted playsInline>
+                                <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+3.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgright3' src={imgright3}></img>

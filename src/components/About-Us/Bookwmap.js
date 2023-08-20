@@ -198,11 +198,11 @@ function Make() {
                             <textarea name="message" id="message" cols={30} rows={10} placeholder={t("comments")} defaultValue={""} className='input-box form-big' style={{borderRadius:"15px"}} onChange={chCmnt}/>
                           </div>
                           <div className='row justify-content-around'>
-                          <div className="col-lg-7 col-12 col-sm-12 col-md-12 d-flex justify-content-center justify-content-lg-start">
-                          <div className="contact-field form-input-pad">
+                          <div className="col-lg-7 col-12 col-sm-12 col-md-12 d-flex justify-content-start justify-content-md-center  justify-content-lg-start">
+                          <div className="form-input-pad">
                            <div className='form-big2' style={{borderStyle:"solid"}}>
                               <h4 className="input-text-pad text-start input-text-sides" style={{fontSize:"12px",lineHeight:"18px",fontWeight:"700"}}>
-                              {t("file")}<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {imgfile?<p>{t("uploaded")}</p>:<p></p>}</i>
+                              {t("file")}<i style={{fontWeight:"400"}}>Png, Jpg, Pdf {imgfile?<p>Uploaded!</p>:<p></p>}</i>
                               </h4>
                            </div>
                           </div>

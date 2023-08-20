@@ -50,7 +50,7 @@ function Main (){
                 </div>
                 <div className="row upper-padding justify-content-center align-items-center">
                     <div className="col-lg-4 col-md-12 col-12 text-lg-start text-md-center">
-                        <img src={img1} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
+                        <img src={img1} alt="benefitimg" style={{height:"auto",width:"371px"}}/>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 order-lg-first order-md-first mob-top-pad text-center text-lg-start">
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
@@ -63,7 +63,7 @@ function Main (){
                 </div>
                 <div className="row upper-padding justify-content-center align-items-center">
                     <div className="col-lg-4 col-md-12 col-12 text-lg-start text-md-center order-lg-first">
-                        <img src={img2} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
+                        <img src={img2} alt="benefitimg" style={{height:"auto",width:"371px"}}/>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 move-up text-center text-lg-start order-md-first" style={{paddingTop:"20px"}}>
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>
@@ -76,7 +76,7 @@ function Main (){
                 </div>
                 <div className="row upper-padding justify-content-center  align-items-center">
                     <div className="col-lg-4 col-md-12 col-12 text-lg-start text-md-center">
-                        <img src={img3} alt="benefitimg" style={{height:"222px",width:"371px"}}/>
+                        <img src={img3} alt="benefitimg" style={{height:"auto",width:"371px"}}/>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 move-up order-lg-first order-md-first mob-top-pad text-center text-lg-start">
                         <h2 className="theme-dark size-16" style={{fontWeight:"700"}}>

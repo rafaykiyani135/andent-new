@@ -29,7 +29,7 @@ function Main (){
         <div className="container before-after-pad">
 
             <div className="row align-items-center justify-content-center text-center andent-padding">
-                <div className="col-lg-12">
+                <div className="col-lg-12 col-12">
                     <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s" >
                     <h2 className='theme-dark mob-heading'>{t("beforeandafter")}</h2>
                     </div>
@@ -41,7 +41,7 @@ function Main (){
                 <Slider {...settings}>
                 {imageList.map((image, index) => (
                     <div key={index} className="slider-image-wrapper">
-                    <img src={image} alt="beforeafterimg" className="slider-image" />
+                    <img src={image} alt="beforeafterimg" className="slider-image before-after-pic-pad" />
                     </div>
                 ))}
                 </Slider>
