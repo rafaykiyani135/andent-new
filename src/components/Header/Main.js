@@ -93,14 +93,14 @@ function Main() {
                     <div className="container">
                         <div className="second-menu">
                             <div className="row align-items-center">
-                                <div className="col-xl-1 col-lg-1 justify-content-start">
+                                <div className="col-xl-1 col-lg-1 justify-content-start move-logo-left-landscape">
                                     <div className="logo header-logo">
                                         <Link to="/" title='AndentLogo' onClick={linkClick}>
                                             <img src={Logo} alt="logo" style={{height:"35px",width:"145px"}}/>
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-xl-10 col-lg-10 move-header-left">
+                                <div className="col-xl-10 col-lg-10 move-header-left move-navbar-left-landscape">
                                     <div className="main-menu text-right text-xl-right adjust-header">
                                         <nav id="mobile-menu">
                                             <ul>

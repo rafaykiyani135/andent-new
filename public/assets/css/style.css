@@ -1232,7 +1232,7 @@ label {
             margin: 0 auto;
         }
         .second-about {
-            transform:translate(150%,-120px);
+            transform:translate(80%,-120px);
             left: 0;
             right: 25px;
             bottom: 0;
@@ -1276,7 +1276,14 @@ label {
           margin-left: -10px;
           bottom: 5px;
           }
-
+          .move-logo-left-landscape{
+            position: relative;
+            right: 40px;
+          }
+          .move-navbar-left-landscape{
+            position: relative;
+            right: 20px;
+          }
 
 
         
