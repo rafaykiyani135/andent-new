@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 function Testimonialslider() {
 
     const stars = Array.from({ length: 5 }, (_, index) => (
-        <img index={index} src={star} alt="icons" style={{paddingRight:"10px",transform:"translateY(-5px)",height:"20px",width:"30px"}}  />
+        <img index={index} key={index} src={star} alt="icons" style={{paddingRight:"10px",transform:"translateY(-5px)",height:"20px",width:"30px"}}  />
       ));
 
       const {t}=useTranslation();

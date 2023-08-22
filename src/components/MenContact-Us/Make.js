@@ -200,7 +200,7 @@ function Make() {
                           </div>
                           <div className="col-lg-5 col-12 col-sm-12 col-md-12 d-flex justify-content-lg-end justify-content-center text-center align-items-center form-input-pad-mob upload-top-pad">
                             <input type="file" id="file-input" multiple name="file-input" onChange={chPano}/>
-                            <label id="file-input-label" for="file-input" className='text-center'>{t("upload")}</label>
+                            <label id="file-input-label" htmlFor="file-input" className='text-center'>{t("upload")}</label>
                           </div>
                           </div>
                           <div className='d-flex justify-content-center pad-20'>

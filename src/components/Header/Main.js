@@ -117,7 +117,7 @@ function Main() {
                                                     <NavLink to="/about" title='Why Us' onClick={linkClick}>{t("aboutus")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <NavLink to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>{t("tourism")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></NavLink>
+                                                    <NavLink to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>{t("tourism")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i className="arrow down"></i></span></NavLink>
                                                     <ul>
                                                     <li className='has-sub'>
                                                         <NavLink to="/testimonials" title='Testimonials' onClick={linkClick}>{t("testimonial")}</NavLink>
@@ -128,7 +128,7 @@ function Main() {
                                                     </ul>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <Link to="#" title='Other Services' onClick={linkClick}>{t("otherserv")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
+                                                    <Link to="#" title='Other Services' onClick={linkClick}>{t("otherserv")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i className="arrow down"></i></span></Link>
                                                     <ul>
                                                         <li>
                                                             <NavLink to="/orthodontics" title='Orthodontics' onClick={linkClick}>{t("orthodontics")}</NavLink>
