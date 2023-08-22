@@ -39,9 +39,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                         <ReactPlayer
-                            url="https://streamable.com/wdmsxr"
+                            url="https://andent-media.s3.us-east-2.amazonaws.com/Giuseppe_testimonial.mp4"
                             controls={true}
-                            width='400px'
+                            width='320px'
                             height='400px'
                         />
                     </div>
@@ -65,9 +65,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                         <ReactPlayer
-                                url="https://streamable.com/x6ikix"
+                                url="https://andent-media.s3.us-east-2.amazonaws.com/Rossella_testimonial.mp4"
                                 controls={true}
-                                width='400px'
+                                width='320px'
                                 height='400px'
                             />
                     </div>
@@ -93,9 +93,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                             <ReactPlayer
-                                url="https://streamable.com/x71o4y"
+                                url="https://andent-media.s3.us-east-2.amazonaws.com/Antonio_testimonial.mp4"
                                 controls={true}
-                                width='400px'
+                                width='320px'
                                 height='400px'
                             />
                     </div>
@@ -119,9 +119,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                             <ReactPlayer
-                                url="https://streamable.com/hyrnc6"
+                                url="https://andent-media.s3.us-east-2.amazonaws.com/Mikela_testimonial.mp4"
                                 controls={true}
-                                width='400px'
+                                width='320px'
                                 height='400px'
                             />
                     </div>
@@ -148,9 +148,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                             <ReactPlayer
-                                url="https://streamable.com/zizvfo"
+                                url="https://andent-media.s3.us-east-2.amazonaws.com/Mateo_testimonial.mp4"
                                 controls={true}
-                                width='400px'
+                                width='320px'
                                 height='400px'
                             />
                     </div>
@@ -174,9 +174,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                             <ReactPlayer
-                                url="https://streamable.com/fsfjt4"
+                                url="https://andent-media.s3.us-east-2.amazonaws.com/George_testimonia.mp4"
                                 controls={true}
-                                width='400px'
+                                width='320px'
                                 height='400px'
                             />
                     </div>

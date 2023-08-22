@@ -98,7 +98,7 @@ function Main (){
                     }}
                     >
                     <ReactPlayer
-                        url="https://streamable.com/yp0ty3"
+                        url="https://andent-media.s3.us-east-2.amazonaws.com/Antdent.mp4"
                         controls={true}
                         width="100%" // Keep the width consistent, it will adjust according to its parent container
                         height="100%" // Keep the height consistent, it will adjust according to its parent container

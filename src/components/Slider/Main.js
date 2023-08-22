@@ -117,13 +117,13 @@ function Main(props) {
                         <div className="row justify-content-lg-center justify-content-start">
                         <div className="slider-content-new col-lg-6 col-6 text-lg-center slider-left justify-content-lg-center">
                             <img className='slider-content-dim' alt='imgleft1' src={imgleft1}></img>
-                            <video className='slider-content-vid-dim' autoPlay loop muted>
+                            <video className='slider-content-vid-dim' autoPlay="autoplay" loop muted style={{pointerEvents:"none"}}>
                                 <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+1.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgleft2' src={imgleft2}></img>
                             <img className='slider-content-dim' alt='imgleft3' src={imgleft3}></img>
-                            <video className='slider-content-vid-dim' autoPlay loop muted>
+                            <video className='slider-content-vid-dim' autoPlay="autoplay" loop muted style={{pointerEvents:"none"}}>
                                 <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+2.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
@@ -134,13 +134,13 @@ function Main(props) {
                             <img className='slider-content-filler-dim' alt='imgrightfiller' src={filler}></img>
                             <img className='slider-content-dim' alt='imgright1' src={imgright1}></img>
                             <img className='slider-content-dim' alt='imgright2' src={imgright2}></img>
-                            <video className='slider-content-vid-dim' autoPlay loop muted playsInline>
+                            <video className='slider-content-vid-dim' autoPlay="autoplay" loop muted style={{pointerEvents:"none"}} playsInline>
                                 <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+3.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <img className='slider-content-dim' alt='imgright3' src={imgright3}></img>
                             <img className='slider-content-dim' alt='imgright4' src={imgright4}></img>
-                            <video className='slider-content-vid-dim' autoPlay loop muted>
+                            <video className='slider-content-vid-dim' autoPlay="autoplay" loop muted style={{pointerEvents:"none"}}>
                                 <source src="https://andent-media.s3.us-east-2.amazonaws.com/video+4.mov"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>

@@ -39,9 +39,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                         <ReactPlayer
-                            url="https://streamable.com/oc16p6"
+                            url="https://andent-media.s3.us-east-2.amazonaws.com/Antonio+Naselli.mp4"
                             controls={true}
-                            width='400px'
+                            width='320px'
                             height='400px'
                         />
                     </div>
@@ -65,9 +65,9 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                         <ReactPlayer
-                            url="https://streamable.com/ja40h4"
+                            url="https://andent-media.s3.us-east-2.amazonaws.com/Emilio.mp4"
                             controls={true}
-                            width='400px'
+                            width='320px'
                             height='400px'
                         />
                     </div>

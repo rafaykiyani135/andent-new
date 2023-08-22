@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "bootstrap": "^5.3.1",
     "browserify-zlib": "^0.2.0",
     "child_process": "^1.0.2",

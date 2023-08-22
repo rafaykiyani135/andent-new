@@ -117,13 +117,15 @@ function Main() {
                                                     <NavLink to="/about" title='Why Us' onClick={linkClick}>{t("aboutus")}</NavLink>
                                                 </li>
                                                 <li className='has-sub'>
-                                                    <NavLink to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>{t("tourism")}</NavLink>
-                                                </li>
-                                                <li className='has-sub'>
-                                                    <NavLink to="/testimonials" title='Testimonials' onClick={linkClick}>{t("testimonial")}</NavLink>
-                                                </li>
-                                                <li className='has-sub'>
-                                                    <NavLink to="/blog/1" title='Blogs' onClick={linkClick}>{t("blog")}</NavLink>
+                                                    <NavLink to="/dental-tourism" title='Dental Tourism' onClick={linkClick}>{t("tourism")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></NavLink>
+                                                    <ul>
+                                                    <li className='has-sub'>
+                                                        <NavLink to="/testimonials" title='Testimonials' onClick={linkClick}>{t("testimonial")}</NavLink>
+                                                    </li>
+                                                    <li className='has-sub'>
+                                                        <NavLink to="/blog/1" title='Blogs' onClick={linkClick}>{t("blog")}</NavLink>
+                                                    </li>
+                                                    </ul>
                                                 </li>
                                                 <li className='has-sub'>
                                                     <Link to="#" title='Other Services' onClick={linkClick}>{t("otherserv")} &nbsp; <span style={{position:"relative",bottom:"3px"}}><i class="arrow down"></i></span></Link>
