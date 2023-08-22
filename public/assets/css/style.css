@@ -620,7 +620,7 @@ label {
       }
 
       .second-about {
-        transform:translate(150px,-60px);
+        transform:translate(calc(140px + 2vw),-90px);
         left: 0;
         bottom: 0;
         display: block !important;
