@@ -28,8 +28,8 @@ function Main(){
     }, []);
 
     const customStyle = {
-    height: isMobile ? '300px' : isTablet ? '350px' : '200px',
-    width: isMobile ? '100%' : isTablet ? '400px' : '400px'
+    height: isMobile ? '200px' : isTablet ? '350px' : '200px',
+    width: isMobile ? '70%' : isTablet ? '400px' : '400px'
     };
 
     return(
@@ -46,7 +46,7 @@ function Main(){
                 <div className="row justify-content-around">
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
-                        <div className='d-flex justify-content-start upper-padding'>
+                        <div className='d-flex justify-content-center justify-content-md-start upper-padding'>
                         <img src={w1} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
@@ -56,7 +56,7 @@ function Main(){
                 </div>
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
-                        <div className='d-flex justify-content-start upper-padding'>
+                        <div className='d-flex justify-content-center justify-content-md-start upper-padding'>
                         <img src={w2} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
@@ -66,7 +66,7 @@ function Main(){
                 </div>
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
-                        <div className='d-flex justify-content-start upper-padding'>
+                        <div className='d-flex justify-content-center justify-content-md-start upper-padding'>
                         <img src={w3} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}}>
@@ -76,7 +76,7 @@ function Main(){
                 </div>
                 <div className="col-lg-2 col-md-6 d-flex justify-content-center">
                     <div className="fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" >
-                        <div className='d-flex justify-content-start upper-padding'>
+                        <div className='d-flex justify-content-center justify-content-md-start upper-padding'>
                         <img src={w4} alt="dt1" style={customStyle} className='img-fluid'/>
                         </div>
                         <div style={{paddingTop:"20px"}} className=''>

@@ -1,8 +1,8 @@
 import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from 'react';
-import { useAlert } from 'react-alert';
+//import { useState } from 'react';
+//import { useAlert } from 'react-alert';
 import imgleft1 from '../../assets/andent-data/herosectionimg/Images/slider image 1.png'
 import imgleft2 from '../../assets/andent-data/herosectionimg/Images/slider image 5.png'
 import imgleft3 from '../../assets/andent-data/herosectionimg/Images/slider image 2.png'
@@ -12,58 +12,39 @@ import imgright2 from '../../assets/andent-data/herosectionimg/Images/slider ima
 import imgright3 from '../../assets/andent-data/herosectionimg/Images/slider image 7.png'
 import imgright4 from '../../assets/andent-data/herosectionimg/Images/slider image 8.png'
 import filler from '../../assets/andent-data/herosectionimg/Images/last image 200px.png'
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Main() {
 
     
 
-      const [number,setNumber] = useState("")
-      const [name,setName] = useState("")
-      const alert=useAlert();
+   //   const [number,setNumber] = useState("")
+   //   const [name,setName] = useState("")
+    //  const alert=useAlert();
 
       const {t}=useTranslation();
 
 
 
-      const changeName = (e) => {
+    /*  const changeName = (e) => {
           setName(e.target.value)
       }
   
       const changeNum = (e) => {
           setNumber(e.target.value)
       }
-  
-      const getCallBack = async (e) => {
+  */
+      const contactUs = async (e) => {
         e.preventDefault();
 
-        window.analytics.identify(number,{
-            Name : name,
-            Number : number
-        });
-
-        const res = await fetch("/getcallback",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body: JSON.stringify({
-                phoneNum: number,
-                Name: name
-            })
-        });
-
-        const data=await res.json();
-
-        if(data.status===401 || !data){
-        console.log("error sending email")
-        alert.show("Error Sending Email")
-        }
-        else{
-        console.log("email sent")
-        alert.show("Email Sent Successfully")
-        }
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
     }
+
 
   return (
     <>
@@ -71,7 +52,7 @@ function Main() {
             <div className="slider-active">
             <div className="single-slider slider-bg d-flex align-items-center" style={{backgroundImage: "url(img/slider/slider_bg.png)", backgroundSize: "cover"}}>
                 <div className="container">
-                <div className="row justify-content-around align-items-center justify-content-md-start">
+                <div className="row justify-content-around align-items-end justify-content-md-start">
                     <div className="col-lg-6 col-md-11 hero-left-pos">
                     <div className="slider-content s-slider-content mt-20 text-center text-lg-start text-md-start">
                         <h5 data-animation="fadeInUp" data-delay=".4s" className='theme' style={{color:"#6DA7A2"}}>
@@ -91,23 +72,15 @@ function Main() {
                         </div>
                         <br/>
                         <br/>
-                        <form method="post" onSubmit={getCallBack}>
-                        <div className="row">
-                        <div className="col-lg-4 col-md-3">
-                            <input type="number" className='input-box form-control mb-3' placeholder={t("yourphone")} onChange={changeNum} required/>
-                        </div>
-                        <div className="col-lg-4 col-md-3">
-                            <input className='input-box form-control mb-3' placeholder={t("yourname")} onChange={changeName} required/>
-                        </div>
-                        <div className="col-lg-4 col-md-4 text-center text-lg-start">
-                            <button className='btn' style={{height:"66px"}} type='submit'>
-                            <p style={{color:"white"}}>
-                                {t("callback")}
+                        <div className="col-lg-4 col-md-4 text-center text-md-start tourism-hero-pad hero-contact-botpad">
+                        <button className="btn" style={{height:"66px"}} title='ContactUs' onClick={contactUs}>
+                            <Link to="/contact">
+                            <p style={{ color: "white" }}>
+                            {t("contactus")}
                             </p>
-                            </button>
+                            </Link>
+                        </button>
                         </div>
-                        </div>
-                        </form>
                     </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12 slider-container d-flex justify-content-lg-start upper-padding hero-right-pos" >

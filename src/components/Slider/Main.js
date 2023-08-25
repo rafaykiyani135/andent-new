@@ -10,8 +10,9 @@ import imgright2 from '../../assets/andent-data/herosectionimg/Images/slider ima
 import imgright3 from '../../assets/andent-data/herosectionimg/Images/slider image 7.png'
 import imgright4 from '../../assets/andent-data/herosectionimg/Images/slider image 8.png'
 import filler from '../../assets/andent-data/herosectionimg/Images/last image 200px.png'
-import { useState } from 'react';
-import { useAlert } from 'react-alert';
+import { Link } from 'react-router-dom';
+//import { useState } from 'react';
+//import { useAlert } from 'react-alert';
 import { useTranslation } from 'react-i18next';
 
 function Main(props) {
@@ -20,47 +21,26 @@ function Main(props) {
   
 
 
-    const [number,setNumber] = useState("")
-    const [name,setName] = useState("")
-    const alert=useAlert();
+   // const [number,setNumber] = useState("")
+   // const [name,setName] = useState("")
+  //  const alert=useAlert();
 
-    const changeName = (e) => {
+  /*  const changeName = (e) => {
         setName(e.target.value)
     }
 
     const changeNum = (e) => {
         setNumber(e.target.value)
     }
-
-    const getCallBack = async (e) => {
+*/
+    const contactus = async (e) => {
         e.preventDefault();
-
-        window.analytics.identify(number, {
-            Name : name,
-            Number : number
-        });
-
-        const res = await fetch("/getcallback",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body: JSON.stringify({
-                phoneNum: number,
-                Name: name
-            })
-        });
-
-        const data=await res.json();
-
-        if(data.status===401 || !data){
-        console.log("error sending email")
-        alert.show("Error Sending Email")
-        }
-        else{
-        console.log("email sent")
-        alert.show("Email Sent Successfully")
-        }
+        
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
 
     }
       
@@ -93,23 +73,15 @@ function Main(props) {
                             </div>
                             <br/>
                             <br/>
-                            <form method="post" onSubmit={getCallBack}>
-                            <div className="row">
-                            <div className="col-lg-4 col-md-3">
-                                <input type="number" className='input-box form-control mb-3' placeholder={t("yourphone")} onChange={changeNum} required/>
-                            </div>
-                            <div className="col-lg-4 col-md-3">
-                                <input className='input-box form-control mb-3' placeholder={t("yourname")} onChange={changeName} required/>
-                            </div>
-                            <div className="col-lg-4 col-md-4 text-center text-lg-start">
-                                <button className='btn' style={{height:"66px"}} type='submit'>
+                            <div className="col-lg-4 col-md-4 text-md-start text-center text-lg-start hero-contact-botpad">
+                                <button className='btn' style={{height:"66px"}} title='ContactUs' onClick={contactus}>
+                                <Link to="/contact">
                                 <p style={{color:"white"}}>
-                                    {t("callback")}
+                                    {t("contactus")}
                                 </p>
+                                </Link>
                                 </button>
                             </div>
-                            </div>
-                            </form>
 
                         </div>
                         </div>

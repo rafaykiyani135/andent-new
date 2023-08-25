@@ -44,8 +44,8 @@ function Main (){
              <br/>
              <Apt/>
              <div style={{height:"auto",width:"auto",zIndex:"1000",position:"absolute",padding:"50px"}}>
-             <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true" allowClickAway="true" allowEsc="true" onSubmit={getMessage}/>
-             </div>
+              <FloatingWhatsApp accountName="Andent"phoneNumber="+355 69 375 5065" darkMode="true"  chatboxHeight={450} allowClickAway="true" allowEsc="true" onSubmit={getMessage} buttonStyle={{height:"70px",width:"70px"}}/>
+              </div>
         </div>
 
 

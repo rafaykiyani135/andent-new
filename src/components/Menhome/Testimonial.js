@@ -2,6 +2,9 @@ import React from 'react'
 import star from '../../assets/andent-data/star.png'
 import ReactPlayer from 'react-player'
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import axios from 'axios';
 
 
 
@@ -12,8 +15,22 @@ function Testimonialslider() {
       ));
 
       const {t}=useTranslation();
-  
+      const [testimonials,setTestimonials]=useState([])
+      const url = 'https://andent-backend.prodbuilds.com/api/testimonials';
 
+      useEffect(() => {
+
+       const fetchData = async () => {
+         try {
+           const response = await axios.get(url);
+           setTestimonials(response.data.data.slice(0,2));
+         } catch (error) {
+           console.log("Error fetching data:", error);
+         }
+       };
+     
+       fetchData();
+     }, [url]);
         
   return (
     
@@ -31,7 +48,7 @@ function Testimonialslider() {
                 <div className='col-lg-4 col-md-12'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{t("test1name")} &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{testimonials.length>0? testimonials[0].attributes.title : ""} &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6 text-lg-start'>
                             {stars}
@@ -39,24 +56,17 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px"}} className='text-center d-flex justify-content-center'>
                         <ReactPlayer
-                            url="https://andent-media.s3.us-east-2.amazonaws.com/Gaetano.mp4"
+                            url={testimonials.length>0? testimonials[0].attributes.video : ""}
                             controls={true}
                             width='320px'
                             height='400px'
                         />
                     </div>
-                    <div className='d-flex justify-content-center test-top-pad'>
-                    <div style={{paddingTop:"10px"}} className='andent-text text-center testimon-dim tourism-text'>
-                        <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
-                        {t("test1desc")}
-                        </p>
-                    </div>
-                    </div>
                 </div>
                 <div className='col-lg-4 col-md-12 mob-top-pad'>
                     <div className='row justify-content-center text-center'>
                         <div className='col-lg-6'>
-                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{t("test2name")} &nbsp; &nbsp;</h4>
+                            <h4 className='size-18 theme-dark text-lg-start move-right' style={{fontWeight:"700"}}>{testimonials.length>0? testimonials[1].attributes.title : ""} &nbsp; &nbsp;</h4>
                         </div>
                         <div className='col-lg-6 text-lg-start'>
                             {stars}
@@ -64,20 +74,12 @@ function Testimonialslider() {
                     </div>
                     <div style={{paddingTop:"15px",position:"relative",bottom:"3px"}} className='text-center d-flex justify-content-center'>
                         <ReactPlayer
-                            url="https://andent-media.s3.us-east-2.amazonaws.com/Roberta_Testimonianza.mp4"
+                            url={testimonials.length>0? testimonials[1].attributes.video : ""}
                             controls={true}
                             width='320px'
                             height='400px'
                         />
                     </div>
-                    <div className='d-flex justify-content-center test-top-pad'>
-                        <div style={{paddingTop:"10px"}} className='andent-text text-center testimon-dim tourism-text'>
-                        <p className='size-16 theme-dark' style={{lineHeight:"20px"}}>
-                        {t("test2desc")}
-                        </p>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
 

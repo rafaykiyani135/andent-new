@@ -1,18 +1,19 @@
 import React from 'react'
 import FeaturesservicesTwo from '../../assets/andent-data/aboutustop.png'
-import { useState } from 'react'
-import { useAlert } from 'react-alert'
+//import { useState } from 'react'
+//import { useAlert } from 'react-alert'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 function About() {
 
-    const [number,setNumber] = useState("")
-    const [name,setName] = useState("")
-    const alert=useAlert();
+ //   const [number,setNumber] = useState("")
+  //  const [name,setName] = useState("")
+  //  const alert=useAlert();
     const {t}=useTranslation();
 
-
+/*
     const changeName = (e) => {
         setName(e.target.value)
     }
@@ -20,38 +21,17 @@ function About() {
     const changeNum = (e) => {
         setNumber(e.target.value)
     }
-
-    const getCallBack = async (e) => {
+*/
+    const contactUs = async (e) => {
         e.preventDefault();
 
-        window.analytics.identify(number, {
-            Name : name,
-            Number : number
-        });
+        window.analytics.track("Link clicked", {
+            buttonText: e.currentTarget.title,
+            link: e.currentTarget.href,
+            clickedOnPage: window.location.pathname
+          });
 
-        const res = await fetch("/getcallback",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body: JSON.stringify({
-                phoneNum: number,
-                Name: name
-            })
-        });
-
-        const data=await res.json();
-
-        if(data.status===401 || !data){
-        console.log("error sending email")
-        alert.show("Error Sending Email")
-        }
-        else{
-        console.log("email sent")
-        alert.show("Email Sent Successfully")
-        }
-
-    }
+    }  
 
   return (
     <>
@@ -80,23 +60,17 @@ function About() {
                             </p>
                             <br/>
                             <br/>
-                            <form method="post" onSubmit={getCallBack}>
-                            <div className="row justify-content-lg-start justify-content-center">
-                            <div className="col-lg-4 col-md-3">
-                                <input type="number" style={{height:"58px"}} className='input-box form-control mb-3' placeholder={t("yourphone")} onChange={changeNum} required/>
-                            </div>
-                            <div className="col-lg-4 col-md-3">
-                                <input type="text" style={{height:"58px"}} className='input-box form-control mb-3' placeholder={t("yourname")} onChange={changeName} required/>
-                            </div>
-                            <div className="col-lg-3 col-md-4 text-center text-lg-start">
-                                <button className='btn' style={{height:"58px"}} type='submit'>
+                            <div className='row justify-content-center'>
+                            <div className="col-lg-12 col-md-12">
+                                <button className='btn' style={{height:"58px"}} title='ContactUs' onClick={contactUs}>
+                                <Link to="contact">
                                 <p style={{color:"white"}}>
-                                {t("callback")}
+                                {t("contactus")}
                                 </p>
+                                </Link>
                                 </button>
                             </div>
                             </div>
-                            </form>
                         </div>
                     </div>
                     </div>

@@ -67,22 +67,22 @@ function Main() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-4 d-none d-lg-block text-end" style={{position:"relative",left:"22px"}}>
-                                <div className="header-social header-btn-pos header-social-pos" style={{position:"relative",bottom:"2px"}}>
-                                    <span>
+                            <div className="col-lg-4 col-md-4 d-none d-lg-block text-end" style={{boxSizing: 'border-box', padding: '7px 0 7px 0', height: '100%'}}>
+                                <div className="header-social header-btn-xaxis" style={{height: '100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginTop: '0px'}}>
+                                    <div style={{display: 'flex', justifyContent: 'flex-end', alignItems: 'center'}}>
                                         <Link to='https://instagram.com/andent_clinic?igshid=MzRlODBiNWFlZA' target="_blank" 
                                         rel="noreferrer"title="Instagram" onClick={linkClick}>
-                                        <img src={ig} alt='phone' className='icon2' style={{width:"40px",height:"40px"}}/>
+                                        <img src={ig} alt='phone' className='icon2' style={{width:"32px",height:"32px"}}/>
                                         </Link>
                                         <Link to='https://www.facebook.com/andentclinic?mibextid=LQQJ4d' target="_blank"
                                         rel="noreferrer"title="Facebook" onClick={linkClick}>
-                                        <img src={fb} alt='phone' className='icon3' style={{width:"40px",height:"40px"}}/>
+                                        <img src={fb} alt='phone' className='icon3' style={{width:"32px",height:"32px"}}/>
                                         </Link>
                                         <Link to='https://www.tiktok.com/@andentclinic' target="_blank"
                                         rel="noreferrer"title="Tiktok" onClick={linkClick}>
-                                        <img src={tiktok} alt='phone' className='icon2' style={{width:"40px",height:"40px"}} />
+                                        <img src={tiktok} alt='phone' className='icon2' style={{width:"32px",height:"32px"}} />
                                         </Link>
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

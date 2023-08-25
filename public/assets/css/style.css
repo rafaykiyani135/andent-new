@@ -626,7 +626,6 @@ label {
         display: block !important;
     }
         .second-about p {
-            
         margin-bottom: 0;
         color: #0e264f;
         font-size: 15px;
@@ -1047,6 +1046,9 @@ label {
           margin-left: -10px;
           bottom: 5px;
           }
+          .hero-contact-botpad{
+            padding-bottom: 20px;
+          }
 
 
 
@@ -1352,7 +1354,11 @@ nav ul li.active {
     }
     .header-social-pos{
         position: relative;
-        bottom: 24px;
+        /* bottom: 24px; */
+    }
+    .header-btn-xaxis{
+        position: relative;
+        left: 25px;
     }
     .learn-more-btn{
         position: relative;
